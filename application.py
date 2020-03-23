@@ -1,23 +1,34 @@
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
 from flask import Flask, render_template, request
 
-app = Flask(__name__)
+server = Flask(__name__)
+
+app = dash.Dash(
+    __name__,
+    server=server,
+    routes_pathname_prefix='/dash/'
+)
+
+app.layout = html.Div("Graphs for hospital data")
 
 
-@app.route("/")
+@server.route("/")
 def root():
     return render_template("index.html")
 
 
-@app.route("/about")
+@server.route("/about")
 def about():
     return render_template("about.html")
     
     
-@app.route("/contact")
+@server.route("/contact")
 def contact():
     return render_template("contact.html")
 
 
-@app.route("/donate")
+@server.route("/donate")
 def donate():
     return render_template("donate.html")

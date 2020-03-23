@@ -1,5 +1,6 @@
 import sqlite3
-# import pandas as pd
+# TODO: Figure out how to get pandas working on director without a functional pip
+import pandas as pd
 
 conn = sqlite3.connect('hospital_data.db')
 c = conn.cursor()
@@ -17,35 +18,22 @@ def update_from_csv():
     dataframe.columns = dataframe.columns.str.strip()
     dataframe.to_sql("data", conn)
     conn.commit()
-
-
-# def read_from_db():
-#     c.execute('SELECT * FROM data')
-#     data = c.fetchall()
-#     print(data)
-#     for row in data:
-#         print(row)
-
-#     c.execute('SELECT * FROM data WHERE value = 3')
-#     data = c.fetchall()
-#     print(data)
-#     for row in data:
-#         print(row)
-
-#     c.execute('SELECT * FROM data WHERE unix > 1452554972')
-#     data = c.fetchall()
-#     print(data)
-#     for row in data:
-#         print(row)
-
-#     c.execute('SELECT value, datestamp FROM data WHERE unix > 1452554972')
-#     data = c.fetchall()
-#     print(data)
-#     for row in data:
-#         print(row[0])
-        
     
-# 
-create_table()
-c.close
-conn.close()
+    
+# TODO: Add methods that filter / sort the data based on parameters we pass:
+# For example, sort by most commonly needed equipment or which hospitals need the most equipment,
+# filter by retaining only hospitals in high-risk areas such as New York, etc.
+
+def filter_data(key, operation, value):
+    c.execute('SELECT * FROM data WHERE {key} {operation} {value}')
+    data = c.fetchall()
+
+
+def main():
+    # create_table()
+    c.close
+    conn.close()
+    
+
+if __name__ == '__main__':
+    main()
