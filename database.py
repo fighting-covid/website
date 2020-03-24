@@ -10,7 +10,7 @@ c = conn.cursor()
 # Whichever makes querying and sorting data easiest
 
 def create_table():
-    c.execute("CREATE TABLE IF NOT EXISTS data(datestamp TEXT, hospital TEXT, address TEXT, needed_equipment TEXT, quantity INTEGER)")
+    c.execute("wCREATE TABLE IF NOT EXISTS data(datestamp TEXT, hospital TEXT, address TEXT, needed_equipment TEXT, quantity INTEGER)")
 
 
 def update_from_csv():
