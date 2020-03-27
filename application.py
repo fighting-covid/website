@@ -6,6 +6,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 import pandas as pd
 import os
+import yagmail
 
 server = Flask(__name__)
 
@@ -65,9 +66,23 @@ def about():
     return render_template("about.html")
     
     
-@server.route("/contact")
+@server.route("/contact", methods=['GET', 'POST'])
 def contact():
-    return render_template("contact.html")
+    if request.method=='POST':
+        name = request.form['name']
+        email = request.form['email']
+        message = request.form['message']
+        
+        email_message = "Name: "+name+"\n";
+        email_message += "Email: "+email+"\n";
+        email_message += "Message: "+message+"\n";
+        
+        yag = yagmail.SMTP('fighting.coronav@gmail.com', oauth2_file='~/oauth2_creds.json')
+        yag.send('fighting.coronav@gmail.com', "Contact Form: "+name, email_message)
+        return render_template("contact_results.html")
+        
+    else:
+         return render_template("contact.html")
 
 
 @server.route("/donate")
