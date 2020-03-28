@@ -1,60 +1,52 @@
 from flask import Flask, render_template, request
 from dash import Dash, callback_context, no_update
-from dash.dependencies import Input, Output
-from dash_table import DataTable
 import dash_core_components as dcc
 import dash_html_components as html
 import pandas as pd
-import os
+import sqlite3
 import yagmail
 
 server = Flask(__name__)
 
-app = Dash(
+app1 = Dash(
     __name__,
     server=server,
-    routes_pathname_prefix='/dash/'
+    routes_pathname_prefix='/dash1/'
 )
 
-global lastmt
+# app2 = Dash(
+#     __name__,
+#     server=server,
+#     routes_pathname_prefix='/dash2/'
+# )
+#
+# app3 = Dash(
+#     __name__,
+#     server=server,
+#     routes_pathname_prefix='/dash3/'
+# )
 
-path = "test.csv"
-df = pd.read_csv(path)
-lastmt = os.stat(path).st_mtime
-print(lastmt)
-app.layout = html.Div(
+conn = sqlite3.connect("hospital_data.db")
+df = pd.read_sql_query("SELECT * FROM data", conn)
+
+x1_list = ["masks", "ventilators", "faceshields", "gowns"]
+y1_list = [df[key].sum() for key in x1_list]
+app1.layout = html.Div(
     [
         dcc.Graph(
             id='graph',
             figure={
                 'data': [
-                    {'x': ["masks", "gloves", "respirators", "hand sanitizer", "toilet paper"],
-                     'y': [6000, 3000, 4500, 7300, 9999], 'type': 'bar', 'name': 'Supplies'},
+                    {'x': x1_list,
+                     'y': y1_list, 'type': 'bar', 'name': 'Supplies'},
                 ],
                 'layout': {
                     'title': 'Supplies Requested by Hospitals'
                 }
             }
         ),
-        # DataTable(
-        #     id="table",
-        #     columns=[{"name": i, "id": i} for i in df.columns],
-        #     data=df.to_dict("records"),
-        #     export_format="csv",
-        # ),
-        dcc.Interval(id='interval', interval=1000, n_intervals=0)
     ]
 )
-
-@app.callback(Output('graph', 'figure'), [Input('interval', 'n_intervals')])
-def trigger_by_modify(n):
-    global lastmt
-    if os.stat(path).st_mtime > lastmt:
-        print("modified")
-        lastmt = os.stat(path).st_mtime
-        return pd.read_csv(path).to_dict('records')
-    return no_update
-
 
 @server.route("/")
 def root():

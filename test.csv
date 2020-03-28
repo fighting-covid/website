@@ -1,6 +1,8 @@
-Name,Class,Dorm,Room,GPA
-Sally Whittaker,2018,McCarren House,312,3.75
-Belinda Jameson,2017,Cushing House,148,3.52
-Jeff Smith,2018,Prescott House,17-D,3.20
-Sandy Allen,2019,Oliver House,108,3.48
+Hospital,Address,Contact,masks,ventilators,faceshields,gowns
+a,b,c,3105,1042,6468,2666
+d,e,f,5803,8513,4504,5651
+g,h,i,4827,9262,5489,8081
+j,k,l,2135,9331,1932,3416
+m,n,o,2276,7385,7348,8498
+p,q,r,6930,6170,9894,5752
 
