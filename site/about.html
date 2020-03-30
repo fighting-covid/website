@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/article.css">
+	<link rel="stylesheet" href="./css/about.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Fighting Corona | About</title>
+</head>
+
+<body>
+	<header>
+		<a href="index.html" class="name">
+			<h1>Fighting Corona</h1>
+		</a>
+		<nav class="nav">
+			<button class="hamburger" type="button">
+				<div class="hamburger__lines">
+					<span class="hamburger__line"></span>
+					<span class="hamburger__line"></span>
+					<span class="hamburger__line"></span>
+				</div>
+			</button>
+			<a href="./index.html" class="nav__link"><span>Home</span></a>
+			<a href="./contact.html" class="nav__link"><span>Contact</span></a>
+			<a href="./about.html" class="nav__link"><span>About</span></a>
+
+			<!-- link to actual paypal -->
+			<a href="https://www.paypal.com" class="nav__link"><span>Donate</span></a>
+		</nav>
+	</header>
+
+	<main class="content">
+		<article class="article">
+			<h1>Our Mission</h1>
+			<section class="container">
+				<p>We are a group of TJ students interested in the independent production of masks and other materials that are in very short supply during the COVID-19 pandemic. Our purpose is to
+					organize households across the DMV into a production center for masks and other materials to ship to sites around the US in dire need of them. Epicenters of the outbreak, including
+					New
+					York City, Seattle, and Chicago, are being contacted to gauge what materials are in need.</p>
+			</section>
+		</article>
+		<section class="team">
+			<h1>Our Team</h1>
+			<section class="container">
+				<h2>Web Development</h2>
+				<div class="members">
+					<div class="member">
+						<span>Aryan Chinnala</span>
+					</div>
+					<span class="member">Varun Chilukuri</span>
+					<span class="member">Nuha Mohammed</span>
+					<span class="member">Saigautam Bonam</span>
+					<span class="member">Jason Klein</span>
+					<span class="member">Aryan Joshi</span>
+					<span class="member">Jennifer Abraham</span>
+					<span class="member">Akash Bhave</span>
+					<span class="member">Tharun Saravanan</span>
+				</div>
+				<h2>Outreach</h2>
+				<div class="members">
+					<span class="member">Member</span>
+					<span class="member">Member</span>
+					<span class="member">Member</span>
+					<span class="member">Member</span>
+					<span class="member">Member</span>
+				</div>
+			</section>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p class="copyright">&copy; 2020</p>
+		<!-- <section class="socials">
+			<p>facebook</p>
+		</section> -->
+	</footer>
+
+	<script>
+		let hamburger = document.querySelector('.hamburger')
+		let nav = document.querySelector('nav')
+		hamburger.addEventListener('click', () => {
+			nav.classList.toggle('active')
+		})
+	</script>
+</body>
+
+</html>

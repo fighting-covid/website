@@ -1,0 +1,52 @@
+.content {
+  margin: 0 1rem;
+}
+
+.content .team {
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0 0.125rem 0.125rem -0.125rem black;
+          box-shadow: 0 0.125rem 0.125rem -0.125rem black;
+}
+
+.content .team h1 {
+  padding: 0.5rem 2rem;
+  background-color: #304352;
+  color: whitesmoke;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content .team h2 {
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.content .team h2:last-of-type {
+  margin-top: 2rem;
+}
+
+.content .team .container {
+  padding: 1rem;
+  background-color: white;
+  color: #304352;
+}
+
+.content .team .container .members {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+
+.content .team .container .members .member {
+  background-color: #e44c65;
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 125%;
+  -webkit-box-shadow: 0 0.125rem 0.125rem -0.125rem black;
+          box-shadow: 0 0.125rem 0.125rem -0.125rem black;
+}
+/*# sourceMappingURL=about.css.map */

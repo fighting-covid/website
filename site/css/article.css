@@ -1,0 +1,26 @@
+article.article {
+  margin: calc(3rem + 5rem) 1rem 5rem 1rem;
+}
+
+article.article h1 {
+  padding: 0.5rem 2rem;
+  color: #304352;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 200%;
+}
+
+article.article p {
+  margin: auto 10% 5rem 10%;
+  line-height: 250%;
+  text-align: center;
+}
+
+article.article a {
+  color: #e44c65;
+}
+
+article.article a:visited {
+  color: #e44c65;
+}
+/*# sourceMappingURL=article.css.map */
