@@ -1,0 +1,52 @@
+.content {
+  margin: 1rem;
+  margin-top: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(22.5rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(22.5rem, 1fr));
+  -ms-grid-rows: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.content__visualizations {
+  min-height: 32.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-shadow: 0 0.125rem 0.125rem -0.125rem black;
+          box-shadow: 0 0.125rem 0.125rem -0.125rem black;
+}
+
+.content__visualizations .visual {
+  min-height: calc(32.5rem - 35px);
+  background-color: white;
+  border: none;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content__visualizations figcaption {
+  text-align: center;
+  background-color: #304352;
+  color: whitesmoke;
+  padding: 0.5rem;
+}
+/*# sourceMappingURL=index.css.map */

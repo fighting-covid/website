@@ -1,149 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/header.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/article.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/form.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/footer.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}" />
+        <title>Fighting Corona | Contact</title>
+    </head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
+    <body>
+        <header>
+            <a href="/" class="name">
+                <h1>Fighting Corona</h1>
+            </a>
+            <nav class="nav">
+                <button class="hamburger" type="button">
+                    <div class="hamburger__lines">
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                    </div>
+                </button>
+                <a href="/" class="nav__link"><span>Home</span></a>
+                <a href="/contact" class="nav__link"><span>Contact</span></a>
+                <a href="/about" class="nav__link"><span>About</span></a>
 
-	<title>Fighting Corona</title>
-<!--
-Snapshot Template
-http://www.templatemo.com/tm-493-snapshot
+                <!-- link to actual paypal -->
+                <a href="https://www.paypal.com" class="nav__link" target="_blank"
+                    ><span>Donate</span></a
+                >
+            </nav>
+        </header>
 
-Zoom Slider
-https://vegas.jaysalvat.com/
+        <main class="content">
+            <article class="article">
+                <h1>Send Us a Message</h1>
+                <section class="container">
+                    <p>
+                        Are you a hospital that needs resources?
+                        <a href="https://forms.gle/qNMzx9vATTk695o89" class="link" target="_blank"
+                            >Click Here!</a
+                        >
+                        Can you donate supplies? Leave us a message!
+                    </p>
+                </section>
+            </article>
+            <form action="#" method="POST">
+                <div class="name">
+                    <input type="text" name="name" placeholder="Name" required />
+                    <span class="line"></span>
+                </div>
 
-Caption Hover Effects
-http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
--->
-	<link rel="stylesheet" href="static/css/bootstrap.min.css">
-	<link rel="stylesheet" href="static/css/animate.min.css">
-	<link rel="stylesheet" href="static/css/font-awesome.min.css">
-  	<link rel="stylesheet" href="static/css/component.css">
+                <div class="email">
+                    <input type="email" name="email" placeholder="Email" required />
+                    <span class="line"></span>
+                </div>
+                <div class="message">
+                    <textarea
+                        name="message"
+                        cols="30"
+                        rows="10"
+                        placeholder="Message"
+                        required
+                    ></textarea>
+                    <span class="line"></span>
+                </div>
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </main>
 
-    <link rel="stylesheet" href="static/css/owl.theme.css">
-	<link rel="stylesheet" href="static/css/owl.carousel.css">
-	<link rel="stylesheet" href="static/css/vegas.min.css">
-	<link rel="stylesheet" href="static/css/style.css">
+        <footer class="footer">
+            <p class="copyright">&copy; 2020</p>
+            <!-- <section class="socials">
+			<p>facebook</p>
+		</section> -->
+        </footer>
 
-	<!-- Google web font  -->
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-
-</head>
-<body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
-
-
-<!-- Preloader section -->
-
-<div class="preloader">
-     <div class="sk-spinner sk-spinner-pulse"></div>
-</div>
-
-
-<!-- Navigation section  -->
-
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-
-      <div class="navbar-header">
-        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon icon-bar"></span>
-          <span class="icon icon-bar"></span>
-          <span class="icon icon-bar"></span>
-        </button>
-        <a href="/" class="navbar-brand smoothScroll">Fighting Corona</a>
-      </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/" class="smoothScroll"><span>Home</span></a></li>
-            <li><a href="/contact" class="smoothScroll"><span>Contact</span></a></li>
-            <li><a href="/about" class="smoothScroll"><span>About</span></a></li>
-            <li><a href="/donate" class="smoothScroll"><span>Donate</span></a></li>
-          </ul>
-       </div>
-
-    </div>
-  </div>
-
-
-<!-- Contact section -->
-
-<section id="contact">
-  <div class="container">
-    <div class="row">
-
-       <div class="col-md-offset-1 col-md-10 col-sm-12">
-
-        <div class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="0.4s">
-          <h1>Send us a message</h1>
-          <p>Are you a hospital that needs resources? Can you donate supplies? Leave us a message! </p>
-        </div>
-
-        <form action="/contact" method="post" class="wow fadeInUp" data-wow-delay="0.8s">
-          <div class="col-md-6 col-sm-6">
-            <input name="name" type="text" class="form-control" id="name" placeholder="Name">
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <input name="email" type="email" class="form-control" id="email" placeholder="Email">
-          </div>
-          <div class="col-md-12 col-sm-12">
-            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
-          </div>
-          <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
-            <input type="submit" class="form-control" value="SUBMIT">
-          </div>
-        </form>
-        <div class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="0.4s">
-             <p><a href="https://forms.gle/qNMzx9vATTk695o89" target="_blank">Don't forget to also fill out this <u>form</u></a></p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Footer section -->
-
-<footer>
-	<div class="container">
-
-		<div class="row">
-
-			<div class="col-md-12 col-sm-12">
-
-                <ul class="social-icon">
-                    <li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="0.1s"></a></li>
-                    <li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="0.2s"></a></li>
-                    <li><a href="#" class="fa fa-linkedin wow fadeInUp" data-wow-delay="0.3s"></a></li>
-                    <li><a href="#" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.4s"></a></li>
-                    <li><a href="#" class="fa fa-google-plus wow fadeInUp" data-wow-delay="0.5s"></a></li>
-                </ul>
-
-
-			</div>
-
-		</div>
-
-	</div>
-</footer>
-
-<!-- Back top -->
-<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
-
-<!-- Javascript  -->
-<script src="static/js/jquery.js"></script>
-<script src="static/js/bootstrap.min.js"></script>
-<script src="static/js/vegas.min.js"></script>
-<script src="static/js/modernizr.custom.js"></script>
-<script src="static/js/toucheffects.js"></script>
-<script src="static/js/owl.carousel.min.js"></script>
-<script src="static/js/smoothscroll.js"></script>
-<script src="static/js/wow.min.js"></script>
-<script src="static/js/custom.js"></script>
-
-</body>
+        <script>
+            let hamburger = document.querySelector(".hamburger");
+            let nav = document.querySelector("nav");
+            hamburger.addEventListener("click", () => {
+                nav.classList.toggle("active");
+            });
+        </script>
+    </body>
 </html>
