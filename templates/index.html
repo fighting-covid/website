@@ -7,11 +7,31 @@
             href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="../static/css/header.css" />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='styles/header.css') }}"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='styles/message.css') }}"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='styles/index.css') }}"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='styles/footer.css') }}"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='styles/style.css') }}"
+        />
+        <!-- <link rel="stylesheet" href="../static/css/header.css" />
         <link rel="stylesheet" href="../static/css/message.css" />
         <link rel="stylesheet" href="../static/css/index.css" />
         <link rel="stylesheet" href="../static/css/footer.css" />
-        <link rel="stylesheet" href="../static/css/style.css" />
+        <link rel="stylesheet" href="../static/css/style.css" /> -->
         <title>Fighting Corona | Home</title>
     </head>
 
@@ -50,13 +70,23 @@
         </section>
 
         <main class="content">
-            <section class="content__visualizations content__visualizations--map">
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1EYwPfRTAqljYRM2A5VL514hlb2igE-J0&zoom=8" style="width:100%; height:100%;"></iframe>
+            <section
+                class="content__visualizations content__visualizations--map"
+            >
+                <iframe
+                    src="https://www.google.com/maps/d/u/0/embed?mid=1EYwPfRTAqljYRM2A5VL514hlb2igE-J0&zoom=8"
+                    style="width: 100%; height: 100%;"
+                ></iframe>
                 <figcaption><span>Caption for the map</span></figcaption>
             </section>
 
-            <section class="content__visualizations content__visualizations--chart">
-                <iframe src="http://127.0.0.1:5000/dash1/" style="width:100%; height:100%;"></iframe>
+            <section
+                class="content__visualizations content__visualizations--chart"
+            >
+                <iframe
+                    src="http://127.0.0.1:5000/dash1/"
+                    style="width: 100%; height: 100%;"
+                ></iframe>
                 <figcaption><span>Caption for the chart</span></figcaption>
             </section>
 

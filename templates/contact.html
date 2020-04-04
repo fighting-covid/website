@@ -1,81 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='styles/header.css') }}"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='styles/article.css') }}"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='styles/form.css') }}"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='styles/footer.css') }}"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='styles/style.css') }}"
+        />
+        <!-- <link rel="stylesheet" href="../static/css/header.css" />
+        <link rel="stylesheet" href="../static/css/article.css" />
+        <link rel="stylesheet" href="../static/css/form.css" />
+        <link rel="stylesheet" href="../static/css/footer.css" />
+        <link rel="stylesheet" href="../static/css/style.css" /> -->
+        <title>Fighting Corona | Contact</title>
+    </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./static/css/header.css">
-	<link rel="stylesheet" href="./static/css/article.css">
-	<link rel="stylesheet" href="./static/css/form.css">
-	<link rel="stylesheet" href="./static/css/footer.css">
-	<link rel="stylesheet" href="./static/css/style.css">
-	<title>Fighting Corona | Contact</title>
-</head>
+    <body>
+        <header>
+            <a href="/" class="name">
+                <h1>Fighting Corona</h1>
+            </a>
+            <nav class="nav">
+                <button class="hamburger" type="button">
+                    <div class="hamburger__lines">
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                    </div>
+                </button>
+                <a href="/" class="nav__link"><span>Home</span></a>
+                <a href="/contact" class="nav__link"><span>Contact</span></a>
+                <a href="/about" class="nav__link"><span>About</span></a>
 
-<body>
-	<header>
-		<a href="/" class="name">
-			<h1>Fighting Corona</h1>
-		</a>
-		<nav class="nav">
-			<button class="hamburger" type="button">
-				<div class="hamburger__lines">
-					<span class="hamburger__line"></span>
-					<span class="hamburger__line"></span>
-					<span class="hamburger__line"></span>
-				</div>
-			</button>
-			<a href="/" class="nav__link"><span>Home</span></a>
-			<a href="/contact" class="nav__link"><span>Contact</span></a>
-			<a href="/about" class="nav__link"><span>About</span></a>
+                <!-- link to actual paypal -->
+                <a
+                    href="https://www.paypal.com"
+                    class="nav__link"
+                    target="_blank"
+                    ><span>Donate</span></a
+                >
+            </nav>
+        </header>
 
-			<!-- link to actual paypal -->
-			<a href="https://www.paypal.com" class="nav__link" target="_blank"><span>Donate</span></a>
-		</nav>
-	</header>
+        <main class="content">
+            <article class="article">
+                <h1>Send Us a Message</h1>
+                <section class="container">
+                    <p>
+                        Are you a hospital that needs resources?
+                        <a
+                            href="https://forms.gle/qNMzx9vATTk695o89"
+                            class="link"
+                            target="_blank"
+                            >Click Here!</a
+                        >
+                        Can you donate supplies? Leave us a message!
+                    </p>
+                </section>
+            </article>
+            <form action="#" method="POST">
+                <div class="name">
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        required
+                    />
+                    <span class="line"></span>
+                </div>
 
-	<main class="content">
-		<article class="article">
-			<h1>Send Us a Message</h1>
-			<section class="container">
-				<p>Are you a hospital that needs resources? <a href="https://forms.gle/qNMzx9vATTk695o89" class="link" target="_blank">Click Here!</a> Can you donate supplies? Leave us a message!</p>
-			</section>
-		</article>
-		<form action="#" method="POST">
-			<div class="name">
-				<input type="text" name="name" placeholder="Name" required>
-				<span class="line"></span>
-			</div>
+                <div class="email">
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                        required
+                    />
+                    <span class="line"></span>
+                </div>
+                <div class="message">
+                    <textarea
+                        name="message"
+                        cols="30"
+                        rows="10"
+                        placeholder="Message"
+                        required
+                    ></textarea>
+                    <span class="line"></span>
+                </div>
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </main>
 
-			<div class="email">
-				<input type="email" name="email" placeholder="Email" required>
-				<span class="line"></span>
-			</div>
-			<div class="message">
-				<textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
-				<span class="line"></span>
-			</div>
-			<div class="submit">
-				<button type="submit">Submit</button>
-			</div>
-		</form>
-	</main>
-
-	<footer class="footer">
-		<p class="copyright">&copy; 2020</p>
-		<!-- <section class="socials">
+        <footer class="footer">
+            <p class="copyright">&copy; 2020</p>
+            <!-- <section class="socials">
 			<p>facebook</p>
 		</section> -->
-	</footer>
+        </footer>
 
-	<script>
-		let hamburger = document.querySelector('.hamburger')
-		let nav = document.querySelector('nav')
-		hamburger.addEventListener('click', () => {
-			nav.classList.toggle('active')
-		})
-	</script>
-</body>
-
+        <script>
+            let hamburger = document.querySelector(".hamburger");
+            let nav = document.querySelector("nav");
+            hamburger.addEventListener("click", () => {
+                nav.classList.toggle("active");
+            });
+        </script>
+    </body>
 </html>
