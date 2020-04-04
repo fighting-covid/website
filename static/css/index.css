@@ -26,30 +26,8 @@
           box-shadow: 0 0.125rem 0.125rem -0.125rem black;
 }
 
-.content__visualizations--map {
-  grid-column: span 2;
-  grid-row: span 2;
-  min-height: 35rem;
-}
-
-.content__visualizations--map .visual {
-  min-height: calc(20rem - 35px);
-  background-color: white;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.content__visualizations--chart .visual {
-  min-height: calc(20rem - 35px);
+.content__visualizations .visual {
+  min-height: calc(25rem - 35px);
   background-color: white;
   width: 100%;
   height: 100%;
@@ -69,19 +47,5 @@
   background-color: #304352;
   color: whitesmoke;
   padding: 0.5rem;
-}
-
-@media only screen and (max-width: 720px) {
-  .content {
-    -ms-grid-columns: (100%)[auto-fit];
-        grid-template-columns: repeat(auto-fit, 100%);
-  }
-  .content__visualizations {
-    grid-row: span 1;
-    grid-column: span 1;
-  }
-  .content__visualizations--map {
-    min-height: 20rem;
-  }
 }
 /*# sourceMappingURL=index.css.map */
