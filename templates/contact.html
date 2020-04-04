@@ -7,31 +7,11 @@
             href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap"
             rel="stylesheet"
         />
-        <link
-            rel="stylesheet"
-            href="{{ url_for('static', filename='styles/header.css') }}"
-        />
-        <link
-            rel="stylesheet"
-            href="{{ url_for('static', filename='styles/article.css') }}"
-        />
-        <link
-            rel="stylesheet"
-            href="{{ url_for('static', filename='styles/form.css') }}"
-        />
-        <link
-            rel="stylesheet"
-            href="{{ url_for('static', filename='styles/footer.css') }}"
-        />
-        <link
-            rel="stylesheet"
-            href="{{ url_for('static', filename='styles/style.css') }}"
-        />
-        <!-- <link rel="stylesheet" href="../static/css/header.css" />
-        <link rel="stylesheet" href="../static/css/article.css" />
-        <link rel="stylesheet" href="../static/css/form.css" />
-        <link rel="stylesheet" href="../static/css/footer.css" />
-        <link rel="stylesheet" href="../static/css/style.css" /> -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/header.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/article.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/form.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/footer.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}" />
         <title>Fighting Corona | Contact</title>
     </head>
 
@@ -53,10 +33,7 @@
                 <a href="/about" class="nav__link"><span>About</span></a>
 
                 <!-- link to actual paypal -->
-                <a
-                    href="https://www.paypal.com"
-                    class="nav__link"
-                    target="_blank"
+                <a href="https://www.paypal.com" class="nav__link" target="_blank"
                     ><span>Donate</span></a
                 >
             </nav>
@@ -68,10 +45,7 @@
                 <section class="container">
                     <p>
                         Are you a hospital that needs resources?
-                        <a
-                            href="https://forms.gle/qNMzx9vATTk695o89"
-                            class="link"
-                            target="_blank"
+                        <a href="https://forms.gle/qNMzx9vATTk695o89" class="link" target="_blank"
                             >Click Here!</a
                         >
                         Can you donate supplies? Leave us a message!
@@ -80,22 +54,12 @@
             </article>
             <form action="#" method="POST">
                 <div class="name">
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Name"
-                        required
-                    />
+                    <input type="text" name="name" placeholder="Name" required />
                     <span class="line"></span>
                 </div>
 
                 <div class="email">
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-                        required
-                    />
+                    <input type="email" name="email" placeholder="Email" required />
                     <span class="line"></span>
                 </div>
                 <div class="message">

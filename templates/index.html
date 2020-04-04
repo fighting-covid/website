@@ -7,31 +7,11 @@
             href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap"
             rel="stylesheet"
         />
-        <link
-            rel="stylesheet"
-            href="{{ url_for('static', filename='styles/header.css') }}"
-        />
-        <link
-            rel="stylesheet"
-            href="{{ url_for('static', filename='styles/message.css') }}"
-        />
-        <link
-            rel="stylesheet"
-            href="{{ url_for('static', filename='styles/index.css') }}"
-        />
-        <link
-            rel="stylesheet"
-            href="{{ url_for('static', filename='styles/footer.css') }}"
-        />
-        <link
-            rel="stylesheet"
-            href="{{ url_for('static', filename='styles/style.css') }}"
-        />
-        <!-- <link rel="stylesheet" href="../static/css/header.css" />
-        <link rel="stylesheet" href="../static/css/message.css" />
-        <link rel="stylesheet" href="../static/css/index.css" />
-        <link rel="stylesheet" href="../static/css/footer.css" />
-        <link rel="stylesheet" href="../static/css/style.css" /> -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/header.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/message.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/footer.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}" />
         <title>Fighting Corona | Home</title>
     </head>
 
@@ -53,10 +33,7 @@
                 <a href="/about" class="nav__link"><span>About</span></a>
 
                 <!-- link to actual paypal -->
-                <a
-                    href="https://www.paypal.com"
-                    class="nav__link"
-                    target="_blank"
+                <a href="https://www.paypal.com" class="nav__link" target="_blank"
                     ><span>Donate</span></a
                 >
             </nav>
@@ -64,28 +41,26 @@
 
         <section class="message">
             <p>
-                Very brief description explaining what is happening and what
-                we're doing. Include call to action?
+                Very brief description explaining what is happening and what we're doing. Include
+                call to action?
             </p>
         </section>
 
         <main class="content">
-            <section
-                class="content__visualizations content__visualizations--map"
-            >
+            <section class="content__visualizations content__visualizations--map">
                 <iframe
+                    class="visual"
                     src="https://www.google.com/maps/d/u/0/embed?mid=1EYwPfRTAqljYRM2A5VL514hlb2igE-J0&zoom=8"
-                    style="width: 100%; height: 100%;"
+                    style="width: 100%; height: 100%; border: none;"
                 ></iframe>
                 <figcaption><span>Caption for the map</span></figcaption>
             </section>
 
-            <section
-                class="content__visualizations content__visualizations--chart"
-            >
+            <section class="content__visualizations content__visualizations--chart">
                 <iframe
+                    class="visual"
                     src="http://127.0.0.1:5000/dash1/"
-                    style="width: 100%; height: 100%;"
+                    style="width: 100%; height: 100%; border: none;"
                 ></iframe>
                 <figcaption><span>Caption for the chart</span></figcaption>
             </section>
