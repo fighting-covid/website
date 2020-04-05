@@ -3,14 +3,22 @@ $white: whitesmoke;
 $blue: #304352;
 
 footer {
-	position: absolute;
-	bottom: 0;
-	width: 100vw;
-	height: 3rem;
-	background-color: $blue;
-	color: $white;
-	padding: 1rem;
-	display: flex;
-	justify-content: space-between;
-	box-shadow: inset 0 0.125rem 0.25rem -0.25rem black;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 3rem;
+    background-color: $blue;
+    color: $white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: inset 0 0.125rem 0.25rem -0.25rem black;
+
+    .Instagram a {
+        color: $pink;
+
+        &:visited {
+            color: $pink;
+        }
+    }
 }

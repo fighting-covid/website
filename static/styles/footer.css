@@ -15,4 +15,12 @@ footer {
   -webkit-box-shadow: inset 0 0.125rem 0.25rem -0.25rem black;
           box-shadow: inset 0 0.125rem 0.25rem -0.25rem black;
 }
+
+footer .Instagram a {
+  color: #e44c65;
+}
+
+footer .Instagram a:visited {
+  color: #e44c65;
+}
 /*# sourceMappingURL=footer.css.map */
