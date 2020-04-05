@@ -69,8 +69,8 @@ def contact():
         email_message += "Email: "+email+"\n";
         email_message += "Message: "+message+"\n";
         
-        yag = yagmail.SMTP('fighting.coronav@gmail.com', oauth2_file='oauth2_creds.json')
-        yag.send('fighting.coronav@gmail.com', "Contact Form: "+name, email_message)
+        yag = yagmail.SMTP('projectycro@gmail.com', oauth2_file='oauth2_creds.json')
+        yag.send('projectycro@gmail.com', "Contact Form: "+name, email_message)
         return render_template("contact_results.html")
         
     else:
