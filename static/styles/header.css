@@ -33,6 +33,10 @@ header .name h1 {
   font-size: 20px;
 }
 
+header .name .logo {
+  width: 3rem;
+}
+
 header .nav {
   margin-right: 1rem;
   -webkit-box-flex: 2;

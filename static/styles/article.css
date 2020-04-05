@@ -1,5 +1,5 @@
 article.article {
-  margin: calc(3rem + 5rem) 1rem 5rem 1rem;
+  margin: calc(3rem + 5rem) 0 5rem 0;
 }
 
 article.article h1 {
@@ -22,5 +22,11 @@ article.article a {
 
 article.article a:visited {
   color: #e44c65;
+}
+
+@media only screen and (max-width: 720px) {
+  article.article p {
+    margin: auto 1rem 5rem 1rem;
+  }
 }
 /*# sourceMappingURL=article.css.map */

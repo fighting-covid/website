@@ -3,27 +3,33 @@ $white: whitesmoke;
 $blue: #304352;
 
 article.article {
-	margin: calc(3rem + 5rem) 1rem 5rem 1rem;
+    margin: calc(3rem + 5rem) 0 5rem 0;
 
-	h1 {
-		padding: 0.5rem 2rem;
-		color: $blue;
-		text-align: center;
-		text-transform: uppercase;
-		font-size: 200%;
-	}
+    h1 {
+        padding: 0.5rem 2rem;
+        color: $blue;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 200%;
+    }
 
-	p {
-		margin: auto 10% 5rem 10%;
-		line-height: 250%;
-		text-align: center;
-	}
+    p {
+        margin: auto 10% 5rem 10%;
+        line-height: 250%;
+        text-align: center;
+    }
 
-	a {
-		color: $pink;
+    a {
+        color: $pink;
 
-		&:visited {
-			color: $pink;
-		}
-	}
+        &:visited {
+            color: $pink;
+        }
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    article.article p {
+        margin: auto 1rem 5rem 1rem;
+    }
 }
