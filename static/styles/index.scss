@@ -11,6 +11,7 @@ $blue: #304352;
     gap: 1rem;
 
     &__visualizations {
+        width: calc(100vw - 2rem);
         min-height: 32.5rem;
         display: flex;
         flex-direction: column;

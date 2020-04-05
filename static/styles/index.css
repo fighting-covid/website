@@ -11,6 +11,7 @@
 }
 
 .content__visualizations {
+  width: calc(100vw - 2rem);
   min-height: 32.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
