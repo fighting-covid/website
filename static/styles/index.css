@@ -11,7 +11,6 @@
 }
 
 .content__visualizations {
-  width: calc(100vw - 2rem);
   min-height: 32.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,5 +48,11 @@
   background-color: #304352;
   color: whitesmoke;
   padding: 0.5rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .content__visualizations {
+    width: calc(100vw - 2rem) !important;
+  }
 }
 /*# sourceMappingURL=index.css.map */
