@@ -12,6 +12,7 @@ form input,
 form textarea,
 form button {
   font-size: 16px;
+
   -webkit-box-shadow: 0 0.125rem 0.125rem -0.125rem black;
           box-shadow: 0 0.125rem 0.125rem -0.125rem black;
 }
@@ -50,28 +51,33 @@ form textarea:focus {
 form textarea {
   resize: vertical;
   min-height: 3.5rem;
+
 }
 
 form .name {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2 / 4;
+
 }
 
 form .email {
   grid-column: span 2;
+
 }
 
 form .message {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-column: 2 / 6;
+
 }
 
 form .submit {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-column: 3 / 5;
+
 }
 
 form .submit button {
@@ -85,6 +91,7 @@ form .submit button {
   font-weight: bold;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
+solid red;
 }
 
 form .submit button:hover {
