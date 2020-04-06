@@ -9,7 +9,8 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="{{ url_for('static', filename='styles/header.css') }}" />
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles/message.css') }}" />
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles/message.css') }}" /> -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/article.css') }}" />
         <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}" />
         <link rel="stylesheet" href="{{ url_for('static', filename='styles/footer.css') }}" />
         <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}" />
@@ -45,62 +46,84 @@
             </nav>
         </header>
 
-        <section class="message">
+        <main>
+            <article class="article">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <section class="container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum
+                        explicabo natus vel necessitatibus tenetur suscipit debitis doloribus, iure
+                        rerum placeat error corrupti ut incidunt quam! Consequatur unde ut impedit
+                        enim consequuntur. Ducimus dicta voluptates suscipit corrupti iusto numquam
+                        nesciunt pariatur repellat eaque blanditiis! Voluptatibus porro dolores
+                        repellat quasi consequuntur.
+                    </p>
+                </section>
+            </article>
+
+            <section class="button-toggles">
+                <button class="map active" type="button">Map</button>
+                <button class="chart active" type="button">Charts</button>
+            </section>
+
+            <!-- <section class="message">
             <p>
-                We work to provide hospitals with desperately needed supplies to fight against the COVID-19 pandemic. (call to action)?
+                We work to provide hospitals with desperately needed supplies to fight against the
+                COVID-19 pandemic. (call to action)?
             </p>
-        </section>
+        </section> -->
 
-        <main class="content">
-            <section class="content__visualizations content__visualizations--map">
-                <iframe
-                    class="visual"
-                    src="https://www.google.com/maps/d/u/0/embed?mid=1EYwPfRTAqljYRM2A5VL514hlb2igE-J0&zoom=8"
-                    style="width: 100%; height: 100%; border: none; object-fit: cover;"
-                ></iframe>
-                <figcaption><span>This is a map showing which hospitals currently need supplies.</span></figcaption>
+            <section class="content">
+                <section class="content__visualizations content__visualizations--map">
+                    <iframe
+                        class="visual"
+                        src="https://www.google.com/maps/d/u/0/embed?mid=1EYwPfRTAqljYRM2A5VL514hlb2igE-J0&zoom=8"
+                        style="width: 100%; height: 100%; border: none; object-fit: cover;"
+                    ></iframe>
+                    <figcaption>
+                        <span>This is a map showing which hospitals currently need supplies.</span>
+                    </figcaption>
+                </section>
+
+                <section class="content__visualizations content__visualizations--chart">
+                    <iframe
+                        class="visual"
+                        src="https://project-ycro.herokuapp.com/dash1/"
+                        style="width: 100%; height: 100%; border: none;"
+                    ></iframe>
+                    <figcaption>
+                        <span
+                            >Hospitals have informed us that these are the supplies they need
+                            most.</span
+                        >
+                    </figcaption>
+                </section>
+
+                <!-- <section class="content__visualizations content__visualizations--chart">
+                    <iframe
+                        class="visual"
+                        src="https://project-ycro.herokuapp.com/dash1/"
+                        style="width: 100%; height: 100%; border: none;"
+                    ></iframe>
+                    <figcaption>
+                        <span
+                            >Hospitals have informed us that these are the supplies they need
+                            most.</span
+                        >
+                    </figcaption>
+                </section> -->
             </section>
-
-            <section class="content__visualizations content__visualizations--chart">
-                <!-- TODO: I'm pretty sure this SRC won't work once deployed -->
-                <iframe
-                    class="visual"
-                    src="https://project-ycro.herokuapp.com/dash1/"
-                    style="width: 100%; height: 100%; border: none;"
-                ></iframe>
-                <figcaption><span>Hospitals have informed us that these are the supplies they need most.</span></figcaption>
-            </section>
-
-            <!-- more charts -->
-            <!-- <section class="content__visualizations content__visualizations--chart">
-			<div class="visual"><span>chart</span></div>
-			<figcaption><span>Caption for the chart</span></figcaption>
-		</section>
-
-		<section class="content__visualizations content__visualizations--chart">
-			<div class="visual"><span>chart</span></div>
-			<figcaption><span>Caption for the chart</span></figcaption>
-		</section>
-
-		<section class="content__visualizations content__visualizations--chart">
-			<div class="visual"><span>chart</span></div>
-			<figcaption><span>Caption for the chart</span></figcaption>
-		</section>
-
-		<section class="content__visualizations content__visualizations--chart">
-			<div class="visual"><span>chart</span></div>
-			<figcaption><span>Caption for the chart</span></figcaption>
-		</section> -->
         </main>
 
         <footer class="footer">
             <p class="copyright">&copy; 2020</p>
-            <p class="Instagram"><a href="https://www.instagram.com/projectycro/?hl=en">Instagram</a></p>
+            <p class="instagram">
+                <a href="https://www.instagram.com/projectycro/?hl=en">Instagram</a>
+            </p>
             <!-- <section class="socials">
 			<p>facebook</p>
 		</section> -->
         </footer>
-
 
         <script>
             let hamburger = document.querySelector(".hamburger");
@@ -108,6 +131,67 @@
             hamburger.addEventListener("click", () => {
                 nav.classList.toggle("active");
             });
+
+            let container = document.querySelector(".content");
+            let mapButton = document.querySelector(".map");
+            let chartButton = document.querySelector(".chart");
+            let map = document.querySelector(".content__visualizations--map");
+            let charts = document.querySelectorAll(".content__visualizations--chart");
+
+            chartsAndMap();
+
+            mapButton.addEventListener("click", () => {
+                let mapButtonIsActive = mapButton.classList.contains("active");
+                let chartButtonIsActive = chartButton.classList.contains("active");
+
+                if (mapButtonIsActive && chartButtonIsActive) chartsOnly();
+                else if (!mapButtonIsActive && !chartButtonIsActive) mapOnly();
+                else if (!mapButtonIsActive && chartButtonIsActive) chartsAndMap();
+                else if (mapButtonIsActive && !chartButtonIsActive) {
+                    return;
+                }
+                mapButton.classList.toggle("active");
+            });
+            chartButton.addEventListener("click", () => {
+                let mapButtonIsActive = mapButton.classList.contains("active");
+                let chartButtonIsActive = chartButton.classList.contains("active");
+
+                if (mapButtonIsActive && chartButtonIsActive) mapOnly();
+                else if (!mapButtonIsActive && !chartButtonIsActive) chartsOnly();
+                else if (mapButtonIsActive && !chartButtonIsActive) chartsAndMap();
+                else if (!mapButtonIsActive && chartButtonIsActive) {
+                    return;
+                }
+                chartButton.classList.toggle("active");
+            });
+
+            function mapOnly() {
+                map.style.display = "flex";
+                charts.forEach((chart) => {
+                    chart.style.display = "none";
+                });
+            }
+
+            function chartsOnly() {
+                map.style.display = "none";
+                charts.forEach((chart) => {
+                    chart.style.display = "flex";
+                });
+            }
+
+            function chartsAndMap() {
+                map.style.display = "flex";
+                charts.forEach((chart) => {
+                    chart.style.display = "flex";
+                });
+            }
+
+            function none() {
+                map.style.display = "none";
+                charts.forEach((chart) => {
+                    chart.style.display = "none";
+                });
+            }
         </script>
     </body>
 </html>
