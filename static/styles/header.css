@@ -39,9 +39,6 @@ header .name .logo {
 
 header .nav {
   margin-right: 1rem;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
