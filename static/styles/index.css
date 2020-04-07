@@ -79,22 +79,6 @@
   padding: 0.5rem;
 }
 
-.socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.socials a {
-  margin-left: 1rem;
-  height: 30px;
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
-}
-
 @media only screen and (max-width: 720px) {
   .content__visualizations {
     width: calc(100vw - 2rem) !important;
