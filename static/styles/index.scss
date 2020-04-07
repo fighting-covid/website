@@ -96,17 +96,6 @@ $blue: #304352;
     }
 }
 
-.socials {
-    display: flex;
-    align-items: center;
-
-    a {
-        margin-left: 1rem;
-        height: 30px;
-        filter: invert(100%);
-    }
-}
-
 @media only screen and (max-width: 720px) {
     .content__visualizations {
         width: calc(100vw - 2rem) !important;

@@ -11,7 +11,7 @@ header {
     background-color: white;
     padding-right: 0;
     display: grid;
-    grid-template-columns: minmax(25rem, 1fr) max(2fr);
+    grid-template-columns: minmax(25rem, 1fr) max(1fr);
     box-shadow: 0 0.125rem 0.25rem -0.25rem black;
 
     .name {
@@ -38,7 +38,7 @@ header {
         margin-right: 1rem;
         flex: 2;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
 
         &__link {
             height: 3rem;

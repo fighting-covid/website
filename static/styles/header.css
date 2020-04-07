@@ -8,8 +8,8 @@ header {
   padding-right: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(25rem, 1fr) 2fr;
-      grid-template-columns: minmax(25rem, 1fr) 2fr;
+  -ms-grid-columns: minmax(25rem, 1fr) 1fr;
+      grid-template-columns: minmax(25rem, 1fr) 1fr;
   -webkit-box-shadow: 0 0.125rem 0.25rem -0.25rem black;
           box-shadow: 0 0.125rem 0.25rem -0.25rem black;
 }
@@ -44,8 +44,8 @@ header .nav {
           flex: 2;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 header .nav__link {
