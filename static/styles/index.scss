@@ -29,6 +29,15 @@ $blue: #304352;
     }
 }
 
+.doctors-image {
+    object-fit: cover;
+    width: calc(20rem + 0.5rem);
+    height: 25%;
+    display: block;
+    margin: 5rem auto -7rem auto;
+    border: 3px solid $blue;
+}
+
 .content {
     margin: 1rem;
     margin-top: 0.5rem;
@@ -104,6 +113,10 @@ $blue: #304352;
 
 //for when there are >3-4 charts:
 @media only screen and (max-width: 720px) {
+    .doctors-image {
+        margin: 4rem auto -4rem auto;
+    }
+
     .content {
         grid-template-columns: repeat(auto-fit, 100%);
 

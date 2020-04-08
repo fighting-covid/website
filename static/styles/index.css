@@ -30,6 +30,16 @@
   color: whitesmoke;
 }
 
+.doctors-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: calc(20rem + 0.5rem);
+  height: 25%;
+  display: block;
+  margin: 5rem auto -7rem auto;
+  border: 3px solid #304352;
+}
+
 .content {
   margin: 1rem;
   margin-top: 0.5rem;
@@ -86,6 +96,9 @@
 }
 
 @media only screen and (max-width: 720px) {
+  .doctors-image {
+    margin: 4rem auto -4rem auto;
+  }
   .content {
     -ms-grid-columns: (100%)[auto-fit];
         grid-template-columns: repeat(auto-fit, 100%);

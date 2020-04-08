@@ -9,7 +9,6 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="{{ url_for('static', filename='styles/header.css') }}" />
-        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles/message.css') }}" /> -->
         <link rel="stylesheet" href="{{ url_for('static', filename='styles/article.css') }}" />
         <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}" />
         <link rel="stylesheet" href="{{ url_for('static', filename='styles/footer.css') }}" />
@@ -45,6 +44,11 @@
         </header>
 
         <main>
+            <img
+                class="doctors-image"
+                src="https://cdn.pixabay.com/photo/2020/03/26/16/11/corona-4970836__340.jpg"
+                alt="Doctors"
+            />
             <article class="article">
                 <h1>
                     <span style="font-size: 125%;">Y</span>outh
@@ -53,28 +57,12 @@
                     <span style="font-size: 125%;">O</span>rganization
                 </h1>
                 <section class="container">
-                    <br />
                     <p>
                         Healthcare workers are lacking basic personal protective equipment (PPE)
                         while fighting the COVID-19 pandemic, putting themselves and their loved
                         ones in danger. Help us deliver critically needed supplies so they can
                         safely continue saving lives.
                     </p>
-                    <div>
-                        <style>
-                            img {
-                                width: 45%;
-                                height: 45%;
-                                display: block;
-                                margin-left: auto;
-                                margin-right: auto;
-                            }
-                        </style>
-                        <img
-                            src="https://cdn.pixabay.com/photo/2020/03/26/16/11/corona-4970836__340.jpg"
-                            alt="Doctors"
-                        />
-                    </div>
                 </section>
             </article>
 
