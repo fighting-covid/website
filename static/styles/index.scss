@@ -2,6 +2,34 @@ $pink: #e44c65;
 $white: whitesmoke;
 $blue: #304352;
 
+article.title {
+	background-image: url("https://cdn.pixabay.com/photo/2020/03/26/16/11/corona-4970836__340.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: calc(3rem + 1rem) 1rem 3rem 1rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	h1 {
+		color: $pink;
+		background: transparentize($color: $blue, $amount: 0.25);
+		margin: auto 10%;
+		padding: 0.5rem 2rem;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 200%;
+	}
+
+	p {
+		margin: 2rem 10% 0 10%;
+		padding: 1rem;
+		background-color: transparentize($color: $white, $amount: 0.25);
+		line-height: 250%;
+		text-align: center;
+	}
+}
+
 .button-toggles {
 	margin: 1rem 0;
 	display: flex;
@@ -132,5 +160,14 @@ $blue: #304352;
 				min-height: 20rem;
 			}
 		}
+	}
+
+	article.title p,
+	article.title h1 {
+		margin: auto 1rem 0 1rem;
+	}
+
+	article.title p {
+		margin-top: 2rem;
 	}
 }
