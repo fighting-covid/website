@@ -6,6 +6,9 @@ import pandas as pd
 import sqlite3
 import yagmail
 
+
+EMAIL_SEND= "fighting.coronav@gmail.com"
+
 server = Flask(__name__)
 
 app1 = Dash(
@@ -77,8 +80,8 @@ def contact():
         email_message += "Email: "+email+"\n";
         email_message += "Message: "+message+"\n";
         
-        yag = yagmail.SMTP('projectycro@gmail.com', oauth2_file='oauth2_creds.json')
-        yag.send('projectycro@gmail.com', "Contact Form: "+name, email_message)
+        yag = yagmail.SMTP(EMAIL_SEND, oauth2_file='oauth2_creds.json')
+        yag.send(EMAIL_SEND, "Contact Form: "+name, email_message)
         return render_template("contact_results.html")
         
     else:
