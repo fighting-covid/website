@@ -6,10 +6,12 @@ header {
   height: 3rem;
   background-color: white;
   padding-right: 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: minmax(25rem, 1fr) 1fr;
-      grid-template-columns: minmax(25rem, 1fr) 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-shadow: 0 0.125rem 0.25rem -0.25rem black;
           box-shadow: 0 0.125rem 0.25rem -0.25rem black;
 }
@@ -35,18 +37,29 @@ header .name h1 {
 
 header .name .logo {
   width: 3rem;
+  height: unset;
 }
 
 header .nav {
+  -webkit-box-flex: 0.75;
+      -ms-flex: 0.75;
+          flex: 0.75;
+  width: 50%;
   margin-right: 1rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 header .nav__link {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 3rem;
+  padding: 0 0.5rem;
   text-decoration: none;
   color: #e44c65;
   display: -webkit-box;
@@ -58,6 +71,7 @@ header .nav__link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }

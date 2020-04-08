@@ -10,8 +10,8 @@ header {
     height: 3rem;
     background-color: white;
     padding-right: 0;
-    display: grid;
-    grid-template-columns: minmax(25rem, 1fr) max(1fr);
+    display: flex;
+    justify-content: space-between;
     box-shadow: 0 0.125rem 0.25rem -0.25rem black;
 
     .name {
@@ -30,22 +30,28 @@ header {
 
         .logo {
             width: 3rem;
-            // width: 10% !important;
+            height: unset;
         }
     }
 
     .nav {
+        flex: 0.75;
+        width: 50%;
+        // margin-left: 2.5%;
         margin-right: 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        justify-content: flex-end;
 
         &__link {
+            flex: 1;
             height: 3rem;
+            padding: 0 0.5rem;
             text-decoration: none;
             color: $pink;
             display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
             transition: all 0.25s ease;
 
             &:hover {
