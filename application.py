@@ -53,6 +53,10 @@ def root():
     return render_template("index.html")
 
 
+@server.route("/requestppe")
+def requestppe():
+    return render_template("requestppe.html")
+    
 @server.route("/about")
 def about():
     return render_template("about.html")
