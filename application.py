@@ -56,6 +56,10 @@ def root():
 @server.route("/requestppe")
 def requestppe():
     return render_template("requestppe.html")
+
+@server.route("/donateppe")
+def donateppe():
+    return render_template("donateppe.html")
     
 @server.route("/about")
 def about():
@@ -64,7 +68,7 @@ def about():
     
 @server.route("/contact", methods=['GET', 'POST'])
 def contact():
-    if request.method=='POST':
+    if request.method == 'POST':
         name = request.form['name']
         email = request.form['email']
         message = request.form['message']
@@ -78,12 +82,7 @@ def contact():
         return render_template("contact_results.html")
         
     else:
-         return render_template("contact.html")
-
-
-@server.route("/donate")
-def donate():
-    return render_template("donate.html")
+        return render_template("contact.html")
 
 
 if __name__ == '__main__':
