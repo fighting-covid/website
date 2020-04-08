@@ -162,6 +162,12 @@
 
 			chartsAndMap()
 
+			if (window.innerWidth <= 720) chartsAndMap()
+
+			window.onresize = () => {
+				if (window.innerWidth <= 720) chartsAndMap()
+			}
+
 			mapButton.addEventListener("click", () => {
 				let mapButtonIsActive = mapButton.classList.contains("active")
 				let chartButtonIsActive = chartButton.classList.contains("active")

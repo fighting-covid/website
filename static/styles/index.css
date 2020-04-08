@@ -96,6 +96,9 @@
 }
 
 @media only screen and (max-width: 720px) {
+  .button-toggles {
+    display: none;
+  }
   .doctors-image {
     margin: 4rem auto -4rem auto;
   }
