@@ -2,131 +2,176 @@ $pink: #e44c65;
 $white: whitesmoke;
 $blue: #304352;
 
+article.title {
+	background-image: url("https://cdn.pixabay.com/photo/2020/03/26/16/11/corona-4970836__340.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: calc(3rem + 1rem) 1rem 3rem 1rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	h1 {
+		color: $pink;
+		background: transparentize($color: $blue, $amount: 0.25);
+		margin: auto 10%;
+		padding: 0.5rem 2rem;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 200%;
+	}
+
+	p {
+		margin: 2rem 10% 0 10%;
+		padding: 1rem;
+		background-color: transparentize($color: $white, $amount: 0.25);
+		line-height: 250%;
+		text-align: center;
+	}
+}
+
 .button-toggles {
-    margin: 1rem 0;
-    display: flex;
-    justify-content: center;
+	margin: 1rem 0;
+	display: flex;
+	justify-content: center;
 
-    button {
-        color: $blue;
-        background-color: white;
-        border: none;
-        border-bottom: 3px solid $blue;
-        margin: 0 0.25rem;
-        width: 10rem;
-        font-size: 16px;
-        padding: 1rem;
-        transition: all 0.25s ease;
+	button {
+		color: $blue;
+		background-color: white;
+		border: none;
+		border-bottom: 3px solid $blue;
+		margin: 0 0.25rem;
+		width: 10rem;
+		font-size: 16px;
+		padding: 1rem;
+		transition: all 0.25s ease;
 
-        &.active {
-            border: 3px solid $blue;
-        }
+		&.active {
+			border: 3px solid $blue;
+		}
 
-        &:hover {
-            background-color: $blue;
-            color: $white;
-        }
-    }
+		&:hover {
+			background-color: $blue;
+			color: $white;
+		}
+	}
 }
 
 .doctors-image {
-    object-fit: cover;
-    width: calc(20rem + 0.5rem);
-    height: 25%;
-    display: block;
-    margin: 5rem auto -7rem auto;
-    border: 3px solid $blue;
+	object-fit: cover;
+	width: calc(20rem + 0.5rem);
+	height: 25%;
+	display: block;
+	margin: 5rem auto -7rem auto;
+	border: 3px solid $blue;
 }
 
 .content {
-    margin: 1rem;
-    margin-top: 0.5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22.5rem, 1fr));
-    // grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 1rem;
+	margin: 1rem;
+	margin-top: 0.5rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(22.5rem, 1fr));
+	// grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: 1rem;
 
-    &__visualizations {
-        // min-height: 32.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-        box-shadow: 0 0.125rem 0.125rem -0.125rem black;
+	&__visualizations {
+		// min-height: 32.5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: stretch;
+		box-shadow: 0 0.125rem 0.125rem -0.125rem black;
 
-        //for when there are >3-4 charts:
-        // &--map {
-        //     grid-column: span 2;
-        //     grid-row: span 2;
-        //     // min-height: 35rem;
+		//for when there are >3-4 charts:
+		// &--map {
+		//     grid-column: span 2;
+		//     grid-row: span 2;
+		//     // min-height: 35rem;
 
-        //     .visual {
-        //         min-height: 40rem;
-        //         // height: 100%;
-        //         // min-height: calc(20rem - 35px);
-        //         background-color: white;
-        //         width: 100%;
-        //         // height: 100%;
-        //         display: flex;
-        //         align-items: center;
-        //         justify-content: center;
-        //     }
-        // }
+		//     .visual {
+		//         min-height: 40rem;
+		//         // height: 100%;
+		//         // min-height: calc(20rem - 35px);
+		//         background-color: white;
+		//         width: 100%;
+		//         // height: 100%;
+		//         display: flex;
+		//         align-items: center;
+		//         justify-content: center;
+		//     }
+		// }
 
-        // &--chart .visual {
-        //     // min-height: calc(20rem - 35px);
-        //     min-height: 20rem;
-        //     background-color: white;
-        //     width: 100%;
-        //     height: 100%;
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: center;
-        // }
+		// &--chart .visual {
+		//     // min-height: calc(20rem - 35px);
+		//     min-height: 20rem;
+		//     background-color: white;
+		//     width: 100%;
+		//     height: 100%;
+		//     display: flex;
+		//     align-items: center;
+		//     justify-content: center;
+		// }
 
-        //for when there's only one of each:
-        .visual {
-            // min-height: calc(32.5rem - 35px);
-            min-height: 30rem;
-            background-color: white;
-            border: none;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+		//for when there's only one of each:
+		.visual {
+			// min-height: calc(32.5rem - 35px);
+			min-height: 30rem;
+			background-color: white;
+			border: none;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 
-        figcaption {
-            text-align: center;
-            background-color: $blue;
-            color: $white;
-            padding: 0.5rem;
-        }
-    }
+		figcaption {
+			text-align: center;
+			background-color: $blue;
+			color: $white;
+			padding: 0.5rem;
+		}
+	}
 }
 
 @media only screen and (max-width: 720px) {
-    .content__visualizations {
-        width: calc(100vw - 2rem) !important;
-    }
+	.content__visualizations {
+		width: calc(100vw - 2rem) !important;
+	}
 }
 
 //for when there are >3-4 charts:
 @media only screen and (max-width: 720px) {
-    .doctors-image {
-        margin: 4rem auto -4rem auto;
-    }
+	.button-toggles {
+		display: none;
+	}
 
-    .content {
-        grid-template-columns: repeat(auto-fit, 100%);
+	.doctors-image {
+		margin: 4rem auto -4rem auto;
+	}
 
-        &__visualizations {
-            grid-row: span 1;
-            grid-column: span 1;
+	.content {
+		grid-template-columns: repeat(auto-fit, 100%);
 
-            &--map .visual {
-                min-height: 20rem;
-            }
-        }
-    }
+		&__visualizations {
+			grid-row: span 1;
+			grid-column: span 1;
+
+			&--map .visual {
+				min-height: 20rem;
+			}
+		}
+	}
+
+	article.title {
+		padding: 1rem 0;
+	}
+
+	article.title p,
+	article.title h1 {
+		margin: auto 1rem 0 1rem;
+	}
+
+	article.title p {
+		margin-top: 2rem;
+	}
 }

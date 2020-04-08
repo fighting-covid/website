@@ -51,10 +51,20 @@
           box-shadow: 0 0.125rem 0.125rem -0.125rem black;
 }
 
+.spacing {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 720px) {
+  .spacing {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 19rem) {
-  .members {
-    -ms-grid-columns: 1fr !important;
-        grid-template-columns: 1fr !important;
+  .content .team .container .members {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=about.css.map */

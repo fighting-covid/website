@@ -55,11 +55,8 @@ header .nav {
 }
 
 header .nav__link {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   height: 3rem;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   text-decoration: none;
   color: #e44c65;
   display: -webkit-box;
