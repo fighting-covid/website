@@ -64,6 +64,7 @@
 			<section class="button-toggles">
 				<button class="chart active" type="button">Map</button>
 				<button class="map active" type="button">Charts</button>
+				<button class="both active" type="button">Both</button>
 			</section>
 
 			<!-- <section class="message">
@@ -152,6 +153,7 @@
 			let container = document.querySelector(".content")
 			let mapButton = document.querySelector(".map")
 			let chartButton = document.querySelector(".chart")
+			let bothButton = document.querySelector(".both")
 			let map = document.querySelector(".content__visualizations--map")
 			let charts = document.querySelectorAll(".content__visualizations--chart")
 
@@ -168,12 +170,14 @@
 				let chartButtonIsActive = chartButton.classList.contains("active")
 
 				if (mapButtonIsActive && chartButtonIsActive) chartsOnly()
-				else if (!mapButtonIsActive && !chartButtonIsActive) mapOnly()
-				else if (!mapButtonIsActive && chartButtonIsActive) chartsAndMap()
+				else if (!mapButtonIsActive && !chartButtonIsActive) { console.log("here"); mapOnly() }
+				// else if (!mapButtonIsActive && chartButtonIsActive) chartsAndMap()
 				else if (mapButtonIsActive && !chartButtonIsActive) {
-					return
+					chartsOnly()
+					chartButton.classList.toggle("active")
 				}
-				mapButton.classList.toggle("active")
+				if(!bothButton.classList.contains("active")) bothButton.classList.toggle("active")
+				if(mapButtonIsActive) mapButton.classList.toggle("active")
 			})
 			chartButton.addEventListener("click", () => {
 				let mapButtonIsActive = mapButton.classList.contains("active")
@@ -181,11 +185,19 @@
 
 				if (mapButtonIsActive && chartButtonIsActive) mapOnly()
 				else if (!mapButtonIsActive && !chartButtonIsActive) chartsOnly()
-				else if (mapButtonIsActive && !chartButtonIsActive) chartsAndMap()
+				// else if (mapButtonIsActive && !chartButtonIsActive) chartsAndMap()
 				else if (!mapButtonIsActive && chartButtonIsActive) {
-					return
+					mapOnly()
+					mapButton.classList.toggle("active")
 				}
-				chartButton.classList.toggle("active")
+				if(!bothButton.classList.contains("active")) bothButton.classList.toggle("active")
+				if(chartButtonIsActive) chartButton.classList.toggle("active")
+			})
+			bothButton.addEventListener("click", () => {
+				if(!mapButton.classList.contains("active")) mapButton.classList.toggle("active")
+				if(!chartButton.classList.contains("active")) chartButton.classList.toggle("active")
+				chartsAndMap()
+				bothButton.classList.toggle("active")
 			})
 
 			function mapOnly() {
