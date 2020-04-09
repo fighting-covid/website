@@ -47,6 +47,7 @@ article.title p {
   padding: 1rem;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
+  cursor: pointer;
 }
 
 .button-toggles button.active, .button-toggles button:hover {
@@ -127,7 +128,7 @@ article.title p {
 
 @media only screen and (max-width: 720px) {
   .content__visualizations {
-    width: calc(100vw - 2rem) !important;
+    width: calc(100vw - 2rem);
   }
 }
 

@@ -45,6 +45,7 @@ article.title {
 		font-size: 16px;
 		padding: 1rem;
 		transition: all 0.25s ease;
+		cursor: pointer;
 
 		&.active,
 		&:hover {
@@ -145,7 +146,7 @@ article.title {
 
 @media only screen and (max-width: 720px) {
 	.content__visualizations {
-		width: calc(100vw - 2rem) !important;
+		width: calc(100vw - 2rem);
 	}
 }
 
