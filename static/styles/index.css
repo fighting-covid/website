@@ -113,6 +113,18 @@ article.title p {
   padding: 0.5rem;
 }
 
+@media only screen and (max-width: 400px) {
+  article.title h1 {
+    font-size: 150%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  article.title h1 {
+    font-size: 115%;
+  }
+}
+
 @media only screen and (max-width: 720px) {
   .content__visualizations {
     width: calc(100vw - 2rem) !important;
