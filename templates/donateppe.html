@@ -86,11 +86,14 @@
 				nav.classList.toggle("active")
 			})
 
-			window.addEventListener("click", event => {
+			window.addEventListener("click", closeIfOutsite)
+			window.addEventListener("touchstart", closeIfOutsite)
+
+			function closeIfOutsite() {
 				if (nav.classList.contains("active"))
 					if (event.clientX < window.innerWidth - nav.getBoundingClientRect().width)
 						nav.classList.remove("active")
-			})
+			}
 		</script>
 	</body>
 </html>
