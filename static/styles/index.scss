@@ -46,10 +46,7 @@ article.title {
 		padding: 1rem;
 		transition: all 0.25s ease;
 
-		&.active {
-			border: 3px solid $blue;
-		}
-
+		&.active,
 		&:hover {
 			background-color: $blue;
 			color: $white;

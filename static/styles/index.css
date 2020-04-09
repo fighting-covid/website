@@ -49,11 +49,7 @@ article.title p {
   transition: all 0.25s ease;
 }
 
-.button-toggles button.active {
-  border: 3px solid #304352;
-}
-
-.button-toggles button:hover {
+.button-toggles button.active, .button-toggles button:hover {
   background-color: #304352;
   color: whitesmoke;
 }

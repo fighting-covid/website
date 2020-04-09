@@ -62,8 +62,8 @@
 			</article>
 
 			<section class="button-toggles">
-				<button class="chart active" type="button">Map</button>
-				<button class="map active" type="button">Charts</button>
+				<button class="chart" type="button">Map</button>
+				<button class="map" type="button">Charts</button>
 				<button class="both active" type="button">Both</button>
 			</section>
 
@@ -84,8 +84,9 @@
 					<figcaption>
 						<span
 							>This map shows hospitals that we've contacted which currently need
-                            supplies. Click on the location icons on the map to see more information,
-                            such as the name and address of the hospital, as well as how and what to donate.</span
+							supplies. Click on the location icons on the map to see more
+							information, such as the name and address of the hospital, as well as
+							how and what to donate.</span
 						>
 					</figcaption>
 				</section>
@@ -149,10 +150,12 @@
 				nav.classList.toggle("active")
 			})
 
-			let container = document.querySelector(".content")
 			let mapButton = document.querySelector(".map")
 			let chartButton = document.querySelector(".chart")
 			let bothButton = document.querySelector(".both")
+			let buttons = [mapButton, chartButton, bothButton]
+
+			let container = document.querySelector(".content")
 			let map = document.querySelector(".content__visualizations--map")
 			let charts = document.querySelectorAll(".content__visualizations--chart")
 
@@ -164,46 +167,20 @@
 				if (window.innerWidth <= 720) chartsAndMap()
 			}
 
-			mapButton.addEventListener("click", () => {
-				let mapButtonIsActive = mapButton.classList.contains("active")
-				let chartButtonIsActive = chartButton.classList.contains("active")
-
-				if (mapButtonIsActive && chartButtonIsActive) chartsOnly()
-				else if (!mapButtonIsActive && !chartButtonIsActive) { console.log("here"); mapOnly() }
-				// else if (!mapButtonIsActive && chartButtonIsActive) chartsAndMap()
-				else if (mapButtonIsActive && !chartButtonIsActive) {
-					chartsOnly()
-					chartButton.classList.toggle("active")
-				}
-				if(!bothButton.classList.contains("active")) bothButton.classList.toggle("active")
-				if(mapButtonIsActive) mapButton.classList.toggle("active")
-			})
-			chartButton.addEventListener("click", () => {
-				let mapButtonIsActive = mapButton.classList.contains("active")
-				let chartButtonIsActive = chartButton.classList.contains("active")
-
-				if (mapButtonIsActive && chartButtonIsActive) mapOnly()
-				else if (!mapButtonIsActive && !chartButtonIsActive) chartsOnly()
-				// else if (mapButtonIsActive && !chartButtonIsActive) chartsAndMap()
-				else if (!mapButtonIsActive && chartButtonIsActive) {
-					mapOnly()
-					mapButton.classList.toggle("active")
-				}
-				if(!bothButton.classList.contains("active")) bothButton.classList.toggle("active")
-				if(chartButtonIsActive) chartButton.classList.toggle("active")
-			})
-			bothButton.addEventListener("click", () => {
-				if(!mapButton.classList.contains("active")) mapButton.classList.toggle("active")
-				if(!chartButton.classList.contains("active")) chartButton.classList.toggle("active")
-				chartsAndMap()
-				bothButton.classList.toggle("active")
-			})
+			mapButton.addEventListener("click", mapOnly)
+			chartButton.addEventListener("click", chartsOnly)
+			bothButton.addEventListener("click", chartsAndMap)
 
 			function mapOnly() {
 				map.style.display = "flex"
 				charts.forEach((chart) => {
 					chart.style.display = "none"
 				})
+
+				buttons.forEach((button) => {
+					button.classList.remove("active")
+				})
+				mapButton.classList.add("active")
 			}
 
 			function chartsOnly() {
@@ -211,6 +188,11 @@
 				charts.forEach((chart) => {
 					chart.style.display = "flex"
 				})
+
+				buttons.forEach((button) => {
+					button.classList.remove("active")
+				})
+				chartButton.classList.add("active")
 			}
 
 			function chartsAndMap() {
@@ -218,13 +200,11 @@
 				charts.forEach((chart) => {
 					chart.style.display = "flex"
 				})
-			}
 
-			function none() {
-				map.style.display = "none"
-				charts.forEach((chart) => {
-					chart.style.display = "none"
+				buttons.forEach((button) => {
+					button.classList.remove("active")
 				})
+				bothButton.classList.add("active")
 			}
 		</script>
 	</body>
