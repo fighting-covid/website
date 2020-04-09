@@ -19,6 +19,7 @@ form button {
 form input,
 form textarea {
   border: none;
+  border-radius: 0;
   background-color: #304352;
   color: whitesmoke;
   padding: 1rem;
