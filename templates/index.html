@@ -173,11 +173,11 @@
 
 			function mapOnly() {
 				map.style.display = "flex"
-				charts.forEach((chart) => {
+				charts.forEach(chart => {
 					chart.style.display = "none"
 				})
 
-				buttons.forEach((button) => {
+				buttons.forEach(button => {
 					button.classList.remove("active")
 				})
 				mapButton.classList.add("active")
@@ -185,11 +185,11 @@
 
 			function chartsOnly() {
 				map.style.display = "none"
-				charts.forEach((chart) => {
+				charts.forEach(chart => {
 					chart.style.display = "flex"
 				})
 
-				buttons.forEach((button) => {
+				buttons.forEach(button => {
 					button.classList.remove("active")
 				})
 				chartButton.classList.add("active")
@@ -197,11 +197,11 @@
 
 			function chartsAndMap() {
 				map.style.display = "flex"
-				charts.forEach((chart) => {
+				charts.forEach(chart => {
 					chart.style.display = "flex"
 				})
 
-				buttons.forEach((button) => {
+				buttons.forEach(button => {
 					button.classList.remove("active")
 				})
 				bothButton.classList.add("active")
