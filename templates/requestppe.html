@@ -83,6 +83,12 @@
 			hamburger.addEventListener("click", () => {
 				nav.classList.toggle("active")
 			})
+
+			window.addEventListener("click", event => {
+				if (nav.classList.contains("active"))
+					if (event.clientX < window.innerWidth - nav.getBoundingClientRect().width)
+						nav.classList.remove("active")
+			})
 		</script>
 	</body>
 </html>

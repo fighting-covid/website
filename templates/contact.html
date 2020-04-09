@@ -58,13 +58,7 @@
 						<span class="line"></span>
 					</div>
 					<div class="message">
-						<textarea
-							name="message"
-							cols="30"
-							rows="10"
-							placeholder="Message"
-							required
-						></textarea>
+						<textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
 						<span class="line"></span>
 					</div>
 					<div class="submit">
@@ -100,6 +94,12 @@
 			let nav = document.querySelector("nav")
 			hamburger.addEventListener("click", () => {
 				nav.classList.toggle("active")
+			})
+
+			window.addEventListener("click", event => {
+				if (nav.classList.contains("active"))
+					if (event.clientX < window.innerWidth - nav.getBoundingClientRect().width)
+						nav.classList.remove("active")
 			})
 		</script>
 	</body>
