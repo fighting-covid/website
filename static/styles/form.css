@@ -20,6 +20,7 @@ form input,
 form textarea {
   border: none;
   border-radius: 0;
+  border-bottom: 3px solid #304352;
   background-color: #304352;
   color: whitesmoke;
   padding: 1rem;
