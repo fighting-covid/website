@@ -35,6 +35,7 @@ $blue: #304352;
 			.members {
 				display: grid;
 				grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+				max-width: calc(var(--count) * 18.5rem);
 				gap: 1rem;
 
 				.member {
@@ -56,9 +57,10 @@ $blue: #304352;
 	visibility: hidden;
 }
 
-@media only screen and (max-width: 720px) {
-	.spacing {
-		display: none;
+@media only screen and (max-width: 640px) {
+	.content .team .container .members {
+		grid-template-columns: 1fr;
+		max-width: initial;
 	}
 }
 

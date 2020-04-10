@@ -37,6 +37,7 @@
   display: grid;
   -ms-grid-columns: (minmax(17.5rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+  max-width: calc(var(--count) * 18.5rem);
   gap: 1rem;
 }
 
@@ -56,9 +57,11 @@
   visibility: hidden;
 }
 
-@media only screen and (max-width: 720px) {
-  .spacing {
-    display: none;
+@media only screen and (max-width: 640px) {
+  .content .team .container .members {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    max-width: initial;
   }
 }
 

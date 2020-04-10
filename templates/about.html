@@ -62,11 +62,8 @@
 					<h2><b>Founder and Overall Coordinator </b></h2>
 
 
-					<div class="members">
+					<div class="members" style="--count: 1">
 						<a href="#" target="_blank" class="member">Reevu Adakroy</a>
-						<a href="#" target="_blank" class="member" style="visibility:hidden;">Empty</a>
-						<a href="#" target="_blank" class="member" style="visibility:hidden;">Empty</a>
-						<a href="#" target="_blank" class="member" style="visibility:hidden;">Empty</a>			
 					</div>
 					</br>
 
@@ -336,6 +333,12 @@
 					if (event.clientX < window.innerWidth - nav.getBoundingClientRect().width)
 						nav.classList.remove("active")
 			}
+
+			let subteams = document.querySelectorAll(".members")
+			subteams.forEach(subteam => {
+				members = subteam.querySelectorAll(".member")
+				subteam.style.setProperty("--count", members.length)
+			})
 		</script>
 	</body>
 </html>
