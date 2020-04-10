@@ -1,7 +1,3 @@
-Hospital,Address,Contact,masks,ventilators,faceshields,gowns
-a,777 Brockton Avenue Abington MA 2351,c,312,27,634,423
-d,30 Memorial Drive Avon MA 2322,f,548,36,769,431
-g,250 Hartford Avenue Bellingham MA 2019,i,687,12,349,581
-j,700 Oak Street Brockton MA 2301,l,635,31,732,416
-m,66-4 Parkhurst Rd Chelmsford MA 1824,o,476,15,348,498
-p,591 Memorial Dr Chicopee MA 1020,r,730,17,694,752
+Hospital,Address,masks,faceshields
+Holy Cross Health,1500 Forest Glen Road MD 20910, 5000, 5000
+

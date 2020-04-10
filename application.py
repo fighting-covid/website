@@ -32,7 +32,7 @@ app1 = Dash(
 conn = sqlite3.connect("hospital_data.db")
 df = pd.read_sql_query("SELECT * FROM data", conn)
 
-x1_list = ["masks", "ventilators", "faceshields", "gowns"]
+x1_list = ["masks", "faceshields"]
 y1_list = [df[key].sum() for key in x1_list]
 app1.layout = html.Div(
     [
