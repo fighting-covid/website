@@ -10,11 +10,11 @@ c = conn.cursor()
 # Whichever makes querying and sorting data easiest
 
 def create_table():
-    c.execute("CREATE TABLE data(hospital TEXT, address TEXT, contact TEXT, masks INTEGER, ventilators INTEGER, faceshields INTEGER, gowns INTEGER)")
+    c.execute("CREATE TABLE data(Timestamp TEXT, Email TEXT, Organization TEXT, 'Phone Number' TEXT, 'Street Address' TEXT, State TEXT, 'Zip Code' INTEGER, 'Face Masks' INTEGER, 'Face Shields' INTEGER)")
 
 
 def update_from_csv():
-    dataframe = pd.read_csv('test.csv')
+    dataframe = pd.read_csv('request.csv')
     dataframe.columns = dataframe.columns.str.strip()
     dataframe.to_sql("data", conn, if_exists='replace')
     conn.commit()
