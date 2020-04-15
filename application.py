@@ -37,10 +37,18 @@ x1_list = ["Face Masks" if i % 2 == 0 else "Face Shields" for i in range(2 * len
 y1_list = [df.at[index // 2, key] for index, key in enumerate(x1_list)]
 org_list = [df.at[index // 2, "Organization"] for index in range(len(x1_list))]
 
+fig=go.Figure([go.Bar(x=x1_list, y=y1_list, text=org_list)])
+fig.update_layout(
+    title="PPE Requested by Hospitals",
+	title_x=0.5,
+    xaxis_title="Type of PPE",
+    yaxis_title="Quantity",
+)
+
 app1.layout = html.Div(
 	[
 		dcc.Graph(
-			figure=go.Figure([go.Bar(x=x1_list, y=y1_list, text=org_list)])
+			figure=fig
 		),
 	]
 )
