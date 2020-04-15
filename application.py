@@ -33,7 +33,7 @@ app1 = Dash(
 conn = sqlite3.connect("hospital_data.db")
 df = pd.read_sql_query("SELECT * FROM data", conn)
 
-x1_list = ["Sewn Face Masks" if i % 2 == 0 else "3D Printed Face Shields" for i in range(2 * len(df))]
+x1_list = ["Face Masks" if i % 2 == 0 else "Face Shields" for i in range(2 * len(df))]
 y1_list = [df.at[index // 2, key] for index, key in enumerate(x1_list)]
 org_list = [df.at[index // 2, "Organization"] for index in range(len(x1_list))]
 
