@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import Header from "../components/header";
+
 import "../styles/main.css";
 
 // This default export is required in a new `pages/_app.js` file.
@@ -13,6 +15,7 @@ export default function MyApp({ Component, pageProps }) {
           key="google-fonts"
         />
       </Head>
+      <Header />
       <Component {...pageProps} />
       <style global jsx>{`
         body {

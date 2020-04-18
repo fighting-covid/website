@@ -4,7 +4,7 @@ module.exports = {
       colors: {
         dark: "#304352",
         light: "whitesmoke",
-        highlight: "#e44c65",
+        accent: "#e44c65",
       },
     },
     fontFamily: {
