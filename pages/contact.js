@@ -26,7 +26,7 @@ const FormField = ({ title, type }) => (
   </div>
 );
 
-const AboutPage = ({ data }) => {
+const ContactPage = ({ data }) => {
   const [formResult, setFormResult] = useState(null);
 
   return (
@@ -127,4 +127,4 @@ export async function getStaticProps() {
   return { props: { data } };
 }
 
-export default AboutPage;
+export default ContactPage;
