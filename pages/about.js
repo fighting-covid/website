@@ -21,7 +21,6 @@ const AboutPage = ({ data }) => {
 export async function getStaticProps() {
   const dataPath = path.join(process.cwd(), "data/about.yml");
   const data = yaml.safeLoad(fs.readFileSync(dataPath));
-  console.log(data);
   return { props: { data } };
 }
 
