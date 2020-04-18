@@ -4,7 +4,10 @@ import Link from "next/link";
 const Header = () => {
   const [isActive, setActive] = useState(false);
   return (
-    <header className="flex items-center justify-between flex-wrap p-8 container mx-auto">
+    <header
+      id="header"
+      className="flex items-center justify-between flex-wrap p-8 container mx-auto"
+    >
       <div className="flex items-center flex-shrink-0 mr-8">
         <span className="font-bold text-2xl tracking-tight">Project YCRO</span>
       </div>

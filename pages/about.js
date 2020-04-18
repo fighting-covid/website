@@ -1,5 +1,5 @@
-const yaml = require("js-yaml");
-const fs = require("fs");
+import yaml from "js-yaml";
+import fs from "fs";
 import path from "path";
 
 const AboutPage = ({ data }) => {

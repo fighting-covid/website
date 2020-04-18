@@ -2,7 +2,7 @@ import Head from "next/head";
 
 import Header from "../components/header";
 
-import "../styles/main.css";
+import "../assets/styles/main.css";
 import "hamburgers/dist/hamburgers.min.css";
 
 // This default export is required in a new `pages/_app.js` file.
@@ -18,11 +18,6 @@ export default function MyApp({ Component, pageProps }) {
       </Head>
       <Header />
       <Component {...pageProps} />
-      <style global jsx>{`
-        body {
-          @apply font-sans bg-light text-dark;
-        }
-      `}</style>
     </>
   );
 }
