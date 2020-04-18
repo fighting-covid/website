@@ -6,6 +6,10 @@
 
 @import "./markdown.css";
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 body {
   @apply leading-relaxed;
 }
