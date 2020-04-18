@@ -1,24 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-		<script>
-			var isCaptchaValid = false;
-			function doCaptchaValidate(source, args) {
-				args.IsValid = isCaptchaValid;
-			}
-			var verifyCallback = function (response) {
-				isCaptchaValid = true;
-			};
-			</script>
-			
-
-			
-			//created a custom validator and added error message and ClientValidationFucntion
-			<asp:CustomValidator runat="server" ID="CustomValidator1" ValidationGroup="Initial" ErrorMessage="Captcha Required" ClientValidationFunction="doCaptchaValidate"/>
 		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap"
@@ -83,8 +67,6 @@
 						<textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
 						<span class="line"></span>
 					</div>
-					<div class="g-recaptcha" data-sitekey="6LcT5-oUAAAAABndJnRFBYsiFEMqxMYdZxuKTaSY" data-callback="verifyCallback"></div>
-					<asp:CustomValidator runat="server" ID="CustomValidator1" ValidationGroup="Initial" ErrorMessage="Captcha Required" ClientValidationFunction="doCaptchaValidate"/>
 					<div class="submit">
 						<button type="submit">Submit</button>
 					</div>
