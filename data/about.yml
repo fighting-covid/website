@@ -1,7 +1,192 @@
----
-founder:
- - reevu
-webdevs:
- - akash bhave
- - luke t
-
+mission: |
+  We are a group of students working to connect hospitals in the DC-Maryland-Virginia region with desperately needed supplies, 
+  in the wake of the COVID-19 pandemic. Our team is also working on independently producing hospital-approved Personal 
+  Protective Equipment (PPE) and other items, with the eventual vision of organizing households across the DMV into a production 
+  center to support healthcare workers during this time of crisis and shortage.
+teams:
+  - title: Founder & Coordinator
+    members:
+      - Reevu Adakroy
+  - title: 2D Printing
+    description: |
+      The 2D Printing team is working on creating innovative designs for masks and protection for the community using only household 
+      materials. Using no 3D printing or sewing procedures, such designs will be simple and easy to make at home.
+    members:
+      - Nathan Suh
+      - Joshua Lian
+      - Marian Qian
+      - Jason Wang
+  - title: 3D Printing
+    description: |
+      The 3D Printing team is responsible for the creation, collection, and prototyping of designs for various tools to help aid the 
+      COVID-19 relief effort, as well as the eventual mass production of said materials to be distributed to organizations in need.
+    members:
+      - Joshua Lian
+      - Tharun Saravanan
+      - Aryan Joshi
+      - Maria Izzi
+      - Kevin Gu
+      - Daniel Fu
+      - Neil Shah
+      - Anisha Talreja
+  - title: Cleaning Supplies
+    description: |
+      The Cleaning Supplies team is responsible for collecting vital supplies such as hand sanitizer and bleach from local schools, 
+      businesses, and government buildings. To date, the team has contacted 6 school districts who have donated tens of thousands of 
+      cleaning supplies to local hospitals.
+    members:
+      - Neil Shah
+      - Vishal Kanigicherla
+      - Hashir Aqeel
+      - Catie Granum
+      - Maxwell Bai
+      - Nathan Suh
+      - Jason Wang
+      - Sahana Ramesh
+      - Anthony Wong
+      - Julia Kao-Sowa
+  - title: Outreach
+    description: |
+      The Outreach team is in charge of all correspondence between facilities in need and the YCRO, managing all requests for materials 
+      and keeping track of where supplies need to go for maximum impact.
+    members:
+      - Aryan Joshi
+      - Maxwell Bai
+      - Marian Qian
+      - Angie Huang
+      - Julia Feldhaus
+      - Vyomika Gandhi
+      - Khushmeet Chandi
+      - Priyanka Mosur
+      - Joshua Lian
+      - John Kim
+      - Summer Wang
+      - Anika Thatavarty
+      - Srilakshmi Medarametla
+      - Annabel Li
+      - Hashir Aqeel
+      - Anisha Jain
+      - Nathan Suh
+      - Anoushka Sarkar
+      - Anthony Wong
+      - Michelle Du
+      - Saanjh Khattar
+      - Sadhika Dhanasekar
+      - Tiffany Ji
+      - Brianna Ta
+      - Andrew Chen
+      - Kashika Dhanjal
+      - Anisha Talreja
+  - title: Publicity
+    description: |
+      The Publicity team's objective is to update the public about our progress as a team,
+      as well as to educate the community on the best ways to stay safe and help out during 
+      this pandemic.
+    members:
+      - Akash Bhave
+      - Angie Huang
+      - Anika Thatavarthy
+      - Anoushka Sarkar
+      - Anthony Wong
+      - Catie Granum
+      - Jennifer Abraham
+      - Joshua Lian
+      - Karen Song
+      - Khushmeet Chandi
+      - Marian Qian
+      - Meghna Sharma
+      - Neil Shah
+      - Nuha Mohammed
+      - Saanjh Khattar
+      - Sadhika Dhanasekar
+      - Sahana Ramesh
+      - Srilakshmi Medarametla
+      - Summer Wang
+      - Tiffany Ji
+      - Brianna Ta
+  - title: Research
+    description: |
+      The objective of the Research Team is to explore different ways in which everyday people 
+      can contribute in the fight against Covid-19 and to create video tutorials to teach the 
+      public how to make important pieces of equipment such as ear protectors and face shields. 
+      Currently, the team is developing several tutorials for the manufacturing of ear protectors.
+    members:
+      - Vishal Kanigicherla
+      - Hashir Aqeel
+      - Neil Shah
+      - Nathan Suh
+      - Anika Thatavarthy
+      - Prithvi Nathan
+      - Saanjh Khattar
+      - Maria Izzi
+      - Adele Peng
+      - Anisha Jain
+      - Ikhlaas Bhat
+      - Julia Kao-Sowa
+      - Kevin Gu
+      - Khushmeet Chandi
+      - Nuha Mohammed
+      - Sadhika Dhanasekar
+      - Sahana Ramesh
+      - Vyomika Gandhi
+      - Yulee Kang
+  - title: Sewing
+    description: |
+      he Sewing team is working on maximizing the comfort and effectiveness of a sewn mask through 
+      material choice and stitching techniques. They have continued to work with hospitals regarding 
+      the specific needs of the facility and are aiming to ramp up production to account for the 
+      shortage as soon as possible.
+    members:
+      - Priyanka Mosur
+      - Joshua Lian
+      - Krithika Layagala
+      - Kritika Jothishankar
+      - Sahana Ramesh
+      - Akash Bhave
+      - Anoushka Sarkar
+      - Marian Qian
+      - Neil Shah
+      - Olivia Ma
+      - Prithvi Nathan
+      - Tiffany Ji
+      - Brianna Ta
+      - Andrew Chen
+  - title: Sterilization
+    description: |
+      The objective of the Sterilization team is to provide those at home with a way to sterilize their own 
+      cloth masks through a materials database. In addition to this, they have been working on new ways to 
+      sterilize and bring comfort to existing 3D Printed masks and shields.
+    members:
+      - Kritika Jothishankar
+      - Vishal Kanigicherla
+      - Daniel Fu
+      - Yulee Kang
+      - Catie Granum
+      - Anisha Jain
+      - Anoushka Sarkar
+      - Anthony Wong
+      - Jason Wang
+      - Marian Qian
+      - Neil Shah
+      - Olivia Ma
+      - Prithvi Nathan
+      - Brianna Ta
+  - title: Web Development
+    description: |
+      The Web Development team has been working hard to create a platform to host our network and share our 
+      progress and research with the community. Their work has led to the creation of this website.
+    members:
+      - Aryan Chinnala
+      - Jason Klein
+      - Varun Chilukuri
+      - Nuha Mohammed
+      - Akash Bhave
+      - Luke Thistlethwaite
+      - Saigautam Bonam
+      - Pranav Wadhwa
+      - Khushmeet Chandi
+      - Jennifer Abraham
+      - Joshua Lian
+      - Tharun Saravanan
+      - Aryan Joshi
+      - Maria Izzi

@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 const yaml = require("js-yaml");
 const fs = require("fs");
 import path from "path";
@@ -6,11 +5,11 @@ import path from "path";
 const AboutPage = ({ data }) => {
   return (
     <div>
-      {Object.keys(data).map((group) => (
+      {data.teams.map((team) => (
         <div>
-          <h2>{group}</h2>
-          {data[group].map((person) => (
-            <h4>{person}</h4>
+          <h2>{team.title}</h2>
+          {team.members.map((member) => (
+            <h4>{member}</h4>
           ))}
         </div>
       ))}
