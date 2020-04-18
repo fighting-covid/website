@@ -1,10 +1,10 @@
 import Head from "next/head";
 import { useRef } from "react";
 
-const PPERequestPage = ({ data }) => (
+const PPEDonatePage = ({ data }) => (
   <>
     <Head>
-      <title>About | Project YCRO</title>
+      <title>Donate PPE | Project YCRO</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
@@ -25,4 +25,4 @@ const PPERequestPage = ({ data }) => (
   </>
 );
 
-export default PPERequestPage;
+export default PPEDonatePage;

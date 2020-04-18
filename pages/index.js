@@ -20,10 +20,12 @@ import {
 
 const HomePage = ({ data }) => {
   const [graphData, setGraphData] = useState(null);
-  useEffect(async () => {
-    const res = await axios.get("/api/data");
-    console.log(res.data);
-    setGraphData(res.data);
+  useEffect(() => {
+    const getGraphData = async () => {
+      const res = await axios.get("/api/data");
+      setGraphData(res.data);
+    };
+    getGraphData();
   }, []);
 
   const valueAccessor = (attribute) => ({ payload }) => {
@@ -48,9 +50,9 @@ const HomePage = ({ data }) => {
                 <p className="font-bold font-serif md:text-5xl text-4xl pb-4">
                   {data.title}
                 </p>
-                <p className="font-sans lg:text-2xl text-xl">
+                <div className="font-sans lg:text-2xl text-xl">
                   <Markdown className="markdown-body">{data.subtitle}</Markdown>
-                </p>
+                </div>
               </div>
             </div>
             <div

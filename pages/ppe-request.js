@@ -4,7 +4,7 @@ import { useRef } from "react";
 const PPERequestPage = ({ data }) => (
   <>
     <Head>
-      <title>About | Project YCRO</title>
+      <title>Request PPE | Project YCRO</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 

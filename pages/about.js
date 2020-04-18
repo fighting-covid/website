@@ -40,7 +40,14 @@ const AboutPage = ({ data }) => {
               </h4>
               <div className="flex flex-wrap">
                 {team.members.map((member) => (
-                  <div className="lg:w-1/6 md:w-1/4 sm:w-1/3 w-1/2">
+                  <div
+                    className="lg:w-1/6 md:w-1/4 sm:w-1/3 w-1/2"
+                    key={
+                      member.hasOwnProperty("link")
+                        ? member.name.replace(" ", "-").toLowerCase()
+                        : member.replace(" ", "-").toLowerCase()
+                    }
+                  >
                     {member.hasOwnProperty("link") ? (
                       <a
                         href={member.link}
