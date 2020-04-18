@@ -1,19 +1,54 @@
+import Head from "next/head";
 import yaml from "js-yaml";
 import fs from "fs";
 import path from "path";
+import Markdown from "react-markdown";
 
 const AboutPage = ({ data }) => {
   return (
-    <div>
-      {data.teams.map((team) => (
-        <div>
-          <h2>{team.title}</h2>
-          {team.members.map((member) => (
-            <h4>{member}</h4>
+    <>
+      <Head>
+        <title>About | Project YCRO</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main className="container mx-auto">
+        <section className="p-8">
+          <h2 className="font-serif font-bold md:text-5xl text-4xl heading">
+            The Mission
+          </h2>
+          <Markdown className="text-xl markdown-body">{data.mission}</Markdown>
+        </section>
+        <section className="p-8">
+          <h2 className="font-serif font-bold md:text-5xl text-4xl heading">
+            The Members
+          </h2>
+          {data.teams.map((team) => (
+            <div className="mb-8">
+              <h3 className="font-serif text-3xl font-bold mb-2">
+                {team.title}
+              </h3>
+              <h4 className="text-lg mb-4">
+                {team.description ? (
+                  <Markdown className="markdown-body">
+                    {team.description}
+                  </Markdown>
+                ) : null}
+              </h4>
+              <div className="flex flex-wrap">
+                {team.members.map((member) => (
+                  <div className="lg:w-1/6 md:w-1/4 sm:w-1/3 w-1/2">
+                    <p className="border-b-2 border-gray-500 inline-block mb-3">
+                      {member}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           ))}
-        </div>
-      ))}
-    </div>
+        </section>
+      </main>
+    </>
   );
 };
 

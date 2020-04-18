@@ -6,6 +6,15 @@
 
 @import "./markdown.css";
 
+body {
+  @apply leading-relaxed;
+}
+
 .trans {
   transition: all 0.25s ease;
+}
+
+.heading {
+  display: inline-block;
+  @apply border-b-4 border-accent pb-0 mb-6;
 }
