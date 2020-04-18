@@ -2,6 +2,9 @@ import Head from "next/head";
 import yaml from "js-yaml";
 import fs from "fs";
 import path from "path";
+import axios from "axios";
+import { useState } from "react";
+
 import Markdown from "react-markdown";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
@@ -24,6 +27,8 @@ const FormField = ({ title, type }) => (
 );
 
 const AboutPage = ({ data }) => {
+  const [formResult, setFormResult] = useState(null);
+
   return (
     <>
       <Head>
@@ -36,7 +41,18 @@ const AboutPage = ({ data }) => {
           <h2 className="font-serif font-bold md:text-5xl text-4xl pb-4">
             {data.title}
           </h2>
-          <Markdown className="text-xl markdown-body">{data.subtitle}</Markdown>
+          <Markdown className="text-xl markdown-body mb-4">
+            {data.subtitle}
+          </Markdown>
+          {formResult === null || (
+            <p
+              className={`text-xl ${
+                formResult.success ? "text-green-600" : "text-red-700"
+              }`}
+            >
+              {formResult.message}
+            </p>
+          )}
         </section>
         <section className="p-8">
           <Formik
@@ -64,7 +80,20 @@ const AboutPage = ({ data }) => {
             }}
             onSubmit={(values, { setSubmitting }) => {
               setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
+                axios
+                  .post("/api/contact", values)
+                  .then(function (response) {
+                    setFormResult({
+                      success: true,
+                      message: response.data.message,
+                    });
+                  })
+                  .catch(function (error) {
+                    setFormResult({
+                      success: false,
+                      message: error.message,
+                    });
+                  });
                 setSubmitting(false);
               }, 400);
             }}
