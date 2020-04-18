@@ -83,7 +83,8 @@ teams:
       as well as to educate the community on the best ways to stay safe and help out during 
       this pandemic.
     members:
-      - Akash Bhave
+      - name: Akash Bhave
+        link: https://www.linkedin.com/in/akashbbhave/
       - Angie Huang
       - Anika Thatavarthy
       - Anoushka Sarkar
