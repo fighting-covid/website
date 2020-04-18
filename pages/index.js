@@ -1,62 +1,131 @@
-import Head from "next/head";
 import yaml from "js-yaml";
 import fs from "fs";
 import path from "path";
+import axios from "axios";
+import { useState, useEffect } from "react";
+
+import Head from "next/head";
 import Markdown from "react-markdown";
+import {
+  ResponsiveContainer,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  LabelList,
+} from "recharts";
 
-const HomePage = ({ data }) => (
-  <>
-    <Head>
-      <title>Project YCRO</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+const HomePage = ({ data }) => {
+  const [graphData, setGraphData] = useState(null);
+  useEffect(async () => {
+    const res = await axios.get("/api/data");
+    console.log(res.data);
+    setGraphData(res.data);
+  }, []);
 
-    <main>
-      <section className="mb-16">
-        <div
-          className="flex flex-wrap-reverse"
-          style={{ height: "calc(100vh - 100px)" }}
-        >
-          <div className="md:w-1/2 w-full p-16">
-            <div className="md:w-3/4 h-full flex flex-col md:justify-center justify-start">
-              <p className="font-bold font-serif md:text-5xl text-4xl pb-4">
-                {data.title}
-              </p>
-              <p className="font-sans lg:text-2xl text-xl">
-                <Markdown className="markdown-body">{data.subtitle}</Markdown>
-              </p>
-            </div>
-          </div>
+  const valueAccessor = (attribute) => ({ payload }) => {
+    return payload[attribute];
+  };
+
+  return (
+    <>
+      <Head>
+        <title>Project YCRO</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main>
+        <section className="mb-16">
           <div
-            className="md:w-1/2 w-full flex flex-col bg-local bg-cover bg-no-repeat bg-center"
-            style={{
-              backgroundImage: `url(${require("../assets/images/mask.jpg")})`,
-            }}
-          ></div>
-        </div>
-      </section>
-      <section className="p-8 flex" style={{ height: "60vh" }}>
-        <div className="border-2 border-gray-500 w-1/2">
-          <iframe
-            className="visual"
-            src="https://www.google.com/maps/d/u/0/embed?mid=1EYwPfRTAqljYRM2A5VL514hlb2igE-J0&zoom=10"
-            style={{ width: "100%", height: "100%", border: "none" }}
-          ></iframe>
-        </div>
-        <div className="p-8 w-1/2 flex flex-col justify-center">
-          <div>
-            <h2 className="font-serif font-bold md:text-4xl text-3xl heading">
-              Hospitals
-            </h2>
+            className="flex flex-wrap-reverse"
+            style={{ height: "calc(100vh - 100px)" }}
+          >
+            <div className="md:w-1/2 w-full p-16">
+              <div className="md:w-3/4 h-full flex flex-col md:justify-center justify-start">
+                <p className="font-bold font-serif md:text-5xl text-4xl pb-4">
+                  {data.title}
+                </p>
+                <p className="font-sans lg:text-2xl text-xl">
+                  <Markdown className="markdown-body">{data.subtitle}</Markdown>
+                </p>
+              </div>
+            </div>
+            <div
+              className="md:w-1/2 w-full flex flex-col bg-local bg-cover bg-no-repeat bg-center"
+              style={{
+                backgroundImage: `url(${require("../assets/images/mask.jpg")})`,
+              }}
+            ></div>
           </div>
-          <Markdown className="markdown-body text-lg">
-            {data.statistics.map}
-          </Markdown>
-        </div>
-      </section>
-    </main>
-  </>
-);
+        </section>
+        <section
+          className="p-8 flex flex-wrap-reverse"
+          style={{ height: "60vh" }}
+        >
+          <div className="border-2 border-gray-500 md:w-1/2 w-full">
+            <iframe
+              className="visual"
+              src="https://www.google.com/maps/d/u/0/embed?mid=1EYwPfRTAqljYRM2A5VL514hlb2igE-J0&zoom=10"
+              style={{ width: "100%", height: "100%", border: "none" }}
+            ></iframe>
+          </div>
+          <div className="p-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
+            <div>
+              <h2 className="font-serif font-bold md:text-4xl text-3xl heading">
+                Hospitals
+              </h2>
+            </div>
+            <Markdown className="markdown-body text-lg">
+              {data.statistics.map}
+            </Markdown>
+          </div>
+        </section>
+        <section className="p-8 flex flex-wrap" style={{ height: "60vh" }}>
+          <div className="p-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
+            <div>
+              <h2 className="font-serif font-bold md:text-4xl text-3xl heading">
+                Requests
+              </h2>
+            </div>
+            <Markdown className="markdown-body text-lg">
+              {data.statistics.graph}
+            </Markdown>
+          </div>
+          <div className="md:w-1/2 w-full">
+            {graphData !== null ? (
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={graphData}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="name" orientation="bottom" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+                  <Bar
+                    dataKey="masks"
+                    name="Face Masks"
+                    stackId="a"
+                    fill="#8884d8"
+                  />
+                  <Bar
+                    dataKey="shields"
+                    name="Face Shields"
+                    stackId="a"
+                    fill="#75b4ca"
+                  />
+                </BarChart>
+              </ResponsiveContainer>
+            ) : (
+              <div></div>
+            )}
+          </div>
+        </section>
+      </main>
+    </>
+  );
+};
 
 export async function getStaticProps() {
   const dataPath = path.join(process.cwd(), "data/index.yml");
