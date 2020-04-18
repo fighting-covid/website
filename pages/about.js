@@ -1,38 +1,28 @@
-import { useRouter } from 'next/router';
-const yaml = require('js-yaml');
-const fs = require('fs');
-import path from 'path'
+import { useRouter } from "next/router";
+const yaml = require("js-yaml");
+const fs = require("fs");
+import path from "path";
 
-const NameTag = ({name}) => {
-  return (
-    <h4>{name}</h4>
-  )
-}
-
-const GroupTag = ({groupName, people}) => {
+const AboutPage = ({ data }) => {
   return (
     <div>
-      <h2>{groupName}</h2>
-      {people.map(person => (
-        <NameTag name={person} />
-      ))}
-    </div>
-  )
-} 
-
-const AboutPage = ({peopleData}) => {
-  return (
-    <div>
-      {Object.keys(peopleData).map(group => (
-        <GroupTag groupName={group} people={peopleData[group]} />
+      {Object.keys(data).map((group) => (
+        <div>
+          <h2>{group}</h2>
+          {data[group].map((person) => (
+            <h4>{person}</h4>
+          ))}
+        </div>
       ))}
     </div>
   );
-}
-export async function getStaticProps(){
-  const peoplePath = path.join(process.cwd(), "userdata.yaml")
-  const peopleData = yaml.safeLoad(fs.readFileSync(peoplePath))
-  return {props: {peopleData}};
+};
+
+export async function getStaticProps() {
+  const dataPath = path.join(process.cwd(), "data/about.yml");
+  const data = yaml.safeLoad(fs.readFileSync(dataPath));
+  console.log(data);
+  return { props: { data } };
 }
 
-export default AboutPage
+export default AboutPage;
