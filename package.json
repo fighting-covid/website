@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
     "google-spreadsheet": "^3.0.11",
     "js-yaml": "^3.13.1",
     "next": "9.3.4",
