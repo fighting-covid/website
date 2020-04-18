@@ -4,6 +4,8 @@
 /* purgecss end ignore */
 @tailwind utilities;
 
+@import "./markdown.css";
+
 .trans {
   transition: all 0.25s ease;
 }

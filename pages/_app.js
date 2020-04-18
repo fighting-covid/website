@@ -11,7 +11,7 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Baskervville&family=Barlow:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Baskervville&family=Barlow:wght@400;600&display=swap"
           rel="stylesheet"
           key="google-fonts"
         />

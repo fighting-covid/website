@@ -2,6 +2,7 @@ import Head from "next/head";
 import yaml from "js-yaml";
 import fs from "fs";
 import path from "path";
+import Markdown from "react-markdown";
 
 const HomePage = ({ data }) => (
   <>
@@ -21,7 +22,9 @@ const HomePage = ({ data }) => (
               <p className="font-bold font-serif md:text-5xl text-4xl pb-4">
                 {data.title}
               </p>
-              <p className="font-sans lg:text-2xl text-xl">{data.subtitle}</p>
+              <p className="font-sans lg:text-2xl text-xl">
+                <Markdown className="markdown-body">{data.subtitle}</Markdown>
+              </p>
             </div>
           </div>
           <div
