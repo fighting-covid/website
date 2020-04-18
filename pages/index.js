@@ -12,7 +12,7 @@ const HomePage = ({ data }) => (
     </Head>
 
     <main>
-      <section className="block">
+      <section className="mb-16">
         <div
           className="flex flex-wrap-reverse"
           style={{ height: "calc(100vh - 100px)" }}
@@ -33,6 +33,25 @@ const HomePage = ({ data }) => (
               backgroundImage: `url(${require("../assets/images/mask.jpg")})`,
             }}
           ></div>
+        </div>
+      </section>
+      <section className="p-8 flex" style={{ height: "60vh" }}>
+        <div className="border-2 border-gray-500 w-1/2">
+          <iframe
+            className="visual"
+            src="https://www.google.com/maps/d/u/0/embed?mid=1EYwPfRTAqljYRM2A5VL514hlb2igE-J0&zoom=10"
+            style={{ width: "100%", height: "100%", border: "none" }}
+          ></iframe>
+        </div>
+        <div className="p-8 w-1/2 flex flex-col justify-center">
+          <div>
+            <h2 className="font-serif font-bold md:text-4xl text-3xl heading">
+              Hospitals
+            </h2>
+          </div>
+          <Markdown className="markdown-body text-lg">
+            {data.statistics.map}
+          </Markdown>
         </div>
       </section>
     </main>
