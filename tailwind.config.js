@@ -7,7 +7,6 @@ module.exports = {
         highlight: "#e44c65",
       },
     },
-
     fontFamily: {
       sans: [
         "Barlow",
@@ -32,8 +31,6 @@ module.exports = {
         "Times",
         "serif",
       ],
-      body: this.sans,
-      heading: this.serif,
     },
   },
 };
