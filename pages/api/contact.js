@@ -1,8 +1,6 @@
 const { GoogleSpreadsheet } = require("google-spreadsheet");
 
-const doc = new GoogleSpreadsheet(
-  "1OkSg01JCUOywrOxWLmRRF1PZ3iiyzpQKPVKNUBBwfPo"
-);
+const doc = new GoogleSpreadsheet(process.env.GOOGLE_SHEET_ID);
 
 export default async (req, res) => {
   if (req.method === "POST") {
@@ -22,23 +20,25 @@ export default async (req, res) => {
     ) {
       // Attempt to write to the sheet
       try {
-        const sheet = doc.sheetsById[790533715];
+        const sheet = doc.sheetsById[784093421];
 
-        await sheet.setHeaderRow(["name", "email", "message"]);
+        await sheet.setHeaderRow(["Name", "Email", "Message"]);
         const entry = await sheet.addRow({
-          name: req.body.name,
-          email: req.body.email,
-          message: req.body.email,
+          Name: req.body.name,
+          Email: req.body.email,
+          Message: req.body.email,
         });
         entry.save();
 
         res.statusCode = 200;
         res.end(
-          JSON.stringify({ message: "Entry written successfully. Thank you!" })
+          JSON.stringify({
+            message: "Message submitted successfully. Thank you!",
+          })
         );
       } catch {
         res.statusCode = 500;
-        res.end(JSON.stringify({ message: "Unable to write entry." }));
+        res.end(JSON.stringify({ message: "Unable to submit message." }));
       }
     } else {
       res.statusCode = 400;

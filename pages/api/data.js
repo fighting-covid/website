@@ -1,8 +1,6 @@
 const { GoogleSpreadsheet } = require("google-spreadsheet");
 
-const doc = new GoogleSpreadsheet(
-  "1OkSg01JCUOywrOxWLmRRF1PZ3iiyzpQKPVKNUBBwfPo"
-);
+const doc = new GoogleSpreadsheet(process.env.GOOGLE_SHEET_ID);
 
 export default async (req, res) => {
   if (req.method === "GET") {
@@ -15,7 +13,7 @@ export default async (req, res) => {
     res.setHeader("Content-Type", "application/json");
 
     try {
-      const sheet = doc.sheetsById[0];
+      const sheet = doc.sheetsById[1701444519];
       const rows = await sheet.getRows();
 
       let data = [];
