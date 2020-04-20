@@ -104,9 +104,11 @@ const ContactPage = ({ data }) => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="block cursor-pointer border-2 bg-accent text-light p-4 mt-6 rounded shadow text-lg font-bold"
+                    className="block cursor-pointer mt-6"
                   >
-                    Submit
+                    <p className="trans bg-accent hover:bg-red-700 text-light p-4 rounded text-lg font-bold">
+                      Submit
+                    </p>
                   </button>
                 </Form>
               );
