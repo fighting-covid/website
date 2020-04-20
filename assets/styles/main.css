@@ -1,0 +1,24 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+@import "./markdown.css";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  @apply leading-relaxed;
+}
+
+.trans {
+  transition: all 0.25s ease;
+}
+
+.heading {
+  display: inline-block;
+  @apply border-b-4 border-accent pb-0 mb-6;
+}
