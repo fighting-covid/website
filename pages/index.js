@@ -4,7 +4,6 @@ import path from "path";
 import axios from "axios";
 import { useState, useEffect } from "react";
 
-import Head from "next/head";
 import Markdown from "react-markdown";
 import {
   ResponsiveContainer,
@@ -17,6 +16,7 @@ import {
   Legend,
   LabelList,
 } from "recharts";
+import SEO from "../components/seo";
 
 const HomePage = ({ data }) => {
   const [graphData, setGraphData] = useState(null);
@@ -30,10 +30,7 @@ const HomePage = ({ data }) => {
 
   return (
     <>
-      <Head>
-        <title>Home | Project YCRO</title>
-      </Head>
-
+      <SEO title="Home" />
       <main>
         <section className="mb-16">
           <div

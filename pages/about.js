@@ -1,16 +1,14 @@
-import Head from "next/head";
 import yaml from "js-yaml";
 import fs from "fs";
 import path from "path";
+
 import Markdown from "react-markdown";
+import SEO from "../components/seo";
 
 const AboutPage = ({ data }) => {
   return (
     <>
-      <Head>
-        <title>About | Project YCRO</title>
-      </Head>
-
+      <SEO title="About" />
       <main className="container mx-auto">
         <section className="p-8">
           <h2 className="font-serif font-bold md:text-5xl text-4xl heading">

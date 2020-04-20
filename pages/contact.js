@@ -7,6 +7,7 @@ import { useState } from "react";
 
 import Markdown from "react-markdown";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import SEO from "../components/seo";
 
 const FormField = ({ title, type }) => (
   <div className="mb-4">
@@ -31,10 +32,7 @@ const ContactPage = ({ data }) => {
 
   return (
     <>
-      <Head>
-        <title>Contact | Project YCRO</title>
-      </Head>
-
+      <SEO title="Contact" />
       <main className="container mx-auto">
         <section className="p-8">
           <h2 className="font-serif font-bold md:text-5xl text-4xl pb-4">

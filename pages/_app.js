@@ -1,5 +1,3 @@
-import Head from "next/head";
-
 import Header from "../components/header";
 import Footer from "../components/footer";
 
@@ -10,15 +8,6 @@ import "hamburgers/dist/hamburgers.min.css";
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Baskervville&family=Barlow:wght@400;600&display=swap"
-          rel="stylesheet"
-          key="google-fonts"
-        />
-        <title>Project YCRO</title>
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
       <Header />
       <Component {...pageProps} />
       <Footer />

@@ -1,12 +1,8 @@
-import Head from "next/head";
-import { useRef } from "react";
+import SEO from "../components/seo";
 
 const PPEDonatePage = ({ data }) => (
   <>
-    <Head>
-      <title>Donate PPE | Project YCRO</title>
-    </Head>
-
+    <SEO title="Donate PPE" />
     <main className="container mx-auto">
       <section className="p-8" style={{ height: "calc(100vh - 100px)" }}>
         <iframe
