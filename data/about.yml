@@ -13,7 +13,8 @@ teams:
       materials. Using no 3D printing or sewing procedures, such designs will be simple and easy to make at home.
     members:
       - Nathan Suh
-      - Joshua Lian
+      - name: Joshua Lian
+        link: https://www.linkedin.com/in/joshua-lian-60425819a/
       - Marian Qian
       - Jason Wang
   - title: 3D Printing
@@ -21,7 +22,8 @@ teams:
       The 3D Printing team is responsible for the creation, collection, and prototyping of designs for various tools to help aid the 
       COVID-19 relief effort, as well as the eventual mass production of said materials to be distributed to organizations in need.
     members:
-      - Joshua Lian
+      - name: Joshua Lian
+        link: https://www.linkedin.com/in/joshua-lian-60425819a/
       - Tharun Saravanan
       - Aryan Joshi
       - Maria Izzi
@@ -53,19 +55,22 @@ teams:
       - Aryan Joshi
       - Maxwell Bai
       - Marian Qian
-      - Angie Huang
+      - name: Angie Huang
+        link: https://www.instagram.com/angiehuang_/
       - Julia Feldhaus
       - Vyomika Gandhi
       - Khushmeet Chandi
       - Priyanka Mosur
-      - Joshua Lian
+      - name: Joshua Lian
+        link: https://www.linkedin.com/in/joshua-lian-60425819a/
       - John Kim
       - Summer Wang
       - Anika Thatavarty
       - Srilakshmi Medarametla
       - Annabel Li
       - Hashir Aqeel
-      - Anisha Jain
+      - name: Anisha Jain
+        link: https://www.linkedin.com/in/anishajain2021/
       - Nathan Suh
       - Anoushka Sarkar
       - Anthony Wong
@@ -85,13 +90,15 @@ teams:
     members:
       - name: Akash Bhave
         link: https://www.linkedin.com/in/akashbbhave/
-      - Angie Huang
+      - name: Angie Huang
+        link: https://www.instagram.com/angiehuang_/
       - Anika Thatavarthy
       - Anoushka Sarkar
       - Anthony Wong
       - Catie Granum
       - Jennifer Abraham
-      - Joshua Lian
+      - name: Joshua Lian
+        link: https://www.linkedin.com/in/joshua-lian-60425819a/
       - Karen Song
       - Khushmeet Chandi
       - Marian Qian
@@ -121,7 +128,8 @@ teams:
       - Saanjh Khattar
       - Maria Izzi
       - Adele Peng
-      - Anisha Jain
+      - name: Anisha Jain
+        link: https://www.linkedin.com/in/anishajain2021/
       - Ikhlaas Bhat
       - Julia Kao-Sowa
       - Kevin Gu
@@ -139,7 +147,8 @@ teams:
       shortage as soon as possible.
     members:
       - Priyanka Mosur
-      - Joshua Lian
+      - name: Joshua Lian
+        link: https://www.linkedin.com/in/joshua-lian-60425819a/
       - Krithika Layagala
       - Kritika Jothishankar
       - Sahana Ramesh
@@ -163,7 +172,8 @@ teams:
       - Daniel Fu
       - Yulee Kang
       - Catie Granum
-      - Anisha Jain
+      - name: Anisha Jain
+        link: https://www.linkedin.com/in/anishajain2021/
       - Anoushka Sarkar
       - Anthony Wong
       - Jason Wang
@@ -181,13 +191,15 @@ teams:
       - Jason Klein
       - Varun Chilukuri
       - Nuha Mohammed
-      - Akash Bhave
+      - name: Akash Bhave
+        link: https://www.linkedin.com/in/akashbbhave/
       - Luke Thistlethwaite
       - Saigautam Bonam
       - Pranav Wadhwa
       - Khushmeet Chandi
       - Jennifer Abraham
-      - Joshua Lian
+      - name: Joshua Lian
+        link: https://www.linkedin.com/in/joshua-lian-60425819a/
       - Tharun Saravanan
       - Aryan Joshi
       - Maria Izzi
