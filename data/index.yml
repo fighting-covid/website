@@ -5,4 +5,4 @@ statistics:
   map: |
     This map shows hospitals that we've contacted which currently need supplies. Click on the location icons on the map to see more information, such as the name and address of the hospital, as well as how and what to donate.
   graph: |
-    This graph displays the supplies that hospitals need along with the respective quantities of each supply requested. Hover over the bars for exact values. Additional functionality can be found in the tool bar in the upper right corner.
+    This graph displays the supplies that hospitals need along with the respective quantities of each supply requested. Hover over the bars for exact values.

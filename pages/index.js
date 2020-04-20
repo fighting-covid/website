@@ -35,9 +35,9 @@ const HomePage = ({ data }) => {
         <section className="mb-16">
           <div
             className="flex flex-wrap-reverse"
-            style={{ height: "calc(100vh - 100px)" }}
+            style={{ minHeight: "calc(100vh - 100px)" }}
           >
-            <div className="md:w-1/2 w-full p-16">
+            <div className="md:w-1/2 w-full md:p-16 p-8">
               <div className="md:w-3/4 h-full flex flex-col md:justify-center justify-start">
                 <p className="font-bold font-serif md:text-5xl text-4xl pb-4">
                   {data.title}
@@ -51,12 +51,13 @@ const HomePage = ({ data }) => {
               className="md:w-1/2 w-full flex flex-col bg-local bg-cover bg-no-repeat bg-center"
               style={{
                 backgroundImage: `url(${require("../assets/images/mask.jpg")})`,
+                minHeight: "30vh",
               }}
             ></div>
           </div>
         </section>
         <section
-          className="p-8 flex flex-wrap-reverse"
+          className="md:p-16 p-8 flex flex-wrap-reverse"
           style={{ height: "60vh" }}
         >
           <div className="border-2 border-gray-500 md:w-1/2 w-full">
@@ -66,7 +67,7 @@ const HomePage = ({ data }) => {
               style={{ width: "100%", height: "100%", border: "none" }}
             ></iframe>
           </div>
-          <div className="p-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
+          <div className="md:pl-16 py-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
             <div>
               <h2 className="font-serif font-bold md:text-4xl text-3xl heading">
                 Hospitals
@@ -77,8 +78,8 @@ const HomePage = ({ data }) => {
             </Markdown>
           </div>
         </section>
-        <section className="p-8 flex flex-wrap" style={{ height: "60vh" }}>
-          <div className="p-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
+        <section className="md:p-16 p-8 flex flex-wrap">
+          <div className="md:pr-16 py-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
             <div>
               <h2 className="font-serif font-bold md:text-4xl text-3xl heading">
                 Requests
@@ -88,7 +89,10 @@ const HomePage = ({ data }) => {
               {data.statistics.graph}
             </Markdown>
           </div>
-          <div className="md:w-1/2 w-full">
+          <div
+            className="md:w-1/2 w-full flex flex-col md:justify-center justify-start"
+            style={{ height: "60vh" }}
+          >
             {graphData !== null ? (
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={graphData}>
