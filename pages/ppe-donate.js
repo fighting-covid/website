@@ -5,7 +5,6 @@ const PPEDonatePage = ({ data }) => (
   <>
     <Head>
       <title>Donate PPE | Project YCRO</title>
-      <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main className="container mx-auto">

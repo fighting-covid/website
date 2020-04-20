@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 
+import Logo from "../assets/images/brand/mask.svg";
+
 const NavLink = ({ href, title, end }) => (
   <Link href={href}>
     <a
@@ -20,9 +22,12 @@ const Header = () => {
       id="header"
       className="flex items-center justify-between flex-wrap p-8 container mx-auto"
     >
-      <div className="flex items-center flex-shrink-0 mr-8">
+      <div className="flex-shrink-0 mr-8">
         <Link href="/">
-          <a className="font-bold text-2xl tracking-tight">Project YCRO</a>
+          <a className="flex items-center font-bold text-2xl tracking-tight">
+            <img src={Logo} alt="Logo" className="h-12 mr-4" />
+            <span>Project YCRO</span>
+          </a>
         </Link>
       </div>
       <div className="block lg:hidden">

@@ -28,15 +28,10 @@ const HomePage = ({ data }) => {
     getGraphData();
   }, []);
 
-  const valueAccessor = (attribute) => ({ payload }) => {
-    return payload[attribute];
-  };
-
   return (
     <>
       <Head>
-        <title>Project YCRO</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Home | Project YCRO</title>
       </Head>
 
       <main>

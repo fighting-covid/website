@@ -5,7 +5,6 @@ const PPERequestPage = ({ data }) => (
   <>
     <Head>
       <title>Request PPE | Project YCRO</title>
-      <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main className="container mx-auto">

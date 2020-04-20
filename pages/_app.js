@@ -16,6 +16,8 @@ export default function MyApp({ Component, pageProps }) {
           rel="stylesheet"
           key="google-fonts"
         />
+        <title>Project YCRO</title>
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <Header />
       <Component {...pageProps} />
