@@ -52,16 +52,7 @@ const Header = () => {
         <div className="text-lg lg:flex-grow">
           <NavLink href="/about" title="About" />
           <NavLink href="/contact" title="Contact" />
-          <a
-            className="inline-block cursor-pointer md:ml-2"
-            href="https://www.gofundme.com/f/projectycro"
-            target="_blank"
-          >
-            <div className="trans bg-accent hover:bg-red-700 text-light px-4 py-2 md:mt-0 mt-4 rounded flex items-center">
-              <FiHeart />
-              <span className="ml-2">Donate</span>
-            </div>
-          </a>
+         
         </div>
         <div className="text-lg">
           <NavLink href="/ppe-request" title="Request PPE" />
