@@ -4,9 +4,9 @@ const PPERequestPage = ({ data }) => (
 	<>
 		<SEO title="Request PPE" />
 		<main className="container">
-			<section style={{ width: "100vw", height: "calc(100vh - 100px)" }}>
+			<section className="w-screen" style={{ height: "calc(100vh - 100px)" }}>
 				<iframe
-					style={{ height: "100%" }}
+					className="h-full"
 					src="https://docs.google.com/forms/d/e/1FAIpQLSfDdXO8zSeozASqR8GUQDwsmXvUPbx1BGUveNh1Yu8fm7omuQ/viewform?usp=sf_link&embedded=true"
 					width="100%"
 					frameBorder="0"
