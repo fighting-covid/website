@@ -1,5 +1,5 @@
 mission: |
-  We are a group of students working to connect hospitals in the DC-Maryland-Virginia region with desperately needed supplies, 
+  We are a group of students working to connect hospitals in the DC-Maryland-Virginia region with desperately needed supplies 
   in the wake of the COVID-19 pandemic. Our team is also working on independently producing hospital-approved Personal 
   Protective Equipment (PPE) and other items, with the eventual vision of organizing households across the DMV into a production 
   center to support healthcare workers during this time of crisis and shortage.
@@ -15,7 +15,8 @@ teams:
       - Nathan Suh
       - name: Joshua Lian
         link: https://www.linkedin.com/in/joshua-lian-60425819a/
-      - Marian Qian
+      - name: Marian Qian
+				link: https://www.linkedin.com/in/marian-q-721580169/
       - Jason Wang
   - title: 3D Printing
     description: |
@@ -26,7 +27,8 @@ teams:
         link: https://www.linkedin.com/in/joshua-lian-60425819a/
       - Tharun Saravanan
       - Aryan Joshi
-      - Maria Izzi
+      - name: Maria Izzi
+        link: https://www.linkedin.com/in/maria-izzi/
       - Kevin Gu
       - Daniel Fu
       - Neil Shah
@@ -54,7 +56,8 @@ teams:
     members:
       - Aryan Joshi
       - Maxwell Bai
-      - Marian Qian
+      - name: Marian Qian
+				link: https://www.linkedin.com/in/marian-q-721580169/
       - name: Angie Huang
         link: https://www.instagram.com/angiehuang_/
       - Julia Feldhaus
@@ -65,7 +68,8 @@ teams:
         link: https://www.linkedin.com/in/joshua-lian-60425819a/
       - John Kim
       - Summer Wang
-      - Anika Thatavarty
+      - name: Anika Thatavarty
+			  link: https://www.linkedin.com/in/anika-thatavarthy-8930211a7
       - Srilakshmi Medarametla
       - Annabel Li
       - Hashir Aqeel
@@ -78,9 +82,12 @@ teams:
       - Saanjh Khattar
       - Sadhika Dhanasekar
       - Tiffany Ji
-      - Brianna Ta
-      - Andrew Chen
-      - Kashika Dhanjal
+      - name: Brianna Ta
+				link: https://www.instagram.com/bbriannata/
+      - name: Andrew Chen
+				link: https://www.linkedin.com/in/andrew-chen-8118a6153
+      - name: Kashika Dhanjal
+        link: https://www.linkedin.com/in/kashika-dhanjal-4636b61a6/
       - Anisha Talreja
   - title: Publicity
     description: |
@@ -96,12 +103,15 @@ teams:
       - Anoushka Sarkar
       - Anthony Wong
       - Catie Granum
-      - Jennifer Abraham
+      - name: Jennifer Abraham
+				link: https://www.linkedin.com/in/jennifer-abraham-6345491a6/
       - name: Joshua Lian
         link: https://www.linkedin.com/in/joshua-lian-60425819a/
-      - Karen Song
+      - name: Karen Song
+				link: https://www.linkedin.com/in/karen-song-657012184/
       - Khushmeet Chandi
-      - Marian Qian
+      - name: Marian Qian
+				link: https://www.linkedin.com/in/marian-q-721580169/
       - Meghna Sharma
       - Neil Shah
       - Nuha Mohammed
@@ -111,7 +121,8 @@ teams:
       - Srilakshmi Medarametla
       - Summer Wang
       - Tiffany Ji
-      - Brianna Ta
+      - name: Brianna Ta
+				link: https://www.instagram.com/bbriannata/
   - title: Research
     description: |
       The objective of the Research Team is to explore different ways in which everyday people 
@@ -126,7 +137,8 @@ teams:
       - Anika Thatavarthy
       - Prithvi Nathan
       - Saanjh Khattar
-      - Maria Izzi
+      - name: Maria Izzi
+        link: https://www.linkedin.com/in/maria-izzi/
       - Adele Peng
       - name: Anisha Jain
         link: https://www.linkedin.com/in/anishajain2021/
@@ -141,10 +153,10 @@ teams:
       - Yulee Kang
   - title: Sewing
     description: |
-      he Sewing team is working on maximizing the comfort and effectiveness of a sewn mask through 
+      The Sewing team is working on maximizing the comfort and effectiveness of sewn masks through 
       material choice and stitching techniques. They have continued to work with hospitals regarding 
-      the specific needs of the facility and are aiming to ramp up production to account for the 
-      shortage as soon as possible.
+      the specific needs of each facility and are aiming to ramp up production to account for the current 
+      mask shortage as soon as possible.
     members:
       - Priyanka Mosur
       - name: Joshua Lian
@@ -154,13 +166,16 @@ teams:
       - Sahana Ramesh
       - Akash Bhave
       - Anoushka Sarkar
-      - Marian Qian
+      - name: Marian Qian
+				link: https://www.linkedin.com/in/marian-q-721580169/
       - Neil Shah
       - Olivia Ma
       - Prithvi Nathan
       - Tiffany Ji
-      - Brianna Ta
-      - Andrew Chen
+      - name: Brianna Ta
+				link: https://www.instagram.com/bbriannata/
+      - name: Andrew Chen
+				link: https://www.linkedin.com/in/andrew-chen-8118a6153
   - title: Sterilization
     description: |
       The objective of the Sterilization team is to provide those at home with a way to sterilize their own 
@@ -177,18 +192,21 @@ teams:
       - Anoushka Sarkar
       - Anthony Wong
       - Jason Wang
-      - Marian Qian
+      - name: Marian Qian
+				link: https://www.linkedin.com/in/marian-q-721580169/
       - Neil Shah
       - Olivia Ma
       - Prithvi Nathan
-      - Brianna Ta
+      - name: Brianna Ta
+				link: https://www.instagram.com/bbriannata/
   - title: Web Development
     description: |
       The Web Development team has been working hard to create a platform to host our network and share our 
       progress and research with the community. Their work has led to the creation of this website.
     members:
       - Aryan Chinnala
-      - Jason Klein
+      - name: Jason Klein
+        link: https://www.linkedin.com/in/jason-klein-8093a0181
       - Varun Chilukuri
       - Nuha Mohammed
       - name: Akash Bhave
@@ -197,9 +215,11 @@ teams:
       - Saigautam Bonam
       - Pranav Wadhwa
       - Khushmeet Chandi
-      - Jennifer Abraham
+      - name: Jennifer Abraham
+				link: https://www.linkedin.com/in/jennifer-abraham-6345491a6/
       - name: Joshua Lian
         link: https://www.linkedin.com/in/joshua-lian-60425819a/
       - Tharun Saravanan
       - Aryan Joshi
-      - Maria Izzi
+      - name: Maria Izzi
+        link: https://www.linkedin.com/in/maria-izzi/
