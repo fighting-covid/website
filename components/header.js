@@ -4,9 +4,10 @@ import Link from "next/link";
 import { FiHeart } from "react-icons/fi";
 import Logo from "../assets/images/brand/mask.svg";
 
-const NavLink = ({ href, title, end }) => (
+const NavLink = ({ href, title, onClick, end }) => (
 	<Link href={href}>
 		<a
+			onClick={onClick}
 			className={`trans block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-dark ${
 				end || false ? "" : "mr-4"
 			}`}
@@ -20,14 +21,20 @@ const Header = () => {
 	const [isActive, setActive] = useState(false);
 	return (
 		<>
-			<div style={{ height: "7rem" }}></div>
+			<div className="h-24"></div>
 			<header
 				id="header"
-				className="flex items-center justify-between flex-wrap py-8 p-4 md:p-8 w-full fixed bg-light"
+				className="flex items-center justify-between flex-wrap p-4 md:p-8 w-full fixed bg-light"
+				style={{ minHeight: "6rem" }}
 			>
 				<div className="flex-shrink-0 lg:mr-8">
 					<Link href="/">
-						<a className="flex items-center font-bold text-2xl tracking-tight">
+						<a
+							onClick={() => {
+								setActive(false);
+							}}
+							className="flex items-center font-bold text-2xl tracking-tight"
+						>
 							<img src={Logo} alt="Logo" className="h-12 mr-4" />
 							<span>Project YCRO</span>
 						</a>
@@ -48,16 +55,41 @@ const Header = () => {
 				</div>
 				<nav
 					className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${
-						isActive ? "block" : "hidden"
+						isActive ? "block absolute inset-0 mt-20 flex-col" : "hidden"
 					} `}
 				>
-					<div className="text-lg lg:flex-grow">
-						<NavLink href="/about" title="About" />
-						<NavLink href="/contact" title="Contact" />
+					<div className={`text-lg lg:flex-grow ${isActive ? "bg-light px-4" : ""}`}>
+						<NavLink
+							href="/about"
+							title="About"
+							onClick={() => {
+								setActive(false);
+							}}
+						/>
+						<NavLink
+							href="/contact"
+							title="Contact"
+							onClick={() => {
+								setActive(false);
+							}}
+						/>
 					</div>
-					<div className="text-lg">
-						<NavLink href="/ppe-request" title="Request PPE" />
-						<NavLink href="/ppe-donate" title="Donate PPE" end={true} />
+					<div className={`text-lg ${isActive ? "bg-light p-4" : ""}`} style={{ marginTop: "-1rem" }}>
+						<NavLink
+							href="/ppe-request"
+							title="Request PPE"
+							onClick={() => {
+								setActive(false);
+							}}
+						/>
+						<NavLink
+							href="/ppe-donate"
+							title="Donate PPE"
+							onClick={() => {
+								setActive(false);
+							}}
+							end={true}
+						/>
 					</div>
 				</nav>
 				<style jsx>{`
