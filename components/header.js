@@ -21,8 +21,11 @@ const Header = () => {
 	return (
 		<>
 			<div style={{ height: "7rem" }}></div>
-			<header id="header" className="flex items-center justify-between flex-wrap p-8 w-full fixed bg-light">
-				<div className="flex-shrink-0 mr-8">
+			<header
+				id="header"
+				className="flex items-center justify-between flex-wrap py-8 p-4 md:p-8 w-full fixed bg-light"
+			>
+				<div className="flex-shrink-0 lg:mr-8">
 					<Link href="/">
 						<a className="flex items-center font-bold text-2xl tracking-tight">
 							<img src={Logo} alt="Logo" className="h-12 mr-4" />
