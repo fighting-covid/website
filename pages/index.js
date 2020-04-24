@@ -52,7 +52,7 @@ const HomePage = ({ data }) => {
 				</section>
 
 				<section className="md:p-16 p-8 flex flex-wrap-reverse">
-					<div className="border-2 border-gray-500 md:w-1/2 w-full">
+					<div className="border-2 border-gray-500 md:w-1/2 w-full" style={{ height: "60vh" }}>
 						<iframe
 							className="visual"
 							src="https://www.google.com/maps/d/u/0/embed?mid=1EYwPfRTAqljYRM2A5VL514hlb2igE-J0&zoom=10"
