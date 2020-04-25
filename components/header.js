@@ -25,7 +25,7 @@ const Header = () => {
 			<header
 				id="header"
 				className="flex items-center justify-between flex-wrap p-4 md:p-8 w-full fixed bg-light"
-				style={{ minHeight: "6rem" }}
+				style={{ minHeight: "6rem", zIndex: "1" }}
 			>
 				<div className="flex-shrink-0 lg:mr-8">
 					<Link href="/">
