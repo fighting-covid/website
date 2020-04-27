@@ -10,7 +10,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import SEO from "../components/seo";
 
 const FormField = ({ title, type }) => (
-  <div className="mb-4", style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+  <div className="mb-4">
     <label className="text-lg block mb-2">{title}</label>
     <Field
       type={type}
