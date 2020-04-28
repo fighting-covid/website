@@ -19,11 +19,7 @@ const FormField = ({ title, type }) => (
       name={title.toLowerCase()}
       className="text-lg w-full border-2 border-gray-500 focus:border-accent rounded p-4 mb-2"
     />
-    <ErrorMessage
-      name={title.toLowerCase()}
-      component="div"
-      className="text-accent mb-6"
-    />
+    <ErrorMessage name={title.toLowerCase()} component="div" className="text-accent mb-6" />
   </div>
 );
 
@@ -35,18 +31,16 @@ const ContactPage = ({ data }) => {
       <SEO title="Contact" />
       <main className="container mx-auto">
         <section className="p-8">
-          <h2 className="font-serif font-bold md:text-5xl text-4xl pb-4">
-            {data.title}
+          <h2 className="text-center font-bold font-serif md:text-5xl text-4xl pb-4">
+            {data.title.split(" ").map(word => (
+              <span className="heading" style={{ marginBottom: "0.5rem" }}>
+                {word}&nbsp;
+              </span>
+            ))}
           </h2>
-          <Markdown className="text-xl markdown-body mb-4">
-            {data.subtitle}
-          </Markdown>
+          <Markdown className="text-xl markdown-body mb-4 mx-auto text-center">{data.subtitle}</Markdown>
           {formResult === null || (
-            <p
-              className={`text-xl ${
-                formResult.success ? "text-green-600" : "text-red-700"
-              }`}
-            >
+            <p className={`text-xl ${formResult.success ? "text-green-600" : "text-red-700"}`}>
               {formResult.message}
             </p>
           )}
@@ -54,7 +48,7 @@ const ContactPage = ({ data }) => {
         <section className="p-8">
           <Formik
             initialValues={{ name: "", email: "", message: "" }}
-            validate={(values) => {
+            validate={values => {
               const errors = {};
 
               if (!values.name) {
@@ -63,9 +57,7 @@ const ContactPage = ({ data }) => {
 
               if (!values.email) {
                 errors.email = "An email is required";
-              } else if (
-                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-              ) {
+              } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
                 errors.email = "Invalid email address";
               }
 
@@ -97,15 +89,11 @@ const ContactPage = ({ data }) => {
           >
             {({ isSubmitting }) => {
               return (
-                <Form className="md:w-1/2 w-full">
+                <Form className="md:w-1/2 md:mx-auto w-full">
                   <FormField title="Name" type="text" />
                   <FormField title="Email" type="email" />
                   <FormField title="Message" type="textarea" />
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="block cursor-pointer mt-6"
-                  >
+                  <button type="submit" disabled={isSubmitting} className="block cursor-pointer mt-6 mx-auto">
                     <p className="trans bg-accent hover:bg-red-700 text-light p-4 rounded text-lg font-bold">
                       Submit
                     </p>
