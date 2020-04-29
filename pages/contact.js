@@ -7,6 +7,7 @@ import { useState } from "react";
 
 import Markdown from "react-markdown";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import ReCAPTCHA from "react-google-recaptcha";
 import SEO from "../components/seo";
 
 const FormField = ({ title, type }) => (
@@ -19,37 +20,62 @@ const FormField = ({ title, type }) => (
       name={title.toLowerCase()}
       className="text-lg w-full border-2 border-gray-500 focus:border-accent rounded p-4 mb-2"
     />
-    <ErrorMessage name={title.toLowerCase()} component="div" className="text-accent mb-6" />
+    <ErrorMessage
+      name={title.toLowerCase()}
+      component="div"
+      className="text-accent mb-6"
+    />
   </div>
 );
 
 const ContactPage = ({ data }) => {
   const [formResult, setFormResult] = useState(null);
 
+  const CaptchaField = ({ field, form, ...props }) => {
+    return (
+      <div>
+        <label className="text-lg block mb-2">Captcha</label>
+        <ReCAPTCHA
+          sitekey={process.env.GOOGLE_RECAPTCHA_KEY}
+          onChange={() => form.setFieldValue("captcha", true)}
+        />
+        {form.touched[field.name] && form.errors[field.name] && (
+          <div className="text-accent mb-6 mt-3">{form.errors[field.name]}</div>
+        )}
+      </div>
+    );
+  };
+
   return (
     <>
       <SEO title="Contact" />
       <main className="container mx-auto">
         <section className="p-8">
-          <h2 className="text-center font-bold font-serif md:text-5xl text-4xl pb-4">
-            {data.title.split(" ").map(word => (
-              <span className="heading" style={{ marginBottom: "0.5rem" }}>
-                {word}&nbsp;
-              </span>
-            ))}
-          </h2>
-          <Markdown className="text-xl markdown-body mb-4 mx-auto text-center">{data.subtitle}</Markdown>
+          <div className="flex justify-center">
+            <h2 className="text-center font-bold font-serif md:text-5xl text-4xl pb-4 heading">
+              {data.title}
+            </h2>
+          </div>
+          <Markdown className="text-xl markdown-body mb-4 mx-auto text-center">
+            {data.subtitle}
+          </Markdown>
           {formResult === null || (
-            <p className={`text-xl ${formResult.success ? "text-green-600" : "text-red-700"}`}>
+            <p
+              className={`text-xl ${
+                formResult.success ? "text-green-600" : "text-red-700"
+              }`}
+            >
               {formResult.message}
             </p>
           )}
         </section>
         <section className="p-8">
           <Formik
-            initialValues={{ name: "", email: "", message: "" }}
-            validate={values => {
+            initialValues={{ name: "", email: "", message: "", captcha: false }}
+            validate={(values) => {
               const errors = {};
+
+              console.log(values);
 
               if (!values.name) {
                 errors.name = "A name is required";
@@ -57,12 +83,18 @@ const ContactPage = ({ data }) => {
 
               if (!values.email) {
                 errors.email = "An email is required";
-              } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
+              } else if (
+                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+              ) {
                 errors.email = "Invalid email address";
               }
 
               if (!values.message) {
                 errors.message = "A message is required";
+              }
+
+              if (!values.captcha) {
+                errors.captcha = "Please complete the captcha";
               }
 
               return errors;
@@ -87,13 +119,18 @@ const ContactPage = ({ data }) => {
               }, 400);
             }}
           >
-            {({ isSubmitting }) => {
+            {({ isSubmitting, setFieldValue }) => {
               return (
                 <Form className="md:w-1/2 md:mx-auto w-full">
                   <FormField title="Name" type="text" />
                   <FormField title="Email" type="email" />
                   <FormField title="Message" type="textarea" />
-                  <button type="submit" disabled={isSubmitting} className="block cursor-pointer mt-6 mx-auto">
+                  <Field name="captcha" component={CaptchaField} />
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="block cursor-pointer mt-6 mx-auto"
+                  >
                     <p className="trans bg-accent hover:bg-red-700 text-light p-4 rounded text-lg font-bold">
                       Submit
                     </p>

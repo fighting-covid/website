@@ -12,4 +12,8 @@ module.exports = images({
 
     return config;
   },
+  // Expose certain environment variables to the client
+  env: {
+    GOOGLE_RECAPTCHA_KEY: process.env.GOOGLE_RECAPTCHA_KEY,
+  },
 });
