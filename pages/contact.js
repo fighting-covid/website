@@ -34,7 +34,6 @@ const ContactPage = ({ data }) => {
   const CaptchaField = ({ field, form, ...props }) => {
     return (
       <div>
-        <label className="text-lg block mb-2">Captcha</label>
         <ReCAPTCHA
           sitekey={process.env.GOOGLE_RECAPTCHA_KEY}
           onChange={() => form.setFieldValue("captcha", true)}
