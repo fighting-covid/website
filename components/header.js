@@ -93,6 +93,13 @@ const Header = () => {
               onClick={() => {
                 setActive(false);
               }}
+            />
+            <NavLink
+              href="/ppe-make"
+              title="Make PPE"
+              onClick={() => {
+                setActive(false);
+              }}
               end={true}
             />
           </div>
