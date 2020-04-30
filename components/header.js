@@ -64,7 +64,9 @@ const Header = () => {
               isActive ? "bg-light px-4" : ""
             }`}
           >
-            <NavLink
+          </div>
+          <div className={`text-lg ${isActive ? "bg-light p-4 -mt-4" : ""}`}>
+          <NavLink
               href="/about"
               title="About"
               onClick={() => {
@@ -78,8 +80,6 @@ const Header = () => {
                 setActive(false);
               }}
             />
-          </div>
-          <div className={`text-lg ${isActive ? "bg-light p-4 -mt-4" : ""}`}>
             <NavLink
               href="/ppe-request"
               title="Request PPE"
