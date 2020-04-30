@@ -23,7 +23,8 @@ const PPEMakePage = ({ data }) => {
             {"Face Shield"}
           </h3>
           <STLViewer
-            url="../assets/stl/face_shield.stl"
+            //url="/assets/stl/face_shield.stl"
+            url="https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl"
             width={400}
             height={400}
             modelColor='#B92C2C'
@@ -32,7 +33,7 @@ const PPEMakePage = ({ data }) => {
             orbitControls={true}
           />
           <Markdown className="markdown-body">
-          [Download](https://media.prusaprinters.org/media/prints/25857/stls/270587_b59f75d0-4b8a-4999-8417-e5e75874ff98/covid19_headband_rc3.stl#_ga=2.218821466.21577498.1588191792-1277063434.1588191792)
+          [Download this file](https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl)
           </Markdown>
         </section>
       </main>
