@@ -18,6 +18,7 @@ const NavLink = ({ href, title, onClick, end }) => (
 
 const Header = () => {
   const [isActive, setActive] = useState(false);
+  const [isInvolvedActive, setInvolvedActive] = useState(false);
   return (
     <>
       <div className="h-24 md:h-32"></div>
@@ -31,6 +32,7 @@ const Header = () => {
             <a
               onClick={() => {
                 setActive(false);
+                setInvolvedActive(false);
               }}
               className="flex items-center font-bold text-2xl tracking-tight"
             >
@@ -63,14 +65,14 @@ const Header = () => {
             className={`text-lg lg:flex-grow ${
               isActive ? "bg-light px-4" : ""
             }`}
-          >
-          </div>
-          <div className={`text-lg ${isActive ? "bg-light p-4 -mt-4" : ""}`}>
-          <NavLink
+          ></div>
+          <div className={`text-lg ${isActive ? "bg-light p-4 pt-2" : ""}`}>
+            <NavLink
               href="/about"
               title="About"
               onClick={() => {
                 setActive(false);
+                setInvolvedActive(false);
               }}
             />
             <NavLink
@@ -78,23 +80,58 @@ const Header = () => {
               title="Contact"
               onClick={() => {
                 setActive(false);
+                setInvolvedActive(false);
               }}
             />
-            <NavLink
-              href="/ppe-request"
-              title="Request PPE"
+            <button
+              className={`trans block mt-4 lg:inline-block lg:mt-0 bg-accent p-2 ${
+                isInvolvedActive && !isActive ? "rounded-t-md" : "rounded-md"
+              } text-light hover:text-white`}
               onClick={() => {
-                setActive(false);
+                setInvolvedActive(!isInvolvedActive);
               }}
-            />
-            <NavLink
-              href="/ppe-donate"
-              title="Donate PPE"
-              onClick={() => {
-                setActive(false);
-              }}
-              end={true}
-            />
+            >
+              Get Involved!
+            </button>
+            <ul
+              className={`${
+                isInvolvedActive ? "" : "hidden"
+              }  bg-light rounded-b-md ${
+                isActive ? "relative list-disc" : "absolute p-2 text-center"
+              }`}
+              style={isActive ? { left: "2rem" } : { right: "2rem" }}
+            >
+              <li className="text-accent">
+                <span>
+                  <NavLink
+                    href="/ppe-request"
+                    title="Request PPE"
+                    onClick={() => {
+                      setActive(false);
+                      setInvolvedActive(false);
+                    }}
+                    end={true}
+                  />
+                </span>
+              </li>
+              <li
+                className={`${
+                  isInvolvedActive && !isActive ? "mt-2" : ""
+                } text-accent`}
+              >
+                <span>
+                  <NavLink
+                    href="/ppe-donate"
+                    title="Donate PPE"
+                    onClick={() => {
+                      setActive(false);
+                      setInvolvedActive(false);
+                    }}
+                    end={true}
+                  />
+                </span>
+              </li>
+            </ul>
           </div>
         </nav>
         <style jsx>{`
