@@ -84,12 +84,11 @@ const Header = () => {
               }}
             />
             <button
-              className={`trans block mt-4 lg:inline-block lg:mt-0 bg-accent p-2 ${
+              className={`trans block mt-4 lg:inline-block lg:mt-0 bg-accent p-2 pt-1 ${
                 isInvolvedActive && !isActive ? "rounded-t-md" : "rounded-md"
               } text-light hover:text-white`}
-              onClick={() => {
-                setInvolvedActive(!isInvolvedActive);
-              }}
+              onClick={() => setInvolvedActive(!isInvolvedActive)}
+              // onMouseEnter={() => setInvolvedActive(true)}
             >
               Get Involved!
             </button>
@@ -100,6 +99,7 @@ const Header = () => {
                 isActive ? "relative list-disc" : "absolute p-2 text-center"
               }`}
               style={isActive ? { left: "2rem" } : { right: "2rem" }}
+              // onMouseLeave={() => setInvolvedActive(false)}
             >
               <li className="text-accent">
                 <span>
