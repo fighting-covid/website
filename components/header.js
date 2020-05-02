@@ -131,6 +131,23 @@ const Header = () => {
                   />
                 </span>
               </li>
+              <li
+                className={`${
+                  isInvolvedActive && !isActive ? "mt-2" : ""
+                } text-accent`}
+              >
+                <span>
+                  <NavLink
+                    href="/ppe-make"
+                    title="Make PPE"
+                    onClick={() => {
+                      setActive(false);
+                      setInvolvedActive(false);
+                    }}
+                    end={true}
+                  />
+                </span>
+              </li>
             </ul>
           </div>
         </nav>
