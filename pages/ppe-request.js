@@ -11,7 +11,7 @@ const PPERequestPage = ({ data }) => (
         <iframe
           className="h-full"
           src="https://docs.google.com/forms/d/e/1FAIpQLSfDdXO8zSeozASqR8GUQDwsmXvUPbx1BGUveNh1Yu8fm7omuQ/viewform?usp=sf_link&embedded=true"
-          width="100%"
+          width="99%"
           frameBorder="0"
           marginHeight="0"
           marginWidth="0"

@@ -11,7 +11,7 @@ const PPEDonatePage = ({ data }) => (
         <iframe
           className="h-full"
           src="https://docs.google.com/forms/d/e/1FAIpQLSdsR-DkQwiTmll-QVtj4bvS4wR5asK6vX1a3DzlOGSduXX7Xg/viewform?usp=sf_link&embedded=true"
-          width="100%"
+          width="99%"
           frameBorder="0"
           marginHeight="0"
           marginWidth="0"
