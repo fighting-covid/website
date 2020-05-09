@@ -88,6 +88,7 @@ const Header = () => {
                 isInvolvedActive && !isActive ? "rounded-t-md" : "rounded-md"
               } text-light hover:text-white`}
               onClick={() => setInvolvedActive(!isInvolvedActive)}
+              style={{ outline: "none" }}
               // onMouseEnter={() => setInvolvedActive(true)}
             >
               Get Involved!
