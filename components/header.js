@@ -43,10 +43,14 @@ const Header = () => {
         </div>
         <div className="block lg:hidden">
           <button
-            onClick={() => setActive(!isActive)}
+            onClick={() => {
+              setActive(!isActive);
+              setInvolvedActive(false);
+            }}
             className={`hamburger hamburger--3dxy ${
               isActive ? "is-active" : ""
             }`}
+            style={{ outline: "none" }}
             aria-label="Menu"
             aria-controls="navigation"
             type="button"
@@ -58,7 +62,9 @@ const Header = () => {
         </div>
         <nav
           className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${
-            isActive ? "block absolute inset-0 mt-20 flex-col" : "hidden"
+            isActive
+              ? "block absolute inset-0 mt-24 md:mt-32 flex-col"
+              : "hidden"
           } `}
         >
           <div
@@ -66,7 +72,9 @@ const Header = () => {
               isActive ? "bg-light px-4" : ""
             }`}
           ></div>
-          <div className={`text-lg ${isActive ? "bg-light p-4 pt-2" : ""}`}>
+          <div
+            className={`text-lg ${isActive ? "bg-light p-4 pt-2 -mt-4" : ""}`}
+          >
             <NavLink
               href="/about"
               title="About"
