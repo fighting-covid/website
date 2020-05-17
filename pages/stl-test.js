@@ -20,7 +20,8 @@ const STL = ({ data }) => {
                     </Markdown>
                     <br></br>
                     <STLViewer
-                        url='https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Surgical%20Mask%20Band%20for%20Ear%20Comfort%20-%20Extra%20Security_2.STL'
+                        //url='https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Surgical%20Mask%20Band%20for%20Ear%20Comfort%20-%20Extra%20Security_2.STL'
+                        url='earband.STL'
                         width={400}
                         height={400}
                         modelColor='#B92C2C'
