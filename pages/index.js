@@ -47,8 +47,12 @@ const HomePage = ({ data }) => {
           >
             <div>
               <p className="text-center font-bold font-serif md:text-5xl text-4xl pb-4">
-                {data.title.split(" ").map((word) => (
-                  <span className="heading" style={{ marginBottom: "0.5rem" }}>
+                {data.title.split(" ").map((word, i) => (
+                  <span
+                    key={i}
+                    className="heading"
+                    style={{ marginBottom: "0.5rem" }}
+                  >
                     {word}&nbsp;
                   </span>
                 ))}
