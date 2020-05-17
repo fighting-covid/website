@@ -21,8 +21,8 @@ export default async (req, res) => {
         // Convert the row data into an array
         const d = row._rawData;
         // Only push if the fields are defined
-        if (d[2] && d[7] && d[8])
-          data.push({ name: d[2], masks: d[7], shields: d[8] });
+        if (d[0] && d[7] && d[8])
+          data.push({ name: d[0], masks: d[7], shields: d[8] });
       });
 
       res.statusCode = 200;
