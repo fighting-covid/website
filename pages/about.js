@@ -38,7 +38,7 @@ const AboutPage = ({ data }) => {
               <div className="flex flex-wrap">
                 {team.members.map((member) => (
                   <div
-                    className="lg:w-1/6 md:w-1/4 sm:w-1/3 w-1/2"
+                    className="lg:w-1/6 md:w-1/4 sm:w-1/3 w-1/2 flex justify-center items-center mb-4"
                     key={
                       member.hasOwnProperty("link")
                         ? member.name.replace(" ", "-").toLowerCase()
@@ -49,13 +49,17 @@ const AboutPage = ({ data }) => {
                       <a
                         href={member.link}
                         target="_blank"
-                        className="border-b-2 border-gray-500 inline-block mb-3"
+                        className="text-lg text-center border-b-2 border-gray-500 inline-block mb-3"
                       >
-                        {member.name}
+                        {member.name.split(" ")[0]}
+                        <br />
+                        {member.name.split(" ")[1]}
                       </a>
                     ) : (
-                      <p className="border-b-2 border-gray-500 inline-block mb-3">
-                        {member}
+                      <p className="text-lg text-center border-b-2 border-gray-500 inline-block mb-3">
+                        {member.split(" ")[0]}
+                        <br />
+                        {member.split(" ")[1]}
                       </p>
                     )}
                   </div>
