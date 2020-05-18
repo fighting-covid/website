@@ -19,6 +19,10 @@ export default async (req, res) => {
       let data = [];
       rows.forEach((row) => {
         // Convert the row data into an array
+        console.log(row);
+        console.log("name", row["Name of organization"]);
+        console.log("facemasks", row["Face Masks"]);
+        console.log("shields", row["Face Shields Remaining"]);
         const d = row._rawData;
         // Only push if the fields are defined
         if (d[0] && d[7] && d[8])
