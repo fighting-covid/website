@@ -56,11 +56,11 @@ const AboutPage = ({ data }) => {
                         {member.name.split(" ")[1]}
                       </a>
                     ) : (
-                      <h4 className="text-lg text-center border-b-2 border-gray-500 inline-block mb-3">
+                      <p className="text-lg text-center border-b-2 border-gray-500 inline-block mb-3">
                         {member.split(" ")[0]}
                         <br />
                         {member.split(" ")[1]}
-                      </h4>
+                      </p>
                     )}
                   </div>
                 ))}
