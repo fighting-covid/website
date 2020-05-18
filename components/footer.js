@@ -1,4 +1,4 @@
-import { FiInstagram, FiFacebook } from "react-icons/fi";
+import { FiInstagram, FiFacebook, FiYoutube } from "react-icons/fi";
 
 const Footer = () => (
   <footer className="p-8 bg-dark text-light flex">
@@ -7,11 +7,23 @@ const Footer = () => (
       All rights reserved.
     </div>
     <div className="md:w-1/2 w-full flex justify-end text-2xl">
-      <a className="mx-2" href="https://www.facebook.com/projectycro/">
+      <a
+        className="mx-2 hover:text-accent"
+        href="https://www.facebook.com/projectycro/"
+      >
         <FiFacebook />
       </a>
-      <a className="mx-2" href="https://www.instagram.com/projectycro/?hl=en">
+      <a
+        className="mx-2 hover:text-accent"
+        href="https://www.instagram.com/projectycro/?hl=en"
+      >
         <FiInstagram />
+      </a>
+      <a
+        className="mx-2 hover:text-accent"
+        href="https://www.youtube.com/channel/UCZZLQHUgUszM7kCv03WckpA/featured"
+      >
+        <FiYoutube />
       </a>
     </div>
   </footer>
