@@ -5,6 +5,52 @@ import path from "path";
 import Markdown from "react-markdown";
 import SEO from "../components/seo";
 
+const Team = ({ team }) => {
+  const key = team.title.replace(" ", "-".toLowerCase());
+
+  return (
+    <div className="mb-8" key={key}>
+      <h3 className="font-serif text-3xl font-bold mb-2">{team.title}</h3>
+      <h4 className="text-lg mb-4">
+        {team.description && (
+          <Markdown className="markdown-body">{team.description}</Markdown>
+        )}
+      </h4>
+      <div className="flex flex-wrap">
+        {team.members.map((member) => (
+          <Member member={member} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const Member = ({ member }) => {
+  const linkStyle = "text-lg border-b-2 border-gray-500 block";
+  const hasLink = member.hasOwnProperty("link");
+  const key = (hasLink ? member.name : member).replace(" ", "-").toLowerCase();
+
+  return (
+    <div
+      className="lg:w-1/4 md:w-1/3 sm:w-1/2 w-full flex items-center mb-4"
+      key={key}
+    >
+      {hasLink ? (
+        <a
+          href={member.link}
+          target="_blank"
+          rel="noopener"
+          className={linkStyle}
+        >
+          {member.name}
+        </a>
+      ) : (
+        <p className={linkStyle}>{member}</p>
+      )}
+    </div>
+  );
+};
+
 const AboutPage = ({ data }) => {
   return (
     <>
@@ -21,51 +67,7 @@ const AboutPage = ({ data }) => {
             The Members
           </h2>
           {data.teams.map((team) => (
-            <div
-              key={team.title.replace(" ", "-").toLowerCase()}
-              className="mb-8"
-            >
-              <h3 className="font-serif text-3xl font-bold mb-2">
-                {team.title}
-              </h3>
-              <h4 className="text-lg mb-4">
-                {team.description ? (
-                  <Markdown className="markdown-body">
-                    {team.description}
-                  </Markdown>
-                ) : null}
-              </h4>
-              <div className="flex flex-wrap">
-                {team.members.map((member) => (
-                  <div
-                    className="lg:w-1/6 md:w-1/4 sm:w-1/3 w-1/2 flex justify-center items-center mb-4"
-                    key={
-                      member.hasOwnProperty("link")
-                        ? member.name.replace(" ", "-").toLowerCase()
-                        : member.replace(" ", "-").toLowerCase()
-                    }
-                  >
-                    {member.hasOwnProperty("link") ? (
-                      <a
-                        href={member.link}
-                        target="_blank"
-                        className="text-lg text-center border-b-2 border-gray-500 inline-block mb-3"
-                      >
-                        {member.name.split(" ")[0]}
-                        <br />
-                        {member.name.split(" ")[1]}
-                      </a>
-                    ) : (
-                      <p className="text-lg text-center border-b-2 border-gray-500 inline-block mb-3">
-                        {member.split(" ")[0]}
-                        <br />
-                        {member.split(" ")[1]}
-                      </p>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
+            <Team team={team} />
           ))}
         </section>
       </main>
