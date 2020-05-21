@@ -33,7 +33,7 @@ const Acknowledgments = ({ data }) => {
                             </h2>
                         </div>
                         <Markdown className="markdown-body text-lg">
-                            {"3D for COVID is a nationwide community of volunteers and independent producers of life-saving PPE for first-responders. Nearly 1500 members strong, the organization worked to produce face shields, complementing our own supply and helping YCRO fulfill requests faster."}
+                            {"3D for COVID is a nationwide community of volunteers and independent producers of life-saving PPE for first-responders. Nearly 1500 members strong, the organization is working to produce face shields, complementing our own supply and helping YCRO fulfill requests faster."}
                         </Markdown>
                     </div>
                 </section>
@@ -48,7 +48,7 @@ const Acknowledgments = ({ data }) => {
                             </h2>
                         </div>
                         <Markdown className="markdown-body text-lg">
-                            {"While the libraries have been closed, FCPL has sought out opportunities to contribute to the community. Library staff have made many masks for public use, helped assemble face shields, and 3d printed a number of different items for healthcare professionals’ use. We are glad they have chosen to work with Project YCRO to supply needed personal protective equipment. The following library branches have been 3d printing for YCRO: Centreville, John Marshall, Kings Park, Oakton, Pohick, Reston, Richard Byrd, Thomas Jefferson, Tysons-Pimmit and Woodrow Wilson."}
+                            {"While the libraries have been closed, FCPL has sought out opportunities to contribute to the community. Library staff have made many masks for public use, helped assemble face shields, and 3D printed a number of different items for healthcare professionals’ use. We are glad they have chosen to work with Project YCRO to supply needed personal protective equipment. The following library branches have been 3D printing for YCRO: Centreville, John Marshall, Kings Park, Oakton, Pohick, Reston, Richard Byrd, Thomas Jefferson, Tysons-Pimmit and Woodrow Wilson."}
                         </Markdown>
                     </div>
                 </section>
@@ -63,7 +63,7 @@ const Acknowledgments = ({ data }) => {
                             </h2>
                         </div>
                         <Markdown className="markdown-body text-lg">
-                            {"YCRO was worked with the Northern VA chapter of Masks for Docs in collaborating to deliver sewn masks to our healthcare workers."}
+                            {"YCRO has worked with the Northern VA chapter of Masks for Docs to deliver sewn masks to healthcare workers."}
                         </Markdown>
                     </div>
                 </section>
@@ -78,7 +78,7 @@ const Acknowledgments = ({ data }) => {
                             </h2>
                         </div>
                         <Markdown className="markdown-body text-lg">
-                            {"The Open Source COVID-19 Medical Supplies group contained a plethora of information that helped YCRO as it was getting started."}
+                            {"The Open Source COVID-19 Medical Supplies group contains a plethora of information that helped YCRO as it was getting started."}
                         </Markdown>
                     </div>
                 </section>

@@ -9,7 +9,7 @@ const NavLink = ({ href, title, onClick, end }) => (
       onClick={onClick}
       className={`trans block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-dark ${
         end || false ? "" : "mr-4"
-      }`}
+        }`}
     >
       {title}
     </a>
@@ -49,7 +49,7 @@ const Header = () => {
             }}
             className={`hamburger hamburger--3dxy ${
               isActive ? "is-active" : ""
-            }`}
+              }`}
             style={{ outline: "none" }}
             aria-label="Menu"
             aria-controls="navigation"
@@ -65,12 +65,12 @@ const Header = () => {
             isActive
               ? "block absolute inset-0 mt-24 md:mt-32 flex-col"
               : "hidden"
-          } `}
+            } `}
         >
           <div
             className={`text-lg lg:flex-grow ${
               isActive ? "bg-light px-4" : ""
-            }`}
+              }`}
           ></div>
           <div
             className={`text-lg ${isActive ? "bg-light p-4 pt-2 -mt-4" : ""}`}
@@ -92,24 +92,32 @@ const Header = () => {
                 setInvolvedActive(false);
               }}
             />
+            <NavLink
+              href="/acknowledgments"
+              title="Acknowledgments"
+              onClick={() => {
+                setActive(false);
+                setInvolvedActive(false);
+              }}
+            />
             <button
               className={`trans block mt-4 lg:inline-block lg:mt-0 bg-accent p-2 pt-1 ${
                 isInvolvedActive && !isActive ? "rounded-t-md" : "rounded-md"
-              } text-light hover:text-white`}
+                } text-light hover:text-white`}
               onClick={() => setInvolvedActive(!isInvolvedActive)}
               style={{ outline: "none" }}
-              // onMouseEnter={() => setInvolvedActive(true)}
+            // onMouseEnter={() => setInvolvedActive(true)}
             >
               Get Involved!
             </button>
             <ul
               className={`${
                 isInvolvedActive ? "" : "hidden"
-              }  bg-light rounded-b-md ${
+                }  bg-light rounded-b-md ${
                 isActive ? "relative list-disc" : "absolute p-2 text-center"
-              }`}
+                }`}
               style={isActive ? { left: "2rem" } : { right: "2rem" }}
-              // onMouseLeave={() => setInvolvedActive(false)}
+            // onMouseLeave={() => setInvolvedActive(false)}
             >
               <li className="text-accent">
                 <span>
@@ -127,7 +135,7 @@ const Header = () => {
               <li
                 className={`${
                   isInvolvedActive && !isActive ? "mt-2" : ""
-                } text-accent`}
+                  } text-accent`}
               >
                 <span>
                   <NavLink
@@ -144,7 +152,7 @@ const Header = () => {
               <li
                 className={`${
                   isInvolvedActive && !isActive ? "mt-2" : ""
-                } text-accent`}
+                  } text-accent`}
               >
                 <span>
                   <NavLink
