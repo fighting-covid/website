@@ -10,6 +10,7 @@ import ReactGA from 'react-ga';
 ReactGA.initialize('UA-167321699-1');
 ReactGA.pageview('/acknowledgments');
 
+
 const Acknowledgments = ({ data }) => {
     return (
         <>
