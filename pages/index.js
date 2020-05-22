@@ -17,6 +17,9 @@ import {
   LabelList,
 } from "recharts";
 import SEO from "../components/seo";
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-167321699-1');
+ReactGA.pageview('/');
 
 const HomePage = ({ data }) => {
   const [graphData, setGraphData] = useState(null);
