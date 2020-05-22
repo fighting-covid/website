@@ -9,6 +9,9 @@ import Markdown from "react-markdown";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import ReCAPTCHA from "react-google-recaptcha";
 import SEO from "../components/seo";
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-167321699-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const FormField = ({ title, type }) => (
   <div className="mb-4">

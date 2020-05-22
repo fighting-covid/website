@@ -5,6 +5,9 @@ import osms from '../assets/images/osms.jpg';
 import fcpl from '../assets/images/fcpl2.jpg';
 import covid from '../assets/images/3d.jpg';
 import mfd from '../assets/images/mfd.jpg'
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-167321699-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const Acknowledgments = ({ data }) => {
     return (
