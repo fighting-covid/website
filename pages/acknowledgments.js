@@ -68,7 +68,7 @@ const Acknowledgments = ({ data }) => {
                             </h2>
                         </div>
                         <Markdown className="markdown-body text-lg">
-                            {"YCRO has worked with the Northern VA chapter of Masks for Docs to deliver sewn masks to healthcare workers."}
+                            {"YCRO has worked with the Northern VA chapter of Masks for Docs to coordinate deliveries of face shields and ear savers to healthcare workers."}
                         </Markdown>
                     </div>
                 </section>
