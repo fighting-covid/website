@@ -5,6 +5,7 @@ import osms from '../assets/images/osms.jpg';
 import fcpl from '../assets/images/fcpl2.jpg';
 import covid from '../assets/images/3d.jpg';
 import mfd from '../assets/images/mfd.jpg'
+import mn from '../assets/images/mn.jpg'
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('UA-167321699-1');
@@ -69,6 +70,19 @@ const Acknowledgments = ({ data }) => {
                         </div>
                         <Markdown className="markdown-body text-lg">
                             {"YCRO has worked with the Northern VA chapter of Masks for Docs to coordinate deliveries of face shields and ear savers to healthcare workers."}
+                        </Markdown>
+                    </div>
+                </section>
+                <section className="md:p-16 p-8 flex flex-wrap-reverse">
+                    <img src={mn} alt="Mika Naraynsingh" style={{"height" : "50%", "width" : "35%"}}/>
+                    <div className="md:pl-16 py-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
+                        <div>
+                            <h2 className="font-serif font-bold md:text-4xl text-3xl heading">
+                                Mika Naraynsingh
+                            </h2>
+                        </div>
+                        <Markdown className="markdown-body text-lg">
+                            {"Ever since Mika Naraynsingh read about the PPE shortages for our frontline workers during COVID-19, she knew she had to help. As an architect at HOK DC, finding solutions came naturally so she fired up her 3D printer and got to work. With the help of her company’s laser cutter and collaborations with great organizations like Project YCRO, she and her husband Arun Ramlakhan have made and donated over 500 face shields to 15 healthcare facilities. They plan to continue helping because they believe in the power and strength of community."}
                         </Markdown>
                     </div>
                 </section>
