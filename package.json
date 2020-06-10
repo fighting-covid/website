@@ -8,6 +8,7 @@
     "start": "next start -p $PORT"
   },
   "dependencies": {
+    "@react-pdf/renderer": "^2.0.0-beta.6",
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
     "formik": "^2.1.4",
@@ -19,10 +20,12 @@
     "next-images": "^1.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-download-link": "^2.3.0",
     "react-ga": "^2.7.0",
     "react-google-recaptcha": "^2.0.1",
     "react-icons": "^3.9.0",
     "react-markdown": "^4.3.1",
+    "react-pdf": "^4.1.0",
     "recharts": "^1.8.5",
     "stl-viewer": "^0.12.0",
     "styled-components": "^5.1.0"

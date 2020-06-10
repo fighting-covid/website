@@ -2,9 +2,9 @@ import Markdown from "react-markdown";
 import SEO from "../components/seo";
 import React from 'react'
 import ReactGA from 'react-ga';
+
 ReactGA.initialize('UA-167321699-1');
 ReactGA.pageview('/ppe-make');
-
 
 const PPEMakePage = ({ data }) => {
   return (
@@ -21,18 +21,20 @@ const PPEMakePage = ({ data }) => {
             {"Help medical professionals fight COVID-19 by 3D-printing PPE at home."}
           </Markdown>
           <br></br>
+          <div style={{color: 'blue'}} dangerouslySetInnerHTML={{__html: '<a href="https://drive.google.com/uc?export=download&id=1ngG0iM11Gf9VhcNeaZRmF8A2KxxJ-aoe" download><u><b>Download the Materials and Sterilization Database for Homemade Masks</b></u></a>'}} />
+          <br></br>
           <h3 className="font-serif text-3xl font-bold mb-2">
             {"Face Shield"}
           </h3>
           <a href="https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl" style={{ color: 'blue' }}><b><u>Download this file</u></b></a>
           <br></br>
-          <div className="modelo-wrapper"> <div style={{marginBottom: '0%', width: '100%', height: '100%', paddingBottom: '56.25%', position: 'relative'}}> <div style={{position: 'absolute', top: 0, bottom: 0, left: 0, right: 0}}> <iframe src="https://app.modelo.io/embedded/7cMeZX4vg9?viewport=true&autoplay=true" style={{width: '100%', height: '100%'}} frameBorder={0}  /> </div> </div> </div>
-          <h3 className="font-serif text-3xl font-bold mb-2" style={{marginTop: '0%'}}>
+          <div className="modelo-wrapper"> <div style={{ marginBottom: '0%', width: '100%', height: '100%', paddingBottom: '56.25%', position: 'relative' }}> <div style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}> <iframe src="https://app.modelo.io/embedded/7cMeZX4vg9?viewport=true&autoplay=true" style={{ width: '100%', height: '100%' }} frameBorder={0} /> </div> </div> </div>
+          <h3 className="font-serif text-3xl font-bold mb-2" style={{ marginTop: '0%' }}>
             {"Face Mask Buckle"}
           </h3>
           <a href="https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Surgical%20Mask%20Band%20for%20Ear%20Comfort%20-%20Extra%20Security_2.STL" style={{ color: 'blue' }}><b><u>Download this file</u></b></a>
           <br></br>
-          <div className="modelo-wrapper"> <div style={{width: '100%', paddingBottom: '56.25%', position: 'relative'}}> <div style={{position: 'absolute', top: 0, bottom: 0, left: 0, right: 0}}> <iframe src="https://app.modelo.io/embedded/R7_6wlbu7K?viewport=true&autoplay=true" style={{width: '100%', height: '100%'}} frameBorder={0}   /> </div> </div> </div>
+          <div className="modelo-wrapper"> <div style={{ width: '100%', paddingBottom: '56.25%', position: 'relative' }}> <div style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}> <iframe src="https://app.modelo.io/embedded/R7_6wlbu7K?viewport=true&autoplay=true" style={{ width: '100%', height: '100%' }} frameBorder={0} /> </div> </div> </div>
           <br></br>
         </section>
       </main>
