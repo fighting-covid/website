@@ -32,7 +32,7 @@ const Acknowledgments = ({ data }) => {
                     <a href="https://3dforcovid.com/" target="_blank">
                         <img style={{width:"400px"}} src={covid} alt="3D for COVID" />
                     </a>
-                    <div className="md:pl-16 py-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
+                    <div className="md:pl-16 py-8 md:w-1/2 w-full flex flex-col md:justify-start justify-end">
                         <div>
                             <h2 className="font-serif font-bold md:text-4xl text-3xl heading">
                                 3D for COVID
@@ -47,7 +47,7 @@ const Acknowledgments = ({ data }) => {
                     <a href="https://www.fairfaxcounty.gov/library/" target="_blank">
                         <img style={{width:"400px"}}  src={fcpl} alt="Fairfax County Public Libraries" />
                     </a>
-                    <div className="md:pl-16 py-8 md:w-1/2 w-full flex flex-col md:justify-start ">
+                    <div className="md:pl-16 py-8 md:w-1/2 w-full flex flex-col md:justify-start justify-end">
                         <div>
                             <h2 className="font-serif font-bold md:text-4xl text-3xl heading">
                                 Fairfax County Public Libraries
@@ -82,7 +82,7 @@ const Acknowledgments = ({ data }) => {
                             </h2>
                         </div>
                         <Markdown className="markdown-body text-lg" >
-                            {"Ever since Mika Naraynsingh read about the PPE shortages for our frontline workers during COVID-19, she knew she had to help. As an architect at HOK DC, she fired up her 3D printer and got to work. With the help of her company’s laser cutter and collaborations with great organizations like Project YCRO, she and her husband, Arun Ramlakhan, have made and donated over 500 face shields to 15 healthcare facilities.xw"}
+                            {"Ever since Mika Naraynsingh read about the PPE shortages for our frontline workers during COVID-19, she knew she had to help. As an architect at HOK DC, finding solutions came naturally to her. With the help of her company’s laser cutter and collaborations with great organizations like Project YCRO, she and her husband Arun Ramlakhan have made and donated over 500 face shields to 15 healthcare facilities."}
                         </Markdown>
                     </div>
                 </section>
@@ -90,7 +90,7 @@ const Acknowledgments = ({ data }) => {
                     <a href="https://www.facebook.com/groups/opensourcecovid19medicalsupplies/" target="_blank">
                         <img style={{width:"400px"}}  src={osms} alt="Open Source COVID19 Medical Supplies" />
                     </a>
-                    <div className="md:pl-16 py-8 md:w-1/2 w-full flex flex-col md:justify-start justify-end ">
+                    <div className="md:pl-16 py-8 md:w-1/2 w-full flex flex-col md:justify-start justify-end">
                         <div>
                             <h2 className="font-serif font-bold md:text-4xl text-3xl heading">
                                 Open Source COVID-19 Medical Supplies
