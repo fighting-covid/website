@@ -7,7 +7,7 @@ const NavLink = ({ href, title, onClick, end }) => (
   <Link href={href}>
     <a
       onClick={onClick}
-      className={`trans block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-dark ${
+      className={`trans block mt-4 lg:inline-block lg:mt-0 text-light hover:text-dark ${
         end || false ? "" : "mr-4"
         }`}
     >
@@ -24,7 +24,7 @@ const Header = () => {
       <div className="h-24 md:h-32"></div>
       <header
         id="header"
-        className="flex items-center justify-between flex-wrap p-4 md:p-8 h-24 md:h-32 w-full fixed bg-light"
+        className="flex items-center justify-between flex-wrap p-4 md:p-8 h-24 md:h-32 w-full text-light fixed bg-dark"
         style={{ minHeight: "6rem", zIndex: "1" }}
       >
         <div className="flex-shrink-0 lg:mr-8">
