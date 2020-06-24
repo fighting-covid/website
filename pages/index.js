@@ -38,7 +38,7 @@ const HomePage = ({ data }) => {
         <section className="md:mb-16 relative p-8 md:p-16">
           <img
             className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
-            src="https://lookinside.kaiserpermanente.org/wp-content/uploads/2020/03/032420_donations_LIKP.jpg"
+            src="https://cdn.pixabay.com/photo/2020/03/26/16/11/corona-4970836__340.jpg"
             style={{
               objectPosition: "25% 50%",
               filter: "grayscale(75%)",
