@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 import Markdown from "react-markdown";
 import {
@@ -35,39 +36,29 @@ const HomePage = ({ data }) => {
     <>
       <SEO title="Home" />
       <main>
-        <section className="md:mb-16 relative p-8 md:p-16">
+        <section className="md:mb-16 relative p-8 md:p-64">
           <img
             className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
             src="https://lookinside.kaiserpermanente.org/wp-content/uploads/2020/03/032420_donations_LIKP.jpg"
-            style={{
-              objectPosition: "25% 50%",
-              filter: "grayscale(75%)",
-            }}
-          ></img>
-          <div
-            className="p-4 md:p-8 flex flex-col items-center md:justify-center relative"
-            style={{ background: "rgba(255, 255, 255, 0.9)" }}
-          >
+            style={{ objectPosition: "50% 75%" }}>
+          </img>
+          <div className="p-4 flex flex-col items-left relative">
             <div>
-              <p className="text-center font-bold font-serif md:text-5xl text-4xl pb-4">
-                {data.title.split(" ").map((word, i) => (
-                  <span
-                    key={i}
-                    className="heading"
-                    style={{ marginBottom: "0.5rem" }}
-                  >
-                    {word}&nbsp;
-                  </span>
-                ))}
+              <p className="text-left font-mono md:text-5xl text-4xl pb-4" style={{ color: "#304352" }}>
+                Youth COVID-19 Relief Organization
               </p>
             </div>
-            <div className="text-center font-sans lg:text-2xl text-xl">
-              <Markdown className="markdown-body">{data.subtitle}</Markdown>
+            <div className="text-left font-mono lg:text-2xl text-xl">
+              <p style={{ color: "#304352" }}>
+                Healthcare workers are lacking basic personal protective
+                equipment (PPE) while fighting the COVID-19 pandemic, putting themselves and their loved ones
+                in danger. Help us deliver critically needed supplies so they can safely continue saving lives.
+              </p>
             </div>
           </div>
         </section>
 
-        <section className="md:p-16 p-8 flex flex-wrap-reverse">
+        <section className="md:p-16 md:pl-40 p-8 flex flex-wrap-reverse">
           <div
             className="border-2 border-gray-500 md:w-1/2 w-full"
             style={{ height: "60vh" }}
@@ -78,33 +69,53 @@ const HomePage = ({ data }) => {
               style={{ width: "100%", height: "100%", border: "none" }}
             ></iframe>
           </div>
-          <div className="md:pl-16 py-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
+          <div className="md:pl-24 md:pr-48 pb-40 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
             <div>
-              <h2 className="font-serif font-bold md:text-4xl text-3xl heading">
-                Hospitals
+              <h2 className="font-mono md:text-4xl text-3xl" style={{ color: "#304352" }}>
+                Hospitals in Need
               </h2>
+              <br></br>
             </div>
             <Markdown className="markdown-body text-lg">
-              {data.statistics.map}
+              This map shows hospitals that we've contacted which currently need supplies.
+              Click on the location icons on the map to see more information.
             </Markdown>
+            <br></br>
+            <div>
+              <button class="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
+                <Link href="/ppe-donate">
+                  Donate PPE
+                </Link>
+              </button>
+            </div>
           </div>
         </section>
 
-        <section className="md:p-16 p-8 flex flex-wrap">
-          <div className="md:pr-16 py-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
+        <section className="md:p-16 md:pr-40 p-8 flex flex-wrap">
+          <div className="md:pr-24 md:pl-40 pb-40 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
             <div>
-              <h2 className="font-serif font-bold md:text-4xl text-3xl heading">
+              <h2 className="font-mono md:text-4xl text-3xl" style={{ color: "#304352" }}>
                 Requests
               </h2>
+              <br></br>
             </div>
             <Markdown className="markdown-body text-lg">
-              {data.statistics.graph}
+              This graph displays the quantities of sewn face masks and 3D printed face shields that
+              hospitals need. Hover over the bars for exact values.
             </Markdown>
+            <br></br>
+            <div>
+              <button class="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
+                <Link href="/ppe-request">
+                  Request PPE
+                </Link>
+              </button>
+            </div>
           </div>
 
           <div
             className="md:w-1/2 w-full flex flex-col md:justify-center justify-start"
-            style={{ height: "60vh" }}
+            style={{ height: "60vh"}}
           >
             {graphData !== null ? (
               <ResponsiveContainer width="100%" height="100%">
@@ -129,8 +140,8 @@ const HomePage = ({ data }) => {
                 </BarChart>
               </ResponsiveContainer>
             ) : (
-              <div></div>
-            )}
+                <div></div>
+              )}
           </div>
         </section>
       </main>
