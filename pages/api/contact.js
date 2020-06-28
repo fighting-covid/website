@@ -26,7 +26,7 @@ export default async (req, res) => {
         const entry = await sheet.addRow({
           Name: req.body.name,
           Email: req.body.email,
-          Message: req.body.email,
+          Message: req.body.message,
         });
         entry.save();
 
