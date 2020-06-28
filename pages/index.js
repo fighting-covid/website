@@ -90,7 +90,7 @@ const HomePage = ({ data }) => {
           </div>
         </section>
 
-        <section className="md:p-16 p-8 flex flex-wrap">
+        {/* <section className="md:p-16 p-8 flex flex-wrap">
           <div className="md:pr-16 py-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
             <div>
               <h2 className="font-serif font-bold md:text-4xl text-3xl heading">
@@ -132,7 +132,7 @@ const HomePage = ({ data }) => {
               <div></div>
             )}
           </div>
-        </section>
+        </section> */}
       </main>
     </>
   );
