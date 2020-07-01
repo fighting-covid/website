@@ -10,8 +10,29 @@ const PPEMakePage = ({ data }) => {
   return (
     <>
       <SEO title="Make PPE" />
-      <main className="container mx-auto">
-        <section className="p-8">
+      <main>
+        <section className="md:mb-16 relative p-8 md:p-64">
+          <img
+            className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
+            src="https://www.shropshirestar.com/resizer/zovJS-MCNgJb2T7VztCSWHAulG4=/1000x0/filters:quality(100)/arc-anglerfish-arc2-prod-shropshirestar-mna.s3.amazonaws.com/public/WROMR4F5T5ERFG3WNNDJGEUSJY.jpg"
+            style={{ objectPosition: "50% 25%" }}>
+          </img>
+          <div className="p-4 flex flex-col items-left relative">
+            <div>
+              <p className="text-left font-mono md:text-5xl text-4xl pb-4" style={{ color: "#304352" }}>
+                Make PPE
+              </p>
+            </div>
+            <div className="text-left font-mono lg:text-2xl text-xl">
+              <p style={{ color: "#304352" }}>
+                Healthcare workers are lacking basic personal protective
+                equipment (PPE) while fighting the COVID-19 pandemic, putting themselves and their loved ones
+                in danger. Help us deliver critically needed supplies so they can safely continue saving lives.
+              </p>
+            </div>
+          </div>
+        </section>
+        {/* <section className="p-8">
           <div className="flex justify-center">
             <h2 className="text-center font-bold font-serif md:text-5xl text-4xl pb-4 heading">
               {"Make PPE at Home"}
@@ -36,7 +57,7 @@ const PPEMakePage = ({ data }) => {
           <br></br>
           <div className="modelo-wrapper"> <div style={{ width: '100%', paddingBottom: '56.25%', position: 'relative' }}> <div style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}> <iframe src="https://app.modelo.io/embedded/R7_6wlbu7K?viewport=true&autoplay=true" style={{ width: '100%', height: '100%' }} frameBorder={0} /> </div> </div> </div>
           <br></br>
-        </section>
+        </section> */}
       </main>
     </>
   );

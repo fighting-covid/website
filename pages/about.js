@@ -76,16 +76,17 @@ const AboutPage = ({ data }) => {
   return (
     <>
       <SEO title="About" />
-      <main className="container mx-auto">
-        <section className="md:mb-16 relative w-full md:p-64">
+      <main>
+        <section className="md:mb-16 relative p-8 md:p-64">
           <img
-            className="object-fill w-full bg-local bg-no-repeat bg-center absolute inset-0"
-            src="https://www.froedtert.com/sites/default/files/styles/one_column/public/image/2020-03/GettyImages-869125416_0.jpg?itok=wTTNF6vl">
+            className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
+            src="https://www.froedtert.com/sites/default/files/styles/one_column/public/image/2020-03/GettyImages-869125416_0.jpg?itok=wTTNF6vl"
+            style={{ objectPosition: "50% 75%" }}>
           </img>
           <div className="p-4 flex flex-col items-left relative">
             <div>
               <p className="text-left font-mono md:text-5xl text-4xl pb-4" style={{ color: "#304352" }}>
-                Youth COVID-19 Relief Organization
+                Our Mission
               </p>
             </div>
             <div className="text-left font-mono lg:text-2xl text-xl">

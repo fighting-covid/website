@@ -77,8 +77,24 @@ const Header = () => {
           ></div>
           <div className={`text-lg ${isActive ? "bg-light p-4 -mt-4" : ""}`}>
             <NavLink
-              href="/about"
-              title="About"
+              href="/ppe-request"
+              title="Request"
+              onClick={() => {
+                setActive(false);
+                setInvolvedActive(false);
+              }}
+            />
+            <NavLink
+              href="/ppe-donate"
+              title="Donate"
+              onClick={() => {
+                setActive(false);
+                setInvolvedActive(false);
+              }}
+            />
+            <NavLink
+              href="/ppe-make"
+              title="Make"
               onClick={() => {
                 setActive(false);
                 setInvolvedActive(false);
@@ -93,6 +109,14 @@ const Header = () => {
               }}
             />
             <NavLink
+              href="/about"
+              title="About"
+              onClick={() => {
+                setActive(false);
+                setInvolvedActive(false);
+              }}
+            />
+            <NavLink
               href="/acknowledgments"
               title="Acknowledgments"
               onClick={() => {
@@ -100,7 +124,7 @@ const Header = () => {
                 setInvolvedActive(false);
               }}
             />
-            <button
+            {/* <button
               className={`trans block mt-4 lg:inline-block lg:mt-0 bg-accent p-2 pt-1 ${
                 isInvolvedActive && !isActive ? "rounded-t-md" : "rounded-md"
                 } text-light hover:text-white`}
@@ -166,7 +190,7 @@ const Header = () => {
                   />
                 </span>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </nav>
         <style jsx>{`
