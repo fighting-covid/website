@@ -4,7 +4,7 @@ import path from "path";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-
+import background from "../assets/images/background2.jpg"
 import Markdown from "react-markdown";
 import {
   ResponsiveContainer,
@@ -39,7 +39,7 @@ const HomePage = ({ data }) => {
         <section className="md:mb-16 relative p-8 md:p-64">
           <img
             className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
-            src="https://lookinside.kaiserpermanente.org/wp-content/uploads/2020/03/032420_donations_LIKP.jpg"
+            src= {background}
             style={{ objectPosition: "50% 75%" }}>
           </img>
           <div className="p-4 flex flex-col items-left relative">

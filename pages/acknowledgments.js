@@ -29,32 +29,30 @@ const Acknowledgments = ({ data }) => {
                     <br></br>
                 </section>
                 <section className="md:p-16 p-8 flex flex-wrap-reverse">
-                    <div class="column">
-                        <img style={{ width: "400px" }} src={covid} alt="3D for COVID" />
+                    <div class="column w-1/3 pr-3 -mr-5">
+                        <img style={{ width: "100%" }} src={covid} alt="3D for COVID" />
                         <p class="center" style={{ textAlign: "center" }}><a href="https://3dforcovid.com/" target="_blank"><u>3D for COVID</u></a></p>
                     </div>
-                </section>
-                <section className="md:p-16 p-8 flex flex-wrap-reverse">
-                    <div class="column">
-                        <img style={{ width: "400px" }} src={fcpl} alt="Fairfax County Public Libraries" />
+                    <div class="column w-1/3 px-3">
+                        <img style={{ width: "100%" }} src={fcpl} alt="Fairfax County Public Libraries" />
                         <p class="center" style={{ textAlign: "center" }}><a href="https://www.fairfaxcounty.gov/library/" target="_blank"><u>FCPL</u></a></p>
                     </div>
-                </section>
-                <section className="md:p-16 p-8 flex flex-wrap-reverse">
-                    <div class="column">
-                        <img style={{ width: "400px" }} src={mfd} alt="Masks for Docs" />
+                    <div class="column w-1/3 ml-5 px-7">
+                        <img style={{ width: "100%" }} src={mfd} alt="Masks for Docs" />
                         <p class="center" style={{ textAlign: "center" }}><a href="https://masksfordocs.com" target="_blank"><u>Masks for Docs</u></a></p>
                     </div>
                 </section>
                 <section className="md:p-16 p-8 flex flex-wrap-reverse">
-                    <div class="column">
-                        <img src={mn} alt="Mika Naraynsingh" style={{ "height": "100%", "width": "400px" }} />
+                    <div class="column w-1/12">
+                    </div>
+                    <div class="column w-1/3">
+                        <img src={mn} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
                         <p class="center" style={{ textAlign: "center" }}>Mika Naraynsingh</p>
                     </div>
-                </section>
-                <section className="md:p-16 p-8 flex flex-wrap-reverse">
-                    <div class="column">
-                        <img style={{ width: "400px" }} src={osms} alt="Open Source COVID19 Medical Supplies" />
+                    <div class="column w-1/6">
+                    </div>
+                    <div class="column w-1/3">
+                        <img style={{ width: "100%" }} src={osms} alt="Open Source COVID19 Medical Supplies" />
                         <p class="center" style={{ textAlign: "center" }}><a href="https://opensourcemedicalsupplies.org/" target="_blank"><u>Open Source Medical Supplies</u></a></p>
                     </div>
                 </section>
