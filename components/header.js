@@ -7,7 +7,7 @@ const NavLink = ({ href, title, onClick, end }) => (
   <Link href={href}>
     <a
       onClick={onClick}
-      className={`trans block mt-4 lg:inline-block lg:mt-0 text-light hover:text-dark ${
+      className={`trans block mt-4 lg:inline-block lg:mt-0 text-light hover:text-gray-400 ${
         end || false ? "" : "mr-4"
         }`}
     >
