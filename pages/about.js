@@ -1,6 +1,13 @@
 import yaml from "js-yaml";
 import fs from "fs";
 import path from "path";
+import osms from '../assets/images/osms.jpg';
+import fcpl from '../assets/images/fcpl2.jpg';
+import covid from '../assets/images/3d.jpg';
+import mfd from '../assets/images/mfd.jpg'
+import mn from '../assets/images/mn.jpg'
+import donate from '../assets/images/donation.jpeg';
+import breathe from '../assets/images/breathe.jpg';
 
 import Markdown from "react-markdown";
 import SEO from "../components/seo";
@@ -107,7 +114,45 @@ const AboutPage = ({ data }) => {
           <p>{data.mission}</p>
         </section> */}
 
-        <section className="p-8 flex items-center flex flex-col">
+        <section className="md:p-16 p-8 flex flex-wrap-reverse">
+          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="3D for COVID" />
+            <p class="center" style={{ textAlign: "center" }}><a href="https://3dforcovid.com/" target="_blank"><u>3D for COVID</u></a></p>
+          </div>
+          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Fairfax County Public Libraries" />
+            <p class="center" style={{ textAlign: "center" }}><a href="https://www.fairfaxcounty.gov/library/" target="_blank"><u>FCPL</u></a></p>
+          </div>
+          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Lets Breathe" />
+            <p class="center" style={{ textAlign: "center" }}><a href="https://www.gofundme.com/f/gofundmecomfmasks-for-healthcare-heroes" target="_blank"><u>Lets Breathe</u></a></p>
+          </div>
+          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Mika Naraynsingh" style={{ "width": "100%" }} />
+            <p class="center" style={{ textAlign: "center" }}>Mika Naraynsingh</p>
+          </div>
+        </section>
+
+        <section className="md:p-16 p-8 flex flex-wrap-reverse">
+          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="3D for COVID" />
+            <p class="center" style={{ textAlign: "center" }}><a href="https://3dforcovid.com/" target="_blank"><u>3D for COVID</u></a></p>
+          </div>
+          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Fairfax County Public Libraries" />
+            <p class="center" style={{ textAlign: "center" }}><a href="https://www.fairfaxcounty.gov/library/" target="_blank"><u>FCPL</u></a></p>
+          </div>
+          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Lets Breathe" />
+            <p class="center" style={{ textAlign: "center" }}><a href="https://www.gofundme.com/f/gofundmecomfmasks-for-healthcare-heroes" target="_blank"><u>Lets Breathe</u></a></p>
+          </div>
+          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Mika Naraynsingh" style={{ "width": "100%" }} />
+            <p class="center" style={{ textAlign: "center" }}>Mika Naraynsingh</p>
+          </div>
+        </section>
+
+        {/* <section className="p-8 flex items-center flex flex-col">
           <h2 className="font-mono md:text-5xl" style={{ color: "#304352" }}>
             Our Team
           </h2>
@@ -164,7 +209,7 @@ const AboutPage = ({ data }) => {
               </img>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
     </>
   );
