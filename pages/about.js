@@ -115,40 +115,40 @@ const AboutPage = ({ data }) => {
         </section> */}
 
         <section className="md:p-16 p-8 flex flex-wrap-reverse">
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+          <div class="flex-1 w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
             <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="3D for COVID" />
-            <p class="center" style={{ textAlign: "center" }}><a href="https://3dforcovid.com/" target="_blank"><u>3D for COVID</u></a></p>
+            <p class="center" style={{ textAlign: "center", fontSize: "20px", color: "white" }}>Web Development</p>
           </div>
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+          <div class="flex-1 w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
             <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Fairfax County Public Libraries" />
-            <p class="center" style={{ textAlign: "center" }}><a href="https://www.fairfaxcounty.gov/library/" target="_blank"><u>FCPL</u></a></p>
+            <p class="center" style={{ textAlign: "center", fontSize: "20px", color: "white" }}>Sewing</p>
           </div>
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+          <div class="flex-1 w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
             <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Lets Breathe" />
-            <p class="center" style={{ textAlign: "center" }}><a href="https://www.gofundme.com/f/gofundmecomfmasks-for-healthcare-heroes" target="_blank"><u>Lets Breathe</u></a></p>
+            <p class="center" style={{ textAlign: "center", fontSize: "20px", color: "white" }}>3D Printing</p>
           </div>
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+          <div class="flex-1 w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
             <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Mika Naraynsingh" style={{ "width": "100%" }} />
-            <p class="center" style={{ textAlign: "center" }}>Mika Naraynsingh</p>
+            <p class="center" style={{ textAlign: "center", fontSize: "20px", color: "white" }}>Publicity</p>
           </div>
         </section>
 
         <section className="md:p-16 p-8 flex flex-wrap-reverse">
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+          <div class="flex-1 w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
             <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="3D for COVID" />
-            <p class="center" style={{ textAlign: "center" }}><a href="https://3dforcovid.com/" target="_blank"><u>3D for COVID</u></a></p>
+            <p class="center" style={{ textAlign: "center", fontSize: "20px", color: "white" }}>Funds</p>
           </div>
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+          <div class="flex-1 w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
             <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Fairfax County Public Libraries" />
-            <p class="center" style={{ textAlign: "center" }}><a href="https://www.fairfaxcounty.gov/library/" target="_blank"><u>FCPL</u></a></p>
+            <p class="center" style={{ textAlign: "center", fontSize: "20px", color: "white" }}>Outreach</p>
           </div>
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+          <div class="flex-1 w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
             <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Lets Breathe" />
-            <p class="center" style={{ textAlign: "center" }}><a href="https://www.gofundme.com/f/gofundmecomfmasks-for-healthcare-heroes" target="_blank"><u>Lets Breathe</u></a></p>
+            <p class="center" style={{ textAlign: "center", fontSize: "20px", color: "white" }}>Tutorials</p>
           </div>
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+          <div class="flex-1 w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
             <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Mika Naraynsingh" style={{ "width": "100%" }} />
-            <p class="center" style={{ textAlign: "center" }}>Mika Naraynsingh</p>
+            <p class="center" style={{ textAlign: "center", fontSize: "20px", color: "white" }}>2D Printing</p>
           </div>
         </section>
 
