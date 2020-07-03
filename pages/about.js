@@ -18,6 +18,7 @@ import funds from '../assets/images/funds.jpg';
 import tutorials from '../assets/images/tutorials.jpg';
 import background from '../assets/images/masks_darkened.jpg';
 import Markdown from "react-markdown";
+import Popup from "reactjs-popup";
 import SEO from "../components/seo";
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-167321699-1');
@@ -121,10 +122,43 @@ const AboutPage = ({ data }) => {
         </section> */}
 
         <section className="md:p-16 p-8 flex flex-wrap-reverse">
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src={webdev} alt="3D for COVID" />
-            <p class="center" style={{ textAlign: "center" }}>Web Development</p>
-          </div>
+
+          <Popup trigger={
+            <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+              <img style={{ width: "100%" }} src={webdev} alt="3D for COVID" />
+              <p class="center" style={{ textAlign: "center" }}>Web Development</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal">
+                <a className="close" onClick={close}>
+                  &times;
+                </a>
+                <h2 style={{ textAlign: "center" }}>Web Development</h2>
+                <div className="content">
+                  <br></br>The Web Development team has been working hard to create a platform to host our network and share our progress and research with the community. Their work has led to the creation of this website.
+                </div>
+                <br></br>
+                <div className="content">
+                  Leads: Aryan Chinnala and Varun Chilukuri
+                </div>
+                <div className="content">
+                  Team: Nuha Mohammed, Ron Nachum, Aaryan Dave, Sarah Zhang
+                </div>
+                <br></br>
+                <div class="w-1/2">
+                  <button
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    onClick={() => {
+                      close();
+                    }}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            )}
+          </Popup>
           <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
             <img style={{ width: "100%" }} src={sewing} alt="Fairfax County Public Libraries" />
             <p class="center" style={{ textAlign: "center" }}>Sewing</p>
