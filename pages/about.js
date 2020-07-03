@@ -8,7 +8,15 @@ import mfd from '../assets/images/mfd.jpg'
 import mn from '../assets/images/mn.jpg'
 import donate from '../assets/images/donation.jpeg';
 import breathe from '../assets/images/breathe.jpg';
-
+import outreach from '../assets/images/outreach.jpg';
+import publicity from '../assets/images/publicity.jpg';
+import sewing from '../assets/images/sewing.jpg';
+import webdev from '../assets/images/webdev.jpeg';
+import dprinting from '../assets/images/3dprinting.jpg';
+import eprinting from '../assets/images/2dprinting.jpg';
+import funds from '../assets/images/funds.jpg';
+import tutorials from '../assets/images/tutorials.jpg';
+import background from '../assets/images/masks_darkened.jpg';
 import Markdown from "react-markdown";
 import SEO from "../components/seo";
 import ReactGA from 'react-ga';
@@ -87,20 +95,18 @@ const AboutPage = ({ data }) => {
         <section className="md:mb-16 relative p-8 md:p-64">
           <img
             className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
-            src="https://www.froedtert.com/sites/default/files/styles/one_column/public/image/2020-03/GettyImages-869125416_0.jpg?itok=wTTNF6vl"
+            src={background}
             style={{ objectPosition: "50% 75%" }}>
           </img>
           <div className="p-4 flex flex-col items-left relative">
             <div>
-              <p className="text-left font-mono md:text-5xl text-4xl pb-4" style={{ color: "#304352" }}>
+              <p className="text-left font-mono md:text-5xl text-4xl pb-4" style={{ color: "white" }}>
                 Our Mission
               </p>
             </div>
             <div className="text-left font-mono lg:text-2xl text-xl">
-              <p style={{ color: "#304352" }}>
-                Healthcare workers are lacking basic personal protective
-                equipment (PPE) while fighting the COVID-19 pandemic, putting themselves and their loved ones
-                in danger. Help us deliver critically needed supplies so they can safely continue saving lives.
+              <p style={{ color: "white" }}>
+                We are a group of students working to connect hospitals in the DC-Maryland-Virginia region with desperately needed supplies in the wake of the COVID-19 pandemic. Our team is also working on independently producing hospital-approved Personal Protective Equipment (PPE) and other items, with the eventual vision of organizing households across the DMV into a production center to support healthcare workers during this time of crisis and shortage.
               </p>
             </div>
           </div>
@@ -116,39 +122,39 @@ const AboutPage = ({ data }) => {
 
         <section className="md:p-16 p-8 flex flex-wrap-reverse">
           <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="3D for COVID" />
-            <p class="center" style={{ textAlign: "center" }}><a href="https://3dforcovid.com/" target="_blank"><u>3D for COVID</u></a></p>
+            <img style={{ width: "100%" }} src={webdev} alt="3D for COVID" />
+            <p class="center" style={{ textAlign: "center" }}>Web Development</p>
           </div>
           <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Fairfax County Public Libraries" />
-            <p class="center" style={{ textAlign: "center" }}><a href="https://www.fairfaxcounty.gov/library/" target="_blank"><u>FCPL</u></a></p>
+            <img style={{ width: "100%" }} src={sewing} alt="Fairfax County Public Libraries" />
+            <p class="center" style={{ textAlign: "center" }}>Sewing</p>
           </div>
           <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Lets Breathe" />
-            <p class="center" style={{ textAlign: "center" }}><a href="https://www.gofundme.com/f/gofundmecomfmasks-for-healthcare-heroes" target="_blank"><u>Lets Breathe</u></a></p>
+            <img style={{ width: "100%" }} src={publicity} alt="Lets Breathe" />
+            <p class="center" style={{ textAlign: "center" }}>Publicity</p>
           </div>
           <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Mika Naraynsingh" style={{ "width": "100%" }} />
-            <p class="center" style={{ textAlign: "center" }}>Mika Naraynsingh</p>
+            <img style={{ width: "100%" }} src={dprinting} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
+            <p class="center" style={{ textAlign: "center" }}>3D Printing</p>
           </div>
         </section>
 
         <section className="md:p-16 p-8 flex flex-wrap-reverse">
           <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="3D for COVID" />
-            <p class="center" style={{ textAlign: "center" }}><a href="https://3dforcovid.com/" target="_blank"><u>3D for COVID</u></a></p>
+            <img style={{ width: "100%" }} src={funds} alt="3D for COVID" />
+            <p class="center" style={{ textAlign: "center" }}>Funds</p>
           </div>
           <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Fairfax County Public Libraries" />
-            <p class="center" style={{ textAlign: "center" }}><a href="https://www.fairfaxcounty.gov/library/" target="_blank"><u>FCPL</u></a></p>
+            <img style={{ width: "100%" }} src={outreach} alt="Fairfax County Public Libraries" />
+            <p class="center" style={{ textAlign: "center" }}>Outreach</p>
           </div>
           <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Lets Breathe" />
-            <p class="center" style={{ textAlign: "center" }}><a href="https://www.gofundme.com/f/gofundmecomfmasks-for-healthcare-heroes" target="_blank"><u>Lets Breathe</u></a></p>
+            <img style={{ width: "100%" }} src={tutorials} alt="Lets Breathe" />
+            <p class="center" style={{ textAlign: "center" }}>Tutorials</p>
           </div>
           <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src="https://miro.medium.com/max/3078/1*fGv3Nm6TtYP_AC0eGa6Ejg.jpeg" alt="Mika Naraynsingh" style={{ "width": "100%" }} />
-            <p class="center" style={{ textAlign: "center" }}>Mika Naraynsingh</p>
+            <img style={{ width: "100%" }} src={eprinting} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
+            <p class="center" style={{ textAlign: "center" }}>2D Printing</p>
           </div>
         </section>
 
