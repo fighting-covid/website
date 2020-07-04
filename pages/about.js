@@ -122,9 +122,8 @@ const AboutPage = ({ data }) => {
         </section> */}
 
         <section className="md:p-16 p-8 flex flex-wrap-reverse">
-
           <Popup trigger={
-            <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
               <img style={{ width: "100%" }} src={webdev} alt="3D for COVID" />
               <p class="center" style={{ textAlign: "center" }}>Web Development</p>
             </div>
@@ -159,37 +158,266 @@ const AboutPage = ({ data }) => {
               </div>
             )}
           </Popup>
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src={sewing} alt="Fairfax County Public Libraries" />
-            <p class="center" style={{ textAlign: "center" }}>Sewing</p>
-          </div>
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src={publicity} alt="Lets Breathe" />
-            <p class="center" style={{ textAlign: "center" }}>Publicity</p>
-          </div>
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src={dprinting} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
-            <p class="center" style={{ textAlign: "center" }}>3D Printing</p>
-          </div>
+
+          <Popup trigger={
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+              <img style={{ width: "100%" }} src={sewing} alt="Fairfax County Public Libraries" />
+              <p class="center" style={{ textAlign: "center" }}>Sewing</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal">
+                <a className="close" onClick={close}>
+                  &times;
+                </a>
+                <h2 style={{ textAlign: "center" }}>Sewing</h2>
+                <div className="content">
+                  <br></br>The Sewing team is working on maximizing the comfort and effectiveness of sewn masks through material choice and stitching techniques. They have continued to work with hospitals regarding the specific needs of each facility and are aiming to ramp up production to account for the current mask shortage as soon as possible.
+                </div>
+                <br></br>
+                <div className="content">
+                  Leads: Aryan Chinnala and Varun Chilukuri
+                </div>
+                <div className="content">
+                  Team: Nuha Mohammed, Ron Nachum, Aaryan Dave, Sarah Zhang
+                </div>
+                <br></br>
+                <div class="w-1/2">
+                  <button
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    onClick={() => {
+                      close();
+                    }}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            )}
+          </Popup>
+
+          <Popup trigger={
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+              <img style={{ width: "100%" }} src={publicity} alt="Lets Breathe" />
+              <p class="center" style={{ textAlign: "center" }}>Publicity</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal">
+                <a className="close" onClick={close}>
+                  &times;
+                </a>
+                <h2 style={{ textAlign: "center" }}>Publicity</h2>
+                <div className="content">
+                  <br></br>The Publicity team's objective is to update the public about our progress as a team, as well as to educate the community on the best ways to stay safe and help out during this pandemic.
+                </div>
+                <br></br>
+                <div className="content">
+                  Leads: Kashika Dhanjal, Khushmeet Chandi, Anika Thatavarty, Jennifer Abraham
+                </div>
+                <div className="content">
+                  Team: Rhea Goswami, Akila Islam, Angie Huang, Anoushka Sarkar, Brianna Ta, Emma Cheng, Jay Siva, Krithi L. , Reva Hirave, Rhea Tammireddi, Simar N., Vyomika Ghandi
+                </div>
+                <br></br>
+                <div class="w-1/2">
+                  <button
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    onClick={() => {
+                      close();
+                    }}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            )}
+          </Popup>
+
+          <Popup trigger={
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+              <img style={{ width: "100%" }} src={dprinting} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
+              <p class="center" style={{ textAlign: "center" }}>3D Printing</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal">
+                <a className="close" onClick={close}>
+                  &times;
+                </a>
+                <h2 style={{ textAlign: "center" }}>3D Printing</h2>
+                <div className="content">
+                  <br></br>The 3D Printing team is responsible for the creation, collection, and prototyping of designs for various tools to help aid the COVID-19 relief effort, as well as the eventual mass production of said materials to be distributed to organizations in need.
+                </div>
+                <br></br>
+                <div className="content">
+                  Lead: Joshua Lian
+                </div>
+                <div className="content">
+                  Team: Tharun Saravanan, Kareem Jaber, Aaryan Dave, Ron Nachum, Daniel Lian
+                </div>
+                <br></br>
+                <div class="w-1/2">
+                  <button
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    onClick={() => {
+                      close();
+                    }}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            )}
+          </Popup>
         </section>
 
         <section className="md:p-16 p-8 flex flex-wrap-reverse">
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src={funds} alt="3D for COVID" />
-            <p class="center" style={{ textAlign: "center" }}>Funds</p>
-          </div>
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src={outreach} alt="Fairfax County Public Libraries" />
-            <p class="center" style={{ textAlign: "center" }}>Outreach</p>
-          </div>
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src={tutorials} alt="Lets Breathe" />
-            <p class="center" style={{ textAlign: "center" }}>Tutorials</p>
-          </div>
-          <div class="flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
-            <img style={{ width: "100%" }} src={eprinting} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
-            <p class="center" style={{ textAlign: "center" }}>2D Printing</p>
-          </div>
+
+          <Popup trigger={
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+              <img style={{ width: "100%" }} src={funds} alt="3D for COVID" />
+              <p class="center" style={{ textAlign: "center" }}>Funds</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal">
+                <a className="close" onClick={close}>
+                  &times;
+                </a>
+                <h2 style={{ textAlign: "center" }}>Funds</h2>
+                <div className="content">
+                  <br></br>The Funds team is working to raise money for YCRO and help compensate costs for our volunteers.
+                </div>
+                <br></br>
+                <div className="content">
+                  Leads: Catie Granum, Vishal Kanigicherla
+                </div>
+                <br></br>
+                <div class="w-1/2">
+                  <button
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    onClick={() => {
+                      close();
+                    }}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            )}
+          </Popup>
+
+          <Popup trigger={
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+              <img style={{ width: "100%" }} src={outreach} alt="Fairfax County Public Libraries" />
+              <p class="center" style={{ textAlign: "center" }}>Outreach</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal">
+                <a className="close" onClick={close}>
+                  &times;
+                </a>
+                <h2 style={{ textAlign: "center" }}>Outreach</h2>
+                <div className="content">
+                  <br></br>The Outreach team is in charge of all correspondence between facilities in need and the YCRO, managing all requests for materials and keeping track of where supplies need to go for maximum impact.
+                </div>
+                <br></br>
+                <div className="content">
+                  Leads: Marian Qian and Aryan Joshi
+                </div>
+                <div className="content">
+                  Team: Shing Gao, Angie Huang, Sarah Zhang, Jay Siva, Saanjh Khattar
+                </div>
+                <br></br>
+                <div class="w-1/2">
+                  <button
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    onClick={() => {
+                      close();
+                    }}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            )}
+          </Popup>
+
+          <Popup trigger={
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+              <img style={{ width: "100%" }} src={tutorials} alt="Lets Breathe" />
+              <p class="center" style={{ textAlign: "center" }}>Tutorials</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal">
+                <a className="close" onClick={close}>
+                  &times;
+                </a>
+                <h2 style={{ textAlign: "center" }}>Tutorials</h2>
+                <div className="content">
+                  <br></br>The Tutorials team is in charge of producing quality content to inform volunteers how to assisst in producing PPE at home.
+                </div>
+                <br></br>
+                <div className="content">
+                  Leads: Marian Qian and Aryan Joshi
+                </div>
+                <div className="content">
+                  Team: Shing Gao, Angie Huang, Sarah Zhang, Jay Siva, Saanjh Khattar
+                </div>
+                <br></br>
+                <div class="w-1/2">
+                  <button
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    onClick={() => {
+                      close();
+                    }}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            )}
+          </Popup>
+
+          <Popup trigger={
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ...">
+              <img style={{ width: "100%" }} src={eprinting} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
+              <p class="center" style={{ textAlign: "center" }}>2D Printing</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal">
+                <a className="close" onClick={close}>
+                  &times;
+                </a>
+                <h2 style={{ textAlign: "center" }}>2D Printing</h2>
+                <div className="content">
+                  <br></br>The 2D Printing team is designing and producing ear savers to help make masks more comfortable and ensure long term wear.
+                </div>
+                <br></br>
+                <div className="content">
+                  Leads: Jason Wang and Maanya Shanker
+                </div>
+                <div className="content">
+                  Team: Marian Qian, Angie Huang, Hashir Aqeel, Taj Abdin, Thomas Lu  
+                </div>
+                <br></br>
+                <div class="w-1/2">
+                  <button
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    onClick={() => {
+                      close();
+                    }}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            )}
+          </Popup>
+
         </section>
 
         {/* <section className="p-8 flex items-center flex flex-col">
