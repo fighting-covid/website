@@ -130,7 +130,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal">
-                <a className="close" onClick={close}>
+                <a className="close cursor-pointer" onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center" }}>Web Development</h2>
@@ -167,7 +167,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal">
-                <a className="close" onClick={close}>
+                <a className="close cursor-pointer" onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center" }}>Sewing</h2>
@@ -204,7 +204,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal">
-                <a className="close" onClick={close}>
+                <a className="close cursor-pointer" onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center" }}>Publicity</h2>
@@ -241,7 +241,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal">
-                <a className="close" onClick={close}>
+                <a className="close cursor-pointer" onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center" }}>3D Printing</h2>
@@ -281,7 +281,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal">
-                <a className="close" onClick={close}>
+                <a className="close cursor-pointer" onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center" }}>Funds</h2>
@@ -315,7 +315,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal">
-                <a className="close" onClick={close}>
+                <a className="close cursor-pointer" onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center" }}>Outreach</h2>
@@ -352,7 +352,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal">
-                <a className="close" onClick={close}>
+                <a className="close cursor-pointer" onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center" }}>Tutorials</h2>
@@ -389,7 +389,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal">
-                <a className="close" onClick={close}>
+                <a className="close cursor-pointer" onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center" }}>2D Printing</h2>
