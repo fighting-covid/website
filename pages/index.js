@@ -65,11 +65,11 @@ const HomePage = ({ data }) => {
           >
             <iframe
               className="visual"
-              src="https://www.google.com/maps/d/u/0/embed?mid=1EYwPfRTAqljYRM2A5VL514hlb2igE-J0&zoom=10"
+              src="https://www.google.com/maps/d/u/4/embed?mid=1QTmhpmhOxj5GOAQPhUczgMgYIlPHJQrT&z=8"
               style={{ width: "100%", height: "100%", border: "none" }}
             ></iframe>
           </div>
-          <div className="md:pl-24 md:pr-48 pb-40 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
+          <div className="md:p-16 md:pr-40 p-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
             <div>
               <h2 className="font-mono md:text-4xl text-3xl" style={{ color: "#304352" }}>
                 Hospitals in Need
