@@ -54,30 +54,30 @@ const Acknowledgments = ({ data }) => {
                 </section>
 
                 <section className="md:p-16 p-8 flex flex-wrap-reverse">
-                    <div class="flex-1 column w-1/4 px-3 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ...">
+                    <div class="flex-1 column w-1/4 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}> 
                         <img style={{ width: "100%" }} src={covid} alt="3D for COVID" />
-                        <p class="center" style={{ textAlign: "center" }}><a href="https://3dforcovid.com/" target="_blank"><u>3D for COVID</u></a></p>
+                        <p class="center" style={{ textAlign: "center", color: "#e44c65"}}><a href="https://3dforcovid.com/" target="_blank"><u>3D for COVID</u></a></p>
                     </div>
-                    <div class="flex-1 column w-1/4 px-3 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ...">
+                    <div class="flex-1 column w-1/4 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
                         <img style={{ width: "100%" }} src={fcpl} alt="Fairfax County Public Libraries" />
                         <p class="center" style={{ textAlign: "center" }}><a href="https://www.fairfaxcounty.gov/library/" target="_blank"><u>FCPL</u></a></p>
                     </div>
-                    <div class="flex-1 column w-1/4 px-3 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ...">
+                    <div class="flex-1 column w-1/4 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
                         <img style={{ width: "100%" }} src={breathe} alt="Lets Breathe" />
                         <p class="center" style={{ textAlign: "center" }}><a href="https://www.gofundme.com/f/gofundmecomfmasks-for-healthcare-heroes" target="_blank"><u>Lets Breathe</u></a></p>
                     </div>
                 </section>
 
                 <section className="md:p-16 p-8 flex flex-wrap-reverse">
-                    <div class="flex-1 column w-1/4 px-3 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ...">
+                    <div class="flex-1 column w-1/4 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
                         <img src={mn} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
                         <p class="center" style={{ textAlign: "center" }}>Mika Naraynsingh</p>
                     </div>
-                    <div class="flex-1 column w-1/4 px-3 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ...">
+                    <div class="flex-1 column w-1/4 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
                         <img style={{ width: "100%" }} src={osms} alt="Open Source COVID19 Medical Supplies" />
                         <p class="center" style={{ textAlign: "center" }}><a href="https://opensourcemedicalsupplies.org/" target="_blank"><u>Open Source Medical Supplies</u></a></p>
                     </div>
-                    <div class="flex-1 column w-1/4 px-3 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ...">
+                    <div class="flex-1 column w-1/4 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
                         <img style={{ width: "100%" }} src={mfd} alt="Masks for Docs" />
                         <p class="center" style={{ textAlign: "center" }}><a href="https://masksfordocs.com" target="_blank"><u>Masks for Docs</u></a></p>
                     </div>
