@@ -37,7 +37,7 @@ const Header = () => {
               className="flex items-center font-bold text-2xl tracking-tight"
             >
               <img src={Logo} alt="Logo" className="h-12 mr-4" />
-              <span>Project YCRO</span>
+              <span style={{color: "#e44c65"}}>Project YCRO</span>
             </a>
           </Link>
         </div>
