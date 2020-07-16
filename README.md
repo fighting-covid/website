@@ -1,6 +1,6 @@
 # Project YCRO
 
-Website of YCRO (Youth COVID-19 Relief Organization). This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+Website of Project YCRO (Youth COVID-19 Relief Organization). This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
 ## Development
 
