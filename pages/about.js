@@ -66,7 +66,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer" onClick={close}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center", color: "#e44c65", fontWeight: "bold"}}>Web Development</h2>
@@ -83,7 +83,7 @@ const AboutPage = ({ data }) => {
                 <br></br>
                 <div class="w-1/2">
                   <button
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    className="text-white font-bold py-1 px-4 rounded" style={{backgroundColor: "#e44c65"}}
                     onClick={() => {
                       close();
                     }}
@@ -103,7 +103,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer" onClick={close}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center", color: "#e44c65", fontWeight: "bold"}}>Sewing</h2>
@@ -140,7 +140,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer" onClick={close}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center", color: "#e44c65", fontWeight: "bold"}}>Publicity</h2>
@@ -177,7 +177,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer" onClick={close}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center", color: "#e44c65", fontWeight: "bold"}}>3D Printing</h2>
@@ -217,7 +217,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer" onClick={close}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center", color: "#e44c65", fontWeight: "bold"}}>Funds</h2>
@@ -251,7 +251,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer" onClick={close}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center", color: "#e44c65", fontWeight: "bold"}}>Outreach</h2>
@@ -288,7 +288,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer" onClick={close}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center", color: "#e44c65", fontWeight: "bold"}}>Tutorials</h2>
@@ -325,7 +325,7 @@ const AboutPage = ({ data }) => {
           } modal>
             {close => (
               <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer" onClick={close}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
                 <h2 style={{ textAlign: "center", color: "#e44c65", fontWeight: "bold"}}>2D Printing</h2>
