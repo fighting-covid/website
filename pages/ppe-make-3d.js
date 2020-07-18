@@ -24,8 +24,7 @@ const PPEMakePage = ({ data }) => {
           <div className="md:pr-3">
             <div
               className="border-2 border-gray-500 md:w-1/2 w-full"
-              style={{ width: "80vh",  height: "50vh" }}
-            >
+              style={{ width: "80vh",  height: "50vh" }} >
               
              <div className="modelo-wrapper"> <div style={{ marginBottom: '0%', width: '100%', height: '100%', paddingBottom: '56.25%', position: 'relative' }}> <div style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }}> <iframe src="https://app.modelo.io/embedded/7cMeZX4vg9?viewport=true&autoplay=true" style={{ width: '100%', height: '100%' }} frameBorder={0} /> </div> </div> </div>
           <br></br>
