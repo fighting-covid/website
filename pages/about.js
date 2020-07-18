@@ -81,9 +81,9 @@ const AboutPage = ({ data }) => {
                   <span style={{color: "#e44c65", fontWeight: "bold"}}>Team:</span> Nuha Mohammed, Ron Nachum, Aaryan Dave, Sarah Zhang
                 </div>
                 <br></br>
-                <div class="w-1/2">
+                <div class="w-auto inline-block flex items-center justify-center pb-2">
                   <button
-                    className="text-white font-bold py-1 px-4 rounded" style={{backgroundColor: "#e44c65"}}
+                    className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-pinkDark"
                     onClick={() => {
                       close();
                     }}
@@ -118,9 +118,9 @@ const AboutPage = ({ data }) => {
                   <span style={{color: "#e44c65", fontWeight: "bold"}}>Team:</span> Nuha Mohammed, Ron Nachum, Aaryan Dave, Sarah Zhang
                 </div>
                 <br></br>
-                <div class="w-1/2">
+                <div class="w-auto inline-block flex items-center justify-center pb-2">
                   <button
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-pinkDark"
                     onClick={() => {
                       close();
                     }}
@@ -155,9 +155,9 @@ const AboutPage = ({ data }) => {
                   <span style={{color: "#e44c65", fontWeight: "bold"}}>Team:</span> Rhea Goswami, Akila Islam, Angie Huang, Anoushka Sarkar, Brianna Ta, Emma Cheng, Jay Siva, Krithi L. , Reva Hirave, Rhea Tammireddi, Simar N., Vyomika Ghandi
                 </div>
                 <br></br>
-                <div class="w-1/2">
+                <div class="w-auto inline-block flex items-center justify-center pb-2">
                   <button
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-pinkDark"
                     onClick={() => {
                       close();
                     }}
@@ -192,9 +192,9 @@ const AboutPage = ({ data }) => {
                   <span style={{color: "#e44c65", fontWeight: "bold"}}>Team:</span> Kareem Jaber, Aaryan Dave, Ron Nachum, Daniel Lian
                 </div>
                 <br></br>
-                <div class="w-1/2">
+                <div class="w-auto inline-block flex items-center justify-center pb-2">
                   <button
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-pinkDark"
                     onClick={() => {
                       close();
                     }}
@@ -229,9 +229,9 @@ const AboutPage = ({ data }) => {
                   <span style={{color: "#e44c65", fontWeight: "bold"}}>Leads:</span> Catie Granum, Vishal Kanigicherla
                 </div>
                 <br></br>
-                <div class="w-1/2">
+                <div class="w-auto inline-block flex items-center justify-center pb-2">
                   <button
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-pinkDark"
                     onClick={() => {
                       close();
                     }}
@@ -266,9 +266,9 @@ const AboutPage = ({ data }) => {
                   <span style={{color: "#e44c65", fontWeight: "bold"}}>Team:</span> Shing Gao, Angie Huang, Sarah Zhang, Jay Siva, Saanjh Khattar
                 </div>
                 <br></br>
-                <div class="w-1/2">
+                <div class="w-auto inline-block flex items-center justify-center pb-2">
                   <button
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-pinkDark"
                     onClick={() => {
                       close();
                     }}
@@ -303,9 +303,9 @@ const AboutPage = ({ data }) => {
                   <span style={{color: "#e44c65", fontWeight: "bold"}}>Team:</span> Shing Gao, Angie Huang, Sarah Zhang, Jay Siva, Saanjh Khattar
                 </div>
                 <br></br>
-                <div class="w-1/2">
+                <div class="w-auto inline-block flex items-center justify-center pb-2">
                   <button
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-pinkDark"
                     onClick={() => {
                       close();
                     }}
@@ -340,9 +340,9 @@ const AboutPage = ({ data }) => {
                   <span style={{color: "#e44c65", fontWeight: "bold"}}>Team:</span> Marian Qian, Angie Huang, Hashir Aqeel, Taj Abdin, Thomas Lu  
                 </div>
                 <br></br>
-                <div class="w-1/2">
+                <div class="w-auto inline-block flex items-center justify-center pb-2">
                   <button
-                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded"
+                    className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-pinkDark"
                     onClick={() => {
                       close();
                     }}
