@@ -75,7 +75,7 @@ const Header = () => {
           <div
             className={`text-lg ${isActive ? "bg-light p-4 pt-2 -mt-4" : ""}`}
           ></div>
-          <div className={`text-lg ${isActive ? "bg-light p-4 -mt-4" : ""}`}>
+          <div className={`text-lg ${isActive ? "bg-dark p-4 -mt-4" : ""}`}>
             <NavLink
               href="/ppe-request"
               title="Request"
