@@ -23,13 +23,22 @@ ReactGA.initialize('UA-167321699-1');
 ReactGA.pageview('/');
 
 const HomePage = ({ data }) => {
-  const [graphData, setGraphData] = useState(null);
+  const [graphRequestData, setGraphDonationData] = useState(null);
   useEffect(() => {
-    const getGraphData = async () => {
+    const getGraphDonationData = async () => {
       const res = await axios.get("/api/data");
-      setGraphData(res.data);
+      setGraphDonationData(res.data["request_data"]);
     };
-    getGraphData();
+    getGraphDonationData();
+  }, []);
+
+  const [graphDonationData, setGraphRequestData] = useState(null);
+  useEffect(() => {
+    const getGraphRequestData = async () => {
+      const res = await axios.get("/api/data");
+      setGraphRequestData(res.data["donation_data"]);
+    };
+    getGraphRequestData();
   }, []);
 
   return (
@@ -39,7 +48,7 @@ const HomePage = ({ data }) => {
         <section className="md:mb-16 relative p-8 md:p-64">
           <img
             className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
-            src= {background}
+            src={background}
             style={{ objectPosition: "50% 75%" }}>
           </img>
           <div className="p-4 flex flex-col items-left relative">
@@ -80,14 +89,6 @@ const HomePage = ({ data }) => {
               This map shows hospitals that we've contacted which currently need supplies.
               Click on the location icons on the map to see more information.
             </Markdown>
-            <br></br>
-            <div>
-              <button class="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
-                <Link href="/ppe-donate">
-                  Donate PPE
-                </Link>
-              </button>
-            </div>
           </div>
         </section>
 
@@ -115,11 +116,11 @@ const HomePage = ({ data }) => {
 
           <div
             className="md:w-1/2 w-full flex flex-col md:justify-center justify-start"
-            style={{ height: "60vh"}}
+            style={{ height: "60vh" }}
           >
-            {graphData !== null ? (
+            {graphRequestData !== null ? (
               <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={graphData}>
+                <BarChart data={graphRequestData}>
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="name" orientation="bottom" />
                   <YAxis />
@@ -129,19 +130,77 @@ const HomePage = ({ data }) => {
                     dataKey="masks"
                     name="Face Masks"
                     stackId="a"
-                    fill="#8884d8"
+                    fill="#1b237e"
                   />
                   <Bar
                     dataKey="shields"
                     name="Face Shields"
                     stackId="a"
-                    fill="#75b4ca"
+                    fill="#2771b8"
+                  />
+                  <Bar
+                    dataKey="savers"
+                    name="Ear Savers"
+                    stackId="a"
+                    fill="#4ebbd6"
+                  />
+                  <Bar
+                    dataKey="grabbers"
+                    name="Door Grabbers"
+                    stackId="a"
+                    fill="#bce3c8"
                   />
                 </BarChart>
               </ResponsiveContainer>
             ) : (
                 <div></div>
               )}
+          </div>
+        </section>
+
+        <section className="md:p-16 md:pl-40 p-8 flex flex-wrap-reverse">
+          <div
+            className="md:w-1/2 w-full flex flex-col md:justify-center justify-start"
+            style={{ height: "60vh" }}
+          >
+            {graphDonationData !== null ? (
+              <ResponsiveContainer width="100%" height="100%">
+                <BarChart data={graphDonationData}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="name" orientation="bottom" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+                  <Bar
+                    dataKey="quantity"
+                    name="Quantity"
+                    stackId="a"
+                    fill="#8884d8"
+                  />
+                </BarChart>
+              </ResponsiveContainer>
+            ) : (
+                <div></div>
+              )}
+          </div>
+          <div className="md:p-16 md:pr-40 p-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
+            <div>
+              <h2 className="font-mono md:text-4xl text-3xl" style={{ color: "#304352" }}>
+                Donations
+              </h2>
+              <br></br>
+            </div>
+            <Markdown className="markdown-body text-lg">
+              This graph shows the quantities of PPE we have already donated to each hospital. Hover over the bars for exact values.
+            </Markdown>
+            <br></br>
+            <div>
+              <button class="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
+                <Link href="/ppe-donate">
+                  Donate PPE
+                </Link>
+              </button>
+            </div>
           </div>
         </section>
       </main>

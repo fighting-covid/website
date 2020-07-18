@@ -13,24 +13,44 @@ export default async (req, res) => {
     res.setHeader("Content-Type", "application/json");
 
     try {
-      const sheet = doc.sheetsById[1701444519];
-      const rows = await sheet.getRows();
+      const requestSheet = doc.sheetsById[1701444519];
+      const donationSheet = doc.sheetsById[1523930735];
+      const requestRows = await requestSheet.getRows();
+      const donationRows = await donationSheet.getRows();
 
-      let data = [];
-      rows.forEach((row) => {
-        // Convert the row data into an array
-        console.log(row);
-        console.log("name", row["Name of organization"]);
-        console.log("facemasks", row["Face Masks"]);
-        console.log("shields", row["Face Shields Remaining"]);
-        const d = row._rawData;
-        // Only push if the fields are defined
-        if (d[0] && d[7] && d[8])
-          data.push({ name: d[0], masks: d[7], shields: d[8] });
+      let requestData = [];
+      requestRows.forEach((requestRows) => {
+        const rawData = requestRows._rawData;
+        if (rawData[0]) {
+          if (!rawData[7])
+            rawData[7] = 0;
+          if (!rawData[8])
+            rawData[8] = 0;
+          if (!rawData[9])
+            rawData[9] = 0;
+          if (!rawData[10])
+            rawData[10] = 0;
+          if (rawData[7] != 0 || rawData[8] != 0 || rawData[9] != 0 || rawData[10] != 0)
+            requestData.push({ name: rawData[0], masks: rawData[7], shields: rawData[8], savers: rawData[9], grabbers: rawData[10] });
+        }
+      });
+
+      let donationData = [];
+      donationRows.forEach((donationRows) => {
+        const rawData2 = donationRows._rawData;
+        let donationDict = {};
+        if (rawData2[2] && rawData2[3])
+          if (donationDict[rawData2[2]])
+            donationDict[rawData2[2]] += Number(rawData2[3]);
+          else
+            donationDict[rawData2[2]] = Number(rawData2[3]);
+        for (const key in donationDict) {
+          donationData.push({ name: key, quantity: donationDict[key] })
+        }
       });
 
       res.statusCode = 200;
-      res.end(JSON.stringify(data));
+      res.send({ request_data: requestData, donation_data: donationData });
     } catch (e) {
       res.statusCode = 500;
       console.error(e);
