@@ -2,7 +2,8 @@ import Markdown from "react-markdown";
 import SEO from "../components/seo";
 import React from 'react'
 import ReactGA from 'react-ga';
-
+import Link from "next/link";
+import ppebackground from '../assets/images/sewingPPE.png';
 ReactGA.initialize('UA-167321699-1');
 ReactGA.pageview('/ppe-make');
 
@@ -11,25 +12,45 @@ const PPEMakePage = ({ data }) => {
     <>
       <SEO title="Make PPE" />
       <main>
-        <section className="md:mb-16 relative p-8 md:p-64">
+        <section className="md:mb-0 relative p-8 md:p-64">
           <img
             className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
-            src="https://www.shropshirestar.com/resizer/zovJS-MCNgJb2T7VztCSWHAulG4=/1000x0/filters:quality(100)/arc-anglerfish-arc2-prod-shropshirestar-mna.s3.amazonaws.com/public/WROMR4F5T5ERFG3WNNDJGEUSJY.jpg"
-            style={{ objectPosition: "50% 25%" }}>
+            src={ppebackground}
+          style={{ objectPosition: "0% 25%" , filter: "blur(2px)", height:"100%"}}
+          >
           </img>
           <div className="p-4 flex flex-col items-left relative">
             <div>
-              <p className="text-left font-mono md:text-5xl text-4xl pb-4" style={{ color: "#304352" }}>
+              <p className="text-left font-mono md:text-5xl text-4xl pb-4" style={{ color: "white" }}>
                 Make PPE
               </p>
             </div>
-            <div className="text-left font-mono lg:text-2xl text-xl">
-              <p style={{ color: "#304352" }}>
-                Healthcare workers are lacking basic personal protective
-                equipment (PPE) while fighting the COVID-19 pandemic, putting themselves and their loved ones
-                in danger. Help us deliver critically needed supplies so they can safely continue saving lives.
+            <div className="text-left font-mono lg:text-2xl text-x1">
+              <p style={{ color: "white" }}>
+                Help medical professionals fight COVID-19 by making PPE at home.
               </p>
             </div>
+          
+            <br></br>
+          
+            <div>
+          <button className="bg-dark hover:bg-blue-700 text-white py-2 w-56 rounded-full" style={{"margin-right":"15px"}}>
+                    <Link href="/ppe-make-3d">
+                         Sewing
+                    </Link>
+                </button>
+              <button className="bg-dark hover:bg-blue-700 text-white py-2 w-56 rounded-full" style={{"margin-right":"15px"}}>
+                  <Link href="/ppe-make-3d">
+                      3D-Printing
+                  </Link>
+              </button>
+              <button className="bg-dark hover:bg-blue-700 text-white py-2 w-56 rounded-full">
+                  <Link href="/ppe-make-3d">
+                     2D-Printing
+                  </Link>
+              </button>
+            </div>
+          
           </div>
         </section>
         {/* <section className="p-8">
