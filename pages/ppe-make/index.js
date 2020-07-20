@@ -1,9 +1,9 @@
 import Markdown from "react-markdown";
-import SEO from "../components/seo";
+import SEO from "../../components/seo";
 import React from "react";
 import ReactGA from "react-ga";
 import Link from "next/link";
-import ppebackground from "../assets/images/sewingPPE.png";
+import ppebackground from "../../assets/images/sewingPPE.png";
 ReactGA.initialize("UA-167321699-1");
 ReactGA.pageview("/ppe-make");
 
@@ -44,16 +44,16 @@ const PPEMakePage = ({ data }) => {
                 className="bg-dark hover:bg-blue-700 text-white py-2 w-56 rounded-full"
                 style={{ "margin-right": "14px" }}
               >
-                <Link href="/ppe-make-3d">Sewing</Link>
+                <Link href="/ppe-make/3d">Sewing</Link>
               </button>
               <button
                 className="bg-dark hover:bg-blue-700 text-white py-2 w-56 rounded-full"
                 style={{ "margin-right": "14px" }}
               >
-                <Link href="/ppe-make-3d">3D-Printing</Link>
+                <Link href="/ppe-make/3d">3D-Printing</Link>
               </button>
               <button className="bg-dark hover:bg-blue-700 text-white py-2 w-56 rounded-full">
-                <Link href="/ppe-make-3d">2D-Printing</Link>
+                <Link href="/ppe-make/3d">2D-Printing</Link>
               </button>
             </div>
           </div>

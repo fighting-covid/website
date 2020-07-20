@@ -1,13 +1,13 @@
 import Markdown from "react-markdown";
-import SEO from "../components/seo";
+import SEO from "../../components/seo";
 import React from "react";
 import ReactGA from "react-ga";
-import materialimg from "../assets/images/material_database.png";
+import materialimg from "../../assets/images/material_database.png";
 
 ReactGA.initialize("UA-167321699-1");
-ReactGA.pageview("/ppe-make");
+ReactGA.pageview("/ppe-make/3d");
 
-const PPEMakePage = ({ data }) => {
+const PPEMake3DPage = ({ data }) => {
   return (
     <>
       <SEO title="Make PPE" />
@@ -142,4 +142,4 @@ const PPEMakePage = ({ data }) => {
   );
 };
 
-export default PPEMakePage;
+export default PPEMake3DPage;
