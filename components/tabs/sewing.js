@@ -1,6 +1,3 @@
-const Sewing = () => (
-	<div>
-	</div>
-);
+const Sewing = () => <div></div>;
 
 export default Sewing;

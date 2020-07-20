@@ -5,7 +5,7 @@ module.exports = {
         dark: "#304352",
         light: "whitesmoke",
         accent: "#e44c65",
-        pinkDark: '#CD445A',
+        pinkDark: "#CD445A",
       },
     },
     fontFamily: {
