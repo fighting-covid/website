@@ -9,7 +9,7 @@ import dprinting from '../assets/images/3dprinting.jpg';
 import eprinting from '../assets/images/2dprinting.jpg';
 import funds from '../assets/images/funds.jpg';
 import tutorials from '../assets/images/tutorials.jpg';
-import background from '../assets/images/masks_darkened.jpg';
+import background from '../assets/images/masks_darkened1.jpg';
 import Popup from "reactjs-popup";
 import SEO from "../components/seo";
 import ReactGA from 'react-ga';
