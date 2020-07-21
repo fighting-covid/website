@@ -1,11 +1,11 @@
 import Markdown from "react-markdown";
-import SEO from "../components/seo";
-import React from 'react'
-import ReactGA from 'react-ga';
+import SEO from "../../components/seo";
+import React from "react";
+import ReactGA from "react-ga";
 import Link from "next/link";
-import ppebackground from '../assets/images/sewingPPE.png';
-ReactGA.initialize('UA-167321699-1');
-ReactGA.pageview('/ppe-make');
+import ppebackground from "../../assets/images/sewingPPE.png";
+ReactGA.initialize("UA-167321699-1");
+ReactGA.pageview("/ppe-make");
 
 const PPEMakePage = ({ data }) => {
   return (
@@ -16,12 +16,18 @@ const PPEMakePage = ({ data }) => {
           <img
             className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
             src={ppebackground}
-          style={{ objectPosition: "0% 25%" , filter: "blur(2px)", height:"100%"}}
-          >
-          </img>
+            style={{
+              objectPosition: "0% 25%",
+              filter: "blur(2px)",
+              height: "100%",
+            }}
+          ></img>
           <div className="p-4 flex flex-col items-left relative">
             <div>
-              <p className="text-left font-mono md:text-5xl text-4xl pb-4" style={{ color: "white" }}>
+              <p
+                className="text-left font-mono md:text-5xl text-4xl pb-4"
+                style={{ color: "white" }}
+              >
                 Make PPE
               </p>
             </div>
@@ -30,27 +36,26 @@ const PPEMakePage = ({ data }) => {
                 Help medical professionals fight COVID-19 by making PPE at home.
               </p>
             </div>
-          
+
             <br></br>
-          
+
             <div>
-          <button className="bg-dark hover:bg-blue-700 text-white py-2 w-56 rounded-full" style={{"margin-right":"14px"}}>
-                    <Link href="/ppe-make-3d">
-                         Sewing
-                    </Link>
-                </button>
-              <button className="bg-dark hover:bg-blue-700 text-white py-2 w-56 rounded-full" style={{"margin-right":"14px"}}>
-                  <Link href="/ppe-make-3d">
-                      3D-Printing
-                  </Link>
+              <button
+                className="bg-dark hover:bg-blue-700 text-white py-2 w-56 rounded-full"
+                style={{ "margin-right": "14px" }}
+              >
+                <Link href="/ppe-make/3d">Sewing</Link>
+              </button>
+              <button
+                className="bg-dark hover:bg-blue-700 text-white py-2 w-56 rounded-full"
+                style={{ "margin-right": "14px" }}
+              >
+                <Link href="/ppe-make/3d">3D-Printing</Link>
               </button>
               <button className="bg-dark hover:bg-blue-700 text-white py-2 w-56 rounded-full">
-                  <Link href="/ppe-make-3d">
-                     2D-Printing
-                  </Link>
+                <Link href="/ppe-make/3d">2D-Printing</Link>
               </button>
             </div>
-          
           </div>
         </section>
         {/* <section className="p-8">

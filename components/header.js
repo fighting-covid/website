@@ -9,7 +9,7 @@ const NavLink = ({ href, title, onClick, end }) => (
       onClick={onClick}
       className={`trans block mt-4 lg:inline-block lg:mt-0 text-light hover:text-gray-400 ${
         end || false ? "" : "mr-4"
-        }`}
+      }`}
     >
       {title}
     </a>
@@ -37,7 +37,7 @@ const Header = () => {
               className="flex items-center font-bold text-2xl tracking-tight"
             >
               <img src={Logo} alt="Logo" className="h-12 mr-4" />
-              <span style={{color: "#e44c65"}}>Project YCRO</span>
+              <span style={{ color: "#e44c65" }}>Project YCRO</span>
             </a>
           </Link>
         </div>
@@ -49,7 +49,7 @@ const Header = () => {
             }}
             className={`hamburger hamburger--3dxy ${
               isActive ? "is-active" : ""
-              }`}
+            }`}
             style={{ outline: "none" }}
             aria-label="Menu"
             aria-controls="navigation"
@@ -65,12 +65,12 @@ const Header = () => {
             isActive
               ? "block absolute inset-0 mt-24 md:mt-32 flex-col"
               : "hidden"
-            } `}
+          } `}
         >
           <div
             className={`text-lg lg:flex-grow ${
               isActive ? "bg-light px-4" : ""
-              }`}
+            }`}
           ></div>
           <div
             className={`text-lg ${isActive ? "bg-light p-4 pt-2 -mt-4" : ""}`}

@@ -4,7 +4,7 @@ import path from "path";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import background from "../assets/images/background2.jpg"
+import background from "../assets/images/background2.jpg";
 import Markdown from "react-markdown";
 import {
   ResponsiveContainer,
@@ -18,9 +18,9 @@ import {
   LabelList,
 } from "recharts";
 import SEO from "../components/seo";
-import ReactGA from 'react-ga';
-ReactGA.initialize('UA-167321699-1');
-ReactGA.pageview('/');
+import ReactGA from "react-ga";
+ReactGA.initialize("UA-167321699-1");
+ReactGA.pageview("/");
 
 const HomePage = ({ data }) => {
   const [graphRequestData, setGraphDonationData] = useState(null);
@@ -49,19 +49,24 @@ const HomePage = ({ data }) => {
           <img
             className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
             src={background}
-            style={{ objectPosition: "50% 75%" }}>
-          </img>
+            style={{ objectPosition: "50% 75%" }}
+          ></img>
           <div className="p-4 flex flex-col items-left relative">
             <div>
-              <p className="text-left font-mono md:text-5xl text-4xl pb-4" style={{ color: "#304352" }}>
+              <p
+                className="text-left font-mono md:text-5xl text-4xl pb-4"
+                style={{ color: "#304352" }}
+              >
                 Youth COVID-19 Relief Organization
               </p>
             </div>
             <div className="text-left font-mono lg:text-2xl text-xl">
               <p style={{ color: "#304352" }}>
                 Healthcare workers are lacking basic personal protective
-                equipment (PPE) while fighting the COVID-19 pandemic, putting themselves and their loved ones
-                in danger. Help us deliver critically needed supplies so they can safely continue saving lives.
+                equipment (PPE) while fighting the COVID-19 pandemic, putting
+                themselves and their loved ones in danger. Help us deliver
+                critically needed supplies so they can safely continue saving
+                lives.
               </p>
             </div>
           </div>
@@ -80,14 +85,18 @@ const HomePage = ({ data }) => {
           </div>
           <div className="md:p-16 md:pr-40 p-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
             <div>
-              <h2 className="font-mono md:text-4xl text-3xl" style={{ color: "#304352" }}>
+              <h2
+                className="font-mono md:text-4xl text-3xl"
+                style={{ color: "#304352" }}
+              >
                 Hospitals in Need
               </h2>
               <br></br>
             </div>
             <Markdown className="markdown-body text-lg">
-              This map shows hospitals that we've contacted which currently need supplies.
-              Click on the location icons on the map to see more information.
+              This map shows hospitals that we've contacted which currently need
+              supplies. Click on the location icons on the map to see more
+              information.
             </Markdown>
           </div>
         </section>
@@ -95,21 +104,23 @@ const HomePage = ({ data }) => {
         <section className="md:p-16 md:pr-40 p-8 flex flex-wrap">
           <div className="md:pr-24 md:pl-40 pb-40 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
             <div>
-              <h2 className="font-mono md:text-4xl text-3xl" style={{ color: "#304352" }}>
+              <h2
+                className="font-mono md:text-4xl text-3xl"
+                style={{ color: "#304352" }}
+              >
                 Requests
               </h2>
               <br></br>
             </div>
             <Markdown className="markdown-body text-lg">
-              This graph displays the quantities of sewn face masks and 3D printed face shields that
-              hospitals need. Hover over the bars for exact values.
+              This graph displays the quantities of sewn face masks and 3D
+              printed face shields that hospitals need. Hover over the bars for
+              exact values.
             </Markdown>
             <br></br>
             <div>
               <button class="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
-                <Link href="/ppe-request">
-                  Request PPE
-                </Link>
+                <Link href="/ppe-request">Request PPE</Link>
               </button>
             </div>
           </div>
@@ -153,8 +164,8 @@ const HomePage = ({ data }) => {
                 </BarChart>
               </ResponsiveContainer>
             ) : (
-                <div></div>
-              )}
+              <div></div>
+            )}
           </div>
         </section>
 
@@ -180,25 +191,27 @@ const HomePage = ({ data }) => {
                 </BarChart>
               </ResponsiveContainer>
             ) : (
-                <div></div>
-              )}
+              <div></div>
+            )}
           </div>
           <div className="md:p-16 md:pr-40 p-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
             <div>
-              <h2 className="font-mono md:text-4xl text-3xl" style={{ color: "#304352" }}>
+              <h2
+                className="font-mono md:text-4xl text-3xl"
+                style={{ color: "#304352" }}
+              >
                 Donations
               </h2>
               <br></br>
             </div>
             <Markdown className="markdown-body text-lg">
-              This graph shows the quantities of PPE we have already donated to each hospital. Hover over the bars for exact values.
+              This graph shows the quantities of PPE we have already donated to
+              each hospital. Hover over the bars for exact values.
             </Markdown>
             <br></br>
             <div>
               <button class="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
-                <Link href="/ppe-donate">
-                  Donate PPE
-                </Link>
+                <Link href="/ppe-donate">Donate PPE</Link>
               </button>
             </div>
           </div>
