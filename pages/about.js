@@ -2,16 +2,10 @@ import yaml from "js-yaml";
 import fs from "fs";
 import path from "path";
 import outreach from '../assets/images/deal.png';
-import publicity from '../assets/images/publicity.jpg';
-import sewing from '../assets/images/sewing.jpg';
-import webdev from '../assets/images/webdev.jpeg';
 import webdev2 from '../assets/images/code5.png';
-
 import sewing2 from '../assets/images/sewing3.png';
 import three from '../assets/images/plastic.png';
 import publicity2 from '../assets/images/marketing.png';
-
-import dprinting from '../assets/images/3dprinting.jpg';
 import eprinting from '../assets/images/sketch.png';
 import funds from '../assets/images/donation.png';
 import tutorials from '../assets/images/intelligence.png';
