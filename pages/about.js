@@ -1,15 +1,21 @@
 import yaml from "js-yaml";
 import fs from "fs";
 import path from "path";
-import outreach from "../assets/images/outreach.jpg";
-import publicity from "../assets/images/publicity.jpg";
-import sewing from "../assets/images/sewing.jpg";
-import webdev from "../assets/images/webdev.jpeg";
-import dprinting from "../assets/images/3dprinting.jpg";
-import eprinting from "../assets/images/2dprinting.jpg";
-import funds from "../assets/images/funds.jpg";
-import tutorials from "../assets/images/tutorials.jpg";
-import background from "../assets/images/masks_darkened1.jpg";
+import outreach from '../assets/images/deal.png';
+import publicity from '../assets/images/publicity.jpg';
+import sewing from '../assets/images/sewing.jpg';
+import webdev from '../assets/images/webdev.jpeg';
+import webdev2 from '../assets/images/code5.png';
+
+import sewing2 from '../assets/images/sewing3.png';
+import three from '../assets/images/plastic.png';
+import publicity2 from '../assets/images/marketing.png';
+
+import dprinting from '../assets/images/3dprinting.jpg';
+import eprinting from '../assets/images/sketch.png';
+import funds from '../assets/images/donation.png';
+import tutorials from '../assets/images/intelligence.png';
+import background from '../assets/images/masks_darkened1.jpg';
 import Popup from "reactjs-popup";
 import SEO from "../components/seo";
 import ReactGA from "react-ga";
@@ -60,34 +66,15 @@ const AboutPage = ({ data }) => {
         </section> */}
 
         <section className="md:p-16 p-8 flex flex-wrap-reverse">
-          <Popup
-            trigger={
-              <div
-                class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..."
-                style={{ background: "#304352" }}
-              >
-                <img
-                  style={{ width: "100%" }}
-                  src={webdev}
-                  alt="3D for COVID"
-                />
-                <p
-                  class="center"
-                  style={{ textAlign: "center", color: "white" }}
-                >
-                  Web Development
-                </p>
-              </div>
-            }
-            modal
-          >
-            {(close) => (
-              <div className="modal" style={{ background: "#304352" }}>
-                <a
-                  className="close cursor-pointer ml-2"
-                  style={{ color: "white" }}
-                  onClick={close}
-                >
+          <Popup trigger={
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+              <img className="bg-gray-200" style={{ width: "100%" }} src={webdev2} alt="3D for COVID" />
+              <p class="center" style={{ textAlign: "center", color: "white"}}>Web Development</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal" style={{background: "#304352"}}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
                 <h2
@@ -133,34 +120,15 @@ const AboutPage = ({ data }) => {
             )}
           </Popup>
 
-          <Popup
-            trigger={
-              <div
-                class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..."
-                style={{ background: "#304352" }}
-              >
-                <img
-                  style={{ width: "100%" }}
-                  src={sewing}
-                  alt="Fairfax County Public Libraries"
-                />
-                <p
-                  class="center"
-                  style={{ textAlign: "center", color: "white" }}
-                >
-                  Sewing
-                </p>
-              </div>
-            }
-            modal
-          >
-            {(close) => (
-              <div className="modal" style={{ background: "#304352" }}>
-                <a
-                  className="close cursor-pointer ml-2"
-                  style={{ color: "white" }}
-                  onClick={close}
-                >
+          <Popup trigger={
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+              <img className="bg-gray-200" style={{ width: "100%" }} src={sewing2} alt="Fairfax County Public Libraries" />
+              <p class="center" style={{ textAlign: "center", color: "white"}}>Sewing</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal" style={{background: "#304352"}}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
                 <h2
@@ -208,34 +176,15 @@ const AboutPage = ({ data }) => {
             )}
           </Popup>
 
-          <Popup
-            trigger={
-              <div
-                class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..."
-                style={{ background: "#304352" }}
-              >
-                <img
-                  style={{ width: "100%" }}
-                  src={publicity}
-                  alt="Lets Breathe"
-                />
-                <p
-                  class="center"
-                  style={{ textAlign: "center", color: "white" }}
-                >
-                  Publicity
-                </p>
-              </div>
-            }
-            modal
-          >
-            {(close) => (
-              <div className="modal" style={{ background: "#304352" }}>
-                <a
-                  className="close cursor-pointer ml-2"
-                  style={{ color: "white" }}
-                  onClick={close}
-                >
+          <Popup trigger={
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+              <img className="bg-gray-200" style={{ width: "100%" }} src={publicity2} alt="Lets Breathe" />
+              <p class="center" style={{ textAlign: "center", color: "white"}}>Publicity</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal" style={{background: "#304352"}}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
                 <h2
@@ -284,35 +233,15 @@ const AboutPage = ({ data }) => {
             )}
           </Popup>
 
-          <Popup
-            trigger={
-              <div
-                class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..."
-                style={{ background: "#304352" }}
-              >
-                <img
-                  style={{ width: "100%" }}
-                  src={dprinting}
-                  alt="Mika Naraynsingh"
-                  style={{ width: "100%" }}
-                />
-                <p
-                  class="center"
-                  style={{ textAlign: "center", color: "white" }}
-                >
-                  3D Printing
-                </p>
-              </div>
-            }
-            modal
-          >
-            {(close) => (
-              <div className="modal" style={{ background: "#304352" }}>
-                <a
-                  className="close cursor-pointer ml-2"
-                  style={{ color: "white" }}
-                  onClick={close}
-                >
+          <Popup trigger={
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+              <img className="bg-gray-200" style={{ width: "100%" }} src={three} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
+              <p class="center" style={{ textAlign: "center", color: "white"}}>3D Printing</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal" style={{background: "#304352"}}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
                 <h2
@@ -361,30 +290,16 @@ const AboutPage = ({ data }) => {
         </section>
 
         <section className="md:p-16 p-8 flex flex-wrap-reverse">
-          <Popup
-            trigger={
-              <div
-                class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..."
-                style={{ background: "#304352" }}
-              >
-                <img style={{ width: "100%" }} src={funds} alt="3D for COVID" />
-                <p
-                  class="center"
-                  style={{ textAlign: "center", color: "white" }}
-                >
-                  Funds
-                </p>
-              </div>
-            }
-            modal
-          >
-            {(close) => (
-              <div className="modal" style={{ background: "#304352" }}>
-                <a
-                  className="close cursor-pointer ml-2"
-                  style={{ color: "white" }}
-                  onClick={close}
-                >
+
+          <Popup trigger={
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+              <img className="bg-gray-200" style={{ width: "100%" }} src={funds} alt="3D for COVID" />
+              <p class="center" style={{ textAlign: "center", color: "white"}}>Funds</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal" style={{background: "#304352"}}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
                 <h2
@@ -422,34 +337,15 @@ const AboutPage = ({ data }) => {
             )}
           </Popup>
 
-          <Popup
-            trigger={
-              <div
-                class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..."
-                style={{ background: "#304352" }}
-              >
-                <img
-                  style={{ width: "100%" }}
-                  src={outreach}
-                  alt="Fairfax County Public Libraries"
-                />
-                <p
-                  class="center"
-                  style={{ textAlign: "center", color: "white" }}
-                >
-                  Outreach
-                </p>
-              </div>
-            }
-            modal
-          >
-            {(close) => (
-              <div className="modal" style={{ background: "#304352" }}>
-                <a
-                  className="close cursor-pointer ml-2"
-                  style={{ color: "white" }}
-                  onClick={close}
-                >
+          <Popup trigger={
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+              <img className="bg-gray-200" style={{ width: "100%" }} src={outreach} alt="Fairfax County Public Libraries" />
+              <p class="center" style={{ textAlign: "center", color: "white"}}>Outreach</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal" style={{background: "#304352"}}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
                 <h2
@@ -495,34 +391,15 @@ const AboutPage = ({ data }) => {
             )}
           </Popup>
 
-          <Popup
-            trigger={
-              <div
-                class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..."
-                style={{ background: "#304352" }}
-              >
-                <img
-                  style={{ width: "100%" }}
-                  src={tutorials}
-                  alt="Lets Breathe"
-                />
-                <p
-                  class="center"
-                  style={{ textAlign: "center", color: "white" }}
-                >
-                  Tutorials
-                </p>
-              </div>
-            }
-            modal
-          >
-            {(close) => (
-              <div className="modal" style={{ background: "#304352" }}>
-                <a
-                  className="close cursor-pointer ml-2"
-                  style={{ color: "white" }}
-                  onClick={close}
-                >
+          <Popup trigger={
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+              <img className="bg-gray-200" style={{ width: "100%" }} src={tutorials} alt="Lets Breathe" />
+              <p class="center" style={{ textAlign: "center", color: "white"}}>Tutorials</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal" style={{background: "#304352"}}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
                 <h2
@@ -567,50 +444,20 @@ const AboutPage = ({ data }) => {
             )}
           </Popup>
 
-          <Popup
-            trigger={
-              <div
-                class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..."
-                style={{ background: "#304352" }}
-              >
-                <img
-                  style={{ width: "100%" }}
-                  src={eprinting}
-                  alt="Mika Naraynsingh"
-                  style={{ width: "100%" }}
-                />
-                <p
-                  class="center"
-                  style={{ textAlign: "center", color: "white" }}
-                >
-                  2D Printing
-                </p>
-              </div>
-            }
-            modal
-          >
-            {(close) => (
-              <div className="modal" style={{ background: "#304352" }}>
-                <a
-                  className="close cursor-pointer ml-2"
-                  style={{ color: "white" }}
-                  onClick={close}
-                >
+          <Popup trigger={
+            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+              <img className="bg-gray-200" style={{ width: "100%" }} src={eprinting} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
+              <p class="center" style={{ textAlign: "center", color: "white"}}>Innovative Design</p>
+            </div>
+          } modal>
+            {close => (
+              <div className="modal" style={{background: "#304352"}}>
+                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
                   &times;
                 </a>
-                <h2
-                  style={{
-                    textAlign: "center",
-                    color: "#e44c65",
-                    fontWeight: "bold",
-                  }}
-                >
-                  2D Printing
-                </h2>
-                <div class="px-2" style={{ color: "white" }}>
-                  <br></br>The 2D Printing team is designing and producing ear
-                  savers to help make masks more comfortable and ensure long
-                  term wear.
+                <h2 style={{ textAlign: "center", color: "#e44c65", fontWeight: "bold"}}>Innovative Design</h2>
+                <div class="px-2" style={{color: "white"}}>
+                  <br></br>The Innovative Design team is designing and producing ear savers to help make masks more comfortable and ensure long term wear.
                 </div>
                 <br></br>
                 <div class="px-2" style={{ color: "white" }}>
