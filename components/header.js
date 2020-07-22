@@ -92,6 +92,71 @@ const Header = () => {
                 setInvolvedActive(false);
               }}
             />
+                        <button
+              className={`trans block mt-4 lg:inline-block lg:mt-0 pr-3 pt-2 pb-2 pt-1 ${
+                isInvolvedActive && !isActive ? "rounded-t-md" : "rounded-md"
+                } text-light hover:text-white`}
+              onClick={() => setInvolvedActive(!isInvolvedActive)}
+              style={{ outline: "none" }}
+            // onMouseEnter={() => setInvolvedActive(true)}
+            >
+              Make &#x25BE;
+            </button>
+            <ul
+              className={`${
+                isInvolvedActive ? "" : "hidden"
+                }  bg-dark rounded-b-md ${
+                isActive ? "relative list-disc" : "absolute p-2 text-center"
+                }`}
+              style={isActive ? { left: "17.2rem" } : { right: "17.2rem" }}
+            // onMouseLeave={() => setInvolvedActive(false)}
+            >
+              <li className="text-accent">
+                <span>
+                  <NavLink
+                    href="/ppe-make/sewing"
+                    title="Sewing"
+                    onClick={() => {
+                      setActive(false);
+                      setInvolvedActive(false);
+                    }}
+                  />
+                </span>
+              </li>
+              <li
+                className={`${
+                  isInvolvedActive && !isActive ? "mt-2" : ""
+                  } text-accent`}
+              >
+                <span>
+                  <NavLink
+                    href="/ppe-make/3d"
+                    title="3D Printing"
+                    onClick={() => {
+                      setActive(false);
+                      setInvolvedActive(false);
+                    }}
+                  />
+                </span>
+              </li>
+              <li
+                className={`${
+                  isInvolvedActive && !isActive ? "mt-2" : ""
+                  } text-accent`}
+              >
+                <span>
+                  <NavLink
+                    href="/ppe-make"
+                    title="Innovative Design"
+                    onClick={() => {
+                      setActive(false);
+                      setInvolvedActive(false);
+                    }}
+                  />
+                </span>
+              </li>
+            </ul>
+            {/*
             <NavLink
               href="/ppe-make"
               title="Make"
@@ -100,6 +165,7 @@ const Header = () => {
                 setInvolvedActive(false);
               }}
             />
+            */}
             <NavLink
               href="/contact"
               title="Contact"
