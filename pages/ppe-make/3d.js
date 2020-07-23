@@ -1,10 +1,10 @@
 import SEO from "../../components/seo";
 import React from "react";
 import ReactGA from "react-ga";
+import Iframe from 'react-iframe'
 
 ReactGA.initialize("UA-167321699-1");
 ReactGA.pageview("/ppe-make/3d");
-
 const PPEMake3DPage = ({ data }) => {
   return (
     <>
@@ -48,11 +48,13 @@ const PPEMake3DPage = ({ data }) => {
                       }}
                     >
                       {" "}
-                      <iframe
-                        src="https://app.modelo.io/embedded/7cMeZX4vg9?viewport=true&autoplay=true"
-                        style={{ width: "100%", height: "100%" }}
-                        frameBorder={0}
-                      />{" "}
+                      <Iframe url="https://platform.sayduck.com/public/preview/e40aec90-aea9-0138-6da4-3ea8e8560ebf"
+                        width="100%"
+                        height="111%"
+                        id="myId"
+                        className="myClassname"
+                        display="initial"
+                        position="relative" />{" "}
                     </div>{" "}
                   </div>{" "}
                 </div>
@@ -103,11 +105,13 @@ const PPEMake3DPage = ({ data }) => {
                     }}
                   >
                     {" "}
-                    <iframe
-                      src="https://app.modelo.io/embedded/R7_6wlbu7K?viewport=true&autoplay=true"
-                      style={{ width: "100%", height: "100%" }}
-                      frameBorder={0}
-                    />{" "}
+                    <Iframe url="https://platform.sayduck.com/public/preview/da690e50-aeaa-0138-19eb-3ea8e8560ebf"
+                        width="100%"
+                        height="111%"
+                        id="myId"
+                        className="myClassname"
+                        display="initial"
+                        position="relative" />{" "}
                   </div>{" "}
                 </div>{" "}
               </div>
