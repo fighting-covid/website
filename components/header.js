@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from 'react'
 import Link from "next/link";
-
 import Logo from "../assets/images/brand/mask.svg";
+import { HamburgerSpin } from 'react-animated-burgers'
 
 const NavLink = ({ href, title, onClick, end }) => (
   <Link href={href}>
@@ -9,7 +9,7 @@ const NavLink = ({ href, title, onClick, end }) => (
       onClick={onClick}
       className={`trans block mt-4 lg:inline-block lg:mt-0 text-light hover:text-gray-400 ${
         end || false ? "" : "mr-4"
-      }`}
+        }`}
     >
       {title}
     </a>
@@ -17,8 +17,12 @@ const NavLink = ({ href, title, onClick, end }) => (
 );
 
 const Header = () => {
-  const [isActive, setActive] = useState(false);
+  const [isActive, setIsActive] = useState(false)
   const [isInvolvedActive, setInvolvedActive] = useState(false);
+  const toggleButton = useCallback(
+    () => setIsActive(prevState => !prevState),
+    [],
+  )
   return (
     <>
       <div className="h-24 md:h-32"></div>
@@ -37,27 +41,17 @@ const Header = () => {
               className="flex items-center font-bold text-2xl tracking-tight"
             >
               <img src={Logo} alt="Logo" className="h-12 mr-4" />
-              <span style={{ color: "#e44c65" }}>Project YCRO</span>
+              <span style={{ color: "#f5f5f5" }}>Project YCRO</span>
             </a>
           </Link>
         </div>
         <div className="block lg:hidden">
-          <button
-            onClick={() => {
-              setActive(!isActive);
-              setInvolvedActive(false);
-            }}
-            className={`hamburger hamburger--3dxy ${
-              isActive ? "is-active" : ""
-            }`}
-            style={{ outline: "none" }}
-            aria-label="Menu"
-            aria-controls="navigation"
-            type="button"
-          >
-            <span className="hamburger-box">
-              <span className="hamburger-inner"></span>
-            </span>
+          <button>
+            <HamburgerSpin
+              buttonColor="transparent"
+              barColor="#F5F5F5"
+              {...{ isActive, toggleButton }}
+            />
           </button>
         </div>
         <nav
@@ -65,15 +59,15 @@ const Header = () => {
             isActive
               ? "block absolute inset-0 mt-24 md:mt-32 flex-col"
               : "hidden"
-          } `}
+            } `}
         >
           <div
             className={`text-lg lg:flex-grow ${
               isActive ? "bg-light px-4" : ""
-            }`}
+              }`}
           ></div>
           <div
-            className={`text-lg ${isActive ? "bg-light p-4 pt-2 -mt-4" : ""}`}
+            className={`text-lg ${isActive ? "bg-dark p-4 pt-2 -mt-4" : ""}`}
           ></div>
           <div className={`text-lg ${isActive ? "bg-dark p-4 -mt-4" : ""}`}>
             <NavLink
@@ -92,7 +86,7 @@ const Header = () => {
                 setInvolvedActive(false);
               }}
             />
-                        <button
+            <button
               className={`trans block mt-4 lg:inline-block lg:mt-0 pr-3 pt-2 pb-2 pt-1 ${
                 isInvolvedActive && !isActive ? "rounded-t-md" : "rounded-md"
                 } text-light hover:text-white`}
