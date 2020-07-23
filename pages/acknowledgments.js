@@ -1,13 +1,13 @@
 import Markdown from "react-markdown";
 import SEO from "../components/seo";
 import React from "react";
-import osms from "../assets/images/osms.jpg";
-import fcpl from "../assets/images/fcpl2.jpg";
+import osms from "../assets/images/osms2.jpg";
+import fcpl from "../assets/images/fcpl3.jpg";
 import covid from "../assets/images/3d.jpg";
-import mfd from "../assets/images/mfd.jpg";
-import mn from "../assets/images/mn.jpg";
+import mfd from "../assets/images/mfd2.jpg";
+import mn from "../assets/images/mn2.jpg";
 import donate from "../assets/images/donation.jpeg";
-import breathe from "../assets/images/breathe.jpg";
+import breathe from "../assets/images/breathe3.jpg";
 import ReactGA from "react-ga";
 
 ReactGA.initialize("UA-167321699-1");
@@ -62,20 +62,28 @@ const Acknowledgments = ({ data }) => {
           <br></br>
         </section>
 
+
+
         <section className="md:p-16 p-8 flex flex-wrap-reverse">
+          
+          
+          {/* 3dforcovid */}
           <div
-            class="flex-1 column w-1/4 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+            class="h-full flex-auto mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
             style={{ background: "#304352" }}
           >
             <img style={{ width: "100%" }} src={covid} alt="3D for COVID" />
-            <p class="center" style={{ textAlign: "center", color: "#e44c65" }}>
+            <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
               <a href="https://3dforcovid.com/" target="_blank">
                 <u>3D for COVID</u>
               </a>
             </p>
           </div>
+
+
+          {/* Fairfax County Public Libraries */}
           <div
-            class="flex-1 column w-1/4 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+            class="h-full flex-auto mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
             style={{ background: "#304352" }}
           >
             <img
@@ -83,20 +91,23 @@ const Acknowledgments = ({ data }) => {
               src={fcpl}
               alt="Fairfax County Public Libraries"
             />
-            <p class="center" style={{ textAlign: "center" }}>
+            <p class="center" style={{ textAlign: "center", color: "#FFFFFF"}}>
               <a href="https://www.fairfaxcounty.gov/library/" target="_blank">
                 <u>FCPL</u>
               </a>
             </p>
           </div>
+
+
+          {/* Lets Breathe */}
           <div
-            class="flex-1 column w-1/4 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+            class="flex-auto mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
             style={{ background: "#304352" }}
           >
             <img style={{ width: "100%" }} src={breathe} alt="Lets Breathe" />
-            <p class="center" style={{ textAlign: "center" }}>
+            <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
               <a
-                href="https://www.gofundme.com/f/gofundmecomfmasks-for-healthcare-heroes"
+                href="https://sites.google.com/view/lets-breathe/home?authuser=0"
                 target="_blank"
               >
                 <u>Lets Breathe</u>
@@ -105,18 +116,23 @@ const Acknowledgments = ({ data }) => {
           </div>
         </section>
 
+
+        {/* Mika Naraynsingh */}
         <section className="md:p-16 p-8 flex flex-wrap-reverse">
           <div
-            class="flex-1 column w-1/4 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+            class="h-full w-1/4 flex-auto mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
             style={{ background: "#304352" }}
           >
             <img src={mn} alt="Mika Naraynsingh" style={{ width: "100%" }} />
-            <p class="center" style={{ textAlign: "center" }}>
+            <p class="center" style={{ textAlign: "center", color: "#FFFFFF"}}>
               Mika Naraynsingh
             </p>
           </div>
+
+
+          {/* Open Source Medical Supplies */}
           <div
-            class="flex-1 column w-1/4 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+            class="h-full w-1/4 flex-auto mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
             style={{ background: "#304352" }}
           >
             <img
@@ -124,23 +140,27 @@ const Acknowledgments = ({ data }) => {
               src={osms}
               alt="Open Source COVID19 Medical Supplies"
             />
-            <p class="center" style={{ textAlign: "center" }}>
+            <p class="center" style={{ textAlign: "center", color: "#FFFFFF"}}>
               <a href="https://opensourcemedicalsupplies.org/" target="_blank">
                 <u>Open Source Medical Supplies</u>
               </a>
             </p>
           </div>
+          
+
+          {/* MasksforDocs */}
           <div
-            class="flex-1 column w-1/4 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+            class="h-full w-1/4 flex-auto mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
             style={{ background: "#304352" }}
           >
             <img style={{ width: "100%" }} src={mfd} alt="Masks for Docs" />
-            <p class="center" style={{ textAlign: "center" }}>
+            <p class="center" style={{ textAlign: "center", color: "#FFFFFF"}}>
               <a href="https://masksfordocs.com" target="_blank">
                 <u>Masks for Docs</u>
               </a>
             </p>
           </div>
+
         </section>
       </main>
     </>
