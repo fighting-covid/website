@@ -32,46 +32,16 @@ const Acknowledgments = ({ data }) => {
               "We would like to thank everyone who helped us deliver PPE to frontline workers."
             }
           </Markdown>
-          <br></br>
         </section>
 
 
 
-        <section className="md:p-16 p-8">
+        <section className="md:p-8 p-8">
           <div className="flex flex-row">
 
-            {/* 3dforcovid */}
+            {/* Let's Breathe */}
             <div
-              class="w-1/4 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
-              style={{ background: "#304352" }}
-            >
-              <img style={{ width: "100%" }} src={covid} alt="3D for COVID" />
-              <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
-                <a href="https://3dforcovid.com/" target="_blank">
-                  <u>3D for COVID</u>
-                </a>
-              </p>
-            </div>
-
-            {/* Fairfax County Public Libraries */}
-            <div
-              class="w-1/2 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
-              style={{ background: "#304352" }}
-            >
-              <img
-                style={{ width: "100%" }}
-                src={fcpl}
-                alt="Fairfax County Public Libraries"
-              />
-              <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
-                <a href="https://www.fairfaxcounty.gov/library/" target="_blank">
-                  <u>FCPL</u>
-                </a>
-              </p>
-            </div>
-
-            <div
-              class="w-1/4 column mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              class="h-full w-1/4 column mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
               <img
@@ -81,19 +51,42 @@ const Acknowledgments = ({ data }) => {
               />
               <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
                 <a href="https://sites.google.com/view/lets-breathe/home?authuser=0" target="_blank">
-                  <u>Lets Breathe</u>
+                  <u>Let's Breathe</u>
                 </a>
               </p>
             </div>
-          </div>
-        </section>
 
+           
 
-        {/* Mika Naraynsingh */}
-        <section className="md:p-16 p-8 flex ">
-          <div className="flex flex-row">
+            {/* MasksforDocs */}
             <div
-              class="w-1/4 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              class="h-full w-1/4 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              style={{ background: "#304352" }}
+            >
+              <img style={{ width: "100%" }} src={mfd} alt="Masks for Docs" />
+              <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
+                <a href="https://masksfordocs.com" target="_blank">
+                  <u>Masks for Docs</u>
+                </a>
+              </p>
+            </div>
+          
+            {/* 3dforcovid */}
+            <div
+              class="h-full w-1/4 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              style={{ background: "#304352" }}
+            >
+              <img style={{ width: "100%" }} src={covid} alt="3D for COVID" />
+              <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
+                <a href="https://3dforcovid.com/" target="_blank">
+                  <u>3D for COVID</u>
+                </a>
+              </p>
+            </div>
+            
+             {/* Mika Naraynsingh */}            
+             <div
+              class="h-full w-5/12 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
               <img src={mn} alt="Mika Naraynsingh" style={{ width: "100%" }} />
@@ -103,9 +96,17 @@ const Acknowledgments = ({ data }) => {
             </div>
 
 
+          </div>
+        </section>
+
+
+
+        <section className="md:p-8 p-8">
+          <div className="flex flex-row">
+
             {/* Open Source Medical Supplies */}
             <div
-              class="w-1/2 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              class="h-full w-1/2 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
               <img
@@ -120,20 +121,25 @@ const Acknowledgments = ({ data }) => {
               </p>
             </div>
 
-
-            {/* MasksforDocs */}
+            {/* Fairfax County Public Libraries */}
             <div
-              class="w-1/4 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              class="h-full w-1/2 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
-              <img style={{ width: "100%" }} src={mfd} alt="Masks for Docs" />
+              <img
+                style={{ width: "100%" }}
+                src={fcpl}
+                alt="Fairfax County Public Libraries"
+              />
               <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
-                <a href="https://masksfordocs.com" target="_blank">
-                  <u>Masks for Docs</u>
+                <a href="https://www.fairfaxcounty.gov/library/" target="_blank">
+                  <u>FCPL</u>
                 </a>
               </p>
             </div>
+
           </div>
+          
         </section>
       </main>
     </>
