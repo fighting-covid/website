@@ -69,7 +69,7 @@ const Newsletter = ({ data }) => {
 						</div>
 						<div className="px-4 pb-4">
 							<button class="bg-white hover:bg-blue-700 text-dark py-2 px-4 rounded-full">
-								<Link href="/newsletter/vol1">Read More</Link>
+								<Link href="/newsletter/vol2">Read More</Link>
 							</button>
 						</div>
 					</div>
