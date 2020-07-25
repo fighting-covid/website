@@ -58,7 +58,16 @@ const AboutPage = ({ data }) => {
           <Markdown className="text-xl markdown-body">{data.mission}</Markdown>
           <p>{data.mission}</p>
         </section> */}
-
+        <div className="flex mt-5 items-center flex-row">
+        <div className="w-1/6"></div>
+        <p
+          className="w-2/3 pr-8 pl-8 pt-2 text-center font-mono md:text-3xl text-2xl pb-4"
+          style={{ color: "whitesmoke", backgroundColor: "#304352" }}
+        >
+          Founder and Coordinator: Reevu Adakroy
+              </p>
+        <div className="w-1/6"></div>
+        </div>
         <section className="md:p-16 p-8 flex flex-wrap-reverse">
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
