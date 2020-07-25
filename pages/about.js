@@ -368,7 +368,7 @@ const AboutPage = ({ data }) => {
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Shing Gao, Angie Huang, Sarah Zhang, Jay Siva, and Saanjh Khattar
+                  Angie Huang, Jay Siva, Saanjh Khattar, Sarah Zhang, and Shing Gao
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
