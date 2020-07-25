@@ -90,7 +90,7 @@ const Header = () => {
             <button
               className={`trans block mt-4 lg:inline-block lg:mt-0 pr-3 pt-2 pb-2 pt-1 ${
                 isInvolvedActive && !isActive ? "rounded-t-md" : "rounded-md"
-                } text-light hover:text-white`}
+                } text-light hover:text-gray-400`}
               onClick={() => setInvolvedActive(!isInvolvedActive)}
               style={{ outline: "none" }}
             // onMouseEnter={() => setInvolvedActive(true)}

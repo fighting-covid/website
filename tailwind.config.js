@@ -7,7 +7,8 @@ module.exports = {
         accent: "#e44c65",
         pinkDark: "#CD445A",
 	      graya: "#F8F9F9",
-	      grayf: "#E5E5E5",
+        grayf: "#E5E5E5",
+        darkLight: "#445563",
       },
     },
     fontFamily: {
