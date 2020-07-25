@@ -25,10 +25,10 @@ export default async (req, res) => {
       requestRows.forEach((requestRows) => {
         const rawData = requestRows._rawData;
         if (rawData[0]) {
-          if (!rawData[7]) rawData[7] = 0;
-          if (!rawData[8]) rawData[8] = 0;
-          if (!rawData[9]) rawData[9] = 0;
-          if (!rawData[10]) rawData[10] = 0;
+          if (!rawData[7] || !isNaN(rawData[7]) rawData[7] = 0;
+          if (!rawData[8] || !isNaN(rawData[8]) rawData[8] = 0;
+          if (!rawData[9] || !isNaN(rawData[9]) rawData[9] = 0;
+          if (!rawData[10] || !isNaN(rawData[10]) rawData[10] = 0;
           if (
             rawData[7] != 0 ||
             rawData[8] != 0 ||
@@ -45,19 +45,23 @@ export default async (req, res) => {
         }
       });
 
+      
       let donationData = [];
+      let donationDict = {};
+
       donationRows.forEach((donationRows) => {
         const rawData2 = donationRows._rawData;
-        let donationDict = {};
+        
         if (rawData2[2] && rawData2[3])
           if (donationDict[rawData2[2]])
             donationDict[rawData2[2]] += Number(rawData2[3]);
           else donationDict[rawData2[2]] = Number(rawData2[3]);
-        for (const key in donationDict) {
-          donationData.push({ name: key, quantity: donationDict[key] });
-        }
+        
       });
-
+      for (const key in donationDict) {
+        donationData.push({ name: key, quantity: donationDict[key] });
+      }
+      
       res.statusCode = 200;
       res.send({ request_data: requestData, donation_data: donationData });
     } catch (e) {
