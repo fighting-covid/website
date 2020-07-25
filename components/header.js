@@ -151,16 +151,14 @@ const Header = () => {
                 </span>
               </li>
             </ul>
-            {/*
             <NavLink
-              href="/ppe-make"
-              title="Make"
+              href="/newsletter"
+              title="Newsletter"
               onClick={() => {
                 setActive(false);
                 setInvolvedActive(false);
               }}
             />
-            */}
             <NavLink
               href="/contact"
               title="Contact"
