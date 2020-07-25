@@ -53,10 +53,11 @@ const Acknowledgments = ({ data }) => {
               class="h-full w-1/5 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
-              <img style={{ width: "100%" }} src={mfd} alt="Masks for Docs" />
+              
               <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
                 <a href="https://masksfordocs.com" target="_blank">
-                  <u>Masks for Docs</u>
+                  <img style={{ width: "100%" }} src={mfd} alt="Masks for Docs" />
+                  Masks for Docs
                 </a>
               </p>
             </div>
@@ -66,14 +67,15 @@ const Acknowledgments = ({ data }) => {
               class="h-full w-5/12 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
-              <img
-                style={{ width: "100%" }}
-                src={fcpl}
-                alt="Fairfax County Public Libraries"
-              />
+              
               <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
                 <a href="https://www.fairfaxcounty.gov/library/" target="_blank">
-                  <u>FCPL</u>
+                  <img
+                  style={{ width: "100%" }}
+                  src={fcpl}
+                  alt="Fairfax County Public Libraries"
+                  />
+                  Fairfax County Public Libraries
                 </a>
               </p>
             </div>
@@ -89,10 +91,11 @@ const Acknowledgments = ({ data }) => {
               class="h-full w-1/4 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
-              <img style={{ width: "100%" }} src={covid} alt="3D for COVID" />
+              
               <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
                 <a href="https://3dforcovid.com/" target="_blank">
-                  <u>3D for COVID</u>
+                  <img style={{ width: "100%" }} src={covid} alt="3D for COVID" />
+                  3D for COVID
                 </a>
               </p>
             </div>
@@ -102,14 +105,16 @@ const Acknowledgments = ({ data }) => {
               class="h-full w-1/2 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
-              <img
-                style={{ width: "100%" }}
-                src={osms}
-                alt="Open Source COVID19 Medical Supplies"
-              />
+              
               <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
+                  
                 <a href="https://opensourcemedicalsupplies.org/" target="_blank">
-                  <u>Open Source Medical Supplies</u>
+                    <img
+                    style={{ width: "100%" }}
+                    src={osms}
+                    alt="Open Source COVID19 Medical Supplies"
+                  />
+                  Open Source Medical Supplies
                 </a>
               </p>
             </div>
@@ -119,14 +124,15 @@ const Acknowledgments = ({ data }) => {
               class="h-full w-1/4 column mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
-              <img
-                style={{ width: "100%" }}
-                src={breathe}
-                alt="Lets Breathe"
-              />
+              
               <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
                 <a href="https://sites.google.com/view/lets-breathe/home?authuser=0" target="_blank">
-                  <u>Let's Breathe</u>
+                  <img
+                  style={{ width: "100%" }}
+                  src={breathe}
+                  alt="Lets Breathe"
+                />
+                  Let's Breathe
                 </a>
               </p>
             </div>
