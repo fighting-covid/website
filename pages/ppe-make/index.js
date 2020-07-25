@@ -53,7 +53,7 @@ const PPEMakePage = ({ data }) => {
                 <Link href="/ppe-make/3d">3D-Printing</Link>
               </button>
               <button className="bg-dark hover:bg-blue-700 text-white py-2 w-56 rounded-full">
-                <Link href="/ppe-make/3d">Innovative Design</Link>
+                <Link href="/ppe-make/innovative-design">Innovative Design</Link>
               </button>
             </div>
           </div>
