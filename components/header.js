@@ -140,7 +140,7 @@ const Header = () => {
               >
                 <span>
                   <NavLink
-                    href="/ppe-make"
+                    href="/ppe-make/innovative-design"
                     title="Innovative Design"
                     onClick={() => {
                       setActive(false);
