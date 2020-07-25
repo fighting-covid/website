@@ -6,6 +6,8 @@ module.exports = {
         light: "whitesmoke",
         accent: "#e44c65",
         pinkDark: "#CD445A",
+	      graya: "#F8F9F9",
+	      grayf: "#E5E5E5",
       },
     },
     fontFamily: {

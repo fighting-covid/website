@@ -62,7 +62,7 @@ const AboutPage = ({ data }) => {
         <section className="md:p-16 p-8 flex flex-wrap-reverse">
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={webdev2} alt="3D for COVID" />
+              <img className="bg-graya" style={{ width: "100%" }} src={webdev2} alt="3D for COVID" />
               <p class="center" style={{ textAlign: "center", color: "white"}}>Web Development</p>
             </div>
           } modal>
@@ -116,7 +116,7 @@ const AboutPage = ({ data }) => {
 
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={sewing2} alt="Fairfax County Public Libraries" />
+              <img className="bg-graya" style={{ width: "100%" }} src={sewing2} alt="Fairfax County Public Libraries" />
               <p class="center" style={{ textAlign: "center", color: "white"}}>Sewing</p>
             </div>
           } modal>
@@ -172,7 +172,7 @@ const AboutPage = ({ data }) => {
 
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={publicity2} alt="Lets Breathe" />
+              <img className="bg-graya" style={{ width: "100%" }} src={publicity2} alt="Lets Breathe" />
               <p class="center" style={{ textAlign: "center", color: "white"}}>Publicity</p>
             </div>
           } modal>
@@ -229,7 +229,7 @@ const AboutPage = ({ data }) => {
 
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={three} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
+              <img className="bg-graya" style={{ width: "100%" }} src={three} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
               <p class="center" style={{ textAlign: "center", color: "white"}}>3D Printing</p>
             </div>
           } modal>
@@ -287,7 +287,7 @@ const AboutPage = ({ data }) => {
 
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={funds} alt="3D for COVID" />
+              <img className="bg-graya" style={{ width: "100%" }} src={funds} alt="3D for COVID" />
               <p class="center" style={{ textAlign: "center", color: "white"}}>Funds</p>
             </div>
           } modal>
@@ -333,7 +333,7 @@ const AboutPage = ({ data }) => {
 
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={outreach} alt="Fairfax County Public Libraries" />
+              <img className="bg-graya" style={{ width: "100%" }} src={outreach} alt="Fairfax County Public Libraries" />
               <p class="center" style={{ textAlign: "center", color: "white"}}>Outreach</p>
             </div>
           } modal>
@@ -387,7 +387,7 @@ const AboutPage = ({ data }) => {
 
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={tutorials} alt="Lets Breathe" />
+              <img className="bg-graya" style={{ width: "100%" }} src={tutorials} alt="Lets Breathe" />
               <p class="center" style={{ textAlign: "center", color: "white"}}>Tutorials</p>
             </div>
           } modal>
@@ -440,7 +440,7 @@ const AboutPage = ({ data }) => {
 
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={eprinting} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
+              <img className="bg-graya" style={{ width: "100%" }} src={eprinting} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
               <p class="center" style={{ textAlign: "center", color: "white"}}>Innovative Design</p>
             </div>
           } modal>
