@@ -34,59 +34,12 @@ const Acknowledgments = ({ data }) => {
           </Markdown>
         </section>
 
+        <section className="md:pr-8 pr-8 md:pt-8 pt-8 md:pl-8 pl-8 md:pb-6 pb-6">
+          <div className="flex items-center flex-row">
 
-
-        <section className="md:p-8 p-8">
-          <div className="flex flex-row">
-
-            {/* Let's Breathe */}
+            {/* Mika Naraynsingh */}
             <div
-              class="h-full w-1/4 column mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
-              style={{ background: "#304352" }}
-            >
-              <img
-                style={{ width: "100%" }}
-                src={breathe}
-                alt="Lets Breathe"
-              />
-              <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
-                <a href="https://sites.google.com/view/lets-breathe/home?authuser=0" target="_blank">
-                  <u>Let's Breathe</u>
-                </a>
-              </p>
-            </div>
-
-           
-
-            {/* MasksforDocs */}
-            <div
-              class="h-full w-1/4 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
-              style={{ background: "#304352" }}
-            >
-              <img style={{ width: "100%" }} src={mfd} alt="Masks for Docs" />
-              <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
-                <a href="https://masksfordocs.com" target="_blank">
-                  <u>Masks for Docs</u>
-                </a>
-              </p>
-            </div>
-          
-            {/* 3dforcovid */}
-            <div
-              class="h-full w-1/4 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
-              style={{ background: "#304352" }}
-            >
-              <img style={{ width: "100%" }} src={covid} alt="3D for COVID" />
-              <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
-                <a href="https://3dforcovid.com/" target="_blank">
-                  <u>3D for COVID</u>
-                </a>
-              </p>
-            </div>
-            
-             {/* Mika Naraynsingh */}            
-             <div
-              class="h-full w-5/12 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              class="h-full w-4/12 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
               <img src={mn} alt="Mika Naraynsingh" style={{ width: "100%" }} />
@@ -95,51 +48,96 @@ const Acknowledgments = ({ data }) => {
             </p>
             </div>
 
-
-          </div>
-        </section>
-
-
-
-        <section className="md:p-8 p-8">
-          <div className="flex flex-row">
-
-            {/* Open Source Medical Supplies */}
+            {/* MasksforDocs */}
             <div
-              class="h-full w-1/2 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              class="h-full w-1/5 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
-              <img
-                style={{ width: "100%" }}
-                src={osms}
-                alt="Open Source COVID19 Medical Supplies"
-              />
+              
               <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
-                <a href="https://opensourcemedicalsupplies.org/" target="_blank">
-                  <u>Open Source Medical Supplies</u>
+                <a href="https://masksfordocs.com" target="_blank">
+                  <img style={{ width: "100%" }} src={mfd} alt="Masks for Docs" />
+                  Masks for Docs
                 </a>
               </p>
             </div>
 
             {/* Fairfax County Public Libraries */}
             <div
-              class="h-full w-1/2 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              class="h-full w-5/12 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
-              <img
-                style={{ width: "100%" }}
-                src={fcpl}
-                alt="Fairfax County Public Libraries"
-              />
+              
               <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
                 <a href="https://www.fairfaxcounty.gov/library/" target="_blank">
-                  <u>FCPL</u>
+                  <img
+                  style={{ width: "100%" }}
+                  src={fcpl}
+                  alt="Fairfax County Public Libraries"
+                  />
+                  Fairfax County Public Libraries
                 </a>
               </p>
             </div>
 
           </div>
-          
+        </section>
+
+        <section className="md:p-8 p-8">
+          <div className="flex items-center flex-row">
+
+            {/* 3dforcovid */}
+            <div
+              class="h-full w-1/4 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              style={{ background: "#304352" }}
+            >
+              
+              <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
+                <a href="https://3dforcovid.com/" target="_blank">
+                  <img style={{ width: "100%" }} src={covid} alt="3D for COVID" />
+                  3D for COVID
+                </a>
+              </p>
+            </div>
+
+            {/* Open Source Medical Supplies */}
+            <div
+              class="h-full w-1/2 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              style={{ background: "#304352" }}
+            >
+              
+              <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
+                  
+                <a href="https://opensourcemedicalsupplies.org/" target="_blank">
+                    <img
+                    style={{ width: "100%" }}
+                    src={osms}
+                    alt="Open Source COVID19 Medical Supplies"
+                  />
+                  Open Source Medical Supplies
+                </a>
+              </p>
+            </div>
+
+            {/* Let's Breathe */}
+            <div
+              class="h-full w-1/4 column mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              style={{ background: "#304352" }}
+            >
+              
+              <p class="center" style={{ textAlign: "center", color: "#FFFFFF" }}>
+                <a href="https://sites.google.com/view/lets-breathe/home?authuser=0" target="_blank">
+                  <img
+                  style={{ width: "100%" }}
+                  src={breathe}
+                  alt="Lets Breathe"
+                />
+                  Let's Breathe
+                </a>
+              </p>
+            </div>
+
+          </div>
         </section>
       </main>
     </>

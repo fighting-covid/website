@@ -58,11 +58,20 @@ const AboutPage = ({ data }) => {
           <Markdown className="text-xl markdown-body">{data.mission}</Markdown>
           <p>{data.mission}</p>
         </section> */}
-
+        <div className="flex mt-5 items-center flex-row">
+        <div className="w-1/6"></div>
+        <p
+          className="w-2/3 pr-8 pl-8 pt-2 text-center font-mono md:text-3xl text-2xl pb-4"
+          style={{ color: "whitesmoke", backgroundColor: "#304352" }}
+        >
+          Founder and Coordinator: Reevu Adakroy
+              </p>
+        <div className="w-1/6"></div>
+        </div>
         <section className="md:p-16 p-8 flex flex-wrap-reverse">
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={webdev2} alt="3D for COVID" />
+              <img className="bg-graya" style={{ width: "100%" }} src={webdev2} alt="3D for COVID" />
               <p class="center" style={{ textAlign: "center", color: "white"}}>Web Development</p>
             </div>
           } modal>
@@ -97,7 +106,7 @@ const AboutPage = ({ data }) => {
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Nuha Mohammed, Ron Nachum, Aaryan Dave, Sarah Zhang
+                  Nuha Mohammed, Akash Bhave, and Jason Klein
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -116,7 +125,7 @@ const AboutPage = ({ data }) => {
 
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={sewing2} alt="Fairfax County Public Libraries" />
+              <img className="bg-graya" style={{ width: "100%" }} src={sewing2} alt="Fairfax County Public Libraries" />
               <p class="center" style={{ textAlign: "center", color: "white"}}>Sewing</p>
             </div>
           } modal>
@@ -145,15 +154,15 @@ const AboutPage = ({ data }) => {
                 <br></br>
                 <div class="px-2" style={{ color: "white" }}>
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
-                    Leads:
+                    Lead:
                   </span>{" "}
-                  Aryan Chinnala and Varun Chilukuri
+                  Cynthia Wang
                 </div>
                 <div class="px-2" style={{ color: "white" }}>
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Nuha Mohammed, Ron Nachum, Aaryan Dave, Sarah Zhang
+                  Sahana Ramesh, Anoushka Sarkar, Brianna Ta, and Priyanka Mosur
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -172,7 +181,7 @@ const AboutPage = ({ data }) => {
 
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={publicity2} alt="Lets Breathe" />
+              <img className="bg-graya" style={{ width: "100%" }} src={publicity2} alt="Lets Breathe" />
               <p class="center" style={{ textAlign: "center", color: "white"}}>Publicity</p>
             </div>
           } modal>
@@ -201,16 +210,16 @@ const AboutPage = ({ data }) => {
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Leads:
                   </span>{" "}
-                  Kashika Dhanjal, Khushmeet Chandi, Anika Thatavarty, Jennifer
+                  Kashika Dhanjal, Khushmeet Chandi, Anika Thatavarty, and Jennifer
                   Abraham
                 </div>
                 <div class="px-2" style={{ color: "white" }}>
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Rhea Goswami, Akila Islam, Angie Huang, Anoushka Sarkar,
-                  Brianna Ta, Emma Cheng, Jay Siva, Krithi L. , Reva Hirave,
-                  Rhea Tammireddi, Simar N., Vyomika Ghandi
+                  Akila Islam, Angie Huang, Anoushka Sarkar,
+                  Brianna Ta, Emma Cheng, Jay Siva, Rhea Vidhyababu, Krithika Layagala, Reva Hirave,
+                  Rhea Tammireddi, Simar Narula, Jay Siva, and Vyomika Ghandi
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -229,7 +238,7 @@ const AboutPage = ({ data }) => {
 
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={three} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
+              <img className="bg-graya" style={{ width: "100%" }} src={three} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
               <p class="center" style={{ textAlign: "center", color: "white"}}>3D Printing</p>
             </div>
           } modal>
@@ -259,13 +268,13 @@ const AboutPage = ({ data }) => {
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Leads:
                   </span>{" "}
-                  Joshua Lian, Tharun Saravanan
+                  Joshua Lian and Tharun Saravanan
                 </div>
                 <div class="px-2" style={{ color: "white" }}>
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Kareem Jaber, Aaryan Dave, Ron Nachum, Daniel Lian
+                  Kareem Jaber, Ron Nachum, and Daniel Lian
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -287,7 +296,7 @@ const AboutPage = ({ data }) => {
 
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={funds} alt="3D for COVID" />
+              <img className="bg-graya" style={{ width: "100%" }} src={funds} alt="3D for COVID" />
               <p class="center" style={{ textAlign: "center", color: "white"}}>Funds</p>
             </div>
           } modal>
@@ -312,9 +321,9 @@ const AboutPage = ({ data }) => {
                 <br></br>
                 <div class="px-2" style={{ color: "white" }}>
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
-                    Leads:
+                    Team:
                   </span>{" "}
-                  Catie Granum, Vishal Kanigicherla
+                  Catie Granum and Vishal Kanigicherla
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -333,7 +342,7 @@ const AboutPage = ({ data }) => {
 
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={outreach} alt="Fairfax County Public Libraries" />
+              <img className="bg-graya" style={{ width: "100%" }} src={outreach} alt="Fairfax County Public Libraries" />
               <p class="center" style={{ textAlign: "center", color: "white"}}>Outreach</p>
             </div>
           } modal>
@@ -368,7 +377,7 @@ const AboutPage = ({ data }) => {
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Shing Gao, Angie Huang, Sarah Zhang, Jay Siva, Saanjh Khattar
+                  Angie Huang, Jay Siva, Saanjh Khattar, Sarah Zhang, and Shing Gao
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -387,7 +396,7 @@ const AboutPage = ({ data }) => {
 
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={tutorials} alt="Lets Breathe" />
+              <img className="bg-graya" style={{ width: "100%" }} src={tutorials} alt="Lets Breathe" />
               <p class="center" style={{ textAlign: "center", color: "white"}}>Tutorials</p>
             </div>
           } modal>
@@ -413,15 +422,15 @@ const AboutPage = ({ data }) => {
                 <br></br>
                 <div class="px-2" style={{ color: "white" }}>
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
-                    Leads:
+                    Lead:
                   </span>{" "}
-                  Marian Qian and Aryan Joshi
+                  Hashir Aqeel 
                 </div>
                 <div class="px-2" style={{ color: "white" }}>
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Shing Gao, Angie Huang, Sarah Zhang, Jay Siva, Saanjh Khattar
+                  Vyomika Gandhi, Rhea Goswami, Maxwell Bai, Yulee Kang, and Kareem Jaber
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -440,7 +449,7 @@ const AboutPage = ({ data }) => {
 
           <Popup trigger={
             <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
-              <img className="bg-gray-200" style={{ width: "100%" }} src={eprinting} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
+              <img className="bg-graya" style={{ width: "100%" }} src={eprinting} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
               <p class="center" style={{ textAlign: "center", color: "white"}}>Innovative Design</p>
             </div>
           } modal>
@@ -464,7 +473,7 @@ const AboutPage = ({ data }) => {
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Marian Qian, Angie Huang, Hashir Aqeel, Taj Abdin, Thomas Lu
+                  Marian Qian, Angie Huang, Hashir Aqeel, Taj Abdin, and  Thomas Lu
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">

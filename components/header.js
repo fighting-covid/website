@@ -2,6 +2,7 @@ import React, { useState, useCallback } from 'react'
 import Link from "next/link";
 import Logo from "../assets/images/brand/mask.svg";
 import { HamburgerSpin } from 'react-animated-burgers'
+import Dropdown from 'react-dropdown';
 
 const NavLink = ({ href, title, onClick, end }) => (
   <Link href={href}>
@@ -102,7 +103,7 @@ const Header = () => {
                 }  bg-dark rounded-b-md ${
                 isActive ? "relative list-disc" : "absolute p-2 text-center"
                 }`}
-              style={isActive ? { left: "17.2rem" } : { right: "17.2rem" }}
+                style={isActive ? { left: "2rem" } : { right: "17.2rem" }}              
             // onMouseLeave={() => setInvolvedActive(false)}
             >
               <li className="text-accent">
@@ -140,7 +141,7 @@ const Header = () => {
               >
                 <span>
                   <NavLink
-                    href="/ppe-make"
+                    href="/ppe-make/innovative-design"
                     title="Innovative Design"
                     onClick={() => {
                       setActive(false);
