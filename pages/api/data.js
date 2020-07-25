@@ -25,10 +25,10 @@ export default async (req, res) => {
       requestRows.forEach((requestRows) => {
         const rawData = requestRows._rawData;
         if (rawData[0]) {
-          if (!rawData[7]) rawData[7] = 0;
-          if (!rawData[8]) rawData[8] = 0;
-          if (!rawData[9]) rawData[9] = 0;
-          if (!rawData[10]) rawData[10] = 0;
+          if (!rawData[7] || !isNaN(rawData[7]) rawData[7] = 0;
+          if (!rawData[8] || !isNaN(rawData[8]) rawData[8] = 0;
+          if (!rawData[9] || !isNaN(rawData[9]) rawData[9] = 0;
+          if (!rawData[10] || !isNaN(rawData[10]) rawData[10] = 0;
           if (
             rawData[7] != 0 ||
             rawData[8] != 0 ||
