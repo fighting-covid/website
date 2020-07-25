@@ -59,6 +59,7 @@ const PPEMake3DPage = ({ data }) => {
                   </div>{" "}
                 </div>
                 <br></br>
+                <br></br>
 
                 <section className="flex flex-wrap-reverse md:justify-center">
                   <div className="md:pr-1 p-5">
@@ -115,6 +116,7 @@ const PPEMake3DPage = ({ data }) => {
                   </div>{" "}
                 </div>{" "}
               </div>
+              <br></br>
 
               <section className="flex flex-wrap-reverse md:justify-center p-6">
                 <div className="md:pr-1 p-5">
