@@ -24,6 +24,7 @@
     "react-burgers": "^1.3.0",
     "react-dom": "^16.13.1",
     "react-download-link": "^2.3.0",
+    "react-dropdown": "^1.7.0",
     "react-ga": "^2.7.0",
     "react-google-recaptcha": "^2.0.1",
     "react-hamburger-menu": "^1.2.1",
