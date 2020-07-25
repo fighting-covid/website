@@ -97,7 +97,7 @@ const AboutPage = ({ data }) => {
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Nuha Mohammed, Ron Nachum, Aaryan Dave, Sarah Zhang
+                  Nuha Mohammed, Akash Bhave, and Jason Klein
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -145,15 +145,15 @@ const AboutPage = ({ data }) => {
                 <br></br>
                 <div class="px-2" style={{ color: "white" }}>
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
-                    Leads:
+                    Lead:
                   </span>{" "}
-                  Aryan Chinnala and Varun Chilukuri
+                  Cynthia Wang
                 </div>
                 <div class="px-2" style={{ color: "white" }}>
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Nuha Mohammed, Ron Nachum, Aaryan Dave, Sarah Zhang
+                  Sahana Ramesh, Anoushka Sarkar, Brianna Ta, and Priyanka Mosur
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -201,16 +201,16 @@ const AboutPage = ({ data }) => {
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Leads:
                   </span>{" "}
-                  Kashika Dhanjal, Khushmeet Chandi, Anika Thatavarty, Jennifer
+                  Kashika Dhanjal, Khushmeet Chandi, Anika Thatavarty, and Jennifer
                   Abraham
                 </div>
                 <div class="px-2" style={{ color: "white" }}>
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Rhea Goswami, Akila Islam, Angie Huang, Anoushka Sarkar,
-                  Brianna Ta, Emma Cheng, Jay Siva, Krithi L. , Reva Hirave,
-                  Rhea Tammireddi, Simar N., Vyomika Ghandi
+                  Akila Islam, Angie Huang, Anoushka Sarkar,
+                  Brianna Ta, Emma Cheng, Jay Siva, Rhea Vidhyababu, Krithika Layagala, Reva Hirave,
+                  Rhea Tammireddi, Simar Narula, Jay Siva, and Vyomika Ghandi
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -259,13 +259,13 @@ const AboutPage = ({ data }) => {
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Leads:
                   </span>{" "}
-                  Joshua Lian, Tharun Saravanan
+                  Joshua Lian and Tharun Saravanan
                 </div>
                 <div class="px-2" style={{ color: "white" }}>
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Kareem Jaber, Aaryan Dave, Ron Nachum, Daniel Lian
+                  Kareem Jaber, Ron Nachum, and Daniel Lian
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -312,9 +312,9 @@ const AboutPage = ({ data }) => {
                 <br></br>
                 <div class="px-2" style={{ color: "white" }}>
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
-                    Leads:
+                    Team:
                   </span>{" "}
-                  Catie Granum, Vishal Kanigicherla
+                  Catie Granum and Vishal Kanigicherla
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -368,7 +368,7 @@ const AboutPage = ({ data }) => {
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Shing Gao, Angie Huang, Sarah Zhang, Jay Siva, Saanjh Khattar
+                  Shing Gao, Angie Huang, Sarah Zhang, Jay Siva, and Saanjh Khattar
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -413,15 +413,15 @@ const AboutPage = ({ data }) => {
                 <br></br>
                 <div class="px-2" style={{ color: "white" }}>
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
-                    Leads:
+                    Lead:
                   </span>{" "}
-                  Marian Qian and Aryan Joshi
+                  Hashir Aqeel 
                 </div>
                 <div class="px-2" style={{ color: "white" }}>
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Shing Gao, Angie Huang, Sarah Zhang, Jay Siva, Saanjh Khattar
+                  Vyomika Gandhi, Rhea Goswami, Maxwell Bai, Yulee Kang, and Kareem Jaber
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -464,7 +464,7 @@ const AboutPage = ({ data }) => {
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Marian Qian, Angie Huang, Hashir Aqeel, Taj Abdin, Thomas Lu
+                  Marian Qian, Angie Huang, Hashir Aqeel, Taj Abdin, and  Thomas Lu
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
