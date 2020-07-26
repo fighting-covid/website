@@ -102,7 +102,7 @@ const HomePage = ({ data }) => {
         </section>
 
         <section className="md:p-16 md:pr-40 p-8 flex flex-wrap">
-          <div className="md:pr-24 md:pl-40 pb-40 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
+          <div className="md:pr-24 md:pl-40 pb-10 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
             <div>
               <h2
                 className="font-mono md:text-4xl text-3xl"
