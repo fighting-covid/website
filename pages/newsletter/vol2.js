@@ -15,15 +15,15 @@ const Vol2 = ({ data }) => {
 		<>
 			<SEO title="Newsletter" />
 			<main>
-				<section className="md:mb-8 relative md:p-8 mx-64">
-					<div className="justify-center">
-						<img style={{ width: "100%" }} src={v1p1} />
+				<section className="mb-8 relative md:p-8">
+					<div className="justify-center items-center flex flex-col">
+						<img className="w-3/4" src={v1p1} />
 						<br></br><br></br>
-						<img style={{ width: "100%" }} src={v1p2} />
+						<img className="w-3/4" src={v1p2} />
 						<br></br><br></br>
-						<img style={{ width: "100%" }} src={v1p3} />
+						<img className="w-3/4" src={v1p3} />
 						<br></br><br></br>
-						<img style={{ width: "100%" }} src={v1p4} />
+						<img className="w-3/4" src={v1p4} />
 					</div>
 				</section>
 			</main>
