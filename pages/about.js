@@ -219,7 +219,7 @@ const AboutPage = ({ data }) => {
                   </span>{" "}
                   Akila Islam, Angie Huang, Anoushka Sarkar,
                   Brianna Ta, Emma Cheng, Jay Siva, Rhea Vidhyababu, Krithika Layagala, Reva Hirave,
-                  Rhea Tammireddi, Simar Narula, Jay Siva, and Vyomika Ghandi
+                  Rhea Tammireddi, Simar Narula, and Vyomika Ghandi
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -460,7 +460,7 @@ const AboutPage = ({ data }) => {
                 </a>
                 <h2 style={{ textAlign: "center", color: "#e44c65", fontWeight: "bold"}}>Innovative Design</h2>
                 <div class="px-2" style={{color: "white"}}>
-                  <br></br>The Innovative Design team is designing and producing ear savers to help make masks more comfortable and ensure long term wear.
+                  <br></br>The Innovative Design team is designing and producing PPE that doesn't require the use of 3D printers or sewing machines. Their products include origami ear savers, face masks, and face shields.
                 </div>
                 <br></br>
                 <div class="px-2" style={{ color: "white" }}>
@@ -473,7 +473,7 @@ const AboutPage = ({ data }) => {
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Marian Qian, Angie Huang, Hashir Aqeel, Taj Abdin, and  Thomas Lu
+                  Marian Qian, Angie Huang, Amanda Nguyen, Saketh Kura, Maria Izzi, and Thomas Lu
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
