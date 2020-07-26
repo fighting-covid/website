@@ -159,7 +159,7 @@ const HomePage = ({ data }) => {
                     dataKey="grabbers"
                     name="Door Grabbers"
                     stackId="a"
-                    fill="#bce3c8"
+                    fill="#84b593"
                   />
                 </BarChart>
               </ResponsiveContainer>
@@ -205,8 +205,8 @@ const HomePage = ({ data }) => {
               <br></br>
             </div>
             <Markdown className="markdown-body text-lg">
-              This graph shows the quantities of PPE we have already donated to
-              each hospital. Hover over the bars for exact values.
+              This graph shows the quantities of PPE we have already coordinated donations for. 
+              Hover over the bars for exact values.
             </Markdown>
             <br></br>
             <div>
