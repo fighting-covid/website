@@ -103,7 +103,7 @@ const Header = () => {
                 }  bg-dark rounded-b-md ${
                 isActive ? "relative list-disc" : "absolute p-2 text-center"
                 }`}
-                style={isActive ? { left: "2rem" } : { right: "17.2rem" }}              
+                style={isActive ? { left: "2rem" } : { right: "23.5rem" }}              
             // onMouseLeave={() => setInvolvedActive(false)}
             >
               <li className="text-accent">
