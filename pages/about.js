@@ -162,7 +162,7 @@ const AboutPage = ({ data }) => {
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Sahana Ramesh, Anoushka Sarkar, Brianna Ta, and Priyanka Mosur
+                  Victoria Lu, Angie Huang, Priyanka Mosur, and Maanya Shanker
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
@@ -274,7 +274,7 @@ const AboutPage = ({ data }) => {
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Team:
                   </span>{" "}
-                  Kareem Jaber, Ron Nachum, and Daniel Lian
+                  Kareem Jaber, Daniel Lian, and Ron Nachum
                 </div>
                 <br></br>
                 <div class="w-auto inline-block flex items-center justify-center pb-2">
