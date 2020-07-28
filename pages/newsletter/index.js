@@ -40,7 +40,7 @@ const Newsletter = ({ data }) => {
 						</div>
 						<div className="px-4 pb-4">
 							<button class="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
-								<Link href="/newsletter/vol1">Read More</Link>
+								<a href="/volume1.pdf" target="_blank">Read More</a>
 							</button>
 						</div>
 					</div>
@@ -69,7 +69,7 @@ const Newsletter = ({ data }) => {
 						</div>
 						<div className="px-4 pb-4">
 							<button class="bg-white hover:bg-blue-700 text-dark py-2 px-4 rounded-full">
-								<Link href="/newsletter/vol2">Read More</Link>
+								<a href="/volume2.pdf" target="_blank">Read More</a>
 							</button>
 						</div>
 					</div>
