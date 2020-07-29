@@ -18,10 +18,10 @@ const Acknowledgments = ({ data }) => {
     <>
       <SEO title="Acknowledgments" />
       <main>
-        <section className="p-8">
+        <section className="pr-8 pl-8 pt-8 pb-4 md:pb-8">
           <div className="flex justify-center">
             <h2
-              className="font-mono md:text-4xl text-3xl"
+              className="font-mono md:text-4xl text-3xl heading"
               style={{ color: "#304352" }}
             >
               Acknowledgments
@@ -34,12 +34,12 @@ const Acknowledgments = ({ data }) => {
           </Markdown>
         </section>
 
-        <section className="md:pr-8 pr-8 md:pt-8 pt-8 md:pl-8 pl-8 md:pb-6 pb-6">
-          <div className="flex items-center flex-row">
+        <section className="md:pr-8 pr-8 md:pt-8 pt-8 md:pl-8 pl-8 md:pb-6 pb-0">
+          <div className="flex items-center flex-col md:flex-row">
 
             {/* Mika Naraynsingh */}
             <div
-              class="h-full w-4/12 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              class="h-full w-3/4 md:w-4/12 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
               <img src={mn} alt="Mika Naraynsingh" style={{ width: "100%" }} />
@@ -50,7 +50,7 @@ const Acknowledgments = ({ data }) => {
 
             {/* MasksforDocs */}
             <div
-              class="h-full w-1/5 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              class="h-full w-3/4 md:w-1/5 mx-16 my-5 md:my-0 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
               
@@ -64,7 +64,7 @@ const Acknowledgments = ({ data }) => {
 
             {/* Fairfax County Public Libraries */}
             <div
-              class="h-full w-5/12 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              class="h-full w-3/4 md:w-5/12 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
               
@@ -83,12 +83,12 @@ const Acknowledgments = ({ data }) => {
           </div>
         </section>
 
-        <section className="md:p-8 p-8">
-          <div className="flex items-center flex-row">
+        <section className="md:p-8 pr-8 pl-8 pb-8 pt-4">
+          <div className="flex items-center flex-col md:flex-row">
 
             {/* 3dforcovid */}
             <div
-              class="h-full w-1/4 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              class="h-full w-3/4 md:w-1/4 mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
               
@@ -102,7 +102,7 @@ const Acknowledgments = ({ data }) => {
 
             {/* Open Source Medical Supplies */}
             <div
-              class="h-full w-1/2 mx-16 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              class="h-full w-3/4 md:w-1/2 mx-16 my-5 md:my-0 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
               
@@ -121,7 +121,7 @@ const Acknowledgments = ({ data }) => {
 
             {/* Let's Breathe */}
             <div
-              class="h-full w-1/4 column mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
+              class="h-full w-3/4 md:w-1/4 column mx-3 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-110 ..."
               style={{ background: "#304352" }}
             >
               
