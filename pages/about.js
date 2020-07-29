@@ -13,6 +13,7 @@ import background from '../assets/images/masks_darkened1.jpg';
 import Popup from "reactjs-popup";
 import SEO from "../components/seo";
 import ReactGA from "react-ga";
+import Markdown from "react-markdown";
 ReactGA.initialize("UA-167321699-1");
 ReactGA.pageview("/about");
 
@@ -21,6 +22,7 @@ const AboutPage = ({ data }) => {
     <>
       <SEO title="About" />
       <main>
+        {/*
         <section className="md:mb-16 relative p-8 md:p-64">
           <img
             className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
@@ -50,6 +52,22 @@ const AboutPage = ({ data }) => {
             </div>
           </div>
         </section>
+          */}
+        <section className="pr-8 pl-8 pt-8 pb-4 md:pb-8">
+          <div className="flex justify-center">
+            <h2
+              className="font-mono md:text-4xl text-3xl heading"
+              style={{ color: "black" }}
+            >
+              Our Mission
+            </h2>
+          </div>
+          <Markdown className="text-xl markdown-body md:w-11/12 mb-4 mx-auto text-center">
+            {
+              "We are a group of students working to connect hospitals in the DC-Maryland-Virginia region with desperately needed supplies in the wake of the COVID-19 pandemic. Our team is also working on independently producing hospital-approved Personal Protective Equipment (PPE) and other items, with the eventual vision of support healthcare workers during this time of crisis and shortage."
+            }
+          </Markdown>
+        </section>
 
         {/* <section className="p-8 flex items-center flex flex-col">
           <h2 className="font-mono md:text-5xl" style={{ color: "#304352" }}>
@@ -58,26 +76,26 @@ const AboutPage = ({ data }) => {
           <Markdown className="text-xl markdown-body">{data.mission}</Markdown>
           <p>{data.mission}</p>
         </section> */}
-        <div className="flex mt-5 items-center flex-row">
-        <div className="w-1/6"></div>
-        <p
-          className="w-2/3 pr-8 pl-8 pt-2 text-center font-mono md:text-3xl text-2xl pb-4"
-          style={{ color: "whitesmoke", backgroundColor: "#304352" }}
-        >
-          Founder and Coordinator: Reevu Adakroy
+        <div className="flex mt-5 items-center">
+          <div className="w-1/6 md:w-1/4"></div>
+          <p
+            className="w-2/3 md:w-1/2 pr-8 pl-8 pt-2 text-center font-mono md:text-2xl text-2xl pb-4"
+            style={{ color: "whitesmoke", backgroundColor: "#304352" }}
+          >
+            Founder and Coordinator: Reevu Adakroy
               </p>
-        <div className="w-1/6"></div>
+          <div className="w-1/6 md:w-1/4"></div>
         </div>
-        <section className="md:p-16 p-8 flex flex-wrap-reverse">
+        <section className="md:pr-16 md:pl-16 md:pt-16 pr-8 pl-8 pt-8 flex items-center flex-col md:flex-row">
           <Popup trigger={
-            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+            <div class="cursor-pointer column w-3/4 md:w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
               <img className="bg-graya" style={{ width: "100%" }} src={webdev2} alt="3D for COVID" />
-              <p class="center" style={{ textAlign: "center", color: "white"}}>Web Development</p>
+              <p class="center" style={{ textAlign: "center", color: "white" }}>Web Development</p>
             </div>
           } modal>
             {close => (
-              <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
+              <div className="modal" style={{ background: "#304352" }}>
+                <a className="close cursor-pointer ml-2" style={{ color: "white" }} onClick={close}>
                   &times;
                 </a>
                 <h2
@@ -124,14 +142,14 @@ const AboutPage = ({ data }) => {
           </Popup>
 
           <Popup trigger={
-            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+            <div class="my-5 md:my-0 cursor-pointer column w-3/4 md:w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
               <img className="bg-graya" style={{ width: "100%" }} src={sewing2} alt="Fairfax County Public Libraries" />
-              <p class="center" style={{ textAlign: "center", color: "white"}}>Sewing</p>
+              <p class="center" style={{ textAlign: "center", color: "white" }}>Sewing</p>
             </div>
           } modal>
             {close => (
-              <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
+              <div className="modal" style={{ background: "#304352" }}>
+                <a className="close cursor-pointer ml-2" style={{ color: "white" }} onClick={close}>
                   &times;
                 </a>
                 <h2
@@ -180,14 +198,14 @@ const AboutPage = ({ data }) => {
           </Popup>
 
           <Popup trigger={
-            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+            <div class="cursor-pointer column w-3/4 md:w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
               <img className="bg-graya" style={{ width: "100%" }} src={publicity2} alt="Lets Breathe" />
-              <p class="center" style={{ textAlign: "center", color: "white"}}>Publicity</p>
+              <p class="center" style={{ textAlign: "center", color: "white" }}>Publicity</p>
             </div>
           } modal>
             {close => (
-              <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
+              <div className="modal" style={{ background: "#304352" }}>
+                <a className="close cursor-pointer ml-2" style={{ color: "white" }} onClick={close}>
                   &times;
                 </a>
                 <h2
@@ -237,14 +255,14 @@ const AboutPage = ({ data }) => {
           </Popup>
 
           <Popup trigger={
-            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+            <div class="my-5 md:my-0 cursor-pointer column w-3/4 md:w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
               <img className="bg-graya" style={{ width: "100%" }} src={three} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
-              <p class="center" style={{ textAlign: "center", color: "white"}}>3D Printing</p>
+              <p class="center" style={{ textAlign: "center", color: "white" }}>3D Printing</p>
             </div>
           } modal>
             {close => (
-              <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
+              <div className="modal" style={{ background: "#304352" }}>
+                <a className="close cursor-pointer ml-2" style={{ color: "white" }} onClick={close}>
                   &times;
                 </a>
                 <h2
@@ -292,17 +310,17 @@ const AboutPage = ({ data }) => {
           </Popup>
         </section>
 
-        <section className="md:p-16 p-8 flex flex-wrap-reverse">
+        <section className="md:pr-16 md:pl-16 md:pb-16 pr-8 pl-8 pb-8 flex items-center flex-col md:flex-row">
 
           <Popup trigger={
-            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+            <div class="cursor-pointer flex-1 column w-3/4 md:w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
               <img className="bg-graya" style={{ width: "100%" }} src={funds} alt="3D for COVID" />
-              <p class="center" style={{ textAlign: "center", color: "white"}}>Funds</p>
+              <p class="center" style={{ textAlign: "center", color: "white" }}>Funds</p>
             </div>
           } modal>
             {close => (
-              <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
+              <div className="modal" style={{ background: "#304352" }}>
+                <a className="close cursor-pointer ml-2" style={{ color: "white" }} onClick={close}>
                   &times;
                 </a>
                 <h2
@@ -341,14 +359,14 @@ const AboutPage = ({ data }) => {
           </Popup>
 
           <Popup trigger={
-            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+            <div class="cursor-pointer flex-1 column my-5 w-3/4 md:w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
               <img className="bg-graya" style={{ width: "100%" }} src={outreach} alt="Fairfax County Public Libraries" />
-              <p class="center" style={{ textAlign: "center", color: "white"}}>Outreach</p>
+              <p class="center" style={{ textAlign: "center", color: "white" }}>Outreach</p>
             </div>
           } modal>
             {close => (
-              <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
+              <div className="modal" style={{ background: "#304352" }}>
+                <a className="close cursor-pointer ml-2" style={{ color: "white" }} onClick={close}>
                   &times;
                 </a>
                 <h2
@@ -395,14 +413,14 @@ const AboutPage = ({ data }) => {
           </Popup>
 
           <Popup trigger={
-            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+            <div class="cursor-pointer flex-1 column w-3/4 md:w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
               <img className="bg-graya" style={{ width: "100%" }} src={tutorials} alt="Lets Breathe" />
-              <p class="center" style={{ textAlign: "center", color: "white"}}>Tutorials</p>
+              <p class="center" style={{ textAlign: "center", color: "white" }}>Tutorials</p>
             </div>
           } modal>
             {close => (
-              <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
+              <div className="modal" style={{ background: "#304352" }}>
+                <a className="close cursor-pointer ml-2" style={{ color: "white" }} onClick={close}>
                   &times;
                 </a>
                 <h2
@@ -424,7 +442,7 @@ const AboutPage = ({ data }) => {
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
                     Lead:
                   </span>{" "}
-                  Hashir Aqeel 
+                  Hashir Aqeel
                 </div>
                 <div class="px-2" style={{ color: "white" }}>
                   <span style={{ color: "#e44c65", fontWeight: "bold" }}>
@@ -448,18 +466,18 @@ const AboutPage = ({ data }) => {
           </Popup>
 
           <Popup trigger={
-            <div class="cursor-pointer flex-1 column w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{background: "#304352"}}>
+            <div class="cursor-pointer flex-1 column my-5 w-3/4 md:w-1/4 mx-8 transition duration-700 ease-in-out box-shadow shadow-2xl opacity hover:opacity-25 transform hover:-translate-y-1 hover:scale-110 ..." style={{ background: "#304352" }}>
               <img className="bg-graya" style={{ width: "100%" }} src={eprinting} alt="Mika Naraynsingh" style={{ "width": "100%" }} />
-              <p class="center" style={{ textAlign: "center", color: "white"}}>Innovative Design</p>
+              <p class="center" style={{ textAlign: "center", color: "white" }}>Innovative Design</p>
             </div>
           } modal>
             {close => (
-              <div className="modal" style={{background: "#304352"}}>
-                <a className="close cursor-pointer ml-2" style={{color: "white"}} onClick={close}>
+              <div className="modal" style={{ background: "#304352" }}>
+                <a className="close cursor-pointer ml-2" style={{ color: "white" }} onClick={close}>
                   &times;
                 </a>
-                <h2 style={{ textAlign: "center", color: "#e44c65", fontWeight: "bold"}}>Innovative Design</h2>
-                <div class="px-2" style={{color: "white"}}>
+                <h2 style={{ textAlign: "center", color: "#e44c65", fontWeight: "bold" }}>Innovative Design</h2>
+                <div class="px-2" style={{ color: "white" }}>
                   <br></br>The Innovative Design team is designing and producing PPE that doesn't require the use of 3D printers or sewing machines. Their products include origami ear savers, face masks, and face shields.
                 </div>
                 <br></br>
