@@ -12,54 +12,53 @@ const PPEMakeSewingPage = ({ data }) => {
 		<>
 			<SEO title="Make PPE" />
 			<main className="md:mb-8 relative md:p-8">
-				<div className="flex justify-left">
+				<div className="justify-left text-center md:text-left w-100">
 					<h2
-						className="text-center md:text-3xl text-4xl pb-4 heading"
-						style={{ "margin-left": "50px" }}
+						className="md:text-4xl mt-4 md:mt-0 text-3xl pb-4 heading"
 					>
 						{"Sewing"}
 					</h2>
 				</div>
-				<section className="flex flex-row">
-					<div className="flex justify-center flex-grow">
-						<img className="border-solid border-4 border-gray-600 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-105 ..." style={{ width: "45%" }} src={materials_database} alt="Materials Database" />
-						<section className="flex flex-col md:justify-center">
-							<div className="md:pr-1 p-5">
+				<section className="flex flex-col md:flex-row">
+					<div className="md:flex justify-center">
+						<img className="ml-12 md:ml-0 w-3/4 md:w-1/2 border-solid border-4 border-gray-600 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-105 ..." src={materials_database} alt="Materials Database" />
+						<section className="ml-20 md:ml-0 flex flex-col justify-center">
+							<div className="md:pr-1 pl-6 pt-5 pr-4">
 								<h2
-									className="font-mono lg:text-2xl text-xll"
+									className="font-mono lg:text-2xl text-xl"
 									style={{ color: "#304352" }}
 								>
 									Materials Database
                     			</h2>
 							</div>
-							<div className="md:p-5">
+							<div className="p-5">
 								<a href="https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl">
-									<button class="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
+									<button class="ml-4 md:ml-0 bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
 										Download PDF
                      				 </button>
 								</a>
 							</div>
 						</section>
 					</div>
-					<div className="flex justify-center flex-grow">						
-						<section className="flex flex-col md:justify-center">
-							<div className="md:p-5">
+					<div className="md:flex justify-center">
+						<img className="ml-12 md:ml-0 w-3/4 md:w-1/2 border-solid border-4 border-gray-600 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-105 ..." src={mask_instructions} alt="Mask Sewing Instructions" />
+						<section className="ml-20 md:ml-0 flex flex-col justify-center">
+							<div className="md:pr-1 pl-1 pt-5 pr-3">
 								<h2
-									className="font-mono lg:text-2xl text-xll"
+									className="font-mono lg:text-2xl text-xl"
 									style={{ color: "#304352" }}
 								>
 									Mask Sewing Instructions
                     			</h2>
 							</div>
-							<div className="md:p-5">
+							<div className="p-5">
 								<a href="https://www.hopkinsmedicine.org/coronavirus/_documents/INF2003076_VW_Hand-Sewn%20Mask%20instructions-1.pdf">
-									<button class="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
+									<button class="ml-4 md:ml-0 bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
 										Download PDF
                      				 </button>
 								</a>
 							</div>
 						</section>
-						<img className="border-solid border-4 border-gray-600 transition duration-500 ease-in-out box-shadow shadow-2xl transform hover:-translate-y-1 hover:scale-105 ..." style={{ width: "45%" }} src={mask_instructions} alt="Mask Sewing Instructions" />
 					</div>
 				</section>
 			</main>
