@@ -22,7 +22,7 @@ const Acknowledgments = ({ data }) => {
           <div className="flex justify-center">
             <h2
               className="font-mono md:text-4xl text-3xl heading"
-              style={{ color: "#304352" }}
+              style={{ color: "black" }}
             >
               Acknowledgments
             </h2>
