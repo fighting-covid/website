@@ -32,11 +32,13 @@ const Acknowledgments = ({ data }) => {
               >
                 <div className="shadow hover:shadow-xl border border-dark-secondary rounded">
                   <div className="flex items-center justify-center">
-                    <img
-                      src={require(`../assets/images/acknowledgements/${ack.image}`)}
-                      alt={ack.title}
-                      className="w-full h-full object-cover"
-                    />
+                    <a href={ack.link} target="_blank">
+                      <img
+                        src={require(`../assets/images/acknowledgements/${ack.image}`)}
+                        alt={ack.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </a>
                   </div>
                   <p
                     className="text-light bg-dark text-center text-xl py-2"
