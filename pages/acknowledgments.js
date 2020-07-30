@@ -19,18 +19,12 @@ const Acknowledgments = ({ data }) => {
       <SEO title="Acknowledgments" />
       <main>
         <section className="pr-8 pl-8 pt-8 pb-4 md:pb-8">
-          <div className="flex justify-center">
-            <h2
-              className="font-mono md:text-4xl text-3xl heading"
-              style={{ color: "black" }}
-            >
-              Acknowledgments
-            </h2>
+          <div className="text-center">
+            <h1 className="heading">Acknowledgments</h1>
           </div>
           <Markdown className="text-xl markdown-body mb-4 mx-auto text-center">
-            {
-              "We would like to thank everyone who helped us deliver PPE to frontline workers."
-            }
+            We would like to thank everyone who helped us deliver PPE to
+            frontline workers.
           </Markdown>
         </section>
 

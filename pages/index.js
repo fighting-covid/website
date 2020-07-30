@@ -45,7 +45,7 @@ const HomePage = ({ data }) => {
     <>
       <SEO title="Home" />
       <main>
-        <section className="md:mb-16 relative p-8 md:p-64">
+        <section className="md:mb-16 relative p-8 md:p-64 text-dark">
           <img
             className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
             src={background}
@@ -53,15 +53,12 @@ const HomePage = ({ data }) => {
           ></img>
           <div className="p-4 flex flex-col items-left relative">
             <div>
-              <p
-                className="text-left font-mono md:text-5xl text-4xl pb-4"
-                style={{ color: "#304352" }}
-              >
+              <p className="text-left font-mono md:text-5xl text-4xl pb-4">
                 Youth COVID-19 Relief Organization
               </p>
             </div>
             <div className="text-left font-mono lg:text-2xl text-xl">
-              <p style={{ color: "#304352" }}>
+              <p>
                 Healthcare workers are lacking basic personal protective
                 equipment (PPE) while fighting the COVID-19 pandemic, putting
                 themselves and their loved ones in danger. Help us deliver
@@ -85,13 +82,7 @@ const HomePage = ({ data }) => {
           </div>
           <div className="md:p-16 md:pr-40 p-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
             <div>
-              <h2
-                className="font-mono md:text-4xl text-3xl"
-                style={{ color: "#304352" }}
-              >
-                Hospitals in Need
-              </h2>
-              <br></br>
+              <h2 className="heading heading-h2">Hospitals in Need</h2>
             </div>
             <Markdown className="markdown-body text-lg">
               This map shows hospitals that we've contacted which currently need
@@ -104,22 +95,15 @@ const HomePage = ({ data }) => {
         <section className="md:p-16 md:pr-40 p-8 flex flex-wrap">
           <div className="md:pr-24 md:pl-40 pb-10 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
             <div>
-              <h2
-                className="font-mono md:text-4xl text-3xl"
-                style={{ color: "#304352" }}
-              >
-                Requests
-              </h2>
-              <br></br>
+              <h2 className="heading">Requests</h2>
             </div>
-            <Markdown className="markdown-body text-lg">
+            <Markdown className="markdown-body text-lg mb-4">
               This graph displays the quantities of sewn face masks and 3D
               printed face shields that hospitals need. Hover over the bars for
               exact values.
             </Markdown>
-            <br></br>
             <div>
-              <button className="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
+              <button className="trans button">
                 <Link href="/ppe-request">
                   <a>Request PPE</a>
                 </Link>
@@ -198,21 +182,14 @@ const HomePage = ({ data }) => {
           </div>
           <div className="md:p-16 md:pr-40 p-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
             <div>
-              <h2
-                className="font-mono md:text-4xl text-3xl"
-                style={{ color: "#304352" }}
-              >
-                Donations
-              </h2>
-              <br></br>
+              <h2 className="heading">Donations</h2>
             </div>
-            <Markdown className="markdown-body text-lg">
+            <Markdown className="markdown-body text-lg mb-4">
               This graph shows the quantities of PPE we have already coordinated
               donations for. Hover over the bars for exact values.
             </Markdown>
-            <br></br>
             <div>
-              <button className="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
+              <button className="trans button">
                 <Link href="/ppe-donate">
                   <a>Donate PPE</a>
                 </Link>

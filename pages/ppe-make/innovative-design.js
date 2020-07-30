@@ -12,15 +12,9 @@ const PPEMake3DPage = ({ data }) => {
       <SEO title="Make PPE" />
       <main>
         <section className="md:mb-8 relative md:p-8">
-          <div className="flex justify-left">
-            <h2
-              className="text-center md:text-3xl text-4xl pb-4 heading"
-              style={{ marginLeft: "50px" }}
-            >
-              Innovative Design
-            </h2>
+          <div className="text-center mb-8">
+            <h1 className="heading">Innovative Design</h1>
           </div>
-
           <section className="flex flex-wrap-reverse md:justify-center justify-end">
             <div className="md:pr-3">
               <div

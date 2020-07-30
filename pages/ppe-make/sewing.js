@@ -12,10 +12,8 @@ const PPEMakeSewingPage = ({ data }) => {
     <>
       <SEO title="Make PPE" />
       <main className="md:mb-8 relative md:p-8">
-        <div className="justify-left text-center md:text-left w-100">
-          <h2 className="md:text-4xl mt-4 md:mt-0 text-3xl pb-4 heading">
-            Sewing
-          </h2>
+        <div className="text-center mb-8">
+          <h1 className="heading">Sewing</h1>
         </div>
         <section className="flex flex-col md:flex-row">
           <div className="md:flex justify-center">

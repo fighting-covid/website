@@ -11,15 +11,9 @@ const PPEMake3DPage = ({ data }) => {
       <SEO title="Make PPE" />
       <main>
         <section className="md:mb-8 relative md:p-8">
-          <div className="flex justify-left">
-            <h2
-              className="text-center md:text-3xl text-4xl pb-4 heading"
-              style={{ marginLeft: "50px" }}
-            >
-              3D Printing
-            </h2>
+          <div className="text-center mb-8">
+            <h1 className="heading">3D Printing</h1>
           </div>
-
           <section className="flex flex-wrap-reverse md:justify-center justify-end">
             <div className="md:pr-3">
               <div
@@ -60,23 +54,15 @@ const PPEMake3DPage = ({ data }) => {
                     </div>{" "}
                   </div>{" "}
                 </div>
-                <br></br>
-                <br></br>
-
                 <section className="flex flex-wrap-reverse md:justify-center">
                   <div className="md:pr-1 p-5">
-                    <h2
-                      className="font-mono lg:text-2xl text-xll"
-                      style={{ color: "#304352" }}
-                    >
+                    <h2 className="font-mono lg:text-2xl text-xll">
                       Face Shield
                     </h2>
                   </div>
                   <div className="md:p-5">
                     <a href="https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl">
-                      <button className="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
-                        Download STL
-                      </button>
+                      <button className="trans button">Download STL</button>
                     </a>
                   </div>
                 </section>
@@ -133,17 +119,12 @@ const PPEMake3DPage = ({ data }) => {
                 </div>
                 <div className="md:p-5">
                   <a href="https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Surgical%20Mask%20Band%20for%20Ear%20Comfort%20-%20Extra%20Security_2.STL">
-                    <button className="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
-                      Download STL
-                    </button>
+                    <button className="trans button">Download STL</button>
                   </a>
                 </div>
               </section>
             </div>
           </section>
-
-          <br></br>
-          <br></br>
         </section>
       </main>
     </>

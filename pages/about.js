@@ -23,18 +23,16 @@ const AboutPage = ({ data }) => {
       <SEO title="About" />
       <main>
         <section className="pr-8 pl-8 pt-8 pb-4 md:pb-8">
-          <div className="flex justify-center">
-            <h2
-              className="font-mono md:text-4xl text-3xl heading"
-              style={{ color: "black" }}
-            >
-              Our Mission
-            </h2>
+          <div className="text-center">
+            <h2 className="heading">Our Mission</h2>
           </div>
-          <Markdown className="text-xl markdown-body md:w-11/12 mb-4 mx-auto text-center">
-            {
-              "We are a group of students working to connect hospitals in the DC-Maryland-Virginia region with desperately needed supplies in the wake of the COVID-19 pandemic. Our team is also working on independently producing hospital-approved Personal Protective Equipment (PPE) and other items, with the eventual vision of support healthcare workers during this time of crisis and shortage."
-            }
+          <Markdown className="text-xl markdown-body mb-4 md:mx-16 mx-auto text-center">
+            We are a group of students working to connect hospitals in the
+            DC-Maryland-Virginia region with desperately needed supplies in the
+            wake of the COVID-19 pandemic. Our team is also working on
+            independently producing hospital-approved Personal Protective
+            Equipment (PPE) and other items, with the eventual vision of support
+            healthcare workers during this time of crisis and shortage.
           </Markdown>
         </section>
 
@@ -115,7 +113,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -192,7 +190,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -270,7 +268,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -347,7 +345,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -419,7 +417,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -495,7 +493,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -570,7 +568,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -647,7 +645,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -727,7 +725,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -804,7 +802,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -882,7 +880,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -964,7 +962,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -1031,7 +1029,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -1107,7 +1105,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -1187,7 +1185,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -1264,7 +1262,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -1345,7 +1343,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -1422,7 +1420,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -1505,7 +1503,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -1582,7 +1580,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -1654,7 +1652,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -1730,7 +1728,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -1810,7 +1808,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
@@ -1887,7 +1885,7 @@ const AboutPage = ({ data }) => {
                   <br></br>
                   <div className="w-auto inline-block flex items-center justify-center pb-2">
                     <button
-                      className="text-white font-bold py-1 px-4 rounded bg-accent hover:bg-accent-secondary"
+                      className="trans button-alt"
                       onClick={() => {
                         close();
                       }}
