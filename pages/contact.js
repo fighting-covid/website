@@ -51,7 +51,7 @@ const ContactPage = ({ data }) => {
   return (
     <>
       <SEO title="Contact" />
-      <main className="container mx-auto">
+      <main className="container">
         <section className="p-8">
           <div className="text-center">
             <h1 className="heading mb-8">{data.title}</h1>

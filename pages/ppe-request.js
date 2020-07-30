@@ -6,7 +6,7 @@ ReactGA.pageview("/ppe-request");
 const PPERequestPage = ({ data }) => (
   <>
     <SEO title="Request PPE" />
-    <main className="container">
+    <main className="w-full">
       <section
         className="w-screen p-4"
         style={{ overflowX: "hidden", height: "calc(100vh - 100px)" }}

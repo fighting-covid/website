@@ -10,7 +10,7 @@ const PPEMake3DPage = ({ data }) => {
     <>
       <SEO title="Make PPE" />
       <main>
-        <section className="md:mb-8 relative md:p-8">
+        <section className="container my-12">
           <div className="text-center mb-8">
             <h1 className="heading">3D Printing</h1>
           </div>

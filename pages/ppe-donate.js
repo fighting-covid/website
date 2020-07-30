@@ -6,7 +6,7 @@ ReactGA.pageview("/ppe-donate");
 const PPEDonatePage = ({ data }) => (
   <>
     <SEO title="Donate PPE" />
-    <main className="container mx-full">
+    <main className="w-full">
       <section
         className="w-screen p-4"
         style={{ overflowX: "hidden", height: "calc(100vh - 100px)" }}

@@ -11,7 +11,7 @@ const PPEMakeSewingPage = ({ data }) => {
   return (
     <>
       <SEO title="Make PPE" />
-      <main className="md:mb-8 relative md:p-8">
+      <main className="container my-12">
         <div className="text-center mb-8">
           <h1 className="heading">Sewing</h1>
         </div>

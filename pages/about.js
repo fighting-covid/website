@@ -14,11 +14,11 @@ const AboutPage = ({ data }) => {
     <>
       <SEO title="About" />
       <main>
-        <section className="pr-8 pl-8 pt-8 pb-4 md:pb-8">
+        <section className="container my-12">
           <div className="text-center">
             <h2 className="heading">Our Mission</h2>
           </div>
-          <Markdown className="text-xl markdown-body mb-4 md:mx-16 mx-auto text-center">
+          <Markdown className="text-xl markdown-body mb-4 mx-auto text-center">
             We are a group of students working to connect hospitals in the
             DC-Maryland-Virginia region with desperately needed supplies in the
             wake of the COVID-19 pandemic. Our team is also working on
@@ -27,13 +27,12 @@ const AboutPage = ({ data }) => {
             healthcare workers during this time of crisis and shortage.
           </Markdown>
         </section>
-
-        <section className="text-center mb-8">
+        <section className="text-center mb-12">
           <p className="inline-block p-4 text-2xl bg-dark text-light">
             Founder and Coordinator: {data.founder}
           </p>
         </section>
-        <section className="flex flex-wrap items-center -mx-8 my-8 px-16">
+        <section className="container mb-12 flex flex-wrap items-center">
           {data.teams.map((team) => {
             const teamSlug = new String(team.title)
               .toLowerCase()
