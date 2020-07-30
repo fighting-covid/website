@@ -45,7 +45,7 @@ const HomePage = ({ data }) => {
     <>
       <SEO title="Home" />
       <main>
-        <section className="md:mb-16 relative p-8 md:p-64 text-dark">
+        <section className="lg:mb-16 relative p-8 lg:p-64 text-dark">
           <img
             className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
             src={background}
@@ -53,7 +53,7 @@ const HomePage = ({ data }) => {
           ></img>
           <div className="p-4 flex flex-col items-left relative">
             <div>
-              <p className="text-left font-mono md:text-5xl text-4xl pb-4">
+              <p className="text-left font-mono lg:text-5xl text-4xl pb-4">
                 Youth COVID-19 Relief Organization
               </p>
             </div>
@@ -69,9 +69,9 @@ const HomePage = ({ data }) => {
           </div>
         </section>
 
-        <section className="md:p-16 md:pl-40 p-8 flex flex-wrap-reverse">
+        <section className="lg:p-16 lg:pl-40 p-8 flex flex-wrap-reverse">
           <div
-            className="border-2 border-gray-500 md:w-1/2 w-full"
+            className="border-2 border-gray-500 lg:w-1/2 w-full"
             style={{ height: "60vh" }}
           >
             <iframe
@@ -80,7 +80,7 @@ const HomePage = ({ data }) => {
               style={{ width: "100%", height: "100%", border: "none" }}
             ></iframe>
           </div>
-          <div className="md:p-16 md:pr-40 p-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
+          <div className="lg:p-16 lg:pr-40 pb-8 lg:w-1/2 w-full flex flex-col lg:justify-center justify-end">
             <div>
               <h2 className="heading heading-h2">Hospitals in Need</h2>
             </div>
@@ -92,8 +92,8 @@ const HomePage = ({ data }) => {
           </div>
         </section>
 
-        <section className="md:p-16 md:pr-40 p-8 flex flex-wrap">
-          <div className="md:pr-24 md:pl-40 pb-10 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
+        <section className="lg:p-16 lg:pr-40 p-8 flex flex-wrap">
+          <div className="lg:pr-24 lg:pl-40 pb-8 lg:w-1/2 w-full flex flex-col lg:justify-center justify-end">
             <div>
               <h2 className="heading">Requests</h2>
             </div>
@@ -112,7 +112,7 @@ const HomePage = ({ data }) => {
           </div>
 
           <div
-            className="md:w-1/2 w-full flex flex-col md:justify-center justify-start"
+            className="lg:w-1/2 w-full flex flex-col lg:justify-center justify-start"
             style={{ height: "60vh" }}
           >
             {graphRequestData !== null ? (
@@ -155,9 +155,9 @@ const HomePage = ({ data }) => {
           </div>
         </section>
 
-        <section className="md:p-16 md:pl-40 p-8 flex flex-wrap-reverse">
+        <section className="lg:p-16 lg:pl-40 p-8 flex flex-wrap-reverse">
           <div
-            className="md:w-1/2 w-full flex flex-col md:justify-center justify-start"
+            className="lg:w-1/2 w-full flex flex-col lg:justify-center justify-start"
             style={{ height: "60vh" }}
           >
             {graphDonationData !== null ? (
@@ -180,11 +180,11 @@ const HomePage = ({ data }) => {
               <div></div>
             )}
           </div>
-          <div className="md:p-16 md:pr-40 p-8 md:w-1/2 w-full flex flex-col md:justify-center justify-end">
+          <div className="lg:p-16 lg:pr-40 pb-8 lg:w-1/2 w-full flex flex-col lg:justify-center justify-end">
             <div>
               <h2 className="heading">Donations</h2>
             </div>
-            <Markdown className="markdown-body text-lg mb-4">
+            <Markdown className="markdown-body text-lg mb-8">
               This graph shows the quantities of PPE we have already coordinated
               donations for. Hover over the bars for exact values.
             </Markdown>
