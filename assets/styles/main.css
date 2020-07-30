@@ -46,3 +46,12 @@ h2.heading {
 .button-alt:hover {
   @apply bg-accent-secondary;
 }
+
+.container {
+  @apply mx-auto px-8;
+}
+@screen md {
+  .container {
+    @apply w-2/3;
+  }
+}
