@@ -100,7 +100,7 @@ const Header = () => {
               className={`${
                 isInvolvedActive ? "" : "hidden"
               }  bg-dark rounded-b-md ${
-                isActive ? "relative md:list-disc" : "absolute p-2 text-center"
+                isActive ? "relative" : "absolute p-2 text-center"
               } px-2`}
               style={isActive ? { left: "1.5rem" } : { right: "23.5rem" }}
             >

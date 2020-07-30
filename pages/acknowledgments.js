@@ -25,9 +25,10 @@ const Acknowledgments = ({ data }) => {
         </section>
         <section className="container">
           <div className="flex flex-wrap items-center -mx-6">
-            {data.acknowledgments.map((ack) => (
+            {data.acknowledgments.map((ack, i) => (
               <div
                 className={`trans opacity-75 hover:opacity-100 cursor-pointer w-full sm:w-1/2 md:w-1/3 px-4 pb-8`}
+                key={i}
               >
                 <div className="shadow hover:shadow-xl border border-dark-secondary rounded">
                   <div className="flex items-center justify-center">
