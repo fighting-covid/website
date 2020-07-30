@@ -1,307 +1,98 @@
 mission: |
-  We are a group of students working to connect hospitals in the DC-Maryland-Virginia region with desperately needed supplies 
-  in the wake of the COVID-19 pandemic. Our team is also working on independently producing hospital-approved Personal 
-  Protective Equipment (PPE) and other items, with the eventual vision of organizing households across the DMV into a production 
-  center to support healthcare workers during this time of crisis and shortage.
+  We are a group of students working to connect hospitals in the DC-Maryland-Virginia region with desperately needed supplies in the wake of the COVID-19 pandemic. Our team is also working on independently producing hospital-approved Personal Protective Equipment (PPE) and other items with the eventual vision of organizing households across the DMV into a production center to support healthcare workers during this time of crisis and shortage.
+founder: Reevu Adakroy
 teams:
-  - title: Founder & Coordinator
-    members:
-      - Reevu Adakroy
-  - title: 2D Printing
-    description: |
-      The 2D Printing team is working on creating innovative designs for masks and protection for the community using only household 
-      materials. Using no 3D printing or sewing procedures, such designs will be simple and easy to make at home.
-    members:
-      - Nathan Suh
-      - name: Joshua Lian
-        link: https://www.linkedin.com/in/joshua-lian-60425819a/
-      - name: Marian Qian
-        link: https://www.linkedin.com/in/marian-q-721580169/
-      - Jason Wang
-  - title: 3D Printing
-    description: |
-      The 3D Printing team is responsible for the creation, collection, and prototyping of designs for various tools to help aid the 
-      COVID-19 relief effort, as well as the eventual mass production of said materials to be distributed to organizations in need.
-    members:
-      - name: Joshua Lian
-        link: https://www.linkedin.com/in/joshua-lian-60425819a/
-      - Tharun Saravanan
-      - Aryan Joshi
-      - name: Maria Izzi
-        link: https://www.linkedin.com/in/maria-izzi/
-      - Kevin Gu
-      - Daniel Fu
-      - Neil Shah
-      - Anisha Talreja
-      - Teja Buddhavarapu
-      - Ethan Zhang
-      - Aaryan Dave
-  - title: Cleaning Supplies
-    description: |
-      The Cleaning Supplies team is responsible for collecting vital supplies such as hand sanitizer and bleach from local schools, 
-      businesses, and government buildings. To date, the team has contacted 6 school districts who have donated tens of thousands of 
-      cleaning supplies to local hospitals.
-    members:
-      - Neil Shah
-      - Vishal Kanigicherla
-      - Hashir Aqeel
-      - Catie Granum
-      - Maxwell Bai
-      - Nathan Suh
-      - Jason Wang
-      - Sahana Ramesh
-      - Anthony Wong
-      - Julia Kao-Sowa
-      - Kashika Dhanjal
-      - Adishree Venkateswaran
-      - Victoria Lu
-      - Sarah Wang
-      - AJ Seo
-  - title: Community Aid
-    description: |
-      The Community Aid team is working on contacting shelters and grocery stores and recognizing the healthcare workers who are putting their lives on the line. They have also reached out to potential sponsors to begin providing free lunches for medical professionals. The team has also been occupied creating informative videos on YouTube.
-    members:
-      - Rithvik Veeramachaneni
-      - Yana Patel
-      - Anisha Talreja
-      - Joshua Lian
-      - Marian Qian
-      - Anoushka Sarkar
-      - Catie Granum
-      - Didi Elsyad
-      - Emma Cheng
-      - Jennifer Abraham
-      - Kashika Dhanjal
-      - Keertana Yalamanchili
-      - Meera Gupta
-      - Rhea Goswami
-      - Saloni Bedi
-      - Sarah Zhang
-      - Victoria Graf
-      - Vishal Kanigicherla
-  - title: Greetings
-    description: |
-      The Greetings subteam has worked on creating kind greeting cards to send to nearby hospitals as well as virtual cards to provide inspiration, hope, and support to patients suffering from coronavirus. They are currently working on compiling a video with poems, short stories, and other forms of entertainment to send to the hospital patients.
-    members:
-      - Joshua Lian
-      - Adishree Venkateswaran
-      - AJ Seo
-      - Anoushka Sarkar
-      - Isra Satiar
-      - Keertana Yalamanchilli
-      - Maanya Shankar
-      - Meera Gupta
-      - Samhita Vinay
-      - Sohini Banerjee
-      - Teja Koduru
-      - Thomas Lu
-      - Victoria Graf
-  - title: Outreach
-    description: |
-      The Outreach team is in charge of all correspondence between facilities in need and the YCRO, managing all requests for materials 
-      and keeping track of where supplies need to go for maximum impact.
-    members:
-      - Aryan Joshi
-      - Maxwell Bai
-      - name: Marian Qian
-        link: https://www.linkedin.com/in/marian-q-721580169/
-      - name: Angie Huang
-        link: https://www.instagram.com/angiehuang_/
-      - Julia Feldhaus
-      - Vyomika Gandhi
-      - Khushmeet Chandi
-      - Priyanka Mosur
-      - name: Joshua Lian
-        link: https://www.linkedin.com/in/joshua-lian-60425819a/
-      - John Kim
-      - Summer Wang
-      - name: Anika Thatavarty
-        link: https://www.linkedin.com/in/anika-thatavarthy-8930211a7
-      - Srilakshmi Medarametla
-      - Annabel Li
-      - Hashir Aqeel
-      - name: Anisha Jain
-        link: https://www.linkedin.com/in/anishajain2021/
-      - Nathan Suh
-      - Anoushka Sarkar
-      - Anthony Wong
-      - Michelle Du
-      - Saanjh Khattar
-      - Sadhika Dhanasekar
-      - Tiffany Ji
-      - name: Brianna Ta
-        link: https://www.instagram.com/bbriannata/
-      - name: Andrew Chen
-        link: https://www.linkedin.com/in/andrew-chen-8118a6153
-      - name: Kashika Dhanjal
-        link: https://www.linkedin.com/in/kashika-dhanjal-4636b61a6/
-      - Anisha Talreja
-      - Adishree Venkateswaran
-      - Victoria Lu
-      - Sarah Wang
-      - Keertana Yalamanchili
-      - Samhita Vinay
-      - Maanya Shanker
-      - Isra Satiar
-      - Sarah Zhang
-      - Anish Susarla
-      - Sahishnu Hanumansetty
-      - Meera Gupta
-  - title: Publicity
-    description: |
-      The Publicity team's objective is to update the public about our progress as a team,
-      as well as to educate the community on the best ways to stay safe and help out during 
-      this pandemic.
-    members:
-      - name: Akash Bhave
-        link: https://www.linkedin.com/in/akashbbhave/
-      - name: Angie Huang
-        link: https://www.instagram.com/angiehuang_/
-      - Anika Thatavarthy
-      - Anoushka Sarkar
-      - Anthony Wong
-      - Catie Granum
-      - name: Jennifer Abraham
-        link: https://www.linkedin.com/in/jennifer-abraham-6345491a6/
-      - name: Joshua Lian
-        link: https://www.linkedin.com/in/joshua-lian-60425819a/
-      - name: Karen Song
-        link: https://www.linkedin.com/in/karen-song-657012184/
-      - Khushmeet Chandi
-      - name: Marian Qian
-        link: https://www.linkedin.com/in/marian-q-721580169/
-      - Meghna Sharma
-      - Neil Shah
-      - Nuha Mohammed
-      - Saanjh Khattar
-      - Sadhika Dhanasekar
-      - Sahana Ramesh
-      - Srilakshmi Medarametla
-      - Summer Wang
-      - Tiffany Ji
-      - name: Brianna Ta
-        link: https://www.instagram.com/bbriannata/
-      - Rhea Vidyababu
-      - Keertana Yalamanchili
-      - Maanya Shanker
-      - Samhita Vinay
-      - Sarah Zhang
-  - title: Research
-    description: |
-      The objective of the Research Team is to explore different ways in which everyday people 
-      can contribute in the fight against Covid-19 and to create video tutorials to teach the 
-      public how to make important pieces of equipment such as ear protectors and face shields. 
-      Currently, the team is developing several tutorials for the manufacturing of ear protectors.
-    members:
-      - Vishal Kanigicherla
-      - Hashir Aqeel
-      - Neil Shah
-      - Nathan Suh
-      - Anika Thatavarthy
-      - Prithvi Nathan
-      - Saanjh Khattar
-      - name: Maria Izzi
-        link: https://www.linkedin.com/in/maria-izzi/
-      - Adele Peng
-      - name: Anisha Jain
-        link: https://www.linkedin.com/in/anishajain2021/
-      - Ikhlaas Bhat
-      - Julia Kao-Sowa
-      - Kevin Gu
-      - Khushmeet Chandi
-      - Nuha Mohammed
-      - Sadhika Dhanasekar
-      - Sahana Ramesh
-      - Vyomika Gandhi
-      - Yulee Kang
-      - Andrew Chen
-      - Krisha Pahwa
-      - Adishree Venkateswaran
-      - Keertana Yalamanchili
-      - Samhita Vinay
-      - Anish Susarla
-      - Teja Buddhavarapu
-  - title: Sewing
-    description: |
-      The Sewing team is working on maximizing the comfort and effectiveness of sewn masks through 
-      material choice and stitching techniques. They have continued to work with hospitals regarding 
-      the specific needs of each facility and are aiming to ramp up production to account for the current 
-      mask shortage as soon as possible.
-    members:
-      - Priyanka Mosur
-      - name: Joshua Lian
-        link: https://www.linkedin.com/in/joshua-lian-60425819a/
-      - Krithika Layagala
-      - Kritika Jothishankar
-      - Sahana Ramesh
-      - Akash Bhave
-      - Anoushka Sarkar
-      - name: Marian Qian
-        link: https://www.linkedin.com/in/marian-q-721580169/
-      - Neil Shah
-      - Olivia Ma
-      - Tiffany Ji
-      - name: Brianna Ta
-        link: https://www.instagram.com/bbriannata/
-      - name: Andrew Chen
-        link: https://www.linkedin.com/in/andrew-chen-8118a6153
-      - Adishree Venkateswaran
-      - Victoria Lu
-      - Sarah Wang
-      - Karen Song
-      - Keertana Yalamanchili
-      - Samhita Vinay
-  - title: Sterilization
-    description: |
-      The objective of the Sterilization team is to provide those at home with a way to sterilize their own 
-      cloth masks through a materials database. In addition to this, they have been working on new ways to 
-      sterilize and bring comfort to existing 3D Printed masks and shields.
-    members:
-      - Kritika Jothishankar
-      - Vishal Kanigicherla
-      - Daniel Fu
-      - Yulee Kang
-      - Catie Granum
-      - name: Anisha Jain
-        link: https://www.linkedin.com/in/anishajain2021/
-      - Anoushka Sarkar
-      - Anthony Wong
-      - Jason Wang
-      - name: Marian Qian
-        link: https://www.linkedin.com/in/marian-q-721580169/
-      - Neil Shah
-      - Olivia Ma
-      - name: Brianna Ta
-        link: https://www.instagram.com/bbriannata/
-      - Kevin Zhang
-      - Krisha Pahwa
-      - Sarah Wang
-      - Keertana Yalamanchili
-      - Maanya Shanker
   - title: Web Development
     description: |
-      The Web Development team has been working hard to create a platform to host our network and share our 
-      progress and research with the community. Their work has led to the creation of this website.
-    members:
+      The Web Development team has been working hard to create a platform to host our network and share our progress and 
+      research with the community. Their work has led to the creation of this website.
+    leads:
       - Aryan Chinnala
-      - name: Jason Klein
-        link: https://www.linkedin.com/in/jason-klein-8093a0181
       - Varun Chilukuri
+    team:
       - Nuha Mohammed
-      - name: Akash Bhave
-        link: https://www.linkedin.com/in/akashbbhave/
-      - Luke Thistlethwaite
-      - Saigautam Bonam
-      - Pranav Wadhwa
+      - Akash Bhave
+      - Jason Klein
+  - title: Sewing
+    description: |
+      The Sewing team is working on maximizing the comfort and effectiveness of sewn masks through material choice and stitching techniques. They have continued to work with hospitals regarding the specific needs of each facility and are aiming to ramp up production to account for the current mask shortage as soon as possible.
+    leads:
+      - Cynthia Wang
+    team:
+      - Victoria Lu
+      - Angie Huang
+      - Priyanka Mosur
+      - Maanya Shanker
+  - title: Publicity
+    description: |
+      The Publicity team's objective is to update the public about our progress as a team as well as to educate the community on the best ways to stay safe and help out during this pandemic.
+    leads:
+      - Kashika Dhanjal
       - Khushmeet Chandi
-      - name: Jennifer Abraham
-        link: https://www.linkedin.com/in/jennifer-abraham-6345491a6/
-      - name: Joshua Lian
-        link: https://www.linkedin.com/in/joshua-lian-60425819a/
+      - Anika Thatavarty
+      - Jennifer Abraham
+    team:
+      - Akila Islam
+      - Angie Huang
+      - Anoushka Sarkar
+      - Brianna Ta
+      - Emma Cheng
+      - Jay Siva
+      - Rhea Vidhyababu
+      - Krithika Layagala
+      - Reva Hirave
+      - Rhea Tammireddi
+      - Simar Narula
+      - Vyomika Ghandi
+  - title: 3D Printing
+    description: |
+      The 3D Printing team is responsible for the creation, collection, and prototyping of designs for various tools to help aid the COVID-19 relief effort, as well as the eventual mass production of said materials to be distributed to organizations in need.
+    leads:
+      - Joshua Lian
       - Tharun Saravanan
+    team:
+      - Karerem Jaber
+      - Daniel Lian
+      - Ron Nachum
+  - title: Funds
+    description: |
+      The Funds team is working to raise money for YCRO and help compensate costs for our volunteers.
+    members:
+      - Catie Granum
+      - Vishal Kanigicherla
+  - title: Outreach
+    description: |
+      The Funds team is working to raise money for YCRO and help compensate costs for our volunteers.
+    leads:
+      - Marian Qian
       - Aryan Joshi
-      - name: Maria Izzi
-        link: https://www.linkedin.com/in/maria-izzi/
-      - Anika Karpurapu
+    team:
+      - Angie Huang
+      - Jay Siva
+      - Saanjh Khattar
       - Sarah Zhang
-      - William Graf
+      - and Shing Gao
+  - title: Tutorials
+    description: |
+      The Tutorials team is in charge of producing quality content to inform volunteers how to assisst in producing PPE at home.
+    leads:
+      - Hashir Aqeel
+    team:
+      - Vyomika Gandhi
+      - Rhea Goswami
+      - Maxwell Bai
+      - Yulee Kang
+      - Kareem Jaber
+  - title: Innovative Design
+    description: |
+      The Innovative Design team is designing and producing PPE that doesn't require the use of 3D printers or sewing machines. Their products include origami ear savers, face masks, and face shields.
+    leads:
+      - Jason Wang
+      - Maanya Shanker
+    team:
+      - Marian Qian
+      - Angie Huang
+      - Amanda Nguyen
+      - Saketh Kura
+      - Maria Izzi
+      - Thomas Lu
