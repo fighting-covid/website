@@ -1,7 +1,7 @@
 import yaml from "js-yaml";
 import fs from "fs";
 import path from "path";
-import SEO from "../../components/seo";
+import SEO from "../../../components/seo";
 import React from "react";
 import ReactGA from "react-ga";
 
@@ -22,7 +22,7 @@ const PPEMakeSewingPage = ({ data }) => {
               <div className="lg:pr-8 lg:w-1/2 mx-auto mb-4">
                 <img
                   className="trans border-solid border-2 border-gray-600"
-                  src={require(`../../assets/images/make/${resource.thumbnail}`)}
+                  src={require(`../../../assets/images/make/${resource.thumbnail}`)}
                   alt={resource.title}
                 />
               </div>

@@ -72,7 +72,7 @@ const Header = () => {
           ></div>
           <div className={`text-lg ${isActive ? "bg-dark p-4 -mt-4" : ""}`}>
             <NavLink
-              href="/ppe-request"
+              href="/ppe/request"
               title="Request"
               onClick={() => {
                 setActive(false);
@@ -80,7 +80,7 @@ const Header = () => {
               }}
             />
             <NavLink
-              href="/ppe-donate"
+              href="/ppe/donate"
               title="Donate"
               onClick={() => {
                 setActive(false);
@@ -107,7 +107,7 @@ const Header = () => {
               <li className="text-accent">
                 <span>
                   <NavLink
-                    href="/ppe-make/sewing"
+                    href="/ppe/make/sewing"
                     title="Sewing"
                     onClick={() => {
                       setActive(false);
@@ -124,7 +124,7 @@ const Header = () => {
               >
                 <span>
                   <NavLink
-                    href="/ppe-make/3d"
+                    href="/ppe/make/3d"
                     title="3D Printing"
                     onClick={() => {
                       setActive(false);
@@ -141,7 +141,7 @@ const Header = () => {
               >
                 <span>
                   <NavLink
-                    href="/ppe-make/innovative-design"
+                    href="/ppe/make/innovative-design"
                     title="Innovative Design"
                     onClick={() => {
                       setActive(false);
@@ -206,7 +206,7 @@ const Header = () => {
               <li className="text-accent">
                 <span>
                   <NavLink
-                    href="/ppe-request"
+                    href="/ppe/request"
                     title="Request PPE"
                     onClick={() => {
                       setActive(false);
@@ -223,7 +223,7 @@ const Header = () => {
               >
                 <span>
                   <NavLink
-                    href="/ppe-donate"
+                    href="/ppe/donate"
                     title="Donate PPE"
                     onClick={() => {
                       setActive(false);
@@ -240,7 +240,7 @@ const Header = () => {
               >
                 <span>
                   <NavLink
-                    href="/ppe-make"
+                    href="/ppe/make"
                     title="Make PPE"
                     onClick={() => {
                       setActive(false);

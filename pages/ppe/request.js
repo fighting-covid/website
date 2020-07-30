@@ -1,11 +1,11 @@
-import SEO from "../components/seo";
+import SEO from "../../components/seo";
 import ReactGA from "react-ga";
 ReactGA.initialize("UA-167321699-1");
-ReactGA.pageview("/ppe-donate");
+ReactGA.pageview("/ppe-request");
 
-const PPEDonatePage = ({ data }) => (
+const PPERequestPage = ({ data }) => (
   <>
-    <SEO title="Donate PPE" />
+    <SEO title="Request PPE" />
     <main className="w-full">
       <section
         className="w-screen p-4"
@@ -13,7 +13,7 @@ const PPEDonatePage = ({ data }) => (
       >
         <iframe
           className="h-full"
-          src="https://docs.google.com/forms/d/e/1FAIpQLSdsR-DkQwiTmll-QVtj4bvS4wR5asK6vX1a3DzlOGSduXX7Xg/viewform?usp=sf_link&embedded=true"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfDdXO8zSeozASqR8GUQDwsmXvUPbx1BGUveNh1Yu8fm7omuQ/viewform?usp=sf_link&embedded=true"
           width="99%"
           frameBorder="0"
           marginHeight="0"
@@ -26,4 +26,4 @@ const PPEDonatePage = ({ data }) => (
   </>
 );
 
-export default PPEDonatePage;
+export default PPERequestPage;

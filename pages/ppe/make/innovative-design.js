@@ -1,8 +1,7 @@
-import SEO from "../../components/seo";
+import SEO from "../../../components/seo";
 import React from "react";
 import ReactGA from "react-ga";
-import Iframe from "react-iframe";
-import ear_saver from "../../assets/images/ear_saver.png";
+import ear_saver from "../../../assets/images/ear_saver.png";
 
 ReactGA.initialize("UA-167321699-1");
 ReactGA.pageview("/ppe-make/3d");

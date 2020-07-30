@@ -1,4 +1,4 @@
-import SEO from "../../components/seo";
+import SEO from "../../../components/seo";
 import React from "react";
 import ReactGA from "react-ga";
 import Iframe from "react-iframe";
