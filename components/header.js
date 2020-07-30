@@ -2,7 +2,7 @@ import React, { useState, useCallback } from "react";
 import Link from "next/link";
 import Logo from "../assets/images/brand/mask.svg";
 import { HamburgerSpin } from "react-animated-burgers";
-import Dropdown from "react-dropdown";
+import { AiFillCaretDown } from "react-icons/ai";
 
 const NavLink = ({ href, title, onClick, end }) => (
   <Link href={href}>
@@ -88,23 +88,21 @@ const Header = () => {
               }}
             />
             <button
-              className={`trans block mt-4 lg:inline-block lg:mt-0 pr-3 pt-2 pb-2 pt-1 ${
+              className={`trans block mt-4 lg:inline-block lg:mt-0 pr-3 pb-2 pt-1 ${
                 isInvolvedActive && !isActive ? "rounded-t-md" : "rounded-md"
               } text-light hover:text-gray-400`}
               onClick={() => setInvolvedActive(!isInvolvedActive)}
               style={{ outline: "none" }}
-              // onMouseEnter={() => setInvolvedActive(true)}
             >
-              Make &#x25BE;
+              Make <AiFillCaretDown className="inline" />
             </button>
             <ul
               className={`${
                 isInvolvedActive ? "" : "hidden"
               }  bg-dark rounded-b-md ${
-                isActive ? "relative list-disc" : "absolute p-2 text-center"
-              }`}
-              style={isActive ? { left: "2rem" } : { right: "23.5rem" }}
-              // onMouseLeave={() => setInvolvedActive(false)}
+                isActive ? "relative md:list-disc" : "absolute p-2 text-center"
+              } px-2`}
+              style={isActive ? { left: "1.5rem" } : { right: "23.5rem" }}
             >
               <li className="text-accent">
                 <span>
@@ -115,6 +113,7 @@ const Header = () => {
                       setActive(false);
                       setInvolvedActive(false);
                     }}
+                    end={true}
                   />
                 </span>
               </li>
@@ -131,6 +130,7 @@ const Header = () => {
                       setActive(false);
                       setInvolvedActive(false);
                     }}
+                    end={true}
                   />
                 </span>
               </li>
@@ -147,6 +147,7 @@ const Header = () => {
                       setActive(false);
                       setInvolvedActive(false);
                     }}
+                    end={true}
                   />
                 </span>
               </li>
