@@ -941,6 +941,7 @@ const AboutPage = ({ data }) => {
                   </div>
                 )}
               </Popup>
+              <div className="sm:w-0 lg:w-0 md:w-1/3"></div>
             
             </section>
         
