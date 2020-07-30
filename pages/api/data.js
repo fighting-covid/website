@@ -45,23 +45,21 @@ export default async (req, res) => {
         }
       });
 
-      
       let donationData = [];
       let donationDict = {};
 
       donationRows.forEach((donationRows) => {
         const rawData2 = donationRows._rawData;
-        
+
         if (rawData2[2] && rawData2[3])
           if (donationDict[rawData2[2]])
             donationDict[rawData2[2]] += Number(rawData2[3]);
           else donationDict[rawData2[2]] = Number(rawData2[3]);
-        
       });
       for (const key in donationDict) {
         donationData.push({ name: key, quantity: donationDict[key] });
       }
-      
+
       res.statusCode = 200;
       res.send({ request_data: requestData, donation_data: donationData });
     } catch (e) {

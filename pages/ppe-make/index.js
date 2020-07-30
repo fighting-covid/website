@@ -42,18 +42,24 @@ const PPEMakePage = ({ data }) => {
             <div>
               <button
                 className="bg-dark hover:bg-blue-700 text-white py-2 w-56 rounded-full"
-                style={{ "margin-right": "14px" }}
+                style={{ marginRight: "14px" }}
               >
-                <Link href="/ppe-make/sewing">Sewing</Link>
+                <Link href="/ppe-make/sewing">
+                  <a>Sewing</a>
+                </Link>
               </button>
               <button
                 className="bg-dark hover:bg-blue-700 text-white py-2 w-56 rounded-full"
-                style={{ "margin-right": "14px" }}
+                style={{ marginRight: "14px" }}
               >
-                <Link href="/ppe-make/3d">3D-Printing</Link>
+                <Link href="/ppe-make/3d">
+                  <a>3D-Printing</a>
+                </Link>
               </button>
               <button className="bg-dark hover:bg-blue-700 text-white py-2 w-56 rounded-full">
-                <Link href="/ppe-make/innovative-design">Innovative Design</Link>
+                <Link href="/ppe-make/innovative-design">
+                  <a>Innovative Design</a>
+                </Link>
               </button>
             </div>
           </div>

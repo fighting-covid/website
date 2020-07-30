@@ -1,7 +1,7 @@
 import SEO from "../../components/seo";
 import React from "react";
 import ReactGA from "react-ga";
-import Iframe from 'react-iframe'
+import Iframe from "react-iframe";
 
 ReactGA.initialize("UA-167321699-1");
 ReactGA.pageview("/ppe-make/3d");
@@ -14,9 +14,9 @@ const PPEMake3DPage = ({ data }) => {
           <div className="flex justify-left">
             <h2
               className="text-center md:text-3xl text-4xl pb-4 heading"
-              style={{ "margin-left": "50px" }}
+              style={{ marginLeft: "50px" }}
             >
-              {"3D Printing"}
+              3D Printing
             </h2>
           </div>
 
@@ -48,13 +48,15 @@ const PPEMake3DPage = ({ data }) => {
                       }}
                     >
                       {" "}
-                      <Iframe url="https://platform.sayduck.com/public/preview/e40aec90-aea9-0138-6da4-3ea8e8560ebf"
+                      <Iframe
+                        url="https://platform.sayduck.com/public/preview/e40aec90-aea9-0138-6da4-3ea8e8560ebf"
                         width="100%"
                         height="111%"
                         id="myId"
                         className="myClassname"
                         display="initial"
-                        position="relative" />{" "}
+                        position="relative"
+                      />{" "}
                     </div>{" "}
                   </div>{" "}
                 </div>
@@ -72,7 +74,7 @@ const PPEMake3DPage = ({ data }) => {
                   </div>
                   <div className="md:p-5">
                     <a href="https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl">
-                      <button class="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
+                      <button className="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
                         Download STL
                       </button>
                     </a>
@@ -106,13 +108,15 @@ const PPEMake3DPage = ({ data }) => {
                     }}
                   >
                     {" "}
-                    <Iframe url="https://platform.sayduck.com/public/preview/da690e50-aeaa-0138-19eb-3ea8e8560ebf"
-                        width="100%"
-                        height="111%"
-                        id="myId"
-                        className="myClassname"
-                        display="initial"
-                        position="relative" />{" "}
+                    <Iframe
+                      url="https://platform.sayduck.com/public/preview/da690e50-aeaa-0138-19eb-3ea8e8560ebf"
+                      width="100%"
+                      height="111%"
+                      id="myId"
+                      className="myClassname"
+                      display="initial"
+                      position="relative"
+                    />{" "}
                   </div>{" "}
                 </div>{" "}
               </div>
@@ -129,7 +133,7 @@ const PPEMake3DPage = ({ data }) => {
                 </div>
                 <div className="md:p-5">
                   <a href="https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Surgical%20Mask%20Band%20for%20Ear%20Comfort%20-%20Extra%20Security_2.STL">
-                    <button class="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
+                    <button className="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
                       Download STL
                     </button>
                   </a>

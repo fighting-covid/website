@@ -119,8 +119,10 @@ const HomePage = ({ data }) => {
             </Markdown>
             <br></br>
             <div>
-              <button class="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
-                <Link href="/ppe-request">Request PPE</Link>
+              <button className="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
+                <Link href="/ppe-request">
+                  <a>Request PPE</a>
+                </Link>
               </button>
             </div>
           </div>
@@ -205,13 +207,15 @@ const HomePage = ({ data }) => {
               <br></br>
             </div>
             <Markdown className="markdown-body text-lg">
-              This graph shows the quantities of PPE we have already coordinated donations for. 
-              Hover over the bars for exact values.
+              This graph shows the quantities of PPE we have already coordinated
+              donations for. Hover over the bars for exact values.
             </Markdown>
             <br></br>
             <div>
-              <button class="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
-                <Link href="/ppe-donate">Donate PPE</Link>
+              <button className="bg-dark hover:bg-blue-700 text-white py-2 px-4 rounded-full">
+                <Link href="/ppe-donate">
+                  <a>Donate PPE</a>
+                </Link>
               </button>
             </div>
           </div>
