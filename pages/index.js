@@ -104,7 +104,7 @@ const HomePage = ({ data }) => {
             </Markdown>
             <div>
               <button className="trans button">
-                <Link href="/ppe-request">
+                <Link href="/ppe/request">
                   <a>Request PPE</a>
                 </Link>
               </button>
@@ -190,7 +190,7 @@ const HomePage = ({ data }) => {
             </Markdown>
             <div>
               <button className="trans button">
-                <Link href="/ppe-donate">
+                <Link href="/ppe/donate">
                   <a>Donate PPE</a>
                 </Link>
               </button>
