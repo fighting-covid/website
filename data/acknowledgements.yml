@@ -1,0 +1,21 @@
+title: Acknowledgments
+subtitle: |
+  We would like to thank everyone who helped us deliver PPE to frontline workers.
+acknowledgments:
+  - title: Mika Naraynsingh
+    image: mika-naraynsingh.jpg
+  - title: Masks for Docs
+    image: masks-for-docs.jpg
+    link: https://masksfordocs.com/
+  - title: Fairfax County Public Library
+    image: fcpl.jpg
+    link: https://www.fairfaxcounty.gov/library/
+  - title: 3D for COVID
+    image: 3d-for-covid.jpg
+    link: https://3dforcovid.com/
+  - title: Open Source Medical Supplies
+    image: osms.jpg
+    link: https://opensourcemedicalsupplies.org/
+  - title: Let's Breathe
+    image: lets-breathe.jpg
+    link: https://sites.google.com/view/lets-breathe/home?authuser=0
