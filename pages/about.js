@@ -6,6 +6,7 @@ import Popup from "reactjs-popup";
 import SEO from "../components/seo";
 import ReactGA from "react-ga";
 import Markdown from "react-markdown";
+import { MdClose } from "react-icons/md";
 ReactGA.initialize("UA-167321699-1");
 ReactGA.pageview("/about");
 
@@ -41,15 +42,27 @@ const AboutPage = ({ data }) => {
               <Popup
                 key={teamSlug}
                 trigger={
-                  <div className="trans opacity-75 hover:opacity-100 cursor-pointer w-full sm:w-1/4 px-4">
-                    <img
-                      src={require(`../assets/images/teams/${teamSlug}.png`)}
-                      alt={team.title}
-                      className="p-8"
-                    />
-                    <p className="text-light bg-dark text-center text-xl py-2 rounded-b-sm">
-                      {team.title}
-                    </p>
+                  <div
+                    className={`trans opacity-75 hover:opacity-100 cursor-pointer w-full sm:w-1/2 md:w-1/4 px-4 pb-8`}
+                  >
+                    <div className="shadow hover:shadow-xl border border-dark-secondary rounded">
+                      <div
+                        className="flex items-center justify-center"
+                        style={{ height: "150px" }}
+                      >
+                        <img
+                          src={require(`../assets/images/teams/${teamSlug}.png`)}
+                          alt={team.title}
+                          className="p-8 max-h-full"
+                        />
+                      </div>
+                      <p
+                        className="text-light bg-dark text-center text-xl py-2"
+                        style={{ height: "50px" }}
+                      >
+                        {team.title}
+                      </p>
+                    </div>
                   </div>
                 }
                 modal
@@ -57,10 +70,10 @@ const AboutPage = ({ data }) => {
                 {(close) => (
                   <div className="modal bg-dark text-light px-8 py-4">
                     <a
-                      className="close cursor-pointer ml-2 text-light text-3xl"
+                      className="close cursor-pointer text-light text-3xl"
                       onClick={close}
                     >
-                      &times;
+                      <MdClose className="inline" />
                     </a>
                     <div className="text-center">
                       <h2
