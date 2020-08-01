@@ -8,7 +8,7 @@ ReactGA.pageview("/ppe-make/3d");
 const PPEMake3DPage = ({ data }) => {
   return (
     <>
-      <SEO title="Make PPE" />
+      <SEO title="Innovative Design" />
       <main>
         <section className="container my-12">
           <div className="text-center mb-8">

@@ -11,7 +11,7 @@ ReactGA.pageview("/ppe-make/sewing");
 const PPEMakeSewingPage = ({ data }) => {
   return (
     <>
-      <SEO title="Make PPE" />
+      <SEO title="Sewing" />
       <main>
         <section className="container text-center my-5 md:my-12">
           <h1 className="heading">Sewing</h1>
