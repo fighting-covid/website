@@ -13,10 +13,10 @@ const PPEMakeSewingPage = ({ data }) => {
     <>
       <SEO title="Make PPE" />
       <main>
-        <section className="container text-center my-12">
+        <section className="container text-center my-5 md:my-12">
           <h1 className="heading">Sewing</h1>
         </section>
-        <section className="container flex flex-wrap mb-12 -mr-8">
+        <section className="container flex flex-wrap mb-2 md:mb-12 -mr-8">
           {data.sewing.map((resource, i) => (
             <div className="flex flex-wrap w-full md:w-1/2 pr-8 mb-8" key={i}>
               <div className="lg:pr-8 lg:w-1/2 mx-auto mb-4">
@@ -26,7 +26,7 @@ const PPEMakeSewingPage = ({ data }) => {
                   alt={resource.title}
                 />
               </div>
-              <div className="lg:w-1/2 h-full">
+              <div className="lg:w-1/2">
                 <h2 className="text-2xl text-dark mb-4">{resource.title}</h2>
                 <div className="">
                   <a href={resource.link}>
