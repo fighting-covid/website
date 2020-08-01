@@ -14,11 +14,10 @@ const PPEMake3DPage = ({ data }) => {
           <div className="text-center mb-8">
             <h1 className="heading">Innovative Design</h1>
           </div>
-          <section className="flex flex-wrap-reverse md:justify-center justify-end">
-            <div className="md:pr-3">
+          <section className="flex flex-col md:flex-row md:justify-center justify-end">
+            <div className="md:w-2/3 w-full mb-5 md:mb-0 md:pr-3">
               <div
-                className="border-2 border-gray-500 md:w-1/2 w-full"
-                style={{ width: "80vh", height: "50vh" }}
+                className="border-2 border-gray-500"
               >
                 <a
                   href="https://www.youtube.com/watch?v=ij9wQRHGri0"
@@ -34,10 +33,9 @@ const PPEMake3DPage = ({ data }) => {
                 </a>
               </div>
             </div>
-            <div className="md:pr-3">
+            <div className="md:w-2/3 w-full md:pr-3">
               <div
-                className="border-2 border-gray-500 md:w-1/2 w-full"
-                style={{ width: "80vh", height: "50vh" }}
+                className="border-2 border-gray-500 h-full"
               >
                 <iframe
                   width="100%"
