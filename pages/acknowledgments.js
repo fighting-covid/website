@@ -3,11 +3,11 @@ import SEO from "../components/seo";
 import React from "react";
 import osms from "../assets/images/acknowledgments/osms.jpg";
 import fcpl from "../assets/images/acknowledgments/fcpl.jpg";
-import covid from "../assets/images/acknowledgements/3d-for-covid.jpg";
-import mfd from "../assets/images/acknowledgements/masks-for-docs.jpg";
-import mn from "../assets/images/acknowledgements/mika-naraynsingh.jpg";
+import covid from "../assets/images/acknowledgments/3d-for-covid.jpg";
+import mfd from "../assets/images/acknowledgments/masks-for-docs.jpg";
+import mn from "../assets/images/acknowledgments/mika-naraynsingh.jpg";
 import donate from "../assets/images/donation.jpeg";
-import breathe from "../assets/images/acknowledgements/lets-breathe.jpg";
+import breathe from "../assets/images/acknowledgments/lets-breathe.jpg";
 import ReactGA from "react-ga";
 
 ReactGA.initialize("UA-167321699-1");
