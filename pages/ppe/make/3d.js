@@ -40,7 +40,7 @@ const PPEMake3DPage = ({ data }) => {
             const printTime = new String(stl.printTime);
             const description = new String(stl.description);
             return(
-            <>
+            <section className="flex">
             <div className="mb-100 flex flex-col px-4 md:px-0 h-64 md:w-1/2 w-full">
               <Iframe url={link}
                 width="100%"
@@ -51,7 +51,7 @@ const PPEMake3DPage = ({ data }) => {
                 position="relative" />
             </div>
             <div className="flex flex-col">
-              <section className="pl-2 md:pl-0 ml-3 md:ml-10">
+              <section className="pl-2 md:pl-0 ml-3 md:ml-10 md:w-1/2">
                 <h3 className="heading text-2xl mt-2 sm:mt-0 mb-2">{title}</h3>
                 <p><i>Print time: {printTime}</i></p>
                 <p className="mt-5 mb-4">{description}</p>
@@ -62,7 +62,7 @@ const PPEMake3DPage = ({ data }) => {
                 </a>
               </section>
             </div>
-            </>
+            </section>
             );
           })}
           </div>
