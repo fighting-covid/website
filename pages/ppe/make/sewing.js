@@ -35,17 +35,17 @@ const PPEMakeSewingPage = ({ data }) => {
                   src={require(`../../../assets/images/make/${resource.thumbnail}`)}
                   alt={resource.title}
                 />
+            <div className="lg:w-full text-center pt-4">
+            <div className="">
+              <button className="trans button">
+                <a href={resource.link} target="_blank">
+                  Download PDF
+                </a>
+              </button>
+            </div>
+            </div>
               </div>
-              <div className="lg:w-1/2">
-                <h2 className="text-2xl text-dark mb-4">{resource.title}</h2>
-                <div className="">
-                  <button className="trans button">
-                    <a href={resource.link} target="_blank">
-                      Download PDF
-                    </a>
-                  </button>
-                </div>
-                </div>
+              
           </div>
           ))}
         </section>
