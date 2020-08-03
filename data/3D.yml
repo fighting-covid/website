@@ -1,46 +1,46 @@
 stls:
-  - title: Face Shield
+  - title: Prusa Face Shield
     link: |
       https://platform.sayduck.com/public/preview/e40aec90-aea9-0138-6da4-3ea8e8560ebf
     download: |
       https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
     printTime: |
-      35 minutes
+      2 hours and 30 minutes
     description: |
-      This is one sentence about face shields.
-  - title: Ear Saver
+      The Prusa face shield takes much longer than 3DVerkstan to print, but creates a much sturdier and lasting product. For this reason, this design is more ideal for injection molding machines but can be printed using PLA or PETG.
+  - title: 3DVerkstan Face Shield
     link: |
       https://platform.sayduck.com/public/preview/da690e50-aeaa-0138-19eb-3ea8e8560ebf
     download: |
       https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
     printTime: |
-      250 minutes
+      40 minutes
     description: |
-      this is one sentence about ear savers.
-  - title: Door Grabber
+      The 3DVerkstan is the fastest face shield model to 3D print. The thin design makes the finished product very flexible, although a rubber band can be placed between the hooks for a tighter fit. The pegs align with a standard 3-hole punch. The design can be printed out of PLA or PETG.
+  - title: Ear Saver
     link: |
       https://platform.sayduck.com/public/preview/827221e0-b7ec-0138-f94c-3e3d3865bbc7
     download: |
       https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
     printTime: |
-      250 minutes
+      30 minutes
     description: |
-      this is one sentence about door grabbers.
-  - title: Ear Saver
+      Ear savers are small bendable devices that fit behind the head and can hold the mask straps, providing comfort to the user. They take relatively little time to print, but are a great contribution from the maker community to healthcare workers. The design can be printed out of PLA. 
+  - title: Ear Saver - Buckle Variation
     link: |
       https://platform.sayduck.com/public/preview/e40aec90-aea9-0138-6da4-3ea8e8560ebf
     download: |
       https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
     printTime: |
-      250 minutes
+      30 minutes
     description: |
-      this is one sentence about ear savers.
-  - title: Ear Saver
+      The buckle variation is another form of ear saver that has its own pros and cons. While this design fits more nicely around the head and secures mask straps well, unless the print comes out perfect there is a chance of the hooks snapping off. This design can be printed out of PLA or PETG.
+  - title: Door Grabber
     link: |
       https://platform.sayduck.com/public/preview/e40aec90-aea9-0138-6da4-3ea8e8560ebf
     download: |
       https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
     printTime: |
-      250 minutes
+      40 minutes
     description: |
-      this is one sentence about ear savers.
+      The door grabber is small device that can fit around a key ring. The main use of the item is to prevent unnecessary contact to elevator buttons and door handles. It is also very easy to clean. The model can be printed out of PLA or PETG. 

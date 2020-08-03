@@ -1,12 +1,12 @@
 import yaml from "js-yaml";
 import fs from "fs";
 import path from "path";
-import dynamic from "next/dynamic";
 import Popup from "reactjs-popup";
 import SEO from "../components/seo";
 import ReactGA from "react-ga";
 import Markdown from "react-markdown";
 import { MdClose } from "react-icons/md";
+
 ReactGA.initialize("UA-167321699-1");
 ReactGA.pageview("/about");
 
@@ -41,6 +41,7 @@ const AboutPage = ({ data }) => {
             return (
               <Popup
                 key={teamSlug}
+                className="w-full"
                 trigger={
                   <div
                     className={`trans hover:opacity-100 cursor-pointer w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-4 pb-8`}
@@ -53,7 +54,7 @@ const AboutPage = ({ data }) => {
                         <img
                           src={require(`../assets/images/teams/${teamSlug}.png`)}
                           alt={team.title}
-                          className="p-0 max-h-full"
+                          className="py-2 max-h-full"
                         />
                       </div>
                       <p
@@ -87,22 +88,26 @@ const AboutPage = ({ data }) => {
                       {team.description}
                     </Markdown>
                     <div className="mb-6">
-                      <p>
-                        <span className="text-accent font-bold mr-1">
-                          Leads:
-                        </span>
-                        <span className="text-light">
-                          {team.leads.join(", ")}
-                        </span>
-                      </p>
-                      <p>
-                        <span className="text-accent font-bold mr-1">
-                          Team:
-                        </span>
-                        <span className="text-light">
-                          {team.team.join(", ")}
-                        </span>
-                      </p>
+                      {team.leads ? (
+                        <p>
+                          <span className="text-accent font-bold mr-1">
+                            Leads:
+                          </span>
+                          <span className="text-light">
+                            {team.leads.join(", ")}
+                          </span>
+                        </p>
+                      ) : null}
+                      {team.team ? (
+                        <p>
+                          <span className="text-accent font-bold mr-1">
+                            Team:
+                          </span>
+                          <span className="text-light">
+                            {team.team.join(", ")}
+                          </span>
+                        </p>
+                      ) : null}
                     </div>
                     <div className="text-center mb-4">
                       <button
@@ -120,6 +125,18 @@ const AboutPage = ({ data }) => {
             );
           })}
         </section>
+        <style jsx global>{`
+          .popup-content {
+            width: 100% !important;
+            margin: auto 1em !important;
+          }
+          @media (min-width: 768px) {
+            .popup-content {
+              width: 50% !important;
+              margin: auto !important;
+            }
+          }
+        `}</style>
       </main>
     </>
   );
