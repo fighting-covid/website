@@ -57,7 +57,7 @@ teams:
   - title: Funds
     description: |
       The Funds team is working to raise money for YCRO and help compensate costs for our volunteers.
-    members:
+    team:
       - Catie Granum
       - Vishal Kanigicherla
   - title: Outreach
