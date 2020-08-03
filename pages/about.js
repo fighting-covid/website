@@ -43,9 +43,9 @@ const AboutPage = ({ data }) => {
                 key={teamSlug}
                 trigger={
                   <div
-                    className={`trans opacity-75 hover:opacity-100 cursor-pointer w-full sm:w-1/2 md:w-1/4 px-4 pb-8`}
+                    className={`trans hover:opacity-100 cursor-pointer w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-4 pb-8`}
                   >
-                    <div className="shadow hover:shadow-xl border border-dark-secondary rounded">
+                    <div className="hover:shadow-2xl border border-dark-secondary rounded">
                       <div
                         className="flex items-center justify-center"
                         style={{ height: "150px" }}
@@ -53,7 +53,7 @@ const AboutPage = ({ data }) => {
                         <img
                           src={require(`../assets/images/teams/${teamSlug}.png`)}
                           alt={team.title}
-                          className="p-8 max-h-full"
+                          className="p-0 max-h-full"
                         />
                       </div>
                       <p
