@@ -1,0 +1,46 @@
+stls:
+  - title: Face Shield
+    link: |
+      https://platform.sayduck.com/public/preview/e40aec90-aea9-0138-6da4-3ea8e8560ebf
+    download: |
+      https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
+    printTime: |
+      35 minutes
+    description: |
+      This is one sentence about face shields.
+  - title: Ear Saver
+    link: |
+      https://platform.sayduck.com/public/preview/da690e50-aeaa-0138-19eb-3ea8e8560ebf
+    download: |
+      https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
+    printTime: |
+      250 minutes
+    description: |
+      this is one sentence about ear savers.
+  - title: Door Grabber
+    link: |
+      https://platform.sayduck.com/public/preview/827221e0-b7ec-0138-f94c-3e3d3865bbc7
+    download: |
+      https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
+    printTime: |
+      250 minutes
+    description: |
+      this is one sentence about door grabbers.
+  - title: Ear Saver
+    link: |
+      https://platform.sayduck.com/public/preview/e40aec90-aea9-0138-6da4-3ea8e8560ebf
+    download: |
+      https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
+    printTime: |
+      250 minutes
+    description: |
+      this is one sentence about ear savers.
+  - title: Ear Saver
+    link: |
+      https://platform.sayduck.com/public/preview/e40aec90-aea9-0138-6da4-3ea8e8560ebf
+    download: |
+      https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
+    printTime: |
+      250 minutes
+    description: |
+      this is one sentence about ear savers.
