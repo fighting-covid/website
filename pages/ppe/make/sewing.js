@@ -29,9 +29,11 @@ const PPEMakeSewingPage = ({ data }) => {
               <div className="lg:w-1/2">
                 <h2 className="text-2xl text-dark mb-4">{resource.title}</h2>
                 <div className="">
-                  <a href={resource.link}>
-                    <button className="trans button">Download PDF</button>
-                  </a>
+                  <button className="trans button">
+                    <a href={resource.link} target="_blank">
+                      Download PDF
+                    </a>
+                  </button>
                 </div>
               </div>
             </div>

@@ -1,7 +1,7 @@
 sewing:
   - title: Materials Database
     thumbnail: materials-db.svg
-    link: https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
+    link: /materials_database.pdf
   - title: Mask Sewing Instructions
     thumbnail: mask-instructions.svg
-    link: https://www.hopkinsmedicine.org/coronavirus/_documents/INF2003076_VW_Hand-Sewn%20Mask%20instructions-1.pdf
+    link: /mask_instructions.pdf
