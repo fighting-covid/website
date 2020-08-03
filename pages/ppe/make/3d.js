@@ -15,14 +15,14 @@ const PPEMake3DPage = ({ data }) => {
             <h1 className="heading">3D Printing</h1>
           </div>
 
-          <section className="container flex flex-wrap md:justify-center justify-end">
+          <section className="flex md:justify-center justify-end">
             
             {/* Face Shield */}
             <div
-                className="container md:w-1/2 w-full"
+                className="md:w-1/2 w-full"
                 style={{ width: "80vh", height: "50vh" }}
               >
-              <div className="modelo-wrapper">                  
+              <div className="modelo-wrapper p-6">                  
                 <div
                   style={{
                     marginBottom: "0%",
@@ -55,7 +55,7 @@ const PPEMake3DPage = ({ data }) => {
                 </div>
               </div>
 
-              <section className="flex flex-wrap-reverse md:justify-center">
+              <section className="flex flex-wrap md:justify-center p-6">
                 <div className="md:pr-1 p-5">
                   <h2 className="font-mono lg:text-2xl text-xll">
                     Face Shield
@@ -72,10 +72,10 @@ const PPEMake3DPage = ({ data }) => {
             
             {/* Ear Saver */}
             <div
-              className="flex border-2 border-gray-500 md:w-1/2 w-full"
+              className="md:w-1/2 w-full"
               style={{ width: "80vh", height: "50vh" }}
             >
-              <div className="modelo-wrapper">
+              <div className="modelo-wrapper p-6">
                 
                 <div
                   style={{
