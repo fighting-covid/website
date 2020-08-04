@@ -4,18 +4,24 @@ subtitle: |
 acknowledgments:
   - title: Mika Naraynsingh
     image: mika-naraynsingh.jpg
+    width: w-1/3
   - title: Masks for Docs
     image: masks-for-docs.jpg
     link: https://masksfordocs.com/
+    width: w-1/5
   - title: Fairfax County Public Library
     image: fcpl.jpg
     link: https://www.fairfaxcounty.gov/library/
+    width: w-5/12
   - title: 3D for COVID
     image: 3d-for-covid.jpg
     link: https://3dforcovid.com/
+    width: w-1/4
   - title: Open Source Medical Supplies
     image: osms.jpg
     link: https://opensourcemedicalsupplies.org/
+    width: w-1/2
   - title: Let's Breathe
     image: lets-breathe.jpg
     link: https://sites.google.com/view/lets-breathe/home?authuser=0
+    width: w-1/4
