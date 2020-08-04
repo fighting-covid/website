@@ -2,44 +2,64 @@ stls:
   - title: Prusa Face Shield
     link: |
       https://platform.sayduck.com/public/preview/e40aec90-aea9-0138-6da4-3ea8e8560ebf
+    credit: |
+      Prusa Research
+    credit_link: |
+      https://www.prusaprinters.org/prints/27950-prusa-protective-face-shield-rc3-us-version
     download: |
-      https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
+      https://drive.google.com/uc?export=download&id=1zK41qZjoHO8a4Tdd2FduMMYaut0syAV9
     printTime: |
       2 hours and 30 minutes
     description: |
       The Prusa face shield takes much longer than 3DVerkstan to print, but creates a much sturdier and lasting product. For this reason, this design is more ideal for injection molding machines but can be printed using PLA or PETG.
   - title: 3DVerkstan Face Shield
+    credit: |
+      Erik Cederberg 
+    credit_link: |
+      https://3dverkstan.se/protective-visor/protective-visor-versions/
     link: |
-      https://platform.sayduck.com/public/preview/da690e50-aeaa-0138-19eb-3ea8e8560ebf
+      https://platform.sayduck.com/public/preview/f3f4cae0-b8ab-0138-db05-6edbcf45b493
     download: |
-      https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
+      https://drive.google.com/uc?export=download&id=1EDSqgNkUsLrYhDrjswQ-5V8W1BiGBwRB
     printTime: |
       40 minutes
     description: |
       The 3DVerkstan is the fastest face shield model to 3D print. The thin design makes the finished product very flexible, although a rubber band can be placed between the hooks for a tighter fit. The pegs align with a standard 3-hole punch. The design can be printed out of PLA or PETG.
   - title: Ear Saver
+    credit: |
+      Suraky
+    credit_link: |
+      https://www.thingiverse.com/thing:4249113
     link: |
-      https://platform.sayduck.com/public/preview/827221e0-b7ec-0138-f94c-3e3d3865bbc7
+      https://platform.sayduck.com/public/preview/ee4916c0-b8aa-0138-3be0-6edbcf45b493
     download: |
-      https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
+      https://drive.google.com/uc?export=download&id=1McpoEKtxHEJ2QqFxsvAnsz_GnwPGp2SQ
     printTime: |
       30 minutes
     description: |
       Ear savers are small bendable devices that fit behind the head and can hold the mask straps, providing comfort to the user. They take relatively little time to print, but are a great contribution from the maker community to healthcare workers. The design can be printed out of PLA. 
   - title: Ear Saver - Buckle Variation
+    credit: |
+      w_Stadolnik
+    credit_link: |
+      https://3dprint.nih.gov/discover/3dpx-013574
     link: |
-      https://platform.sayduck.com/public/preview/e40aec90-aea9-0138-6da4-3ea8e8560ebf
+      https://platform.sayduck.com/public/preview/da690e50-aeaa-0138-19eb-3ea8e8560ebf
     download: |
-      https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
+      https://drive.google.com/uc?export=download&id=1VZiyFbHPO1JldfjTC-27PTetKK6tCvEb
     printTime: |
       30 minutes
     description: |
       The buckle variation is another form of ear saver that has its own pros and cons. While this design fits more nicely around the head and secures mask straps well, unless the print comes out perfect there is a chance of the hooks snapping off. This design can be printed out of PLA or PETG.
   - title: Door Grabber
+    credit: |
+      Coolioiglesias
+    credit_link: |
+      https://www.prusaprinters.org/prints/26146-savegrabber-open-door-without-touching-the-handle-
     link: |
-      https://platform.sayduck.com/public/preview/e40aec90-aea9-0138-6da4-3ea8e8560ebf
+      https://platform.sayduck.com/public/preview/68392e50-b8a8-0138-3fe3-6edbcf45b493
     download: |
-      https://3dprint.nih.gov/sites/default/files/models/3d_model_files/Prusa_Modified_TensionLocks_0.stl
+     https://drive.google.com/uc?export=download&id=1wEz9bvsn00x7CfeFDXZisURsg1ashVAv
     printTime: |
       40 minutes
     description: |
