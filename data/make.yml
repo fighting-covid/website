@@ -1,7 +1,10 @@
+content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 sewing:
   - title: Materials Database
     thumbnail: materials-db.svg
     link: /materials_database.pdf
+    content: Our Materials Database was developed from hours of research in primary literature and information has been compiled from a variety of veritable sources, including the Center for Disease Control and the World Health Organization. The database consists of a list of materials that may be used to make masks that are commonly found around the house, and relevant guidelines for sterilization.
   - title: Mask Sewing Instructions
     thumbnail: mask-instructions.svg
     link: /mask_instructions.pdf
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.

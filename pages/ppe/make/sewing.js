@@ -20,7 +20,7 @@ const PPEMakeSewingPage = ({ data }) => {
           
         <section className="container flex flex-wrap md:justify-center">
         <section className="flex flex-wrap pl-6 pr-6 text-center pb-8">
-            <p className="w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+            <p className="w-full">{data.content}</p>
           </section>
           {data.sewing.map((resource, i) => (
             <div className="flex flex-wrap md:w-1/2  mb-8 pl-6 pr-6" key={i}>
@@ -28,7 +28,7 @@ const PPEMakeSewingPage = ({ data }) => {
             <div className="lg:pr-6 mb-4">
               <div className="text-center">
                 <h2 className="text-2xl text-dark mb-4 text-center">{resource.title}</h2>
-                <p className="pb-6"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p className="pb-6">{resource.content}</p>
               </div>
                 <img
                   className="trans border-solid border-2 border-gray-600"

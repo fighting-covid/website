@@ -27,10 +27,10 @@ const Acknowledgments = ({ data }) => {
           <div className="flex flex-wrap items-center justify-center -mx-6">
             {data.acknowledgments.map((ack, i) => (
               <div
-                className={`trans opacity-75 hover:opacity-100 cursor-pointer w-full sm:w-1/2 md:${ack.width || "w-1/3"} px-4 pb-8`}
+                className={`trans cursor-pointer w-full sm:w-1/2 md:${ack.width || "w-1/3"} px-4 pb-8`}
                 key={i}
               >
-                <div className="shadow hover:shadow-xl border border-dark-secondary rounded">
+                <div className="shadow duration-500 ease-in-out hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 border border-dark-secondary rounded">
                   <div className="flex items-center justify-center">
                     <a href={ack.link} target="_blank">
                       <img

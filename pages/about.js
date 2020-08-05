@@ -44,9 +44,9 @@ const AboutPage = ({ data }) => {
                 className="w-full"
                 trigger={
                   <div
-                    className={`trans hover:opacity-100 cursor-pointer w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-4 pb-8`}
+                    className={`trans cursor-pointer w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-4 pb-8`}
                   >
-                    <div className="hover:shadow-2xl border border-dark-secondary rounded">
+                    <div className="transition duration-500 transform hover:scale-105 hover:shadow-2xl border border-dark-secondary rounded">
                       <div
                         className="flex items-center justify-center"
                         style={{ height: "150px" }}
