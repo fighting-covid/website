@@ -28,7 +28,7 @@ const PPEMakeSewingPage = ({ data }) => {
             <div className="lg:pr-6 mb-4">
               <div className="text-center">
                 <h2 className="text-2xl text-dark mb-4 text-center">{resource.title}</h2>
-                <p className="pb-6">{resource.content}</p>
+                <p className="pb-6 text-left">{resource.content}</p>
               </div>
                 <img
                   className="trans border-solid border-2 border-gray-600"
