@@ -66,13 +66,13 @@ const HomePage = ({ data }) => {
                 className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
                 src={background}
               ></img>
-              <div className="md:mt-40 p-4 flex flex-col items-left relative">
+              <div className="md:mt-40 md:ml-6 p-4 flex flex-col items-left relative">
                 <div>
                   <p className="text-left font-mono lg:text-5xl text-4xl pb-4">
                     Youth COVID-19 Relief Organization
                   </p>
                 </div>
-                <div className="text-left font-mono lg:text-2xl text-xl">
+                <div className="text-left mb-10 font-mono lg:text-2xl text-xl">
                   <p>
                     Healthcare workers are lacking basic personal protective
                     equipment (PPE) while fighting the COVID-19 pandemic, putting
