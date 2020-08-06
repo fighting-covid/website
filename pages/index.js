@@ -5,6 +5,10 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import background from "../assets/images/background2.jpg";
+import josh from "../assets/images/donation.jpeg"
+import sewing from "../assets/images/sewingPPE.png"
+import printer from "../assets/images/3d-printer.jpg"
+import mask from "../assets/images/n95.jpg"
 import Markdown from "react-markdown";
 
 import { Carousel } from 'react-responsive-carousel';
@@ -53,49 +57,59 @@ const HomePage = ({ data }) => {
       <SEO title="Home" />
       <main>
 
-        <section className="lg:mb-16 relative p-8 lg:p-64 text-dark">
-            <Carousel autoPlay infiniteLoop>
-                <div>
-                    <img alt="" src={background} />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img alt="" src={background} />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <img alt="" src={background} />
-                    <p className="legend">Legend 3</p>
-                </div>
-                <div>
-                    <img alt="" src={background} />
-                    <p className="legend">Legend 4</p>
-                </div>
-                <div>
-                    <img alt="" src={background} />
-                    <p className="legend">Legend 5</p>
-                </div>
-                <div>
-                    <img alt="" src={background} />
-                    <p className="legend">Legend 6</p>
-                </div>
-            </Carousel>
-          <div className="p-4 flex flex-col items-left relative">
+        <section className="text-dark">
+          {/*Carousel Documentation *IMPORTANT*: https://github.com/leandrowd/react-responsive-carousel/blob/master/stories/01-basic.tsx */}
+
+          <Carousel interval={5000} swipeable autoPlay useKeyboardArrows infiniteLoop stopOnHover={false} showThumbs={false}>
             <div>
-              <p className="text-left font-mono lg:text-5xl text-4xl pb-4">
-                Youth COVID-19 Relief Organization
-              </p>
+              <img
+                className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
+                src={background}
+              ></img>
+              <div className="md:mt-40 p-4 flex flex-col items-left relative">
+                <div>
+                  <p className="text-left font-mono lg:text-5xl text-4xl pb-4">
+                    Youth COVID-19 Relief Organization
+                  </p>
+                </div>
+                <div className="text-left font-mono lg:text-2xl text-xl">
+                  <p>
+                    Healthcare workers are lacking basic personal protective
+                    equipment (PPE) while fighting the COVID-19 pandemic, putting
+                    themselves and their loved ones in danger. Help us deliver
+                    critically needed supplies so they can safely continue saving
+                    lives.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="text-left font-mono lg:text-2xl text-xl">
-              <p>
-                Healthcare workers are lacking basic personal protective
-                equipment (PPE) while fighting the COVID-19 pandemic, putting
-                themselves and their loved ones in danger. Help us deliver
-                critically needed supplies so they can safely continue saving
-                lives.
-              </p>
+            <div>
+              <img
+                className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
+                src={josh}
+              ></img>
+              <p className="legend">Legend 3</p>
             </div>
-          </div>
+            <div>
+              <img
+                className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
+                src={printer}
+              ></img>
+              <p className="legend">Legend 4</p>
+            </div>
+            <div>
+              <img
+                className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
+                src={sewing}
+              ></img>
+              <p className="legend">Legend 4</p>
+            </div>
+            <div>
+              <img alt="" src={sewing} />
+              <p className="legend">Legend 4</p>
+            </div>
+          </Carousel>
+
         </section>
 
         <section className="lg:p-16 lg:pl-40 p-8 flex flex-wrap-reverse">
@@ -179,8 +193,8 @@ const HomePage = ({ data }) => {
                 </BarChart>
               </ResponsiveContainer>
             ) : (
-              <div></div>
-            )}
+                <div></div>
+              )}
           </div>
         </section>
 
@@ -206,8 +220,8 @@ const HomePage = ({ data }) => {
                 </BarChart>
               </ResponsiveContainer>
             ) : (
-              <div></div>
-            )}
+                <div></div>
+              )}
           </div>
           <div className="lg:p-16 lg:pr-40 pb-8 lg:w-1/2 w-full flex flex-col lg:justify-center justify-end">
             <div>
