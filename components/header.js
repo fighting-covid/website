@@ -141,8 +141,8 @@ const Header = () => {
               >
                 <span>
                   <NavLink
-                    href="/ppe/make/innovative-design"
-                    title="Innovative Design"
+                    href="/ppe/make/low-tech-ppe"
+                    title="Low Tech PPE"
                     onClick={() => {
                       setActive(false);
                       setInvolvedActive(false);

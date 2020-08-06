@@ -4,15 +4,15 @@ import ReactGA from "react-ga";
 import ear_saver from "../../../assets/images/ear_saver.png";
 
 ReactGA.initialize("UA-167321699-1");
-ReactGA.pageview("/ppe-make/3d");
-const PPEMake3DPage = ({ data }) => {
+ReactGA.pageview("/ppe-make/low-tech-ppe");
+const PPEMakeLowTechPPEPage = ({ data }) => {
   return (
     <>
-      <SEO title="Innovative Design" />
+      <SEO title="Low Tech PPE" />
       <main>
         <section className="container my-12">
           <div className="text-center mb-8">
-            <h1 className="heading">Innovative Design</h1>
+            <h1 className="heading">Low Tech PPE</h1>
           </div>
           <section className="flex flex-col md:flex-row md:justify-center justify-end">
             <div className="md:w-2/3 w-full mb-5 md:mb-0 md:pr-3">
@@ -54,4 +54,4 @@ const PPEMake3DPage = ({ data }) => {
   );
 };
 
-export default PPEMake3DPage;
+export default PPEMakeLowTechPPEPage;
