@@ -22,7 +22,7 @@ const Newsletter = ({ data }) => {
         <section className="container">
           {data.volumes.map((volume, i) => (
             <div className="flex flex-wrap mb-12" key={i}>
-              <div className="w-full lg:w-1/3 pr-8 mb-4">
+              <div className="w-full lg:w-5/12 pr-8 mb-4">
                 <img
                   src={require(`../assets/images/newsletter/volume-${
                     i + 1
@@ -30,7 +30,7 @@ const Newsletter = ({ data }) => {
                   alt={`Volume ${i + 1}`}
                 />
               </div>
-              <div className="w-full lg:w-2/3">
+              <div className="w-full lg:w-7/12">
                 <h2 className="heading">Volume {i + 1}</h2>
                 <Markdown className="text-lg markdown-body mb-4">
                   {volume}
