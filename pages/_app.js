@@ -3,6 +3,7 @@ import Footer from "../components/footer";
 
 import "../assets/styles/main.css";
 import "hamburgers/dist/hamburgers.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {

@@ -6,6 +6,11 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import background from "../assets/images/background2.jpg";
 import Markdown from "react-markdown";
+
+import { Carousel } from 'react-responsive-carousel';
+import ReactDOM from 'react-dom';
+import React, { Component } from 'react';
+
 import {
   ResponsiveContainer,
   BarChart,
@@ -21,6 +26,8 @@ import SEO from "../components/seo";
 import ReactGA from "react-ga";
 ReactGA.initialize("UA-167321699-1");
 ReactGA.pageview("/");
+
+
 
 const HomePage = ({ data }) => {
   const [graphRequestData, setGraphDonationData] = useState(null);
@@ -45,12 +52,34 @@ const HomePage = ({ data }) => {
     <>
       <SEO title="Home" />
       <main>
+
         <section className="lg:mb-16 relative p-8 lg:p-64 text-dark">
-          <img
-            className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
-            src={background}
-            style={{ objectPosition: "50% 75%" }}
-          ></img>
+            <Carousel autoPlay infiniteLoop>
+                <div>
+                    <img alt="" src={background} />
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div>
+                    <img alt="" src={background} />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img alt="" src={background} />
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <img alt="" src={background} />
+                    <p className="legend">Legend 4</p>
+                </div>
+                <div>
+                    <img alt="" src={background} />
+                    <p className="legend">Legend 5</p>
+                </div>
+                <div>
+                    <img alt="" src={background} />
+                    <p className="legend">Legend 6</p>
+                </div>
+            </Carousel>
           <div className="p-4 flex flex-col items-left relative">
             <div>
               <p className="text-left font-mono lg:text-5xl text-4xl pb-4">

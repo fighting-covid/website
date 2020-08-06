@@ -34,6 +34,7 @@
     "react-markdown": "^4.3.1",
     "react-model-viewer": "^0.6.1",
     "react-pdf": "^4.1.0",
+    "react-responsive-carousel": "^3.2.9",
     "reactjs-popup": "^1.5.0",
     "recharts": "^1.8.5",
     "stl-viewer": "^0.12.0",

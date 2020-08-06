@@ -5,7 +5,6 @@ import SEO from "../../../components/seo";
 import React from "react";
 import ReactGA from "react-ga";
 
-
 ReactGA.initialize("UA-167321699-1");
 ReactGA.pageview("/ppe-make/sewing");
 
