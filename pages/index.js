@@ -69,13 +69,13 @@ const HomePage = ({ data }) => {
                 className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
                 src={background}
               ></img>
-              <div className="md:mt-40 md:mb-40 md:ml-6 p-4 flex flex-col items-left relative">
+              <div className="md:pt-20 md:pb-20 md:ml-6 p-4 flex flex-col items-left relative">
                 <div>
                   <p className="text-left font-mono lg:text-5xl text-4xl pb-4">
                     Youth COVID-19 Relief Organization
                   </p>
                 </div>
-                <div className="text-left mb-10 font-mono lg:text-2xl text-xl">
+                <div className="text-left md:w-1/3 mb-10 font-mono lg:text-2xl text-xl">
                   <p>
                     Healthcare workers are lacking basic personal protective
                     equipment (PPE) while fighting the COVID-19 pandemic, putting
@@ -88,34 +88,33 @@ const HomePage = ({ data }) => {
             </div>
             <div>
               <img
-                className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
+                className="-mb-32 w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
                 src={printer}
               ></img>
               <p className="legend">Visit the <a href="/ppe/make/3d"><u>3D printing</u></a> page for PPE designs you can print at home.</p>
             </div>
             <div>
               <img
-                className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
+                className="-mb-32 w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
                 src={innovative}
               ></img>
               <p className="legend">Visit the <a href="/ppe/make/low-tech-ppe"><u>low tech PPE</u></a> page to find ways that you can aid in fighting the pandemic without having to use any technology.</p>
             </div>
             <div>
               <img
-                className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
+                className="-mb-32 w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
                 src={josh}
               ></img>
               <p className="legend">Visit the <a href="/newsletter"><u>newsletter</u></a> page to stay up-to-date with recent coronavirus information and YCRO related news.</p>
             </div>
             <div>
               <img
-                className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
+                className="-mb-32 w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
                 src={sewing}
               ></img>
               <p className="legend">Visit the <a href="/ppe/make/sewing"><u>sewing</u></a> page for instructions and guidelines on making sewn masks to protect yourself and preserve supplies for our frontline workers.</p>
             </div>
           </Carousel>
-
         </section>
 
         <section className="lg:p-16 lg:pl-40 p-8 flex flex-wrap-reverse">
