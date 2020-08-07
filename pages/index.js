@@ -122,7 +122,33 @@ const HomePage = ({ data }) => {
 
         <section className="mx-auto px-8 md:w-11/12">
           <div className="flex flex-wrap items-center justify-center -mx-6 my-6">
-            <div className="bg-dark text-white text-center text-2xl w-1/3 mx-5">
+          <div className="bg-dark text-white text-center text-2xl w-1/4 mx-5">
+              <CountUp start={0} end={8} delay={0}>
+                      {({ countUpRef }) => (
+                        <div>
+                          <span ref={countUpRef} />
+                        </div>
+                      )}
+              </CountUp>
+              <p>
+                Subteams
+              </p>
+            </div>
+
+            <div className="bg-dark text-white text-center text-2xl w-1/4 mx-5">
+              <CountUp start={0} end={110} delay={0}>
+                      {({ countUpRef }) => (
+                        <div>
+                          <span ref={countUpRef} />
+                        </div>
+                      )}
+              </CountUp>
+              <p>
+                Hospitals contacted
+              </p>
+            </div>
+            
+            <div className="bg-dark text-white text-center text-2xl w-1/4 mx-5">
               <CountUp start={0} end={6800} delay={0}>
                       {({ countUpRef }) => (
                         <div>
@@ -132,18 +158,6 @@ const HomePage = ({ data }) => {
               </CountUp>
               <p>
                 Supplies donated
-              </p>
-            </div>
-            <div className="bg-dark text-white text-center text-2xl w-1/3 mx-5">
-              <CountUp start={0} end={100} delay={0}>
-                      {({ countUpRef }) => (
-                        <div>
-                          <span ref={countUpRef} />
-                        </div>
-                      )}
-              </CountUp>
-              <p>
-                Hospitals contacted
               </p>
             </div>
           </div>
