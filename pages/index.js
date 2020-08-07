@@ -7,7 +7,10 @@ import Link from "next/link";
 import background from "../assets/images/background2.jpg";
 import josh from "../assets/images/donation.jpeg"
 import sewing from "../assets/images/sewingPPE.png"
+import sewing5 from "../assets/images/sewing5.jpeg"
+import sewingg from "../assets/images/sewing2.jpg"
 import printer from "../assets/images/3d-printer.jpg"
+import innovative from "../assets/images/V7.jpg"
 import mask from "../assets/images/n95.jpg"
 import Markdown from "react-markdown";
 
@@ -66,7 +69,7 @@ const HomePage = ({ data }) => {
                 className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
                 src={background}
               ></img>
-              <div className="md:mt-40 md:ml-6 p-4 flex flex-col items-left relative">
+              <div className="md:mt-40 md:mb-40 md:ml-6 p-4 flex flex-col items-left relative">
                 <div>
                   <p className="text-left font-mono lg:text-5xl text-4xl pb-4">
                     Youth COVID-19 Relief Organization
@@ -86,27 +89,30 @@ const HomePage = ({ data }) => {
             <div>
               <img
                 className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
-                src={josh}
+                src={printer}
               ></img>
-              <p className="legend">Legend 3</p>
+              <p className="legend">Visit the <a href="/ppe/make/3d"><u>3D printing</u></a> page for PPE designs you can print at home.</p>
             </div>
             <div>
               <img
                 className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
-                src={printer}
+                src={innovative}
               ></img>
-              <p className="legend">Legend 4</p>
+              <p className="legend">Visit the <a href="/ppe/make/low-tech-ppe"><u>low tech PPE</u></a> page to find ways that you can aid in fighting the pandemic without having to use any technology.</p>
+            </div>
+            <div>
+              <img
+                className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
+                src={josh}
+              ></img>
+              <p className="legend">Visit the <a href="/newsletter"><u>newsletter</u></a> page to stay up-to-date with recent coronavirus information and YCRO related news.</p>
             </div>
             <div>
               <img
                 className="w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
                 src={sewing}
               ></img>
-              <p className="legend">Legend 4</p>
-            </div>
-            <div>
-              <img alt="" src={sewing} />
-              <p className="legend">Legend 4</p>
+              <p className="legend">Visit the <a href="/ppe/make/sewing"><u>sewing</u></a> page for instructions and guidelines on making sewn masks to protect yourself and preserve supplies for our frontline workers.</p>
             </div>
           </Carousel>
 
