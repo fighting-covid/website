@@ -149,7 +149,7 @@ const HomePage = ({ data }) => {
             </div>
             
             <div className="bg-dark text-white text-center text-2xl w-1/4 mx-5">
-              <CountUp start={0} end={6800} delay={0}>
+              <CountUp start={0} end={6874} delay={0}>
                       {({ countUpRef }) => (
                         <div>
                           <span ref={countUpRef} />
