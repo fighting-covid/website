@@ -100,7 +100,7 @@ const HomePage = ({ data }) => {
                 className="-mb-32 w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
                 src={innovative}
               ></img>
-              <p className="legend">Visit the <a href="/ppe/make/low-tech-ppe"><u>low tech PPE</u></a> page to find ways that you can aid in fighting the pandemic without having to use any technology.</p>
+              <p className="legend">Visit the <a href="/ppe/make/low-tech-ppe"><u>low-tech PPE</u></a> page to find ways that you can aid in fighting the pandemic without having to use any technology.</p>
             </div>
             <div>
               <img

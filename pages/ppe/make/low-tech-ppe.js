@@ -14,7 +14,7 @@ const PPEMakeLowTechPPEPage = ({ data }) => {
       <SEO title="Low Tech PPE" />
       <main className="container my-12">
         <section className="text-center mb-8">
-          <h1 className="heading">Low Tech PPE</h1>
+          <h1 className="heading">Low-Tech PPE</h1>
         </section>        
 
         <section className="container">
