@@ -37,7 +37,7 @@ const PPEMakeLowTechPPEPage = ({ data }) => {
               <iframe
                 width="100%"
                 height="400px"
-                src="https://www.youtube.com/watch?v=gJ4aQbABioA&feature=youtu.be"
+                src="https://www.youtube.com/embed/gJ4aQbABioA"
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
