@@ -23,6 +23,7 @@
     "react-3d-viewer": "^1.0.12",
     "react-animated-burgers": "^1.2.8",
     "react-burgers": "^1.3.0",
+    "react-countup": "^4.3.3",
     "react-dom": "^16.13.1",
     "react-download-link": "^2.3.0",
     "react-dropdown": "^1.7.0",

@@ -18,6 +18,8 @@ import { Carousel } from 'react-responsive-carousel';
 import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
 
+import CountUp from 'react-countup';
+
 import {
   ResponsiveContainer,
   BarChart,
@@ -116,6 +118,37 @@ const HomePage = ({ data }) => {
             </div>
           </Carousel>
         </section>
+
+
+        <section className="mx-auto px-8 md:w-11/12">
+          <div className="flex flex-wrap items-center justify-center -mx-6 my-6">
+            <div className="bg-dark text-white text-center text-2xl w-1/3 mx-5">
+              <CountUp start={0} end={6800} delay={0}>
+                      {({ countUpRef }) => (
+                        <div>
+                          <span ref={countUpRef} />
+                        </div>
+                      )}
+              </CountUp>
+              <p>
+                Supplies donated
+              </p>
+            </div>
+            <div className="bg-dark text-white text-center text-2xl w-1/3 mx-5">
+              <CountUp start={0} end={100} delay={0}>
+                      {({ countUpRef }) => (
+                        <div>
+                          <span ref={countUpRef} />
+                        </div>
+                      )}
+              </CountUp>
+              <p>
+                Hospitals contacted
+              </p>
+            </div>
+          </div>
+        </section>
+
 
         <section className="lg:p-16 lg:pl-40 p-8 flex flex-wrap-reverse">
           <div
