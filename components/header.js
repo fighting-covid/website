@@ -102,7 +102,7 @@ const Header = () => {
               }  bg-dark rounded-b-md ${
                 isActive ? "relative" : "absolute p-2 text-center"
               } px-2`}
-              style={isActive ? { left: "1.5rem" } : { right: "23.5rem" }}
+              style={isActive ? { left: "1.5rem" } : { right: "26.0rem" }}
             >
               <li className="text-accent">
                 <span>
@@ -184,73 +184,6 @@ const Header = () => {
                 setInvolvedActive(false);
               }}
             />
-            {/* <button
-              className={`trans block mt-4 lg:inline-block lg:mt-0 bg-accent p-2 pt-1 ${
-                isInvolvedActive && !isActive ? "rounded-t-md" : "rounded-md"
-                } text-light hover:text-white`}
-              onClick={() => setInvolvedActive(!isInvolvedActive)}
-              style={{ outline: "none" }}
-            // onMouseEnter={() => setInvolvedActive(true)}
-            >
-              Get Involved!
-            </button>
-            <ul
-              className={`${
-                isInvolvedActive ? "" : "hidden"
-                }  bg-light rounded-b-md ${
-                isActive ? "relative list-disc" : "absolute p-2 text-center"
-                }`}
-              style={isActive ? { left: "2rem" } : { right: "2rem" }}
-            // onMouseLeave={() => setInvolvedActive(false)}
-            >
-              <li className="text-accent">
-                <span>
-                  <NavLink
-                    href="/ppe/request"
-                    title="Request PPE"
-                    onClick={() => {
-                      setActive(false);
-                      setInvolvedActive(false);
-                    }}
-                    end={true}
-                  />
-                </span>
-              </li>
-              <li
-                className={`${
-                  isInvolvedActive && !isActive ? "mt-2" : ""
-                  } text-accent`}
-              >
-                <span>
-                  <NavLink
-                    href="/ppe/donate"
-                    title="Donate PPE"
-                    onClick={() => {
-                      setActive(false);
-                      setInvolvedActive(false);
-                    }}
-                    end={true}
-                  />
-                </span>
-              </li>
-              <li
-                className={`${
-                  isInvolvedActive && !isActive ? "mt-2" : ""
-                  } text-accent`}
-              >
-                <span>
-                  <NavLink
-                    href="/ppe/make"
-                    title="Make PPE"
-                    onClick={() => {
-                      setActive(false);
-                      setInvolvedActive(false);
-                    }}
-                    end={true}
-                  />
-                </span>
-              </li>
-            </ul> */}
           </div>
         </nav>
         <style jsx>{`
