@@ -242,7 +242,7 @@ const HomePage = ({ data }) => {
                     dataKey="grabbers"
                     name="Door Grabbers"
                     stackId="a"
-                    fill="#83CFE2"
+                    fill="#84B593"
                   />
                 </BarChart>
               </ResponsiveContainer>
