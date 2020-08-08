@@ -293,7 +293,7 @@ const HomePage = ({ data }) => {
               </button>
             </div>
           </div>
-        </section> */}
+        </section>
       </main>
     </>
   );
