@@ -10,6 +10,42 @@ import ReactGA from "react-ga";
 ReactGA.initialize("UA-167321699-1");
 ReactGA.pageview("/acknowledgments");
 
+import ReactHoverObserver from 'react-hover-observer';
+
+const Label = ({isHovering = false}, ack) => {
+  if (isHovering) {
+    return HoverText(ack);
+  }
+  return JustImage(ack);
+}
+
+function JustImage(ack) {
+  return (
+    <a href={ack} target="_blank">
+       <img
+         src={require(`../assets/images/acknowledgments/osms.jpg`)}
+         alt="no hover now"
+         className="w-full h-full object-cover"
+       />
+     </a>
+  );
+}   
+
+function HoverText(ack) {
+  return (
+      <a href={ack} target="_blank">
+       <img
+         src={require(`../assets/images/acknowledgments/fcpl.jpg`)}
+         alt="i am so cool"
+         className="w-full h-full object-cover"
+       />
+     </a>
+  );
+}   
+
+
+
+
 const Acknowledgments = ({ data }) => {
   return (
     <>
@@ -31,15 +67,10 @@ const Acknowledgments = ({ data }) => {
                 key={i}
               >
                 <div className="shadow duration-500 ease-in-out hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 border border-dark-secondary rounded">
-                  <div className="flex items-center justify-center">
-                    <a href={ack.link} target="_blank">
-                      <img
-                        src={require(`../assets/images/acknowledgments/${ack.image}`)}
-                        alt={ack.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </a>
-                  </div>
+                  
+                  <ReactHoverObserver className="flex items-center justify-center">                    
+                      <Label />
+                  </ReactHoverObserver>
                   <p
                     className="text-light bg-dark text-center text-xl py-2"
                     style={{ minHeight: "50px" }}
