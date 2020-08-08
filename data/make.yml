@@ -1,0 +1,10 @@
+content: Lack of accessibility to disposable, medical grade masks means that sewn masks are a necessary addition to the uniforms of many front line workers. They serve as a way to protect N95 masks from external wear, extending the longevity of PPE which can be hard to acquire, especially for smaller hospitals and clinics. Other providers are using our masks to protect at risk patients in senior living and mental health facilities. Our masks are made using 2 layers of 100% cotton fabric.
+sewing:
+  - title: Materials Database
+    thumbnail: materials-db.svg
+    link: /materials_database.pdf
+    content: Our Materials Database was developed from hours of research in primary literature and information has been compiled from a variety of veritable sources, including the Center for Disease Control and the World Health Organization. The database consists of a list of materials that may be used to make masks that are commonly found around the house, and relevant guidelines for sterilization.
+  - title: Mask Sewing Instructions
+    thumbnail: mask-instructions.svg
+    link: /mask_instructions.pdf
+    content: The Johns Hopkins mask pattern is very detailed and easy to follow along. Many of our sewers started off with this design. While having a sewing machine is not aboslutely necessary, it certainly makes the task a lot more doable. Please take the time to be careful and thorough, because while quantity is certainly desireable, without quality the masks are useless.

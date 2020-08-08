@@ -1,7 +1,8 @@
 require("dotenv").config();
-const images = require("next-images");
+const withPlugins = require("next-compose-plugins");
+const withImages = require("next-optimized-images");
 
-module.exports = images({
+module.exports = withPlugins([[withImages, { optimizeImages: false }]], {
   webpack: (config, { isServer }) => {
     // Fixes npm packages that depend on `fs` module
     if (!isServer) {

@@ -3,8 +3,11 @@ module.exports = {
     extend: {
       colors: {
         dark: "#304352",
+        "dark-secondary": "#445563",
         light: "whitesmoke",
+        "light-secondary": "#E5E5E5",
         accent: "#e44c65",
+        "accent-secondary": "#CD445A",
       },
     },
     fontFamily: {

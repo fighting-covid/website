@@ -9,9 +9,9 @@ import Markdown from "react-markdown";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import ReCAPTCHA from "react-google-recaptcha";
 import SEO from "../components/seo";
-import ReactGA from 'react-ga';
-ReactGA.initialize('UA-167321699-1');
-ReactGA.pageview('/contact');
+import ReactGA from "react-ga";
+ReactGA.initialize("UA-167321699-1");
+ReactGA.pageview("/contact");
 
 const FormField = ({ title, type }) => (
   <div className="mb-4">
@@ -51,14 +51,12 @@ const ContactPage = ({ data }) => {
   return (
     <>
       <SEO title="Contact" />
-      <main className="container mx-auto">
+      <main className="container">
         <section className="p-8">
-          <div className="flex justify-center">
-            <h2 className="text-center font-bold font-serif md:text-5xl text-4xl pb-4 heading">
-              {data.title}
-            </h2>
+          <div className="text-center">
+            <h1 className="heading mb-8">{data.title}</h1>
           </div>
-          <Markdown className="text-xl markdown-body mb-4 mx-auto text-center">
+          <Markdown className="text-xl markdown-body mx-auto text-center">
             {data.subtitle}
           </Markdown>
           {formResult === null || (
@@ -133,9 +131,7 @@ const ContactPage = ({ data }) => {
                     disabled={isSubmitting}
                     className="block cursor-pointer mt-6 mx-auto"
                   >
-                    <p className="trans bg-accent hover:bg-red-700 text-light p-4 rounded text-lg font-bold">
-                      Submit
-                    </p>
+                    <p className="trans button text-lg">Submit</p>
                   </button>
                 </Form>
               );
