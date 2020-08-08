@@ -5,7 +5,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import background from "../assets/images/background2.jpg";
-import newsletter from "../assets/images/newsletter/volume-2.png"
+import newsletter from "../assets/images/newsletter/volume-3.png"
 import sewing from "../assets/images/sewingPPE.png"
 import sewing5 from "../assets/images/sewing5.jpeg"
 import sewingg from "../assets/images/sewing2.jpg"
