@@ -9,7 +9,7 @@ import newsletter from "../assets/images/newsletter/volume-3.png"
 import sewing from "../assets/images/sewingPPE.png"
 import sewing5 from "../assets/images/sewing5.jpeg"
 import sewingg from "../assets/images/sewing2.jpg"
-import printer from "../assets/images/3d-printer.jpg"
+import printer from "../assets/images/3d-printer2.jpg"
 import innovative from "../assets/images/V7.jpg"
 import mask from "../assets/images/n95.jpg"
 import Markdown from "react-markdown";
