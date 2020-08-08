@@ -8,7 +8,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-###Installing
+### Installing
 
 1. Install dependencies
 
@@ -16,7 +16,7 @@ These instructions will get you a copy of the project up and running on your loc
    npm install
    ```
 
-###Running
+### Running
 
 2. Start the development server
 
