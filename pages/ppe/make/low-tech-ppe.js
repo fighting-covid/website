@@ -35,10 +35,10 @@ const PPEMakeLowTechPPEPage = ({ data }) => {
             </div>
           ))}
         </section>
-        <section className="flex flex-col md:-mx-16 md:flex-row md:justify-center justify-end mb-16">
+        <section className="flex flex-col md:-mx-16 lg:flex-row md:justify-center justify-end mb-16">
           <div className="w-full mb-5 md:mb-0 md:pr-3">
             <div
-              className="border-2 border-gray-500"
+              className="border-2 sm:mb-12 lg:mb-0 border-gray-500"
             >
               <iframe
                 width="100%"
