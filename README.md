@@ -41,11 +41,11 @@ These instructions will get you a copy of the project up and running on your loc
    ```bash
    npm run start
    ```
-##Built With
+## Built With
 
--ReactJS
--TailwindCSS
--Next.JS
+-ReactJS  
+-TailwindCSS  
+-Next.JS  
 
 ## Resources
 
