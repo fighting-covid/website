@@ -16,7 +16,7 @@ const Newsletter = ({ data }) => {
       <main>
         <section className="container my-12">
           <div className="text-center ">
-            <h1 className="heading uppercase">{data.title}</h1>
+            <h1 className="heading">{data.title}</h1>
           </div>
         </section>
         <section className="container">

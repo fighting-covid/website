@@ -5,7 +5,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import background from "../assets/images/background2.jpg";
-import josh from "../assets/images/donation.jpeg"
+import newsletter from "../assets/images/newsletter/volume-2.png"
 import sewing from "../assets/images/sewingPPE.png"
 import sewing5 from "../assets/images/sewing5.jpeg"
 import sewingg from "../assets/images/sewing2.jpg"
@@ -105,7 +105,7 @@ const HomePage = ({ data }) => {
             <div>
               <img
                 className="-mb-32 w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
-                src={josh}
+                src={newsletter}
               ></img>
               <p className="legend">Visit the <a href="/newsletter"><u>newsletter</u></a> page to stay up-to-date with recent coronavirus information and YCRO related news.</p>
             </div>
