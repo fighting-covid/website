@@ -1,4 +1,4 @@
-description: While usually used by hobbyist designers to test designs or make something small, 3D printing is an extremely powerful tool. Even though they do require maintenance, it is an especially simple way to help out because the printer does all of the work. There are problems with FDM printers that you will need be careful of, including the porosity of layer by layer prints.
+description: 3D printing is an extraordinarily powerful tool, whether it's with a hobbyist's FDM, or a professional grade resin printer. 3D printing PPE is a great way for people at home to help out and create a sturdy, reusable product. There are multiple caveats to be aware of, for example the type of filament being used and the porosity of an FDM print. These are by no means comparable to professional, medical-grade PPE. Until the scarcity is resolved however, they are definitely better than nothing. Take a look at the FDA 3D printing Q&A as well as the NIH 3D Print Exchange for more information.
 stls:
   - title: Prusa Face Shield
     link: |
