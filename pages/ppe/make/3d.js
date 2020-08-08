@@ -17,6 +17,7 @@ const PPEMake3DPage = ({ data }) => {
         <section className="md:mb-8 relative md:p-8">
           <section className="container text-center my-5 md:my-12">
             <h1 className="heading">3D Printing</h1>
+            <p>{data.description}</p>
           </section>
 
           <div className="flex flex-wrap flex-col md:flex-row">
