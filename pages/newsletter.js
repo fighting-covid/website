@@ -31,7 +31,7 @@ const Newsletter = ({ data }) => {
                 />
               </div>
               <div className="w-full lg:w-7/12">
-                <h2 className="heading">Volume {i + 1}</h2>
+                <h2 className="heading">Issue {i + 1}</h2>
                 <Markdown className="text-lg markdown-body mb-4">
                   {volume}
                 </Markdown>
