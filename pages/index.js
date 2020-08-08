@@ -113,13 +113,13 @@ const HomePage = ({ data }) => {
               <img
                 className="-mb-32 w-full h-full bg-local object-cover bg-no-repeat bg-center absolute inset-0"
                 src={sewing}
-              ></img>                                                             
+              ></img>
               <p className="legend">Visit the <a href="/ppe/make/sewing"><u>sewing</u></a> page for instructions and guidelines on making sewn masks to protect yourself and preserve supplies for our frontline workers.</p>
             </div>
           </Carousel>
-        </section>                                                                                                                                                                                                                                                                                                                                                                                                              
+        </section>
         <section className="mx-auto justify-center mt-12 flex flex-col md:flex-row px-8 md:w-11/12">
-          <div className="bg-dark text-white text-center text-5xl w-5/6 md:w-1/4 mx-5 rounded">
+          <div className="bg-dark text-white text-center text-5xl w-5/6 md:w-1/4 mx-auto rounded">
             <CountUp start={0} end={8} delay={0}>
               {({ countUpRef }) => (
                 <div>
@@ -134,7 +134,7 @@ const HomePage = ({ data }) => {
             </div>
           </div>
 
-          <div className="bg-dark text-white text-center my-5 md:my-0 text-5xl w-5/6 md:w-1/4 mx-5 rounded">
+          <div className="bg-dark text-white text-center my-5 md:my-0 text-5xl w-5/6 md:w-1/4 mx-auto rounded">
             <CountUp start={0} end={110} delay={0}>
               {({ countUpRef }) => (
                 <div>
@@ -149,7 +149,7 @@ const HomePage = ({ data }) => {
             </div>
           </div>
 
-          <div className="bg-dark text-white text-center text-5xl w-5/6 md:w-1/4 mx-5 rounded">
+          <div className="bg-dark text-white text-center text-5xl w-5/6 md:w-1/4 mx-auto rounded">
             <CountUp start={0} end={6874} delay={0}>
               {({ countUpRef }) => (
                 <div>
