@@ -27,7 +27,7 @@ const PPEMakeLowTechPPEPage = ({ data }) => {
                 />
               </div>
               <div className="w-full lg:w-7/12">
-                <h2 className="text-3xl" style={{color: "#304352"}}>{image.title}</h2>
+                <h3 className="heading text-3xl">{image.title}</h3>
                 <Markdown className="text-lg mt-2 markdown-body mb-4">
                   {image.content}
                 </Markdown>
