@@ -43,9 +43,9 @@ These instructions will get you a copy of the project up and running on your loc
    ```
 ## Built With
 
--ReactJS  
--TailwindCSS  
--Next.JS  
+- [ReactJS](https://reactjs.org/)  
+- [TailwindCSS](https://tailwindcss.com/)  
+- [Next.JS](https://nextjs.org/)  
 
 ## Resources
 
