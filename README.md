@@ -1,14 +1,22 @@
 # Project YCRO
 
-Website of Project YCRO (Youth COVID-19 Relief Organization). This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+Website of Project YCRO (Youth COVID-19 Relief Organization). We are a group of students working to connect hospitals in the DC-Maryland-Virginia region with desperately needed supplies in the wake of the COVID-19 pandemic. Our team is also working on independently producing hospital-approved Personal Protective Equipment (PPE) and other items, with the eventual vision of support healthcare workers during this time of crisis and shortage.
 
-## Development
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+###Installing
 
 1. Install dependencies
 
    ```bash
    npm install
    ```
+
+###Running
 
 2. Start the development server
 
@@ -33,6 +41,11 @@ Website of Project YCRO (Youth COVID-19 Relief Organization). This is a [Next.js
    ```bash
    npm run start
    ```
+##Built With
+
+-ReactJS
+-TailwindCSS
+-Next.JS
 
 ## Resources
 
