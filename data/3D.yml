@@ -1,4 +1,4 @@
-description: While usually used by hobbyist designers to test designs or make something small, 3D printing is an extremely powerful tool. Even though they do require maintenance, it is an especially simple way to help out because the printer does all of the work. I need to go back and make this text better later, there are problems with FDM printers being porous, link to caveats article.
+description: While usually used by hobbyist designers to test designs or make something small, 3D printing is an extremely powerful tool. Even though they do require maintenance, it is an especially simple way to help out because the printer does all of the work. There are problems with FDM printers that you will need be careful of, including the porosity of layer by layer prints.
 stls:
   - title: Prusa Face Shield
     link: |
