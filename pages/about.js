@@ -20,12 +20,7 @@ const AboutPage = ({ data }) => {
             <h2 className="heading">Our Mission</h2>
           </div>
           <Markdown className="text-xl markdown-body mb-4 mx-auto text-center">
-            We are a group of students working to connect hospitals in the
-            DC-Maryland-Virginia region with desperately needed supplies in the
-            wake of the COVID-19 pandemic. Our team is also working on
-            independently producing hospital-approved Personal Protective
-            Equipment (PPE) and other items, with the eventual vision of support
-            healthcare workers during this time of crisis and shortage.
+            {data.mission}
           </Markdown>
         </section>
         <section className="text-center mb-12">
