@@ -14,21 +14,35 @@ import ReactHoverObserver from 'react-hover-observer';
 
 const Label = ({isHovering = false}, ack) => {
   if (isHovering) {
-    return HoverText(ack);
+     return HoverText(ack);
+    // return true;
   }
-  return JustImage(ack);
+   return JustImage(ack);
+  // return false;
 }
 
-function JustImage(ack) {
+const JustImage = (ack) => {
+  // if(isHovering){
   return (
-    <a href={ack} target="_blank">
+    <a href={ack.link} target="_blank">
        <img
-         src={require(`../assets/images/acknowledgments/osms.jpg`)}
-         alt="no hover now"
+         src={require(`../assets/images/acknowledgments/${ack.image}`)}
+         alt="hihihihihihihi"
          className="w-full h-full object-cover"
        />
      </a>
   );
+  
+  // }
+  return (
+    <a href={ack} target="_blank">
+     <img
+       src={require(`../assets/images/acknowledgments/fcpl.jpg`)}
+       alt="i am so cool"
+       className="w-full h-full object-cover"
+     />
+   </a>
+);
 }   
 
 function HoverText(ack) {
@@ -69,7 +83,9 @@ const Acknowledgments = ({ data }) => {
                 <div className="shadow duration-500 ease-in-out hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 border border-dark-secondary rounded">
                   
                   <ReactHoverObserver className="flex items-center justify-center">                    
-                      <Label />
+                      <Label ack={ack}/> 
+                      {/* for some reason ack.image is undefined? */}
+                      
                   </ReactHoverObserver>
                   <p
                     className="text-light bg-dark text-center text-xl py-2"
