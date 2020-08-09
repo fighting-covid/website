@@ -23,7 +23,7 @@ const Acknowledgments = ({ data }) => {
             {data.subtitle}
           </Markdown>
         </section>
-        <section className="mx-auto px-8 md:w-10/12">
+        <section className="mx-auto px-8 md:w-8/12">
           <div className="flex flex-wrap items-center justify-center -mx-6">
             {data.acknowledgments.map((ack, i) => (
               <div
