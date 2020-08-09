@@ -12,21 +12,24 @@ ReactGA.pageview("/acknowledgments");
 
 import ReactHoverObserver from 'react-hover-observer';
 
-const Label = ({isHovering = false}, ack) => {
+
+const Label = ({isHovering = false}, importedElement, imageTitle) => {
   if (isHovering) {
-     return HoverText(ack);
+     return HoverText(importedElement, imageTitle);
     // return true;
   }
-   return JustImage(ack);
+   return JustImage(importedElement, imageTitle);
   // return false;
 }
 
-const JustImage = (ack) => {
+const JustImage = (ack, imageTitle) => {
   // if(isHovering){
+  log(dir);
   return (
+    
     <a href={ack.link} target="_blank">
        <img
-         src={require(`../assets/images/acknowledgments/${ack.image}`)}
+         src={require(`../assets/images/acknowledgments/${imageTitle}`)}
          alt="hihihihihihihi"
          className="w-full h-full object-cover"
        />
@@ -45,7 +48,7 @@ const JustImage = (ack) => {
 );
 }   
 
-function HoverText(ack) {
+function HoverText(ack, imageTitle) {
   return (
       <a href={ack} target="_blank">
        <img
@@ -75,7 +78,9 @@ const Acknowledgments = ({ data }) => {
         </section>
         <section className="mx-auto px-8 md:w-11/12">
           <div className="flex flex-wrap items-center justify-center -mx-6">
-            {data.acknowledgments.map((ack, i) => (
+            {data.acknowledgments.map((ack, i) => {
+              const title = new String(ack.image);
+              return(
               <div
                 className={`trans cursor-pointer w-full sm:w-1/2 md:${ack.width || "w-1/3"} px-4 pb-8`}
                 key={i}
@@ -83,7 +88,7 @@ const Acknowledgments = ({ data }) => {
                 <div className="shadow duration-500 ease-in-out hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 border border-dark-secondary rounded">
                   
                   <ReactHoverObserver className="flex items-center justify-center">                    
-                      <Label ack={ack}/> 
+                      <Label importedElement={ack} imageTitle={title}/> 
                       {/* for some reason ack.image is undefined? */}
                       
                   </ReactHoverObserver>
@@ -95,7 +100,7 @@ const Acknowledgments = ({ data }) => {
                   </p>
                 </div>
               </div>
-            ))}
+            )})}
           </div>
         </section>
       </main>
