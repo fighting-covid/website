@@ -7,16 +7,12 @@ import Link from "next/link";
 import background from "../assets/images/background2.jpg";
 import newsletter from "../assets/images/newsletter/volume-3.png"
 import sewing from "../assets/images/sewingPPE.png"
-import sewing5 from "../assets/images/sewing5.jpeg"
-import sewingg from "../assets/images/sewing2.jpg"
 import printer from "../assets/images/3d-printer2.jpg"
 import innovative from "../assets/images/V7.jpg"
-import mask from "../assets/images/n95.jpg"
 import Markdown from "react-markdown";
 
 import { Carousel } from 'react-responsive-carousel';
-import ReactDOM from 'react-dom';
-import React, { Component } from 'react';
+import React from 'react';
 
 import CountUp from 'react-countup';
 
@@ -29,7 +25,6 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
-  LabelList,
 } from "recharts";
 import SEO from "../components/seo";
 import ReactGA from "react-ga";
@@ -74,16 +69,12 @@ const HomePage = ({ data }) => {
               <div className="md:pt-20 md:pb-20 md:ml-6 p-4 flex flex-col items-left relative">
                 <div>
                   <p className="text-left font-mono lg:text-5xl text-4xl pb-4">
-                    Youth COVID-19 Relief Organization
+                    {data.title}
                   </p>
                 </div>
                 <div className="text-left md:w-1/3 mb-10 font-mono lg:text-2xl text-xl">
                   <p>
-                    Healthcare workers are lacking basic personal protective
-                    equipment (PPE) while fighting the COVID-19 pandemic, putting
-                    themselves and their loved ones in danger. Help us deliver
-                    critically needed supplies so they can safely continue saving
-                    lives.
+                    {data.subtitle}
                   </p>
                 </div>
               </div>
@@ -119,8 +110,9 @@ const HomePage = ({ data }) => {
           </Carousel>
         </section>
         <section className="mx-auto justify-center mt-12 flex flex-col md:flex-row px-8 md:w-11/12">
-          <div className="bg-dark text-white text-center text-5xl w-5/6 md:w-1/4 mx-auto rounded">
-            <CountUp start={0} end={8} delay={0}>
+          {data.numbers.map((num) => (
+            <div className="bg-dark text-white text-center text-5xl w-5/6 md:w-1/4 mx-auto rounded">
+            <CountUp start={0} end={num.number} delay={0}>
               {({ countUpRef }) => (
                 <div>
                   <span ref={countUpRef} />
@@ -129,40 +121,11 @@ const HomePage = ({ data }) => {
             </CountUp>
             <div className="text-2xl">
               <p>
-                Subteams
+                {num.title}
                   </p>
             </div>
           </div>
-
-          <div className="bg-dark text-white text-center my-5 md:my-0 text-5xl w-5/6 md:w-1/4 mx-auto rounded">
-            <CountUp start={0} end={110} delay={0}>
-              {({ countUpRef }) => (
-                <div>
-                  <span ref={countUpRef} />
-                </div>
-              )}
-            </CountUp>
-            <div className="text-2xl">
-              <p>
-                Hospitals Contacted
-                  </p>
-            </div>
-          </div>
-
-          <div className="bg-dark text-white text-center text-5xl w-5/6 md:w-1/4 mx-auto rounded">
-            <CountUp start={0} end={7349} delay={0}>
-              {({ countUpRef }) => (
-                <div>
-                  <span ref={countUpRef} />
-                </div>
-              )}
-            </CountUp>
-            <div className="text-2xl">
-              <p>
-                PPE Donated
-                  </p>
-            </div>
-          </div>
+          ))}
         </section>
 
 
@@ -182,9 +145,7 @@ const HomePage = ({ data }) => {
               <h2 className="heading heading-h2">Hospitals in Need</h2>
             </div>
             <Markdown className="markdown-body text-lg">
-              This map shows hospitals that we've contacted which currently need
-              supplies. Click on the location icons on the map to see more
-              information.
+              {data.statistics.map}
             </Markdown>
           </div>
         </section>
@@ -195,9 +156,7 @@ const HomePage = ({ data }) => {
               <h2 className="heading">Requests</h2>
             </div>
             <Markdown className="markdown-body text-lg mb-4">
-              This graph displays the quantities of sewn face masks and 3D
-              printed face shields that hospitals need. Hover over the bars for
-              exact values.
+              {data.statistics.graph}
             </Markdown>
             <div>
               <button className="trans button">
@@ -282,8 +241,7 @@ const HomePage = ({ data }) => {
               <h2 className="heading">Donations</h2>
             </div>
             <Markdown className="markdown-body text-lg mb-8">
-              This graph shows the quantities of PPE we have already coordinated
-              donations for. Hover over the bars for exact values.
+              {data.statistics.donations}
             </Markdown>
             <div>
               <button className="trans button">
