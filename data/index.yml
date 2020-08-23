@@ -8,3 +8,10 @@ statistics:
     This graph displays the supplies that hospitals need along with the respective quantities of sewn face masks and 3D printed face shields requested. Hover over the bars for exact values.
   donations: |
     This graph shows the quantities of PPE we have already coordinated donations for. Hover over the bars for exact values.
+numbers:
+  - title: Subteams
+    number: 8
+  - title: Hospitals Contacted
+    number: 110
+  - title: PPE Donated
+    number: 7860

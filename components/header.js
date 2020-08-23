@@ -169,6 +169,14 @@ const Header = () => {
               }}
             />
             <NavLink
+              href="/chart"
+              title="Delivery Log"
+              onClick={() => {
+                setActive(false);
+                setInvolvedActive(false);
+              }}
+            />
+            <NavLink
               href="/about"
               title="About"
               onClick={() => {

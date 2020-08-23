@@ -282,8 +282,7 @@ const HomePage = ({ data }) => {
               <h2 className="heading">Donations</h2>
             </div>
             <Markdown className="markdown-body text-lg mb-8">
-              This graph shows the quantities of PPE we have already coordinated
-              donations for. Hover over the bars for exact values.
+              {data.statistics.donations}              
             </Markdown>
             <div>
               <button className="trans button">
@@ -293,7 +292,7 @@ const HomePage = ({ data }) => {
               </button>
             </div>
           </div>
-        </section> */}
+        </section> 
       </main>
     </>
   );

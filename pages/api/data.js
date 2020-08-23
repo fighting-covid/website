@@ -18,8 +18,10 @@ export default async (req, res) => {
     try {
       const requestSheet = doc.sheetsById[1701444519];
       const donationSheet = doc.sheetsById[1523930735];
+      const deliverySheet = doc.sheetsById[1523930735];
       const requestRows = await requestSheet.getRows();
       const donationRows = await donationSheet.getRows();
+      const deliveryRows = await deliverySheet.getRows();
 
       let requestData = [];
       requestRows.forEach((requestRows) => {
@@ -60,8 +62,24 @@ export default async (req, res) => {
         donationData.push({ name: key, quantity: donationDict[key] });
       }
 
+      let deliveryData = [];
+      deliveryRows.forEach((deliveryRows) => {
+        const rawData = deliveryRows._rawData;
+        if (rawData[0]) {
+          if (!rawData[3] || isNaN(rawData[3])) rawData[3] = 0;
+          if (rawData[3] != 0)
+            deliveryData.push({
+              date: rawData[0],
+              items: rawData[2],
+              quantity: rawData[3],
+              location: rawData[4],
+              notes: rawData[5],
+            });
+        }
+      });
+
       res.statusCode = 200;
-      res.send({ request_data: requestData, donation_data: donationData });
+      res.send({ request_data: requestData, donation_data: donationData, delivery_data: deliveryData });
     } catch (e) {
       res.statusCode = 500;
       console.error(e);
