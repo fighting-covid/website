@@ -169,7 +169,7 @@ const Header = () => {
               }}
             />            
             <NavLink
-              href="/chart"
+              href="/deliveries"
               title="Delivery Log"
               onClick={() => {
                 setActive(false);
