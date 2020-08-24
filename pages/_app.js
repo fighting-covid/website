@@ -5,6 +5,10 @@ import "../assets/styles/main.css";
 import "hamburgers/dist/hamburgers.min.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+import 'ag-grid-community/dist/styles/ag-grid.css';
+import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
+
+
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
   return (

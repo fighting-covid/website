@@ -102,7 +102,7 @@ const Header = () => {
               }  bg-dark rounded-b-md ${
                 isActive ? "relative" : "absolute p-2 text-center"
               } px-2`}
-              style={isActive ? { left: "1.5rem" } : { right: "26.0rem" }}
+              style={isActive ? { left: "1.5rem" } : { right: "33.0rem" }}
             >
               <li className="text-accent">
                 <span>
@@ -163,6 +163,14 @@ const Header = () => {
             <NavLink
               href="/contact"
               title="Contact"
+              onClick={() => {
+                setActive(false);
+                setInvolvedActive(false);
+              }}
+            />            
+            <NavLink
+              href="/chart"
+              title="Delivery Log"
               onClick={() => {
                 setActive(false);
                 setInvolvedActive(false);
