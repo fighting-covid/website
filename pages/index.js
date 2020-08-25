@@ -111,7 +111,7 @@ const HomePage = ({ data }) => {
         </section>
         <section className="mx-auto justify-center mt-12 flex flex-col md:flex-row px-8 md:w-11/12">
           {data.numbers.map((num) => (
-            <div className="bg-dark text-white text-center text-5xl w-5/6 md:w-1/4 mx-auto rounded">
+            <div className="bg-dark text-white text-center my-4 md:my-0 text-5xl w-5/6 md:w-1/4 mx-auto rounded">
             <CountUp start={0} end={num.number} delay={0}>
               {({ countUpRef }) => (
                 <div>
