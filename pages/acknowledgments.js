@@ -30,7 +30,7 @@ const Acknowledgments = ({ data }) => {
                 className={`trans cursor-pointer w-full sm:w-1/2 md:${ack.width || "w-1/3"} px-4 pb-8`}
                 key={i}
               >
-                <div className="shadow duration-500 ease-in-out hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 border border-dark-secondary rounded">
+                <div className="group shadow duration-500 ease-in-out hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 border border-dark-secondary rounded">
                   <div className="flex items-center justify-center">
                     <a href={ack.link} target="_blank">
                       <img
@@ -38,7 +38,11 @@ const Acknowledgments = ({ data }) => {
                         alt={ack.title}
                         className="w-full h-full object-cover"
                       />
+                      <div className="hidden duration-500 ease-in-out group-hover:block transform">
+                        <p>{ack.info}</p>
+                      </div>
                     </a>
+
                   </div>
                   <p
                     className="text-light bg-dark text-center text-xl py-2"
