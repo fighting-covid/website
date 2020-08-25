@@ -44,7 +44,7 @@ const Acknowledgments = ({ data }) => {
                         className="w-full h-full object-cover"
                       />
                       <div className="flex items-center justify-center">
-                      <p style={textStyle} className="px-1 md:px-6 w-full h-full text-xs opacity-90 hidden text-light bg-dark group-hover:flex">{ack.info}</p>
+                      <p style={textStyle} className="flex px-1 md:px-6 w-full h-full text-xs opacity-90 hidden text-light bg-dark group-hover:flex">{ack.info}</p>
                       </div>
                     </a>
                   </div>
