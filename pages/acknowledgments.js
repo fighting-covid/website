@@ -36,14 +36,14 @@ const Acknowledgments = ({ data }) => {
                 key={i}
               >
                 <div className="shadow duration-500 ease-in-out hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 border border-dark-secondary rounded">
-                  <div className="group flex items-center hover:opacity-25 justify-center">
+                  <div className="group flex items-center justify-center">
                     <a href={ack.link} target="_blank">
                       <img
                         src={require(`../assets/images/acknowledgments/${ack.image}`)}
                         alt={ack.title}
                         className="w-full h-full object-cover"
                       />
-                      <p style={textStyle} className="hidden group-hover:block duration-500 ease-in-out transform">{ack.info}</p>
+                      <p style={textStyle} className="opacity-90 hidden text-light bg-dark group-hover:block">{ack.info}</p>
                     </a>
                   </div>
                   <p
