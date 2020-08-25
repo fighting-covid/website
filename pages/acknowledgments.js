@@ -11,6 +11,11 @@ ReactGA.initialize("UA-167321699-1");
 ReactGA.pageview("/acknowledgments");
 
 const Acknowledgments = ({ data }) => {
+  var textStyle = {
+    position: 'absolute',
+    top: '0%',
+    left: '0%'
+  };
   return (
     <>
       <SEO title="Acknowledgments" />
@@ -30,19 +35,16 @@ const Acknowledgments = ({ data }) => {
                 className={`trans cursor-pointer w-full sm:w-1/2 md:${ack.width || "w-1/3"} px-4 pb-8`}
                 key={i}
               >
-                <div className="group shadow duration-500 ease-in-out hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 border border-dark-secondary rounded">
-                  <div className="flex items-center justify-center">
+                <div className="shadow duration-500 ease-in-out hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 border border-dark-secondary rounded">
+                  <div className="group flex items-center hover:opacity-25 justify-center">
                     <a href={ack.link} target="_blank">
                       <img
                         src={require(`../assets/images/acknowledgments/${ack.image}`)}
                         alt={ack.title}
                         className="w-full h-full object-cover"
                       />
-                      <div className="hidden duration-500 ease-in-out group-hover:block transform">
-                        <p>{ack.info}</p>
-                      </div>
+                      <p style={textStyle} className="hidden group-hover:block duration-500 ease-in-out transform">{ack.info}</p>
                     </a>
-
                   </div>
                   <p
                     className="text-light bg-dark text-center text-xl py-2"
