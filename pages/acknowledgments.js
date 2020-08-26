@@ -4,13 +4,17 @@ import path from "path";
 import Markdown from "react-markdown";
 import SEO from "../components/seo";
 import React from "react";
-import donate from "../assets/images/donation.jpeg";
 import ReactGA from "react-ga";
 
 ReactGA.initialize("UA-167321699-1");
 ReactGA.pageview("/acknowledgments");
 
 const Acknowledgments = ({ data }) => {
+  var textStyle = {
+    position: 'absolute',
+    top: '0%',
+    left: '0%',
+  };
   return (
     <>
       <SEO title="Acknowledgments" />
@@ -30,14 +34,17 @@ const Acknowledgments = ({ data }) => {
                 className={`trans cursor-pointer w-full sm:w-1/2 md:${ack.width || "w-1/3"} px-4 pb-8`}
                 key={i}
               >
-                <div className="shadow duration-500 ease-in-out hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 border border-dark-secondary rounded">
-                  <div className="flex items-center justify-center">
+                <div className="group shadow duration-500 ease-in-out hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105 border border-dark-secondary rounded">
+                  <div className="flex content-center items-center justify-center">
                     <a href={ack.link} target="_blank">
                       <img
                         src={require(`../assets/images/acknowledgments/${ack.image}`)}
                         alt={ack.title}
                         className="w-full h-full object-cover"
                       />
+                      <div className="items-center justify-center">
+                        <span className="align-middle px-1 md:px-6 w-full h-full text-xs opacity-90 hidden text-light bg-dark group-hover:block">{ack.info}</span>
+                      </div>
                     </a>
                   </div>
                   <p
