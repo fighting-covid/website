@@ -53,5 +53,7 @@ module.exports = {
      visibility: ['responsive', 'hover', 'focus', 'group-hover'],
      display: ['responsive', 'hover', 'focus', 'group-hover'],
      opacity: ['responsive', 'hover', 'focus', 'group-hover'],
+     verticalAlign: ['responsive', 'hover', 'focus'],
+     alignContent: ['responsive', 'hover', 'focus'],
   }
 };
