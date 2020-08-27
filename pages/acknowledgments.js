@@ -43,7 +43,7 @@ const Acknowledgments = ({ data }) => {
                         className="w-full h-full object-cover"
                       />
                       <div className="items-center justify-center">
-                        <span className="align-middle px-1 md:px-6 w-full h-full py-2 opacity-90 hidden text-light bg-dark group-hover:block">{ack.info}</span>
+                        <span className="align-middle px-1 md:px-6 w-full h-full py-2 opacity-90 hidden text-xs text-light bg-dark group-hover:block">{ack.info}</span>
                       </div>
                     </a>
                   </div>
