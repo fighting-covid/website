@@ -19,11 +19,11 @@ const PPEMakeLowTechPPEPage = ({ data }) => {
         <section>
           {data.images.map((image, i) => (
             <div className="flex flex-wrap mb-12" key={i}>
-              <div className="w-full lg:w-5/12 md:pr-8 mb-4">
+              <div className="w-full lg:w-5/12 md:pr-8 mb-4 items-center justify-center">
                 <img
                   src={require(`../../../assets/images/make/innovative-design/${image.link}`)}
                   alt={image.title}
-                  style={{height: "300px"}}
+                  style={{height:`${image.height}` }}
                 />
               </div>
               <div className="w-full lg:w-7/12">

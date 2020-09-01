@@ -1,13 +1,17 @@
 images:
   - title: 2D Printing Guide
-    link: doc.png
+    link: doc2.png
     content: This comprehensive PPE guide provides information concerning how to make PPE without 3D printers and sewing machines. Detailed item descriptions, instructions, analyses, and images are provided for your benefit. We want to make sure that anyone and everyone can (and knows that they can) produce effective PPE for themselves or loved ones. You can access the document [here](https://docs.google.com/document/d/1jerQdkTAmrb36UzDtoJ-G9PWjBx0cI_iY531_tOAXWY/edit).
+    height: "300px"
   - title: Paper Ear Saver
     link: paperearsaver.jpg
     content: The hallmark of the Innovative Design team, origami ear savers are fast, easy, sturdy, cheap, comfortable, and recyclable. With 1 sheet of printer paper and just a few folds, you can create 3 ear savers! These can last for several days, if not weeks or months. They are essential if you plan on wearing a face mask for several hours.
+    height: "300px"
   - title: Hair Tie Face Mask
     link: hairtiefacemask.png
     content: Using a square piece of cloth and two hair ties, you can fashion a face mask for yourself in just 3 easy steps!
+    height: "300px"
   - title: Card Ear Saver
     link: cardearsaver.png
     content: An ear saver may also be made with a credit card, playing card, Pokemon card, or Yu-Gi-Oh card. By cutting multiple notches, you can accommodate multiple sizes in one!
+    height: "300px"
