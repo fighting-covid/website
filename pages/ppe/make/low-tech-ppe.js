@@ -10,7 +10,7 @@ ReactGA.pageview("/ppe-make/low-tech-ppe");
 const PPEMakeLowTechPPEPage = ({ data }) => {
   return (
     <>
-      <SEO title="Low Tech PPE" />
+      <SEO title="Low-Tech PPE" />
       <main className="container my-12">
         <section className="text-center mb-12">
           <h1 className="heading">Low-Tech PPE</h1>
