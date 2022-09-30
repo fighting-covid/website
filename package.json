@@ -39,7 +39,7 @@
     "react-pdf": "^4.1.0",
     "react-responsive-carousel": "^3.2.9",
     "reactjs-popup": "^1.5.0",
-    "recharts": "^1.8.5",
+    "recharts": "^2.1.14",
     "stl-viewer": "^0.12.0",
     "styled-components": "^5.1.1",
     "three": "^0.118.3"
